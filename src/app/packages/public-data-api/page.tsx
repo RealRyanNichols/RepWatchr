@@ -1,145 +1,97 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Link from "next/link";
 import PublicDataApiAccessForm from "@/components/public-data-api/PublicDataApiAccessForm";
-import { PUBLIC_API_ENDPOINTS, PUBLIC_API_SCOPES } from "@/lib/public-data-api-config";
+import { getAllOfficials } from "@/lib/data";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
 export const metadata: Metadata = buildRepWatchrMetadata({
-  title: "Public Data API Access | RepWatchr",
-  description:
-    "Request future RepWatchr public data API access for source-backed profiles, public sources, races, jurisdictions, and aggregate civic trends.",
+  title: "Public Official Data Pilots",
+  description: "Request a scoped public-official data pilot for your newsroom, agency or research team. See coverage, source fields and review requirements.",
   path: "/packages/public-data-api",
   imagePath: buildOgImageUrl("services", { slug: "public-data-api" }),
-  imageAlt: "RepWatchr public data API access preview",
+  imageAlt: "RepWatchr public official data pilot",
 });
 
-const availableData = [
-  "Approved public profile data with public-role fields and source counts.",
-  "Approved public source links, source labels, and public record metadata.",
-  "Public jurisdictions, races, stories, school-board pages, and source gaps when reviewed.",
-  "Aggregate non-identifying trends for pages, searches, watches, shares, records, and jurisdictions.",
-  "Data exports that are filtered, logged, expiring, and tied to an approved access request.",
+const packages = [
+  { name: "Researcher", price: "$49 / month", detail: "Proposed pilot for up to 100 public records in an agreed jurisdiction.", includes: "Saved record lists, source-change digest and permitted public-field exports." },
+  { name: "Local team", price: "$249 / month", detail: "Proposed pilot for one supported county, up to 500 records and five team members.", includes: "Office roster, source ledger, CSV delivery and an agreed review schedule." },
+  { name: "Agency data", price: "From $999 / month", detail: "Proposed pilot for up to 2,500 agreed public office and term records.", includes: "Scoped delivery, a field dictionary, source dates and a refresh plan." },
 ];
 
-const unavailableData = [
-  "Private user data, private watchlists, private submissions, or private uploaded documents.",
-  "Raw analytics tied to identifiable people or individual visitor histories.",
-  "Admin notes, internal reviewer comments, risk notes, payment events, or service fulfillment records.",
-  "Under-review claims presented as verified facts.",
-  "Private addresses, minor children, medical data, sealed/restricted records, or doxxing material.",
-];
-
-const useCases = [
-  "Journalists building source-backed local accountability dashboards.",
-  "Civic groups tracking public-record gaps across counties, districts, or school boards.",
-  "Researchers comparing public profiles, races, source trails, and aggregate trends.",
-  "Public affairs or campaign teams that need source links without private-data targeting.",
-  "Organizations that may later need CSV exports, API keys, or a monitored jurisdiction feed.",
+const fields = [
+  ["Record identity", "Stable person and office identifiers; name, office, jurisdiction and term where supported."],
+  ["Public sources", "Direct source URL, source type, record date and the field or claim it supports."],
+  ["Review status", "Imported, awaiting review or reviewed status; last checked date and unresolved gaps."],
+  ["Changes", "Dated officeholder, term or source changes, with the prior record preserved."],
 ];
 
 export default function PublicDataApiPackagePage() {
+  const count = new Intl.NumberFormat("en-US").format(getAllOfficials().length);
   return (
-    <main className="min-h-screen bg-[#f6f9fc]">
-      <section className="border-b border-slate-200 bg-slate-950 text-white">
-        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-          <div className="h-1.5 max-w-xl rounded-full bg-[linear-gradient(90deg,#b42318_0%,#d6b35a_45%,#1d4ed8_100%)]" />
-          <p className="mt-6 text-xs font-black uppercase tracking-[0.22em] text-red-300">Future data product</p>
-          <h1 className="mt-3 max-w-4xl text-4xl font-black leading-[0.98] tracking-tight sm:text-6xl">
-            Public-record data access without private-data games.
-          </h1>
-          <p className="mt-5 max-w-3xl text-base font-semibold leading-7 text-slate-200 sm:text-lg">
-            RepWatchr is building a gated public data API for approved source-backed profiles, public sources,
-            jurisdictions, races, stories, and aggregate non-identifying trends. It is not publicly launched yet.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a href="#request-api-access" className="primary-button">Request access</a>
-            <Link href="/methodology" className="secondary-button">View methodology</Link>
+    <main className="rw-page-shell text-slate-950">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <nav aria-label="Breadcrumb" className="mb-6 flex gap-2 text-sm text-slate-600">
+          <Link href="/services" className="underline underline-offset-4">Services</Link><span aria-hidden="true">/</span><span>Public data</span>
+        </nav>
+        <section className="rounded-2xl bg-slate-950 px-6 py-9 text-white sm:p-10">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-amber-300">Public data pilots · requests open</p>
+          <h1 className="mt-4 max-w-3xl text-4xl font-black leading-tight tracking-tight sm:text-5xl">Put the public record to work.</h1>
+          <p className="mt-5 max-w-3xl text-base leading-7 text-slate-200">Source-linked official profiles, office rosters and record changes for newsrooms, civic researchers and agencies. Tell us the place, fields and delivery you need.</p>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <a href="#request-api-access" className="rounded-lg bg-white px-5 py-3 text-sm font-bold text-slate-950 hover:bg-slate-100">Request a scoped pilot</a>
+            <Link href="/coverage" className="rounded-lg border border-slate-500 px-5 py-3 text-sm font-bold text-white hover:bg-slate-800">Check current coverage</Link>
           </div>
-        </div>
-      </section>
+          <p className="mt-5 max-w-3xl text-sm leading-6 text-slate-300">The public API and paid data subscriptions have not launched. A request starts a scope review; it does not issue a key, reserve a dataset or collect payment.</p>
+        </section>
 
-      <section className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
-        <div className="grid content-start gap-6">
-          <Panel eyebrow="Use cases" title="Who this is for">
-            <BulletList items={useCases} />
-          </Panel>
+        <section className="mt-8 grid gap-5 lg:grid-cols-[1fr_1.6fr]" aria-labelledby="coverage-heading">
+          <div className="rounded-xl border border-slate-200 bg-white p-6">
+            <p className="text-4xl font-black tracking-tight">{count}</p>
+            <h2 id="coverage-heading" className="mt-2 text-lg font-bold">Official records in the current directory</h2>
+            <p className="mt-3 text-sm leading-6 text-slate-600">Loaded records include source-seeded and incomplete profiles. This is not a count of verified officials or complete national coverage. School-board research has its own coverage and dates.</p>
+            <Link href="/data-reports" className="mt-4 inline-block text-sm font-bold text-blue-800 underline underline-offset-4">Read the data report</Link>
+          </div>
+          <div className="rounded-xl border border-slate-200 bg-white p-6">
+            <h2 className="text-2xl font-bold tracking-tight">Agree on the data before the price.</h2>
+            <ol className="mt-5 grid gap-4 sm:grid-cols-3">
+              {[["01", "Name the scope", "Jurisdiction, offices, fields and intended use."], ["02", "Review a sample", "Confirm dates, sources, gaps and permitted reuse."], ["03", "Set delivery terms", "Agree on format, refresh schedule and cost before any access."]].map(([step, title, detail]) => (
+                <li key={step}><span className="text-sm font-bold text-blue-800">{step}</span><h3 className="mt-2 font-bold">{title}</h3><p className="mt-2 text-sm leading-6 text-slate-600">{detail}</p></li>
+              ))}
+            </ol>
+          </div>
+        </section>
 
-          <Panel eyebrow="Available when approved" title="What the API can include">
-            <BulletList items={availableData} />
-          </Panel>
+        <section className="mt-10" aria-labelledby="pilot-options">
+          <h2 id="pilot-options" className="text-2xl font-bold tracking-tight">Pilot packages we are testing</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-600">Proposed pricing for research and planning. Availability, record limits and review cadence require a written scope. These are not active subscriptions.</p>
+          <div className="mt-5 grid gap-4 md:grid-cols-3">
+            {packages.map((item) => (
+              <article key={item.name} className="flex flex-col rounded-xl border border-slate-200 bg-white p-6">
+                <h3 className="text-lg font-bold">{item.name}</h3><p className="mt-3 text-2xl font-black tracking-tight">{item.price}</p>
+                <p className="mt-4 text-sm leading-6 text-slate-600">{item.detail}</p><p className="mt-3 flex-1 text-sm leading-6 text-slate-700">{item.includes}</p>
+                <a href="#request-api-access" className="mt-6 inline-flex text-sm font-bold text-blue-800 underline underline-offset-4">Discuss {item.name.toLowerCase()} scope</a>
+              </article>
+            ))}
+          </div>
+        </section>
 
-          <Panel eyebrow="Hard boundary" title="What the API will not include">
-            <BulletList items={unavailableData} tone="warn" />
-          </Panel>
-        </div>
-
-        <div className="grid content-start gap-6">
+        <section className="mt-10 grid items-start gap-7 lg:grid-cols-2">
+          <div className="grid gap-6">
+            <section className="rounded-xl border border-slate-200 bg-white p-6" aria-labelledby="fields-heading">
+              <h2 id="fields-heading" className="text-2xl font-bold tracking-tight">What a sample should show</h2>
+              <p className="mt-2 text-sm leading-6 text-slate-600">A proposed field dictionary, not an available export. Every pilot must identify missing fields and source restrictions.</p>
+              <dl className="mt-5 divide-y divide-slate-200">{fields.map(([name, detail]) => <div key={name} className="py-4 first:pt-0"><dt className="font-bold">{name}</dt><dd className="mt-1 text-sm leading-6 text-slate-600">{detail}</dd></div>)}</dl>
+            </section>
+            <section className="rounded-xl border border-slate-200 bg-white p-6">
+              <h2 className="text-2xl font-bold tracking-tight">Public records. Clear limits.</h2>
+              <p className="mt-3 text-sm leading-6 text-slate-600">A pilot can cover permitted public-role fields and source links. Private submissions, private addresses, individual voting preferences and identity-linked visitor histories are excluded.</p>
+              <p className="mt-3 text-sm leading-6 text-slate-600">Community feedback is not currently offered as a dataset. Any future aggregate release needs consent, sample disclosure, verification labels and safeguards against identifying participants. Participation does not establish public consensus.</p>
+              <div className="mt-4 flex flex-wrap gap-4 text-sm font-bold text-blue-800"><Link href="/methodology" className="underline underline-offset-4">Methodology</Link><Link href="/privacy" className="underline underline-offset-4">Privacy</Link><Link href="/for-candidates" className="underline underline-offset-4">Free candidate profile requests</Link></div>
+            </section>
+          </div>
           <PublicDataApiAccessForm />
-
-          <Panel eyebrow="Endpoint foundation" title="Future public endpoints">
-            <div className="grid gap-2">
-              {PUBLIC_API_ENDPOINTS.map((endpoint) => (
-                <div key={endpoint.path} className="rounded-xl border border-slate-200 bg-slate-50 p-3">
-                  <p className="text-sm font-black text-slate-950">{endpoint.path}</p>
-                  <p className="mt-1 text-xs font-bold uppercase tracking-wide text-blue-950">{endpoint.scope.replaceAll("_", " ")}</p>
-                  <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{endpoint.description}</p>
-                </div>
-              ))}
-            </div>
-          </Panel>
-
-          <Panel eyebrow="Privacy guardrails" title="Data product rules">
-            <p className="text-sm font-semibold leading-6 text-slate-700">
-              RepWatchr data products are built around public records, public source links, and aggregate signals. Access requests are reviewed before any key is issued. API keys are scoped, rate-limited, logged, and revocable.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {PUBLIC_API_SCOPES.filter((scope) => scope !== "admin_internal").map((scope) => (
-                <span key={scope} className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-black text-blue-950">
-                  {scope.replaceAll("_", " ")}
-                </span>
-              ))}
-            </div>
-          </Panel>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
-  );
-}
-
-function Panel({
-  eyebrow,
-  title,
-  children,
-}: {
-  eyebrow: string;
-  title: string;
-  children: ReactNode;
-}) {
-  return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-      <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">{eyebrow}</p>
-      <h2 className="mt-2 text-2xl font-black leading-tight text-blue-950">{title}</h2>
-      <div className="mt-4">{children}</div>
-    </section>
-  );
-}
-
-function BulletList({ items, tone = "default" }: { items: string[]; tone?: "default" | "warn" }) {
-  return (
-    <div className="grid gap-2">
-      {items.map((item) => (
-        <div
-          key={item}
-          className={`rounded-lg border px-3 py-2 text-sm font-bold leading-6 ${
-            tone === "warn"
-              ? "border-amber-200 bg-amber-50 text-amber-950"
-              : "border-slate-200 bg-slate-50 text-slate-800"
-          }`}
-        >
-          {item}
-        </div>
-      ))}
-    </div>
   );
 }

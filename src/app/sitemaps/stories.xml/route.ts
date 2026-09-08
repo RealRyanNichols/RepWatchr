@@ -1,9 +1,9 @@
-import { getSeoSitemapRecords } from "@/lib/seo-inventory";
+import { storySeoRecords } from "@/lib/seo-inventory";
+import { getPublicArticleCatalog } from "@/lib/article-catalog";
 import { renderUrlSitemap, xmlResponse } from "@/lib/sitemap-xml";
 
-export const dynamic = "force-static";
-export const revalidate = 3600;
+export const dynamic = "force-dynamic";
 
-export function GET() {
-  return xmlResponse(renderUrlSitemap(getSeoSitemapRecords("stories")));
+export async function GET() {
+  return xmlResponse(renderUrlSitemap(storySeoRecords(await getPublicArticleCatalog())));
 }

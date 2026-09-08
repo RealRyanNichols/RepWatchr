@@ -87,6 +87,7 @@ function optionLabel(option: OfficialFacetOption) {
 function activeFilterSummary(params: OfficialSearchParams) {
   const items: string[] = [];
   if (params.search) items.push(`search: ${params.search}`);
+  if (params.recordType !== "all") items.push(params.recordType === "official" ? "official profiles" : "school research records");
   if (params.state) items.push(`state: ${params.state}`);
   if (params.county) items.push(`county: ${params.county}`);
   if (params.city) items.push(`city: ${params.city}`);
@@ -127,15 +128,22 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
             </p>
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-3 border-l-2 border-amber-400 pl-4 sm:pl-5">
-            <MetricPill label="Profiles" value={result.stats.totalProfiles} />
+            <MetricPill label="Official profiles" value={result.stats.officialProfiles} />
+            <MetricPill label="School research" value={result.stats.schoolResearchRecords} />
             <MetricPill label="Source linked" value={result.stats.sourceLinkedProfiles} />
             <MetricPill label="Votes loaded" value={result.stats.voteLoadedProfiles} />
             <MetricPill label="Funding loaded" value={result.stats.fundingLoadedProfiles} />
           </div>
         </div>
+        <p className="relative mt-4 text-sm leading-6 text-slate-600">School research includes historical roster snapshots and candidates. Current membership may be unconfirmed. <Link href="/coverage" className="font-bold text-[#163b5c] underline underline-offset-4">See coverage and source dates →</Link></p>
       </div>
 
       <form action="/officials" method="get" className="border-b border-slate-200 bg-white p-4 sm:p-6">
+        <label className="mb-4 block max-w-sm text-xs font-bold text-slate-600">Record collection
+          <select name="recordType" defaultValue={params.recordType} className="mt-1 block w-full rounded-lg border border-slate-300 bg-slate-50 px-3 py-3 text-sm text-slate-950">
+            <option value="all">All records</option><option value="official">Official profiles</option><option value="school-research">School-board research</option>
+          </select>
+        </label>
         <div className="grid gap-3 lg:grid-cols-[minmax(260px,1.35fr)_repeat(3,minmax(150px,0.55fr))]">
           <label className="block min-w-0">
             <span className="text-[11px] font-black uppercase tracking-wide text-slate-600">Search</span>
@@ -276,7 +284,7 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
       <div className="p-4 sm:p-6">
         <div className="mb-6 flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-sm lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">People in this view</p>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Records in this view</p>
             <p className="mt-1 text-3xl font-black tracking-tight text-slate-950">{resultRange(result)}</p>
             {activeFilters.length > 0 ? (
               <p className="mt-1 max-w-4xl text-xs font-bold leading-5 text-slate-600">
@@ -284,7 +292,7 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
               </p>
             ) : (
               <p className="mt-1 text-sm font-semibold text-slate-600">
-                Federal, state, county, city, and school-board profiles are included.
+                Federal, state, county, city, and school-board records are included. Record totals are not unique-person or current-seat counts.
               </p>
             )}
           </div>
@@ -300,7 +308,7 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
           <>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
               {result.rows.map((row) => (
-                <OfficialSearchCard key={row.official.id} row={row} />
+                row.recordKind === "school-research" ? <SchoolResearchCard key={row.official.id} row={row} /> : <OfficialSearchCard key={row.official.id} row={row} />
               ))}
             </div>
             <Pagination result={result} />
@@ -372,7 +380,7 @@ function CheckboxFilter({ name, label, checked }: { name: string; label: string;
 }
 
 function OfficialSearchCard({ row }: { row: OfficialSearchRow }) {
-  const officialPath = `/officials/${row.official.id}`;
+  const officialPath = row.profileHref;
   const profileStatus = row.profileCompleteness >= 100 ? "Profile built" : `${row.profileCompleteness}% built`;
   const sourceStatus = row.missingSources ? "Needed" : formatNumber(row.sourceCount);
   const cardPartyLabel = row.official.party === "NP" ? "Nonpartisan" : partyLabels[row.official.party];
@@ -422,6 +430,7 @@ function OfficialSearchCard({ row }: { row: OfficialSearchRow }) {
       </Link>
 
       <div className="flex flex-1 flex-col px-5 pb-5 pt-3">
+        <p className="mb-3 text-xs font-semibold leading-5 text-amber-800">{row.recordStatus}</p>
         <p className="line-clamp-2 min-h-10 text-sm font-medium leading-5 text-slate-600" title={officeLine}>
           {officeLine}
         </p>
@@ -487,6 +496,25 @@ function OfficialSearchCard({ row }: { row: OfficialSearchRow }) {
           </Link>
         </p>
       </div>
+    </article>
+  );
+}
+
+function SchoolResearchCard({ row }: { row: OfficialSearchRow }) {
+  return (
+    <article className="flex h-full flex-col rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+      <p className="text-xs font-bold uppercase tracking-wider text-slate-500">School-board research · {row.state}</p>
+      <h3 className="mt-5 font-serif text-2xl font-semibold text-slate-950"><Link href={row.profileHref} className="hover:text-[#163b5c]">{row.official.name}</Link></h3>
+      <p className="mt-2 font-semibold text-slate-700">{row.official.jurisdiction}</p>
+      <p className="mt-1 text-sm text-slate-600">{[row.official.district, row.official.position, row.countyValues.join(" / ")].filter(Boolean).join(" · ")}</p>
+      <div className="mt-5 rounded-md border border-amber-200 bg-amber-50 p-4">
+        <p className="text-sm font-bold leading-6 text-amber-950">{row.recordStatus}</p>
+        {row.sourceSnapshotDate ? <p className="mt-2 text-sm leading-6 text-amber-900">Source snapshot: {row.sourceSnapshotDate}. Current seat, term, and selection method need a fresh district source.</p> : null}
+        {row.rosterCheckedAt ? <p className="mt-2 text-sm text-amber-900">Roster checked: {row.rosterCheckedAt}. Other profile claims remain under review.</p> : null}
+      </div>
+      <p className="mt-4 text-sm leading-6 text-slate-600">{row.sourceCount} linked source{row.sourceCount === 1 ? "" : "s"}. No verified votes, funding, or score are asserted by this search entry.</p>
+      {row.provenanceUrl ? <a href={row.provenanceUrl} className="mt-3 text-sm font-semibold text-[#163b5c] underline underline-offset-4">Open roster source ↗</a> : <p className="mt-3 text-sm text-amber-900">Source link needed.</p>}
+      <Link href={row.profileHref} className="mt-auto flex items-center justify-between rounded-sm bg-[#163b5c] px-4 py-3 text-sm font-semibold text-white hover:bg-[#0d2a44]">Open research record <span aria-hidden="true">→</span></Link>
     </article>
   );
 }

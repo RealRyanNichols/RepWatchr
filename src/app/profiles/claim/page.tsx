@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ProfileClaimForm from "@/components/profile/ProfileClaimForm";
 
 export const metadata: Metadata = {
-  title: "Claim a Profile | RepWatchr",
+  title: "Claim a Profile",
   description:
-    "Request verified RepWatchr profile ownership for reviewed bio, media, and official links while public facts and evidence stay locked.",
+    "Request free profile access for reviewed bio, authentic media and official links. Authority checks and review of public facts remain separate.",
   robots: {
     index: false,
     follow: false,

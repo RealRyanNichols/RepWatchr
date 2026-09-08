@@ -14,6 +14,7 @@ interface NationalSpotlightSelectorProps {
   description: string;
   profileNoun: string;
   profileCountsByState: Record<string, number>;
+  headingLevel?: 1 | 2;
 }
 
 function hrefFor(basePath: string, code?: string) {
@@ -58,7 +59,9 @@ export default function NationalSpotlightSelector({
   description,
   profileNoun,
   profileCountsByState,
+  headingLevel = 1,
 }: NationalSpotlightSelectorProps) {
+  const Heading = headingLevel === 1 ? "h1" : "h2";
   const router = useRouter();
   const selected = jurisdictions.find((state) => state.code === selectedStateCode);
   const loadedStateCount = jurisdictions.filter((state) => (profileCountsByState[state.code] ?? 0) > 0).length;
@@ -72,7 +75,7 @@ export default function NationalSpotlightSelector({
       <div className="grid gap-5 p-5 lg:grid-cols-[1.05fr_0.95fr] lg:p-7">
         <div>
           <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">{pageLabel}</p>
-          <h1 className="mt-2 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">{title}</h1>
+          <Heading className="mt-2 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">{title}</Heading>
           <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">{description}</p>
 
           <div className="mt-5 grid gap-2 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-end">

@@ -102,7 +102,7 @@ export default function AdminClaimsClient() {
         .from("user_roles")
         .select("role")
         .eq("user_id", user!.id)
-        .in("role", ["admin", "reviewer"]);
+        .eq("role", "admin");
 
       if (!mounted) return;
 
@@ -152,7 +152,7 @@ export default function AdminClaimsClient() {
     setMessage("");
 
     const reviewerNotes = notes[claim.id]?.trim() || null;
-    const { error: updateError } = await supabase
+    const { data: updatedClaim, error: updateError } = await supabase
       .from("profile_claims")
       .update({
         status,
@@ -160,10 +160,12 @@ export default function AdminClaimsClient() {
         reviewed_by: user.id,
         reviewed_at: new Date().toISOString(),
       })
-      .eq("id", claim.id);
+      .eq("id", claim.id)
+      .select("id")
+      .maybeSingle();
 
-    if (updateError) {
-      setError(updateError.message);
+    if (updateError || !updatedClaim) {
+      setError(updateError?.message ?? "This claim was not updated. An admin must review another member’s submission.");
       return;
     }
 
@@ -218,7 +220,7 @@ export default function AdminClaimsClient() {
       <div className="mx-auto max-w-xl px-4 py-16 text-center">
         <h1 className="text-2xl font-black text-gray-950">Admin access required</h1>
         <p className="mt-2 text-sm font-semibold text-gray-600">
-          Claim review requires an admin or reviewer role in Supabase.
+          Claim review requires an admin role in Supabase.
         </p>
       </div>
     );

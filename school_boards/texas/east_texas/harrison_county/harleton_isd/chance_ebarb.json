@@ -1,0 +1,27 @@
+{
+  "candidate_id": "chance_ebarb_harleton_isd",
+  "full_name": "Chance Ebarb",
+  "district": "Harleton ISD",
+  "district_slug": "harleton_isd",
+  "county": "Harrison",
+  "state": "TX",
+  "seat": "Place 4",
+  "role": "Trustee (appointed)",
+  "incumbent": true,
+  "status": "needs_review",
+  "summary": "Harleton ISD's board page lists Chance Ebarb in Place 4 and states that he was appointed in July 2026. The roster was checked September 8, 2026. The page does not give a term-expiration date for this seat.",
+  "research_gaps": [
+    "Retrieve the appointment minutes and confirm the exact appointment date.",
+    "Confirm the term expiration and next election for Place 4.",
+    "Review primary meeting records before describing individual votes or board performance."
+  ],
+  "sources": [
+    {
+      "url": "https://www.harletonisd.net/76025_3",
+      "title": "Harleton ISD School Board Information: Place 4 appointment",
+      "accessed_date": "2026-09-08",
+      "source_type": "official_district_roster"
+    }
+  ],
+  "last_updated": "2026-09-08"
+}

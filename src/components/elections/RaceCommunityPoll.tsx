@@ -150,6 +150,7 @@ export default function RaceCommunityPoll() {
   const recordedChoice = payload?.myVote ?? null;
   const resultSummary = leaderLine(options);
   const responseCount = payload?.responseCount ?? 0;
+  const resultsVisible = payload?.resultsVisible === true;
   const canSubmit =
     Boolean(user) &&
     Boolean(choice) &&
@@ -194,9 +195,9 @@ export default function RaceCommunityPoll() {
         <div>
           <p className={styles.pollLiveLabel}>
             <span aria-hidden="true" />
-            Live Marion County poll
+            Marion County community pulse
           </p>
-          <strong className={styles.pollCallout}>Cast your vote</strong>
+          <strong className={styles.pollCallout}>Share your response</strong>
           <h2 id="poll-heading">
             {payload?.question ??
               "If the election were today, who would you support?"}
@@ -204,7 +205,7 @@ export default function RaceCommunityPoll() {
         </div>
         <span className={styles.pollResponseCount}>
           {responseCount}
-          <small>profile-backed {responseCount === 1 ? "vote" : "votes"}</small>
+          <small>signed-in {responseCount === 1 ? "response" : "responses"}</small>
         </span>
       </header>
 
@@ -241,11 +242,12 @@ export default function RaceCommunityPoll() {
       </fieldset>
 
       <div className={styles.heroPollResults} aria-live="polite">
+        {resultsVisible ? <>
         <div className={styles.pollLeaderRow}>
-          <span>Live result</span>
+          <span>Community responses</span>
           <strong>
             {responseCount === 0
-              ? "Waiting for the first verified vote"
+              ? "Waiting for the first signed-in response"
               : resultSummary}
           </strong>
         </div>
@@ -283,6 +285,10 @@ export default function RaceCommunityPoll() {
             </span>
           ))}
         </div>
+        </> : <p>
+          Candidate percentages appear after {payload?.minimumSample ?? 25} signed-in responses.
+          This privacy threshold does not make the pulse representative of residents or voters.
+        </p>}
       </div>
 
       {!authLoading && !user && choice ? (
@@ -290,7 +296,7 @@ export default function RaceCommunityPoll() {
           <strong>Create a free profile for your vote to count</strong>
           <p>
             Your selection is saved in this browser. Sign in or create a profile,
-            then return here to record one real vote.
+            then return here to record one response per account.
           </p>
           <SocialAuthButtons compact nextPath={returnPath} />
           <Link
@@ -304,8 +310,8 @@ export default function RaceCommunityPoll() {
         <div className={styles.heroPollSignIn}>
           <strong>Finish your profile to make this vote count</strong>
           <p>
-            Add your display name and home location. RepWatchr will not count
-            account-only or automated responses.
+            Add your display name and home location. These are self-reported details;
+            they do not establish your identity or residence.
           </p>
           <Link
             className={styles.heroPollCreateProfile}

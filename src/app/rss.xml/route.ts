@@ -1,4 +1,4 @@
-import { getAllNews } from "@/lib/data";
+import { getPublicArticleCatalog } from "@/lib/article-catalog";
 import { getDailyWireClips } from "@/lib/daily-wire";
 
 const siteUrl = "https://www.repwatchr.com";
@@ -25,7 +25,7 @@ function pubDate(value: string) {
 }
 
 export async function GET() {
-  const articles = getAllNews()
+  const articles = (await getPublicArticleCatalog())
     .slice()
     .sort((a, b) => publishedTime(b.publishedAt) - publishedTime(a.publishedAt))
     .slice(0, 30);

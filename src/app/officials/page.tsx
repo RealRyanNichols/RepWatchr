@@ -9,6 +9,7 @@ import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/component
 import type { GovernmentLevel, Official } from "@/types";
 import { getAllNationalJurisdictions, getNationalBuildoutSummary, nationalGovernmentScopes } from "@/data/national-buildout";
 import { countByState, getSelectedStateCode } from "@/lib/state-scope";
+import { officialState } from "@/lib/official-coverage";
 import { getOfficialCompletionDashboard } from "@/lib/profile-completion";
 import { getStateLegislatureBuildoutStats } from "@/lib/state-legislature";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
@@ -107,10 +108,10 @@ export default async function OfficialsPage({
   const jurisdictions = getAllNationalJurisdictions();
   const nationalSummary = getNationalBuildoutSummary();
   const stateLegislatureStats = getStateLegislatureBuildoutStats();
-  const profileCountsByState = countByState(officials, (official) => official.state, "TX");
+  const profileCountsByState = countByState(officials, officialState);
   const selectedState = jurisdictions.find((state) => state.code === selectedStateCode);
   const selectedOfficials = selectedStateCode
-    ? officials.filter((official) => (official.state ?? "TX").toUpperCase() === selectedStateCode)
+    ? officials.filter((official) => officialState(official) === selectedStateCode)
     : [];
   const directoryOfficials = selectedStateCode ? selectedOfficials : officials;
   const dashboardOfficials = getOfficialsWithPhotosByState(directoryOfficials);
@@ -194,9 +195,6 @@ export default async function OfficialsPage({
         />
 
         <div id="official-directory" className="mt-5 scroll-mt-24">
-          <h1 className="sr-only">
-            {selectedStateCode ? `${selectedState?.name ?? selectedStateCode} elected officials directory` : "National elected officials directory"}
-          </h1>
           <OfficialSearchPanel result={searchResult} />
         </div>
 
@@ -215,6 +213,7 @@ export default async function OfficialsPage({
 
         <div className="mt-8">
           <NationalSpotlightSelector
+            headingLevel={2}
             basePath="/officials"
             selectedStateCode={selectedStateCode}
             jurisdictions={jurisdictions}
@@ -362,7 +361,7 @@ function OfficialsCommandDeck({
               selectedStateCode={selectedStateCode}
               initialLevel={initialLevel}
               initialSearch={initialSearch}
-              totalOfficials={totalOfficials}
+              totalOfficials={Object.values(profileCountsByState).reduce((total, count) => total + count, 0)}
             />
           </div>
 

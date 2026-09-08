@@ -26,16 +26,13 @@ async function getOptionalUserId() {
 
 export async function POST(request: Request) {
   const body = (await request.json().catch(() => null)) as ApiAccessRequestInput | null;
+  if (!body || typeof body !== "object" || Array.isArray(body)) {
+    return NextResponse.json({ ok: false, error: "Send a valid request form." }, { status: 400 });
+  }
   const input = normalizeApiAccessRequest(body ?? {});
   const validationError = validateApiAccessRequest(input);
 
   if (validationError) {
-    await recordApiUsageEvent({
-      endpoint: "/api/public-data-api/request-access",
-      method: "POST",
-      statusCode: 400,
-      metadata: { validation_error: validationError },
-    });
     return NextResponse.json({ ok: false, error: validationError }, { status: 400 });
   }
 
@@ -68,10 +65,10 @@ export async function POST(request: Request) {
     await recordApiUsageEvent({
       endpoint: "/api/public-data-api/request-access",
       method: "POST",
-      statusCode: 500,
-      metadata: { error: error?.message ?? "missing_id" },
+      statusCode: 503,
+      metadata: { error_code: error?.code ?? "missing_id" },
     });
-    return NextResponse.json({ ok: false, error: error?.message ?? "API access request did not return an ID." }, { status: 500 });
+    return NextResponse.json({ ok: false, error: "Your request could not be saved. Please try again later." }, { status: 503 });
   }
 
   await recordApiUsageEvent({
@@ -83,7 +80,6 @@ export async function POST(request: Request) {
     metadata: {
       api_access_request_id: data.id,
       requested_scope: input.requestedScope || null,
-      jurisdiction_focus: input.jurisdictionFocus || null,
       event: "api_access_requested",
     },
   });

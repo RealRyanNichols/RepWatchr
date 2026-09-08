@@ -13,7 +13,7 @@ type GeneratedStory = {
   risk_flags: string[];
 };
 
-const PROMPT_VERSION = "repwatchr-editorial-v1";
+const PROMPT_VERSION = "repwatchr-editorial-v2-reviewed-drafts";
 
 function slugify(value: string) {
   const base = value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 72);
@@ -44,7 +44,7 @@ async function writeStory(clips: DailyNewsClip[]): Promise<{ story: GeneratedSto
       input: [
         {
           role: "system",
-          content: "Write restrained, readable public-accountability reporting for RepWatchr. Use only supplied source facts. Separate confirmed facts, attributed reporting, open questions, and public reaction. Never infer corruption, motive, guilt, popularity, or causation. Do not endorse a party or candidate. Return JSON only.",
+          content: "Draft public-accountability reporting for RepWatchr in plain English: direct, specific, short paragraphs, no corporate filler and no em dashes. Its public editorial perspective is America First and conservative, but factual standards apply equally across parties. Use only supplied source facts. These clips are discovery material, not full verified records: never fill gaps or claim to have read linked documents. Separate confirmed facts, attributed reporting, opinion, and open questions. Never infer corruption, motive, guilt, popularity, or causation. Do not target political persuasion using race, religion, or personal demographics. The draft requires source review before publication. Return JSON only.",
         },
         {
           role: "user",
@@ -101,18 +101,22 @@ function chooseSourceSets(clips: DailyNewsClip[], count: number) {
   return sets;
 }
 
-export async function runEditorialPublishing({ targetCount = 4, dryRun = false } = {}) {
+export async function runEditorialPublishing({ targetCount = 1, dryRun = false } = {}) {
   const admin = getSupabaseAdminClient();
   if (!admin) return { ok: false, error: "Supabase admin is not configured", drafted: 0, published: 0, held: 0 };
   const fetched = await fetchDailyNewsClips();
   await persistDailyNewsClips(fetched.clips);
   const existing = await admin.from("repwatchr_articles").select("source_clip_ids").gte("created_at", new Date(Date.now() - 7 * 864e5).toISOString());
   const recentIds = new Set((existing.data ?? []).flatMap((row: { source_clip_ids?: string[] }) => row.source_clip_ids ?? []));
-  const sourceSets = chooseSourceSets(fetched.clips.filter((clip) => !recentIds.has(clip.id)), Math.max(3, Math.min(5, targetCount)));
+  if (existing.error) return { ok: false, error: "The editorial article store is unavailable", drafted: 0, published: 0, held: 0 };
+  const target = Number.isFinite(targetCount) ? Math.max(1, Math.min(5, Math.trunc(targetCount))) : 1;
+  const sourceSets = chooseSourceSets(fetched.clips.filter((clip) => !recentIds.has(clip.id)), target);
   if (dryRun) return { ok: true, dryRun, candidates: sourceSets.map((set) => set.map((clip) => clip.title)), drafted: 0, published: 0, held: 0 };
 
-  const run = await admin.from("repwatchr_editorial_runs").insert({ status: "started", target_count: targetCount }).select("id").single();
-  let drafted = 0, published = 0, held = 0;
+  const run = await admin.from("repwatchr_editorial_runs").insert({ status: "started", target_count: target }).select("id").single();
+  if (run.error) return { ok: false, error: "The editorial run could not be recorded", drafted: 0, published: 0, held: 0 };
+  let drafted = 0, held = 0;
+  const published = 0;
   const errors: string[] = [];
   for (const sources of sourceSets) {
     try {
@@ -120,12 +124,8 @@ export async function runEditorialPublishing({ targetCount = 4, dryRun = false }
       const primaryCount = sources.filter((clip) => clip.sourceWatchId.includes("official")).length;
       const publishers = new Set(sources.map((clip) => clip.sourceName)).size;
       const riskFlags = Array.isArray(story.risk_flags) ? story.risk_flags.filter(Boolean) : ["invalid_risk_flags"];
-      const autoApproved =
-        process.env.EDITORIAL_AUTOPUBLISH_ENABLED === "true" &&
-        primaryCount >= 1 &&
-        publishers >= 2 &&
-        riskFlags.length === 0;
-      const now = new Date().toISOString();
+      // A model's own risk flags and RSS snippets cannot certify its claims.
+      // Source-reviewed publishing is performed by the authorized editorial workflow.
       const digest = createHash("sha256").update(sources.map((clip) => clip.sourceUrl).sort().join("|")).digest("hex");
       const { error } = await admin.from("repwatchr_articles").insert({
         slug: slugify(story.title),
@@ -141,18 +141,19 @@ export async function runEditorialPublishing({ targetCount = 4, dryRun = false }
         independent_publisher_count: publishers,
         midterm_relevance: story.midterm_relevance,
         risk_flags: riskFlags,
-        editorial_status: autoApproved ? "approved" : "in_review",
-        publish_status: autoApproved ? "published" : "draft",
-        reviewed_by: autoApproved ? "RepWatchr automated source gate v1" : null,
-        reviewed_at: autoApproved ? now : null,
-        published_at: autoApproved ? now : null,
+        editorial_status: "in_review",
+        publish_status: "draft",
+        reviewed_by: null,
+        reviewed_at: null,
+        published_at: null,
         model,
         prompt_version: PROMPT_VERSION,
+        idempotency_key: `${PROMPT_VERSION}:${digest}`,
         metadata: { source_digest: digest },
       });
       if (error) throw new Error(error.message);
       drafted += 1;
-      if (autoApproved) published += 1; else held += 1;
+      held += 1;
     } catch (error) {
       errors.push(error instanceof Error ? error.message : "Unknown editorial error");
       held += 1;
@@ -163,5 +164,5 @@ export async function runEditorialPublishing({ targetCount = 4, dryRun = false }
     drafted_count: drafted, published_count: published, held_count: held,
     error_message: errors.join(" | ") || null, completed_at: new Date().toISOString(),
   }).eq("id", run.data.id);
-  return { ok: published >= 3 && errors.length === 0, drafted, published, held, errors };
+  return { ok: drafted >= 1 && errors.length === 0, drafted, published, held, errors };
 }

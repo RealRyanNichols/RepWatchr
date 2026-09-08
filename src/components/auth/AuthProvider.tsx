@@ -9,12 +9,16 @@ import {
   type ReactNode,
 } from "react";
 import { createClient, isSupabaseAuthEnabled } from "@/lib/supabase";
+import { getMemberAssurance, type MemberAssurance } from "@/lib/member-assurance";
 import type { User } from "@supabase/supabase-js";
 
 interface UserProfile {
   county: string | null;
   district: string | null;
   verified: boolean;
+  paidAccount: boolean;
+  personVerified: boolean;
+  residenceVerified: boolean;
 }
 
 type UserRole =
@@ -74,6 +78,7 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     let mounted = true;
+    let accountLoadVersion = 0;
 
     if (!isSupabaseAuthEnabled) {
       window.setTimeout(() => {
@@ -90,7 +95,10 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
 
     async function loadAccountState(currentUser: User | null) {
       if (!mounted) return;
+      const version = ++accountLoadVersion;
       setUser(currentUser);
+      setProfile(null);
+      setRoles([]);
 
       if (!currentUser) {
         setProfile(null);
@@ -101,8 +109,8 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
       const [profileResult, rolesResult] = await withTimeout(
         Promise.all([
           supabase
-            .from("profiles")
-            .select("county, district, verified")
+            .from("member_assurance")
+            .select("account_fee_status, person_status, person_verified_at, person_expires_at, residence_status, residence_verified_at, residence_expires_at, county, district")
             .eq("user_id", currentUser.id)
             .single(),
           supabase
@@ -110,13 +118,13 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
             .select("role")
             .eq("user_id", currentUser.id),
         ]).then(([profileLookup, rolesLookup]): [ProfileLookupResult, RolesLookupResult] => [
-          { data: (profileLookup.data as UserProfile | null) ?? null },
+          { data: getMemberAssurance(profileLookup.error ? null : profileLookup.data as MemberAssurance | null) },
           { data: (rolesLookup.data as Array<{ role: UserRole }> | null) ?? [] },
         ]),
         [{ data: null }, { data: [] }]
       );
 
-      if (!mounted) return;
+      if (!mounted || version !== accountLoadVersion) return;
       setProfile(profileResult.data);
       setRoles((rolesResult.data ?? []).map((item) => item.role));
     }

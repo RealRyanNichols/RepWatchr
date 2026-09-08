@@ -2,359 +2,79 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import RecordVisual from "@/components/shared/RecordVisual";
-import {
-  getEditorialLoopSteps,
-  getSeoTopicClusters,
-  type SeoTopicCluster,
-} from "@/data/seo-content-plan";
-import { getAllNews } from "@/lib/data";
-import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
-import type { NewsArticle, NewsPowerChannel, NewsScope } from "@/types";
+import { getPublicArticleCatalog } from "@/lib/article-catalog";
+import { absoluteRepWatchrUrl, buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { jsonLd } from "@/lib/structured-data";
+import type { NewsArticle } from "@/types";
 
-export const metadata: Metadata = {
-  ...buildRepWatchrMetadata({
-    title: "RepWatchr Blog | Texas Election Records and Accountability",
-    description:
-      "Source-backed articles for Texas elections, East Texas officials, school boards, public records, and public accountability.",
-    path: "/blog",
-    imagePath: buildOgImageUrl("news"),
-    imageAlt: "RepWatchr blog social preview",
-  }),
-};
-
-const scopeLabels: Record<NewsScope, string> = {
-  "east-texas": "East Texas",
-  texas: "Texas",
-  national: "United States",
-};
-
-const channelLabels: Record<NewsPowerChannel, string> = {
-  attorneys: "Attorneys",
-  courts: "Courts",
-  elections: "Elections",
-  media: "Media",
-  money: "Money",
-  officials: "Officials",
-  "public-safety": "Public safety",
-  "school-boards": "School boards",
-};
-
-function articleScope(article: NewsArticle): NewsScope {
-  if (article.scope) return article.scope;
-  if (article.state?.toUpperCase() === "TX") return "texas";
-  return "texas";
-}
-
-function articleChannels(article: NewsArticle): NewsPowerChannel[] {
-  return article.powerChannels?.length ? article.powerChannels : ["officials"];
-}
+export const dynamic = "force-dynamic";
+export const metadata: Metadata = buildRepWatchrMetadata({
+  title: "Blog | Records and Political Accountability",
+  description: "Read sourced reporting and clearly labeled commentary on elected officials, school boards, public spending, and elections from East Texas to Washington.",
+  path: "/blog", imagePath: buildOgImageUrl("news"), imageAlt: "RepWatchr reporting and public records",
+});
 
 function dateLabel(value: string) {
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return "Date pending";
-  return date.toLocaleDateString("en-US", {
-    timeZone: "America/Chicago",
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  });
+  return new Date(value).toLocaleDateString("en-US", { timeZone: "America/Chicago", month: "short", day: "numeric", year: "numeric" });
+}
+function scopeLabel(article: NewsArticle) {
+  return article.scope === "east-texas" ? "East Texas" : article.scope === "texas" ? "Texas" : "United States";
+}
+function ArticleCard({ article, featured = false }: { article: NewsArticle; featured?: boolean }) {
+  const sources = new Set([article.sourceUrl, ...(article.sourceLinks ?? []).map((source) => source.url)].filter(Boolean)).size;
+  return (
+    <article className={`overflow-hidden rounded-2xl border border-slate-200 bg-white ${featured ? "lg:grid lg:grid-cols-2" : "flex h-full flex-col"}`}>
+      <Link href={`/news/${article.id}`} aria-label={`Read ${article.title}`} className="relative block aspect-[1200/630] overflow-hidden bg-slate-100 focus-visible:outline-4 focus-visible:outline-offset-[-4px] focus-visible:outline-blue-700">
+        {article.imageUrl ? <Image src={article.imageUrl} alt={article.imageAlt ?? article.title} fill sizes={featured ? "(min-width: 1024px) 50vw, 100vw" : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"} className="object-cover" /> :
+          <RecordVisual eyebrow={scopeLabel(article)} title={article.title} variant="story" metric={{ label: "Public sources", value: sources }} compact />}
+      </Link>
+      <div className={`flex min-w-0 flex-1 flex-col ${featured ? "p-6 sm:p-8" : "p-5"}`}>
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-bold uppercase tracking-wide text-slate-600">
+          <span className="text-red-700">{article.tags.includes("opinion") ? "Commentary" : "Reporting"}</span><span>{scopeLabel(article)}</span>
+          <time dateTime={article.publishedAt}>{dateLabel(article.publishedAt)}</time>
+        </div>
+        <h2 className={`mt-3 font-bold leading-tight tracking-tight text-blue-950 ${featured ? "text-3xl sm:text-4xl" : "text-2xl"}`}>
+          <Link href={`/news/${article.id}`} className="hover:text-red-700 focus-visible:outline-2 focus-visible:outline-blue-700">{article.title}</Link>
+        </h2>
+        <p className="mt-3 text-base leading-7 text-slate-700">{article.summary}</p>
+        <div className="mt-auto flex flex-wrap items-center justify-between gap-3 pt-5 text-xs font-semibold text-slate-500"><span>{article.author || "RepWatchr"}</span><span>{sources} public {sources === 1 ? "source" : "sources"}</span></div>
+      </div>
+    </article>
+  );
 }
 
-function clusterMatchesArticle(cluster: SeoTopicCluster, article: NewsArticle) {
-  const haystack = [
-    article.title,
-    article.summary,
-    article.locationLabel ?? "",
-    ...(article.tags ?? []),
-    ...articleChannels(article),
-  ]
-    .join(" ")
-    .toLowerCase();
-
-  return [cluster.primaryKeyword, ...cluster.supportingKeywords, cluster.name]
-    .some((keyword) => haystack.includes(keyword.toLowerCase().split(" ")[0]));
-}
-
-function BlogJsonLd({ articles, clusters }: { articles: NewsArticle[]; clusters: SeoTopicCluster[] }) {
-  const blogJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    name: "RepWatchr Blog",
-    url: "https://www.repwatchr.com/blog",
-    description:
-      "Source-backed public accountability articles on Texas elections, East Texas officials, school boards, public records, votes, money, and public power.",
-    publisher: {
-      "@type": "Organization",
-      name: "RepWatchr",
-      url: "https://www.repwatchr.com",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.repwatchr.com/images/repwatchr-logo-america-first.png",
-      },
-    },
-    about: clusters.map((cluster) => cluster.primaryKeyword),
-    blogPost: articles.slice(0, 10).map((article) => ({
-      "@type": "BlogPosting",
-      headline: article.title,
-      description: article.summary,
-      datePublished: article.publishedAt,
-      author: {
-        "@type": "Organization",
-        name: article.author || "RepWatchr",
-      },
-      url: `https://www.repwatchr.com/news/${article.id}`,
-      mainEntityOfPage: `https://www.repwatchr.com/news/${article.id}`,
-      image: article.imageUrl
-        ? `https://www.repwatchr.com${article.imageUrl}`
-        : buildOgImageUrl("news", { id: article.id }),
+export default async function BlogPage() {
+  const articles = await getPublicArticleCatalog();
+  const [lead, ...rest] = articles;
+  const structured = {
+    "@context": "https://schema.org", "@type": "Blog", name: "RepWatchr Blog", url: absoluteRepWatchrUrl("/blog"),
+    description: "Sourced political reporting and clearly labeled commentary from East Texas to Washington.",
+    publisher: { "@type": "Organization", name: "RepWatchr", url: absoluteRepWatchrUrl("/") },
+    blogPost: articles.slice(0, 12).map((article) => ({
+      "@type": "BlogPosting", headline: article.title, description: article.summary, datePublished: article.publishedAt,
+      url: absoluteRepWatchrUrl(`/news/${article.id}`), image: article.imageUrl ? absoluteRepWatchrUrl(article.imageUrl) : buildOgImageUrl("news", { id: article.id }),
+      author: { "@type": article.author === "Ryan Nichols" ? "Person" : "Organization", name: article.author || "RepWatchr" },
     })),
   };
-
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
-    />
-  );
-}
-
-function ArticleCard({ article, prominent = false }: { article: NewsArticle; prominent?: boolean }) {
-  return (
-    <Link
-      href={`/news/${article.id}`}
-      className={`group flex h-full flex-col rounded-lg border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-lg ${
-        prominent ? "md:grid md:grid-cols-[0.74fr_1fr] md:gap-5 md:p-5" : ""
-      }`}
-    >
-      {article.imageUrl ? (
-        <div className="relative aspect-[1200/630] min-h-0 overflow-hidden rounded-md border border-slate-200 bg-slate-100">
-          <Image
-            src={article.imageUrl}
-            alt={article.imageAlt ?? `${article.title} editorial image`}
-            fill
-            sizes={prominent ? "(min-width: 768px) 42vw, 100vw" : "(min-width: 1280px) 28vw, (min-width: 640px) 45vw, 100vw"}
-            className="object-cover"
-          />
-        </div>
-      ) : (
-        <RecordVisual
-          eyebrow={scopeLabels[articleScope(article)]}
-          title={article.title}
-          variant="story"
-          metric={{ label: "Date", value: dateLabel(article.publishedAt).split(",")[0] }}
-          secondaryMetric={{ label: "Sources", value: article.sourceLinks?.length || (article.sourceUrl ? 1 : 0) }}
-          compact={!prominent}
-        />
-      )}
-      <div className="mt-4 flex min-w-0 flex-col md:mt-0">
-        <div className="flex flex-wrap gap-2">
-          {articleChannels(article).slice(0, 3).map((channel) => (
-            <span
-              key={channel}
-              className="rounded-full bg-blue-50 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-blue-900"
-            >
-              {channelLabels[channel]}
-            </span>
-          ))}
-        </div>
-        <h2 className={`mt-3 font-black leading-tight text-slate-950 group-hover:text-red-700 ${prominent ? "text-2xl sm:text-3xl" : "text-xl"}`}>
-          {article.title}
-        </h2>
-        <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">
-          {article.summary}
-        </p>
-        <span className="mt-auto pt-4 text-xs font-black uppercase tracking-wide text-blue-800 group-hover:text-red-700">
-          Read the source-backed story
-        </span>
+    <main className="min-h-screen bg-[#f5f7fa] pb-14">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(structured) }} />
+      <div className="border-b border-slate-200 bg-white"><div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-red-700">The RepWatchr desk</p>
+        <h1 className="mt-4 max-w-4xl text-4xl font-bold leading-[1.08] tracking-tight text-blue-950 sm:text-6xl">Power answers to the public.</h1>
+        <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-700">Start with the record. Follow the money. Ask the questions elected officials should be able to answer. Reporting from Harleton and East Texas to Washington.</p>
+        <p className="mt-4 max-w-3xl text-sm leading-6 text-slate-600">An independent, America First editorial perspective. Opinion is labeled. Factual claims need sources, and corrections stay visible.</p>
+        <nav aria-label="Reporting topics" className="mt-7 flex flex-wrap gap-2">{[["All reporting", "/news"], ["East Texas", "/news?scope=east-texas"], ["Texas", "/news?scope=texas"], ["National", "/news?scope=national"], ["School boards", "/school-boards"], ["RSS feed", "/rss.xml"]].map(([label, href]) => <Link key={href} href={href} className="rounded-full border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-blue-950 hover:border-blue-800 hover:bg-blue-50 focus-visible:outline-2 focus-visible:outline-blue-700">{label}</Link>)}</nav>
+      </div></div>
+      <div className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
+        {lead ? <ArticleCard article={lead} featured /> : <div className="rounded-2xl border border-slate-200 bg-white p-8"><h2 className="text-2xl font-bold text-blue-950">The next report is being prepared.</h2><p className="mt-3 text-slate-700">Explore official profiles and public records while the desk checks its sources.</p><Link href="/officials" className="mt-4 inline-block font-semibold text-blue-800 underline">Find an official</Link></div>}
+        {rest.length > 0 && <section aria-label="Latest reporting" className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{rest.slice(0, 12).map((article) => <ArticleCard key={article.id} article={article} />)}</section>}
+        <section className="mt-10 grid gap-6 rounded-2xl bg-blue-950 p-6 text-white sm:p-8 md:grid-cols-[1fr_auto] md:items-center">
+          <div><h2 className="text-2xl font-bold">Bring the public record.</h2><p className="mt-3 max-w-2xl leading-7 text-blue-100">A meeting agenda. A recorded vote. A budget. A filing. If something is missing or wrong, send the source so the record can be corrected.</p></div>
+          <Link href="/submit-source" className="inline-flex min-h-12 items-center justify-center rounded-lg bg-white px-5 py-3 font-bold text-blue-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Submit a source or correction</Link>
+        </section>
+        <div className="mt-6 flex flex-wrap justify-between gap-4 text-sm text-slate-600"><Link href="/news" className="font-semibold text-blue-900 underline">Browse the full archive</Link><Link href="/methodology" className="font-semibold text-blue-900 underline">How we handle sources and corrections</Link></div>
       </div>
-    </Link>
-  );
-}
-
-export default function BlogPage() {
-  const articles = getAllNews();
-  const clusters = getSeoTopicClusters();
-  const editorialLoop = getEditorialLoopSteps();
-  const latestArticles = [...articles]
-    .sort(
-      (a, b) =>
-        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
-    )
-    .slice(0, 8);
-  const featuredArticle = latestArticles[0];
-  const texasArticles = articles
-    .filter((article) => articleScope(article) === "texas" || articleScope(article) === "east-texas")
-    .slice(0, 6);
-  const sourceLinkedCount = articles.filter((article) => article.sourceUrl || article.sourceLinks?.length).length;
-
-  return (
-    <div className="min-h-screen bg-[#f6f9fc]">
-      <BlogJsonLd articles={articles} clusters={clusters} />
-      <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-[0_16px_40px_rgba(15,23,42,0.08)]">
-          <div className="grid gap-7 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-            <div>
-              <p className="inline-flex rounded-full bg-red-700 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white">
-                Source-backed blog
-              </p>
-              <h1 className="mt-5 max-w-4xl text-4xl font-black leading-[0.98] tracking-tight text-blue-950 sm:text-6xl">
-                Articles built to rank because the record is worth reading.
-              </h1>
-              <p className="mt-5 max-w-3xl text-base font-semibold leading-7 text-slate-700 sm:text-lg">
-                RepWatchr articles should answer the search fast: what happened, who is involved,
-                where the public source is, what still needs a record, and what a voter can do next.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <Link
-                  href="/elections/texas"
-                  className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-blue-950"
-                >
-                  Texas Election Hub
-                </Link>
-                <Link
-                  href="/services"
-                  className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:text-red-700"
-                >
-                  Services
-                </Link>
-                <Link
-                  href="/elections/texas/contribute"
-                  className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3 text-sm font-black uppercase tracking-wide text-amber-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
-                >
-                  Build Free Packet
-                </Link>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-3">
-              <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-                <p className="text-3xl font-black text-blue-950">{articles.length}</p>
-                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">Published stories</p>
-                <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">Only source-backed records appear here.</p>
-              </div>
-              <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-                <p className="text-3xl font-black text-blue-950">{sourceLinkedCount}</p>
-                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">Source linked</p>
-                <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">Public receipts attached to story records.</p>
-              </div>
-              <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-                <p className="text-3xl font-black text-blue-950">{clusters.length}</p>
-                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">SEO clusters</p>
-                <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">Topics tied to races, officials, schools, and records.</p>
-              </div>
-              <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-                <p className="text-3xl font-black text-blue-950">TX</p>
-                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">First focus</p>
-                <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">Texas and East Texas lead the buildout.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {featuredArticle ? (
-          <section className="mt-7">
-            <div className="mb-3 flex items-end justify-between gap-3">
-              <div>
-                <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Lead story</p>
-                <h2 className="text-2xl font-black text-slate-950">Start with the strongest record</h2>
-              </div>
-              <Link href="/news" className="text-sm font-black text-blue-800 hover:text-red-700">
-                Story archive
-              </Link>
-            </div>
-            <ArticleCard article={featuredArticle} prominent />
-          </section>
-        ) : null}
-
-        <section className="mt-8 grid gap-5 lg:grid-cols-[0.82fr_1.18fr]">
-          <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Editorial loop</p>
-            <h2 className="mt-2 text-2xl font-black leading-tight text-blue-950">
-              The ranking strategy is source depth, not filler.
-            </h2>
-            <div className="mt-4 grid gap-3">
-              {editorialLoop.map((item, index) => (
-                <div key={item.step} className="grid grid-cols-[38px_1fr] gap-3 rounded-lg border border-slate-200 bg-slate-50 p-3">
-                  <span className="grid h-9 w-9 place-items-center rounded-full bg-blue-950 text-xs font-black text-white">
-                    {index + 1}
-                  </span>
-                  <span>
-                    <span className="block text-sm font-black text-blue-950">{item.title}</span>
-                    <span className="mt-1 block text-xs font-semibold leading-5 text-slate-600">{item.detail}</span>
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {latestArticles.slice(0, 4).map((article) => (
-              <ArticleCard key={article.id} article={article} />
-            ))}
-          </div>
-        </section>
-
-        <section className="mt-8 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-          <div className="mb-4">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Topic clusters</p>
-            <h2 className="text-2xl font-black text-slate-950">What RepWatchr should own in search</h2>
-          </div>
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {clusters.map((cluster) => {
-              const matchingCount = articles.filter((article) => clusterMatchesArticle(cluster, article)).length;
-              return (
-                <article key={cluster.id} className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-                  <div className="flex items-center justify-between gap-3">
-                    <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
-                      {cluster.primaryKeyword}
-                    </span>
-                    <span className="rounded-full bg-white px-2.5 py-1 text-xs font-black text-slate-700">
-                      {matchingCount}
-                    </span>
-                  </div>
-                  <h3 className="mt-3 text-lg font-black text-slate-950">{cluster.name}</h3>
-                  <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">{cluster.searchIntent}</p>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {cluster.internalLinks.slice(0, 3).map((href) => (
-                      <Link
-                        key={href}
-                        href={href}
-                        className="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-black text-blue-800 hover:border-red-300 hover:text-red-700"
-                      >
-                        {href.replace("/", "") || "home"}
-                      </Link>
-                    ))}
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </section>
-
-        <section className="mt-8 rounded-lg border border-amber-200 bg-amber-50 p-5 shadow-sm">
-          <div className="grid gap-5 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">Texas first</p>
-              <h2 className="mt-2 text-2xl font-black leading-tight text-amber-950">
-                The fastest growth path is local search plus shareable receipts.
-              </h2>
-              <p className="mt-2 text-sm font-semibold leading-6 text-amber-900">
-                Build Texas and East Texas pages around offices, races, meetings, filings, money,
-                votes, and public-source gaps. Social snippets bring people in. The source page keeps them here.
-              </p>
-            </div>
-            <div className="grid gap-3 md:grid-cols-2">
-              {texasArticles.slice(0, 4).map((article) => (
-                <Link
-                  key={article.id}
-                  href={`/news/${article.id}`}
-                  className="rounded-lg border border-amber-200 bg-white p-3 text-sm font-black leading-5 text-amber-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:text-red-700"
-                >
-                  {article.title}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
+    </main>
   );
 }

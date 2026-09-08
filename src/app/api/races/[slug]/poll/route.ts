@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { getSupabaseAdminClient } from "@/lib/race-poll-admin";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
+import { getCommunityPollResults } from "@/lib/community-poll-results";
 import { repwatchrFeatureFlags } from "@/lib/repwatchr-feature-flags";
 
 const POLL_SLUG = "marion-county-judge-2026";
@@ -28,13 +29,6 @@ type TotalRow = {
   option_id: string;
   votes: number;
   as_of: string | null;
-};
-
-type PollOption = {
-  optionId: string;
-  label: string;
-  votes: number | null;
-  percent: number | null;
 };
 
 function json(
@@ -137,31 +131,12 @@ async function buildPayload(
   if (totalError || myVoteResult.error || profileResult.error) return null;
 
   const totals = (totalData ?? []) as TotalRow[];
-  const voteByOption = new Map(
-    totals.map((row) => [row.option_id, Number(row.votes)]),
-  );
-  const responseCount = totals.reduce(
-    (sum, row) => sum + Number(row.votes),
-    0,
-  );
-  const resultsVisible = true;
-  const asOf = totals.reduce<string | null>(
-    (latest, row) =>
-      row.as_of && (!latest || row.as_of > latest) ? row.as_of : latest,
-    null,
-  );
-  const payloadOptions: PollOption[] = options.map((option) => {
-    const votes = voteByOption.get(option.option_id) ?? 0;
-    return {
-      optionId: option.option_id,
-      label: option.label,
-      votes,
-      percent:
-        responseCount > 0
-          ? Math.round((votes / responseCount) * 100)
-          : 0,
-    };
-  });
+  let aggregate: ReturnType<typeof getCommunityPollResults>;
+  try {
+    aggregate = getCommunityPollResults(options, totals, poll.minimum_sample);
+  } catch {
+    return null;
+  }
   const memberProfile = profileResult.data as {
     display_name?: string | null;
     home_location?: string | null;
@@ -175,15 +150,15 @@ async function buildPayload(
     status: poll.status,
     canVote: isPollOpen(poll),
     question: poll.question,
-    asOf,
+    asOf: aggregate.asOf,
     closesAt: poll.closes_at,
     minimumSample: poll.minimum_sample,
-    responseCount,
-    resultsVisible,
+    responseCount: aggregate.responseCount,
+    resultsVisible: aggregate.resultsVisible,
     profileComplete,
     myVote:
       (myVoteResult.data as { option_id?: string } | null)?.option_id ?? null,
-    options: payloadOptions,
+    options: aggregate.options,
   };
 }
 
@@ -245,7 +220,7 @@ export async function POST(
     return json({ message: "Invalid request." }, { status: 400 });
   }
 
-  if (typeof body.optionId !== "string") {
+  if (!body || typeof body !== "object" || typeof body.optionId !== "string") {
     return json({ message: "Choose a candidate first." }, { status: 400 });
   }
 

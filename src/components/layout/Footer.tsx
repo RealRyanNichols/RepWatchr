@@ -8,6 +8,8 @@ const quickLinks = [
   { href: "/votes", label: "Votes" },
   { href: "/blog", label: "Blog" },
   { href: "/services", label: "Services" },
+  { href: "/packages/public-data-api", label: "Data Access" },
+  { href: "/for-candidates", label: "For Candidates" },
   { href: "/elections/texas/contribute", label: "Free Packet" },
   { href: "/authority-watch", label: "Authority Watch" },
   { href: "/funding", label: "Funding" },

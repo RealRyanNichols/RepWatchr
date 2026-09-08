@@ -1,5 +1,7 @@
 import fs from "fs";
 import path from "path";
+import { documentedActiveSchoolInterventions } from "@/data/coverage/school-governance";
+import { currentHarletonMember, harletonRoster } from "@/data/coverage/harleton-roster";
 import { TEXAS_ROSTER_EXTENSIONS } from "@/data/texas-school-board-rosters";
 import {
   TEXAS_SCHOOL_BOARD_2026_CYCLE,
@@ -34,6 +36,7 @@ export interface VoteRecord {
 
 export interface CandidateDossier {
   candidate_id: string;
+  roster_observation?: { observed_at: string; source_url: string; listed: boolean; selection: "elected" | "appointed" | "unknown"; term_end_month: string | null };
   full_name: string;
   preferred_name?: string;
   source_name?: string;
@@ -1105,6 +1108,33 @@ function applyProfileOverlay(candidate: CandidateDossier): CandidateDossier {
   };
 }
 
+function applyDatedHarletonRoster(candidate: CandidateDossier): CandidateDossier {
+  if (candidate.district_slug !== harletonRoster.districtSlug) return candidate;
+  const member = currentHarletonMember(candidate.candidate_id);
+  const source: SourceLink = { url: harletonRoster.sourceUrl, title: `${harletonRoster.sourceTitle} (roster checked ${harletonRoster.observedAt})`, accessed_date: harletonRoster.observedAt, source_type: "district_official" };
+  const summary = member
+    ? `${harletonRoster.sourceTitle}, checked ${harletonRoster.observedAt}, lists ${member.name} at ${member.seat} as ${member.role}${member.selection === "appointed" ? ", appointed" : ", elected"} ${member.selectedMonth}. ${member.termEndMonth ? `Listed term expiration: ${member.termEndMonth}.` : "Term expiration is not listed."} Other profile claims remain under review.`
+    : `Earlier record: ${candidate.full_name} is absent from the Harleton ISD roster checked ${harletonRoster.observedAt}. That page lists Chance Ebarb at Place 4, appointed July 2026. The exact departure date and current candidacy are unconfirmed; earlier meeting records remain available.`;
+  return {
+    ...candidate,
+    role: member ? `${member.role}${member.selection === "appointed" ? " (appointed)" : ""}` : "Earlier roster record",
+    incumbent: Boolean(member),
+    // A roster's term expiration does not establish a current election filing.
+    on_2026_ballot: false,
+    election_date: member?.selection === "elected" ? member.selectedMonth : undefined,
+    summary,
+    status: "needs_review",
+    last_updated: harletonRoster.observedAt,
+    sources: mergeSources(candidate.sources, [source]),
+    roster_observation: { observed_at: harletonRoster.observedAt, source_url: harletonRoster.sourceUrl, listed: Boolean(member), selection: member?.selection ?? "unknown", term_end_month: member?.termEndMonth ?? null },
+    about_public_record: !member && candidate.about_public_record ? {
+      ...candidate.about_public_record,
+      about_summary_narrative: `${summary} Historical source context: ${candidate.about_public_record.about_summary_narrative?.replace("Current public records confirm", "Earlier public records identify") ?? "Earlier evidence has not been removed."}`,
+      conflicts_of_interest_inventory: candidate.about_public_record.conflicts_of_interest_inventory?.map((record) => ({ ...record, description: record.description.replace("Harleton ISD currently lists Kevin Evers on the board", "earlier Harleton ISD records listed Kevin Evers on the board") })),
+    } : candidate.about_public_record,
+  };
+}
+
 function mergeRosterIntoQueuedProfile(existing: CandidateDossier | undefined, rosterCandidate: CandidateDossier): CandidateDossier {
   if (!existing) return rosterCandidate;
   if (existing.status !== "queued") return existing;
@@ -1159,6 +1189,7 @@ export function getSchoolBoardDossiers(): CandidateDossier[] {
 
   schoolBoardDossierCache = Array.from(byId.values())
     .map(applyProfileOverlay)
+    .map(applyDatedHarletonRoster)
     .sort((a, b) => a.district.localeCompare(b.district) || (a.seat ?? a.full_name).localeCompare(b.seat ?? b.full_name));
   return schoolBoardDossierCache;
 }
@@ -1232,6 +1263,13 @@ export function getSchoolBoardDistricts(): DistrictResearch[] {
     if (b.priorityRank) return 1;
     return a.district.localeCompare(b.district);
   });
+  const harleton = schoolBoardDistrictCache.find((district) => district.district_slug === harletonRoster.districtSlug);
+  if (harleton) {
+    harleton.officialRoster = harletonRoster.members.map((member) => ({ full_name: member.name, seat: member.seat, role: `${member.role}${member.selection === "appointed" ? " (appointed)" : ""}`, term: member.termEndMonth ?? "Expiration not listed", summary: `District roster checked ${harletonRoster.observedAt}.` }));
+    // Preserve the AskTED alias in source storage; expose one canonical dossier.
+    harleton.candidates = harleton.candidates.filter((candidate) => candidate.candidate_id !== "pat_mcgill_harleton_isd");
+    harleton.sourceLinks = mergeSources(harleton.sourceLinks, [{ url: harletonRoster.sourceUrl, title: `${harletonRoster.sourceTitle} (checked ${harletonRoster.observedAt})`, accessed_date: harletonRoster.observedAt, source_type: "district_official" }]);
+  }
   return schoolBoardDistrictCache;
 }
 
@@ -1240,7 +1278,8 @@ export function getSchoolBoardDistrict(slug: string): DistrictResearch | undefin
 }
 
 export function getSchoolBoardCandidate(id: string): CandidateDossier | undefined {
-  return getSchoolBoardDossiers().find((candidate) => candidate.candidate_id === id);
+  const canonicalId = id === "pat_mcgill_harleton_isd" ? "patrick_mcgill_harleton_isd" : id;
+  return getSchoolBoardDossiers().find((candidate) => candidate.candidate_id === canonicalId);
 }
 
 export function getDistrictFeed(slug: string): SchoolBoardFeedItem[] {
@@ -1538,10 +1577,9 @@ export function getSchoolBoardStats() {
   const completedDossiers = candidates.filter(
     (candidate) => candidate.status && !IN_PROGRESS_STATUSES.has(candidate.status)
   ).length;
-  const districtsUnderTEAReview = districts.filter((district) => {
-    const queueText = (district.investigationQueue ?? []).join(" ").toLowerCase();
-    return queueText.includes("tea") || queueText.includes("board of managers") || queueText.includes("takeover");
-  }).length;
+  // Only explicit, dated governance observations establish an intervention.
+  // Research queues include generic TEA checks for every district.
+  const districtsUnderTEAReview = documentedActiveSchoolInterventions(districts.map((district) => district.district_slug));
   const tracked2026Districts = new Set(
     candidates
       .filter((candidate) => candidate.on_2026_ballot || candidate.election_date?.includes("2026"))
@@ -1580,6 +1618,7 @@ export function getSchoolBoardStats() {
     stubProfiles,
     completedDossiers,
     districtsUnderTEAReview,
+    teaReviewCountScope: "Documented active interventions in loaded districts; not a statewide total.",
     tracked2026Districts,
     districtFeedItems: districts.reduce((total, district) => total + (district.feed?.length ?? 0), 0),
     districtsByCounty,

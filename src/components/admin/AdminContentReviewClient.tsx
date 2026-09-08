@@ -102,7 +102,7 @@ export default function AdminContentReviewClient() {
         .from("user_roles")
         .select("role")
         .eq("user_id", user!.id)
-        .in("role", ["admin", "reviewer"]);
+        .eq("role", "admin");
 
       if (!mounted) return;
 
@@ -143,7 +143,7 @@ export default function AdminContentReviewClient() {
       setMedia((mediaResult.data ?? []) as PendingMedia[]);
       if (!isAdmin) {
         setSourceSubmissions([]);
-        setSourceNotice("Source submissions are visible to admins only. Reviewer accounts can still handle claimed profile text and media.");
+        setSourceNotice("Source submissions are visible to admins only. An admin role is required to review claimed profile text and media.");
       } else if (sourceSubmissionResult.error) {
         setSourceSubmissions([]);
         setSourceNotice("Source submission queue query failed. Check the source_submissions table, Data API grants, and RLS policies.");
@@ -165,7 +165,7 @@ export default function AdminContentReviewClient() {
     setError("");
     setMessage("");
 
-    const { error: updateError } = await supabase
+    const { data: updatedContent, error: updateError } = await supabase
       .from("claimed_profile_content")
       .update({
         status: nextStatus,
@@ -173,10 +173,12 @@ export default function AdminContentReviewClient() {
         reviewed_by: user.id,
         reviewed_at: new Date().toISOString(),
       })
-      .eq("id", item.id);
+      .eq("id", item.id)
+      .select("id")
+      .maybeSingle();
 
-    if (updateError) {
-      setError(updateError.message);
+    if (updateError || !updatedContent) {
+      setError(updateError?.message ?? "This submission was not updated. An admin must review another member’s submission.");
       return;
     }
 
@@ -234,13 +236,15 @@ export default function AdminContentReviewClient() {
       };
     }
 
-    const { error: updateError } = await supabase
+    const { data: updatedMedia, error: updateError } = await supabase
       .from("profile_media")
       .update(updatePayload)
-      .eq("id", item.id);
+      .eq("id", item.id)
+      .select("id")
+      .maybeSingle();
 
-    if (updateError) {
-      setError(updateError.message);
+    if (updateError || !updatedMedia) {
+      setError(updateError?.message ?? "This media was not updated. An admin must review another member’s submission.");
       return;
     }
 
@@ -338,7 +342,7 @@ export default function AdminContentReviewClient() {
       <div className="mx-auto max-w-xl px-4 py-16 text-center">
         <h1 className="text-2xl font-black text-gray-950">Admin access required</h1>
         <p className="mt-2 text-sm font-semibold text-gray-600">
-          Content review requires an admin or reviewer role in Supabase.
+          Content review requires an admin role in Supabase.
         </p>
       </div>
     );

@@ -10,6 +10,9 @@ import {
 import { buildOfficialCompletionSnapshot, type ProfileCompletionKey } from "@/lib/profile-completion";
 import { getMoneyTrailForOfficial } from "@/lib/money-trail";
 import { getSupabaseAdminClient } from "@/lib/supabase-admin";
+import { countyName, officialCounties, officialState } from "@/lib/official-coverage";
+import { getSchoolBoardSearchIndex } from "@/lib/school-board-search";
+import { harletonRoster } from "@/data/coverage/harleton-roster";
 
 export const officialSearchSortOptions = [
   "relevance",
@@ -30,6 +33,7 @@ export type OfficialCompletenessRange = "all" | "complete" | "85+" | "55-84" | "
 
 export interface OfficialSearchParams {
   search: string;
+  recordType: "all" | "official" | "school-research";
   state: string;
   county: string;
   city: string;
@@ -67,6 +71,12 @@ export interface OfficialSearchFacets {
 
 export interface OfficialSearchRow {
   official: Official;
+  recordKind: "official" | "school-research";
+  profileHref: string;
+  recordStatus: string;
+  sourceSnapshotDate: string | null;
+  rosterCheckedAt: string | null;
+  provenanceUrl: string | null;
   score: number | null;
   letterGrade: string | null;
   redFlagCount: number;
@@ -103,6 +113,8 @@ export interface OfficialSearchResult {
   facets: OfficialSearchFacets;
   stats: {
     totalProfiles: number;
+    officialProfiles: number;
+    schoolResearchRecords: number;
     sourceLinkedProfiles: number;
     voteLoadedProfiles: number;
     fundingLoadedProfiles: number;
@@ -137,7 +149,7 @@ const officeTypeRules: Array<{
   {
     value: "u-s-representative",
     label: "U.S. Representative",
-    test: (official) => /u\.?s\.?\s+representative|congress|house/i.test(official.position),
+    test: (official) => official.level === "federal" && /u\.?s\.?\s+representative|congress|house/i.test(official.position),
   },
   {
     value: "state-senator",
@@ -254,8 +266,9 @@ function parseCompleteness(value: string): OfficialCompletenessRange {
 export function parseOfficialSearchParams(params: SearchParamsInput): OfficialSearchParams {
   return {
     search: stringParam(params, "search", "q"),
+    recordType: stringParam(params, "recordType") === "official" ? "official" : stringParam(params, "recordType") === "school-research" ? "school-research" : "all",
     state: stringParam(params, "state").toUpperCase(),
-    county: stringParam(params, "county"),
+    county: countyName(stringParam(params, "county")),
     city: stringParam(params, "city"),
     level: parseLevel(stringParam(params, "level")),
     officeType: stringParam(params, "officeType", "office_type"),
@@ -273,13 +286,6 @@ export function parseOfficialSearchParams(params: SearchParamsInput): OfficialSe
     page: Math.max(1, numberParam(params, "page", 1)),
     perPage: Math.min(48, Math.max(12, numberParam(params, "perPage", 24))),
   };
-}
-
-function deriveState(official: Official) {
-  const explicit = official.state?.trim().toUpperCase();
-  if (explicit) return explicit;
-  if (/texas|\btx\b/i.test(`${official.jurisdiction} ${official.county.join(" ")}`)) return "TX";
-  return "";
 }
 
 function deriveCity(official: Official) {
@@ -462,7 +468,8 @@ const getStaticOfficialRows = cache(() => {
     const voteRecord = getPublicVoteRecord(official.id);
     const redFlags = getRedFlags(official.id);
     const completion = buildOfficialCompletionSnapshot(official);
-    const state = deriveState(official);
+    const state = officialState(official);
+    const rosterMember = harletonRoster.members.find((member) => member.officialId === official.id);
     const city = deriveCity(official);
     const officeType = deriveOfficeType(official);
     const lastUpdated = latestDate(
@@ -475,6 +482,16 @@ const getStaticOfficialRows = cache(() => {
     const sourceCount = Math.max(sourceCountForOfficial(official, redFlags), moneyTrail?.sourceCount ?? 0);
     const rowBase = {
       official,
+      recordKind: "official" as const,
+      profileHref: `/officials/${official.id}`,
+      recordStatus: rosterMember
+        ? `${rosterMember.selection === "appointed" ? "Appointed" : "Elected"} trustee · roster checked ${harletonRoster.observedAt}`
+        : official.id === "kevin-evers-harleton-isd"
+          ? "Earlier record · absent from district roster checked 2026-09-08"
+          : "Source-linked profile · review in progress",
+      sourceSnapshotDate: null,
+      rosterCheckedAt: rosterMember ? harletonRoster.observedAt : null,
+      provenanceUrl: rosterMember || official.id === "kevin-evers-harleton-isd" ? harletonRoster.sourceUrl : official.sourceLinks?.[0]?.url ?? null,
       score: scoreCard?.overall ?? null,
       letterGrade: scoreCard?.letterGrade ?? null,
       redFlagCount: redFlags.length,
@@ -484,7 +501,7 @@ const getStaticOfficialRows = cache(() => {
       profileCompleteness: completion.completionPercent,
       completionMissingItems: completion.missingItems,
       state,
-      countyValues: official.county,
+      countyValues: officialCounties(official),
       city,
       officeType: officeType.value,
       officeTypeLabel: officeType.label,
@@ -537,8 +554,9 @@ function hasSearchMatch(row: OfficialSearchRow, query: string) {
 
 function matchesFilters(row: OfficialSearchRow, params: OfficialSearchParams) {
   if (params.search && !hasSearchMatch(row, params.search)) return false;
+  if (params.recordType !== "all" && row.recordKind !== params.recordType) return false;
   if (params.state && row.state !== params.state) return false;
-  if (params.county && !row.countyValues.some((county) => county.toLowerCase() === params.county.toLowerCase())) return false;
+  if (params.county && !row.countyValues.some((county) => countyName(county).toLowerCase() === countyName(params.county).toLowerCase())) return false;
   if (params.city && row.city.toLowerCase() !== params.city.toLowerCase()) return false;
   if (params.level !== "all" && row.official.level !== params.level) return false;
   if (params.officeType && row.officeType !== params.officeType) return false;
@@ -652,6 +670,7 @@ function buildFacets(rows: OfficialSearchRow[]): OfficialSearchFacets {
 function activeFilterCount(params: OfficialSearchParams) {
   return [
     params.search,
+    params.recordType !== "all",
     params.state,
     params.county,
     params.city,
@@ -673,6 +692,8 @@ function activeFilterCount(params: OfficialSearchParams) {
 function statsForRows(rows: OfficialSearchRow[]) {
   return {
     totalProfiles: rows.length,
+    officialProfiles: rows.filter((row) => row.recordKind === "official").length,
+    schoolResearchRecords: rows.filter((row) => row.recordKind === "school-research").length,
     sourceLinkedProfiles: rows.filter((row) => row.sourceCount > 0).length,
     voteLoadedProfiles: rows.filter((row) => row.hasVotingData).length,
     fundingLoadedProfiles: rows.filter((row) => row.hasFundingData).length,
@@ -684,7 +705,7 @@ function statsForRows(rows: OfficialSearchRow[]) {
 export async function searchOfficials(input: SearchParamsInput): Promise<OfficialSearchResult> {
   const params = parseOfficialSearchParams(input);
   const engagement = await loadOfficialEngagementStats();
-  const allRows = getStaticOfficialRows().map((row) => {
+  const allRows = [...getStaticOfficialRows(), ...getSchoolBoardSearchIndex().rows].map((row) => {
     const withEngagement = {
       ...row,
       viewCount: engagement.viewCounts.get(row.official.id) ?? 0,
@@ -723,6 +744,7 @@ export function officialSearchQuery(params: OfficialSearchParams, overrides: Par
   const next = { ...params, ...overrides };
   const query = new URLSearchParams();
   if (next.search) query.set("search", next.search);
+  if (next.recordType !== "all") query.set("recordType", next.recordType);
   if (next.state) query.set("state", next.state);
   if (next.county) query.set("county", next.county);
   if (next.city) query.set("city", next.city);
@@ -746,6 +768,7 @@ export function officialSearchQuery(params: OfficialSearchParams, overrides: Par
 }
 
 export function isOfficialSearchIndexable(params: OfficialSearchParams) {
+  if (params.recordType !== "all") return false;
   if (params.search || params.page > 1 || params.sort !== "relevance" || params.perPage !== 24) return false;
   if (
     params.county ||

@@ -6,6 +6,7 @@ import { getOfficeAccountabilityProfile } from "@/lib/official-accountability";
 import type { PerformanceGradeResult } from "@/lib/performance-grade";
 import type { Official, PublicVoteRecord } from "@/types";
 import styles from "./OfficialProfileExperience.module.css";
+import { harletonRoster } from "@/data/coverage/harleton-roster";
 
 type OfficialProfileHeroProps = {
   official: Official;
@@ -91,6 +92,13 @@ export function OfficialProfileHero({
             <p className={styles.jurisdiction}>
               {official.jurisdiction}
             </p>
+            {official.id === "kevin-evers-harleton-isd" ? (
+              <aside className="mt-4 rounded-md border border-amber-200/40 bg-amber-50 px-4 py-3 text-sm leading-6 text-amber-950">
+                <strong>Earlier office record · roster checked {harletonRoster.observedAt}.</strong>{" "}
+                The district now lists Chance Ebarb in Place 4, appointed July 2026. Kevin Evers is absent from that roster. His exact departure date is unconfirmed; earlier records remain available below.{" "}
+                <a href={harletonRoster.sourceUrl} className="font-bold underline underline-offset-4">Open district source ↗</a>
+              </aside>
+            ) : null}
             <p className={styles.heroSummary}>
               {heroSummary ??
                 `A source-linked view of ${official.name}'s public record, applicable decisions, coverage, and open research gaps. Missing evidence stays labeled as missing—not turned into a conclusion.`}
@@ -104,6 +112,16 @@ export function OfficialProfileHero({
                 path={`/officials/${official.id}`}
                 watchHref={watchHref}
               />
+              <p className="mt-3 text-xs leading-6 text-slate-300">
+                Represent this profile?{" "}
+                <Link
+                  href={{ pathname: "/profiles/claim", query: { profileType: official.level === "school-board" ? "school_board" : "official", profileId: official.id, profileName: official.name } }}
+                  className="font-bold text-white underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  Claim this profile
+                </Link>
+                {" · Free, subject to review"}
+              </p>
             </div>
 
             <div className={styles.recordLedger}>

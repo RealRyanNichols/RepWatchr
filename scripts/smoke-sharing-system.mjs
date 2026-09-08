@@ -1,5 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
+import vm from "node:vm";
+import ts from "typescript";
 
 const root = process.cwd();
 
@@ -19,6 +21,7 @@ const globals = read("src/app/globals.css");
 
 for (const template of [
   "confirmed_record",
+  "sources_linked",
   "public_question",
   "missing_source",
   "correction_needed",
@@ -29,6 +32,20 @@ for (const template of [
 ]) {
   assert(shareLib.includes(template), `Share template missing: ${template}`);
 }
+
+const shareExports = {};
+vm.runInNewContext(ts.transpileModule(shareLib, {
+  compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 },
+}).outputText, { exports: shareExports });
+const linkedStory = shareExports.buildRepWatchrShareKit({
+  title: "A public-record report.",
+  path: "/news/source-linked-report",
+  template: "sources_linked",
+});
+assert(linkedStory.label === "Sources linked", "Linked sources must retain their limited source status.");
+assert(!linkedStory.snippet.includes(".."), "Story sharing should preserve terminal punctuation without doubling it.");
+assert(!/confirmed|verified/i.test(linkedStory.snippet), "Source-link sharing must not certify the report.");
+assert(linkedStory.snippet.includes("https://www.repwatchr.com/news/source-linked-report"), "Story sharing must retain its canonical source URL.");
 
 for (const eventName of [
   "share_copy_clicked",

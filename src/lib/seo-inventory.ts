@@ -26,6 +26,7 @@ import {
 } from "@/lib/school-board-urls";
 import { hasCampaignFinanceSourcePath } from "@/lib/campaign-finance-sources";
 import { absoluteRepWatchrUrl, buildOgImageUrl } from "@/lib/repwatchr-seo";
+import type { NewsArticle } from "@/types";
 
 export type SeoSitemapKind =
   | "static"
@@ -68,6 +69,18 @@ type StaticSeoPage = {
 const now = () => new Date();
 
 const staticSeoPages: StaticSeoPage[] = [
+  {
+    path: "/coverage",
+    title: "Elected Official Directory Coverage | RepWatchr",
+    description: "See which official profiles and school-board records are loaded, when sources were checked, and where coverage still needs work.",
+    imageKind: "methodology",
+  },
+  {
+    path: "/for-candidates",
+    title: "Candidates and Official Profile Claims | RepWatchr",
+    description: "Find your public profile, submit missing official sources, and request a reviewed candidate or officeholder profile claim.",
+    imageKind: "services",
+  },
   {
     path: "/",
     title: "RepWatchr - Public Officials on the Record",
@@ -459,8 +472,8 @@ function raceRecords(): SeoUrlRecord[] {
   return [...candidateProfiles, ...races, ...counties, ...districts, ...comparisons];
 }
 
-function storyRecords(): SeoUrlRecord[] {
-  return getAllNews().map((article) =>
+export function storySeoRecords(articles: NewsArticle[]): SeoUrlRecord[] {
+  return articles.map((article) =>
     urlRecord({
       type: "stories",
       path: `/news/${article.id}`,
@@ -577,7 +590,7 @@ export function getSeoSitemapRecords(kind: SeoSitemapKind): SeoUrlRecord[] {
   if (kind === "officials") return officialRecords();
   if (kind === "school-boards") return schoolBoardRecords();
   if (kind === "races") return raceRecords();
-  if (kind === "stories") return storyRecords();
+  if (kind === "stories") return storySeoRecords(getAllNews());
   if (kind === "red-flags-funding") {
     return [
       ...staticRecords().filter((record) => record.type === "red-flags-funding"),
@@ -594,7 +607,10 @@ export function getAllIndexableSeoRecords() {
 
 export function getRecentNewsSeoRecords(referenceDate = now()) {
   const cutoff = referenceDate.getTime() - 1000 * 60 * 60 * 48;
-  return storyRecords().filter((record) => (record.newsPublicationDate?.getTime() ?? 0) >= cutoff);
+  return storySeoRecords(getAllNews()).filter((record) => {
+    const published = record.newsPublicationDate?.getTime() ?? 0;
+    return published >= cutoff && published <= referenceDate.getTime();
+  });
 }
 
 export function getImageSeoRecords() {

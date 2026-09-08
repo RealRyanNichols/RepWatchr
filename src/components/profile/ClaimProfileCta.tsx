@@ -45,7 +45,7 @@ export default function ClaimProfileCta({
   return (
     <div className="rounded-2xl border border-blue-200 bg-blue-50 p-5 shadow-sm">
       <p className="text-xs font-black uppercase tracking-wide text-blue-800">
-        Claimed profile tools
+        Free profile claim
       </p>
       <h2 className="mt-2 text-xl font-black text-blue-950">
         Do you represent {profileName}?
@@ -61,6 +61,7 @@ export default function ClaimProfileCta({
       >
         Claim this profile
       </Link>
+      <Link href="/for-candidates" className="mt-3 block text-sm font-bold text-blue-800 underline underline-offset-4">How profile claims work</Link>
     </div>
   );
 }

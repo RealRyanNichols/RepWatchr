@@ -1,5 +1,6 @@
 export type ShareTemplateKind =
   | "confirmed_record"
+  | "sources_linked"
   | "public_question"
   | "missing_source"
   | "correction_needed"
@@ -32,6 +33,7 @@ const SITE_ORIGIN = "https://www.repwatchr.com";
 
 const labels: Record<ShareTemplateKind, string> = {
   confirmed_record: "Confirmed record",
+  sources_linked: "Sources linked",
   public_question: "Public question",
   missing_source: "Missing source",
   correction_needed: "Correction needed",
@@ -73,6 +75,7 @@ export function buildRepWatchrShareKit(input: ShareKitInput): ShareKit {
 
   const snippetByTemplate: Record<ShareTemplateKind, string> = {
     confirmed_record: `Confirmed public record: ${title}. RepWatchr keeps the source trail attached so people can inspect the receipt, not just react to a post. ${cleanUrl}`,
+    sources_linked: `RepWatchr story: ${title}${/[.!?…]$/.test(title) ? "" : "."} Read the linked sources and review status before sharing. ${cleanUrl}`,
     public_question: `Public question: ${title}. Open the record, check the source trail, and ask the official or board to point voters to the missing receipt. ${cleanUrl}`,
     missing_source: `Missing source check: ${title}. If there is a better public record, add it so this page can be corrected or upgraded. ${cleanUrl}`,
     correction_needed: `Correction needed? RepWatchr should point to the best public record. Review this page and submit the official source or correction. ${cleanUrl}`,

@@ -27,6 +27,7 @@ interface Comment {
   rank_score?: number;
   contains_source?: boolean;
   source_url?: string | null;
+  assurance_basis?: string | null;
 }
 
 interface CommentSectionProps {
@@ -37,7 +38,7 @@ interface CommentSectionProps {
 }
 
 const CORE_COMMENT_FIELDS = "id, content, display_name, county, created_at, user_id";
-const ENHANCED_COMMENT_FIELDS = `${CORE_COMMENT_FIELDS}, comment_kind, author_type, rank_score, contains_source, source_url`;
+const ENHANCED_COMMENT_FIELDS = `${CORE_COMMENT_FIELDS}, comment_kind, author_type, rank_score, contains_source, source_url, assurance_basis`;
 
 function cleanMetadataName(user: { user_metadata?: Record<string, unknown> } | null): string | null {
   if (!user) return null;
@@ -94,7 +95,7 @@ export default function CommentSection({
   storyMode = false,
   targetPath,
 }: CommentSectionProps) {
-  const { user, profile, roles } = useAuth();
+  const { user, profile } = useAuth();
   const [comments, setComments] = useState<Comment[]>([]);
   const [newComment, setNewComment] = useState("");
   const [displayName, setDisplayName] = useState("");
@@ -105,24 +106,13 @@ export default function CommentSection({
   const [posting, setPosting] = useState(false);
   const [error, setError] = useState("");
   const supabase = useMemo(() => createClient(), []);
-  const isVerifiedProfile = Boolean(profile?.verified);
-  const isClaimedOfficial = roles.includes("claimed_official");
-  const isJournalist = roles.includes("journalist");
-  const authorType: AuthorType = isClaimedOfficial
-    ? "claimed_official"
-    : isVerifiedProfile
-      ? "verified_resident"
-      : isJournalist
-        ? "journalist"
-        : "signed_in";
-  const authorTier = isClaimedOfficial
-    ? "Verified official / claimed profile"
-    : isVerifiedProfile
-      ? "Verified resident"
-      : isJournalist
-        ? "Journalist profile"
-        : "Signed-in profile";
-  const authorRank = isClaimedOfficial ? 100 : isVerifiedProfile ? 80 : isJournalist ? 70 : 30;
+  const authorTier = profile?.residenceVerified
+    ? "Verified resident"
+    : profile?.personVerified
+      ? "Verified person · residence not verified"
+      : profile?.paidAccount
+        ? "Paid account · identity and residence not verified"
+        : "Signed-in account · identity and residence not verified";
   const defaultDisplayName =
     cleanMetadataName(user) || (profile?.county ? `${profile.county} Resident` : "Anonymous profile");
 
@@ -150,6 +140,11 @@ export default function CommentSection({
         return;
       }
 
+      if (!isMissingEnhancedColumn(enhancedResult.error)) {
+        setError("Discussion could not be loaded. Please try again.");
+        setLoading(false);
+        return;
+      }
       // Some existing deployments predate evidence-ranking columns. Keep the
       // core discussion usable there, and only reveal sourced modes when the
       // expanded comments schema is confirmed by Supabase.
@@ -157,12 +152,14 @@ export default function CommentSection({
         .from("comments")
         .select(CORE_COMMENT_FIELDS)
         .eq("official_id", officialId)
+        .neq("visibility_status", "removed_illegal")
         .order("created_at", { ascending: false })
         .limit(50);
 
       if (cancelled) return;
       setEnhancedSchemaAvailable(false);
       setComments((fallbackResult.data ?? []) as Comment[]);
+      if (fallbackResult.error) setError("Discussion could not be loaded. Please try again.");
       setLoading(false);
     }
 
@@ -198,7 +195,7 @@ export default function CommentSection({
       official_id: officialId,
       content: trimmed,
       display_name: name,
-      county: profile?.county ?? "Anonymous",
+      county: "Not verified",
     };
 
     const insertCoreComment = () =>
@@ -210,9 +207,6 @@ export default function CommentSection({
           .insert({
             ...corePayload,
             comment_kind: commentKind,
-            author_type: authorType,
-            rank_score: authorRank,
-            contains_source: Boolean(normalizedSourceUrl),
             source_url: normalizedSourceUrl,
           })
           .select(ENHANCED_COMMENT_FIELDS)
@@ -293,7 +287,7 @@ export default function CommentSection({
           />
           <PolicyCard
             title="Evidence gets preference"
-            body="Verified officials, verified parents/residents, named journalists, public-source links, and direct answers rank above anonymous or unsourced comments."
+            body="Public-source links and current, server-confirmed resident checks receive ranking credit. Payment and a self-selected display name do not verify a person."
           />
           <PolicyCard
             title="Illegal content is different"
@@ -339,11 +333,12 @@ export default function CommentSection({
           <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
             <div className="mb-3 grid gap-2 rounded-lg border border-blue-100 bg-blue-50 p-3 text-xs font-bold text-blue-950 sm:grid-cols-[1fr_auto] sm:items-center">
               <span>{authorTier}</span>
-              <span>Ranking weight: {authorRank}/100</span>
+              <span>Sources and verification are checked separately</span>
             </div>
             <div className="mb-3">
               <input
                 type="text"
+                aria-label="Public display name"
                 value={displayName}
                 onChange={(e) => setDisplayName(e.target.value)}
                 placeholder={`Display name (default: ${defaultDisplayName})`}
@@ -380,6 +375,7 @@ export default function CommentSection({
               </div>
             ) : null}
             <textarea
+              aria-label="Your public comment"
               value={newComment}
               onChange={(e) => setNewComment(e.target.value)}
               placeholder={`Ask a public question or leave a sourced concern for ${officialName}.`}
@@ -442,11 +438,11 @@ export default function CommentSection({
                       {comment.display_name}
                     </p>
                     <div className="flex items-center gap-2 text-xs text-gray-400">
-                      <span>{comment.county}</span>
+                      <span>{comment.assurance_basis === "member_assurance_v1" && comment.author_type === "verified_resident" ? comment.county : "Location not verified"}</span>
                       <span>&#183;</span>
                       <span>{formatDate(comment.created_at)}</span>
                       <span>&#183;</span>
-                      <span>{authorTypeLabel(comment.author_type, comment.county)}</span>
+                      <span>{authorTypeLabel(comment.assurance_basis === "member_assurance_v1" ? comment.author_type : "signed_in", comment.county)}</span>
                     </div>
                   </div>
                 </div>
@@ -465,7 +461,7 @@ export default function CommentSection({
               </p>
               <div className="mt-3 flex flex-wrap items-center gap-2">
                 <span className="rounded-full bg-gray-100 px-2.5 py-1 text-[10px] font-black uppercase tracking-wide text-gray-600">
-                  {commentKindLabel(comment.comment_kind)}
+                  {commentKindLabel(comment.comment_kind === "official_answer" && (comment.assurance_basis !== "member_assurance_v1" || comment.author_type !== "claimed_official") ? "comment" : comment.comment_kind)}
                 </span>
                 {safeHttpUrl(comment.source_url) ? (
                   <a

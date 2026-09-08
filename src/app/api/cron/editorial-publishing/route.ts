@@ -16,7 +16,7 @@ export async function GET(request: Request) {
   }
   const url = new URL(request.url);
   const result = await runEditorialPublishing({
-    targetCount: Number(url.searchParams.get("count") ?? "4"),
+    targetCount: Number(url.searchParams.get("count") ?? "1"),
     dryRun: url.searchParams.get("dryRun") === "1",
   });
   return Response.json(result, { status: result.ok ? 200 : 500 });

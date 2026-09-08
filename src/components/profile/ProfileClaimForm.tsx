@@ -88,6 +88,11 @@ export default function ProfileClaimForm({
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [successClaimId, setSuccessClaimId] = useState<string | null>(null);
+  const claimParams = new URLSearchParams({ profileType });
+  if (profileId) claimParams.set("profileId", profileId);
+  if (profileName) claimParams.set("profileName", profileName);
+  if (districtSlug) claimParams.set("districtSlug", districtSlug);
+  const returnPath = `/profiles/claim?${claimParams.toString()}`;
 
   if (loading) {
     return (
@@ -102,30 +107,31 @@ export default function ProfileClaimForm({
       <div className="mx-auto max-w-2xl px-4 py-16">
         <div className="rounded-2xl border border-blue-200 bg-white p-8 text-center shadow-sm">
           <p className="text-sm font-black uppercase tracking-wide text-blue-700">
-            Login required
+            Free profile claim
           </p>
           <h1 className="mt-2 text-3xl font-black text-gray-950">
             Claim a public profile
           </h1>
           <p className="mt-3 text-sm font-semibold leading-6 text-gray-600">
-            Profile claims require a RepWatchr account, manual verification, and
-            admin approval before reviewed submissions unlock. People,
-            companies, firms, and organizations can request access.
+            Sign in to request access{profileName ? ` for ${profileName}` : " to a public profile"}.
+            A reviewer checks your authority before submissions unlock. Account creation
+            does not verify your identity, approve a claim or establish ballot status.
           </p>
-          <div className="mt-6 flex justify-center gap-3">
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Link
-              href="/auth/login"
+              href={`/auth/login?next=${encodeURIComponent(returnPath)}`}
               className="rounded-xl bg-blue-900 px-5 py-3 text-sm font-black text-white hover:bg-red-700"
             >
               Log in
             </Link>
             <Link
-              href="/auth/signup"
+              href={`/auth/signup?next=${encodeURIComponent(returnPath)}`}
               className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-black text-blue-900 hover:border-red-300 hover:text-red-700"
             >
               Create account
             </Link>
           </div>
+          <Link href="/for-candidates" className="mt-5 inline-block text-sm font-bold text-blue-800 underline underline-offset-4">How candidate and official profile requests work</Link>
         </div>
       </div>
     );
@@ -135,7 +141,7 @@ export default function ProfileClaimForm({
     event.preventDefault();
     setError("");
 
-    if (!user) return;
+    if (!user || submitting) return;
 
     if (!profileId.trim() || !profileName.trim()) {
       setError("Profile name and profile ID are required.");
@@ -158,49 +164,54 @@ export default function ProfileClaimForm({
     }
 
     setSubmitting(true);
-    let proofStoragePath: string | null = null;
+    try {
+      let proofStoragePath: string | null = null;
 
-    if (proofFile) {
-      const storagePath = `${user.id}/${Date.now()}-${cleanPathSegment(proofFile.name)}`;
-      const { error: uploadError } = await supabase.storage
-        .from("profile-submissions")
-        .upload(storagePath, proofFile, { upsert: false });
+      if (proofFile) {
+        const storagePath = `${user.id}/${Date.now()}-${cleanPathSegment(proofFile.name)}`;
+        const { error: uploadError } = await supabase.storage
+          .from("profile-submissions")
+          .upload(storagePath, proofFile, { upsert: false });
 
-      if (uploadError) {
-        setError(uploadError.message);
+        if (uploadError) {
+          setError("The proof upload could not be saved. Try again, or use a public proof link.");
+          setSubmitting(false);
+          return;
+        }
+
+        proofStoragePath = storagePath;
+      }
+
+      const { data, error: insertError } = await supabase
+        .from("profile_claims")
+        .insert({
+          user_id: user.id,
+          profile_type: profileType,
+          profile_id: profileId.trim(),
+          profile_name: profileName.trim(),
+          district_slug: districtSlug.trim() || null,
+          official_email: officialEmail.trim() || null,
+          role_title: roleTitle.trim() || null,
+          proof_url: proofUrl.trim() || null,
+          proof_storage_path: proofStoragePath,
+          proof_notes: proofNotes.trim(),
+          status: "pending",
+        })
+        .select("id")
+        .single();
+
+      if (insertError || !data?.id) {
+        setError("Your claim could not be saved. Please try again later. No claim has been approved.");
         setSubmitting(false);
         return;
       }
 
-      proofStoragePath = storagePath;
-    }
-
-    const { data, error: insertError } = await supabase
-      .from("profile_claims")
-      .insert({
-        user_id: user.id,
-        profile_type: profileType,
-        profile_id: profileId.trim(),
-        profile_name: profileName.trim(),
-        district_slug: districtSlug.trim() || null,
-        official_email: officialEmail.trim() || null,
-        role_title: roleTitle.trim() || null,
-        proof_url: proofUrl.trim() || null,
-        proof_storage_path: proofStoragePath,
-        proof_notes: proofNotes.trim(),
-        status: "pending",
-      })
-      .select("id")
-      .single();
-
-    if (insertError) {
-      setError(insertError.message);
+      setSuccessClaimId(data.id);
+    } catch {
+      setError("Your claim could not be saved. Check your connection and try again.");
+    } finally {
       setSubmitting(false);
-      return;
     }
-
-    setSuccessClaimId(data.id);
-    setSubmitting(false);
   }
 
   if (successClaimId) {
@@ -213,10 +224,11 @@ export default function ProfileClaimForm({
           <h1 className="mt-2 text-3xl font-black text-emerald-950">
             Manual review is next
           </h1>
-          <p className="mt-3 text-sm font-semibold leading-6 text-emerald-900">
+          <p role="status" className="mt-3 text-sm font-semibold leading-6 text-emerald-900">
             RepWatchr will review the proof. Submitted content remains hidden
             until it is reviewed.
           </p>
+          <p className="mt-3 break-words text-xs font-semibold text-emerald-900">Reference: {successClaimId}</p>
           <Link
             href="/dashboard/claims"
             className="mt-6 inline-flex rounded-xl bg-blue-900 px-5 py-3 text-sm font-black text-white hover:bg-red-700"
@@ -232,25 +244,27 @@ export default function ProfileClaimForm({
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
       <div className="rounded-2xl border border-blue-200 bg-white p-6 shadow-sm sm:p-8">
         <p className="text-sm font-black uppercase tracking-wide text-blue-700">
-          Profile ownership request
+          Free profile access request
         </p>
         <h1 className="mt-2 text-3xl font-black text-gray-950">
           Claim a RepWatchr profile
         </h1>
         <p className="mt-3 text-sm font-semibold leading-6 text-gray-600">
-          Verification is strict and manual. Approved claimants can submit a
+          A reviewer checks your authority to represent this profile. Approved claimants can submit a
           reviewed public bio, company profile, statement, media, and links.
           They cannot edit RepWatchr facts, evidence, scores, source records,
           red flags, or research gaps.
         </p>
+        <p className="mt-3 text-sm leading-6 text-gray-600">Claim review is free. Approval verifies permission to submit, not every statement, residency, candidacy or endorsement. No payment changes your grade or review status.</p>
+        {!initialProfileId ? <p className="mt-3 text-sm leading-6 text-gray-600"><Link href="/officials" className="font-bold text-blue-800 underline underline-offset-4">Find your profile first</Link> to fill in its ID, or <Link href="/submit-source" className="font-bold text-blue-800 underline underline-offset-4">submit a missing profile with its official source</Link>.</p> : null}
 
         {error ? (
-          <div className="mt-5 rounded-xl border border-red-200 bg-red-50 p-4 text-sm font-bold text-red-800">
+          <div role="alert" className="mt-5 rounded-xl border border-red-200 bg-red-50 p-4 text-sm font-bold text-red-800">
             {error}
           </div>
         ) : null}
 
-        <form onSubmit={handleSubmit} className="mt-6 grid gap-5">
+        <form onSubmit={handleSubmit} aria-busy={submitting} className="mt-6 grid gap-5">
           <div className="grid gap-4 md:grid-cols-2">
             <label className="block">
               <span className="text-sm font-black text-gray-700">Profile type</span>

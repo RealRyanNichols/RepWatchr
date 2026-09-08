@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { getAllNews, getNewsById, getOfficialById } from "@/lib/data";
 import { getPublishedArticle } from "@/lib/published-articles";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
-import RecordVisual from "@/components/shared/RecordVisual";
 import RouteEventTracker from "@/components/shared/RouteEventTracker";
 import ShareButtons from "@/components/shared/ShareButtons";
 import ReportButton from "@/components/shared/ReportButton";
@@ -13,6 +13,9 @@ import TrustLabel from "@/components/shared/TrustLabel";
 import PublicPostEmbed from "@/components/news/PublicPostEmbed";
 import { absoluteRepWatchrUrl, buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, jsonLd, newsArticleJsonLd } from "@/lib/structured-data";
+
+// Reviewed database articles and later corrections should not remain stale.
+export const revalidate = 300;
 
 export async function generateStaticParams() {
   const articles = getAllNews();
@@ -26,7 +29,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params;
   const article = getNewsById(id) ?? await getPublishedArticle(id);
-  if (!article) return { title: "Article Not Found" };
+  if (!article) return { title: "Article Not Found", robots: { index: false, follow: false } };
   return buildRepWatchrMetadata({
     title: article.seoTitle ?? article.title,
     description: article.seoDescription ?? article.summary,
@@ -38,17 +41,6 @@ export async function generateMetadata({
     authors: [article.author],
   });
 }
-
-const tagColors: Record<string, string> = {
-  breaking: "bg-red-100 text-red-700",
-  investigation: "bg-orange-100 text-orange-700",
-  watchdog: "bg-amber-100 text-amber-700",
-  update: "bg-blue-100 text-blue-700",
-  opinion: "bg-purple-100 text-purple-700",
-  election: "bg-green-100 text-green-700",
-  corruption: "bg-red-100 text-red-800",
-  transparency: "bg-emerald-100 text-emerald-700",
-};
 
 const scopeLabels: Record<string, string> = {
   "east-texas": "East Texas",
@@ -97,23 +89,21 @@ export default async function NewsArticlePage({
   const { id } = await params;
   const article = getNewsById(id) ?? await getPublishedArticle(id);
 
-  if (!article) {
-    return (
-      <div className="max-w-3xl mx-auto px-4 py-16 text-center">
-        <h1 className="text-2xl font-bold text-gray-900">
-          Article Not Found
-        </h1>
-        <Link href="/news" className="mt-4 text-blue-600 hover:underline">
-          Back to News
-        </Link>
-      </div>
-    );
-  }
+  if (!article) notFound();
 
   const linkedOfficials = article.officialIds
     .map((officialId) => getOfficialById(officialId))
     .filter(Boolean);
   const postSnippet = articlePostSnippet(article);
+  const shareTitle = article.title.trim().replace(/[.!?]+$/, "");
+  const scopeLabel = article.scope ? (scopeLabels[article.scope] ?? article.scope) : undefined;
+  const locationLabel = article.locationLabel || scopeLabel || article.state;
+  const topics = [...new Set([
+    ...article.tags,
+    ...(article.powerChannels ?? []).map((channel) => channelLabels[channel] ?? channel),
+    ...(article.counties ?? []).map((county) => `${county} County`),
+    ...(article.cities ?? []),
+  ])];
   const sourceStructuredLinks = article.sourceLinks?.length
     ? article.sourceLinks
     : article.sourceUrl
@@ -159,45 +149,16 @@ export default async function NewsArticlePage({
         &larr; Back to News
       </Link>
 
-      {/* Tags */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        {article.category ? (
-          <span className="rounded-full bg-red-700 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
-            {article.category}
-          </span>
-        ) : null}
-        {article.scope ? (
+      <div className="mb-4 flex flex-wrap items-center gap-2">
+        <span className="rounded-full bg-red-700 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
+          {article.tags.includes("opinion") ? "Commentary" : article.category || "Reporting"}
+        </span>
+        {locationLabel ? (
           <span className="rounded-full bg-blue-950 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
-            {scopeLabels[article.scope] ?? article.scope}
+            {locationLabel}
           </span>
         ) : null}
-        {article.locationLabel ? (
-          <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-bold uppercase tracking-wide text-amber-900">
-            {article.locationLabel}
-          </span>
-        ) : null}
-        {article.tags.map((tag) => (
-          <span
-            key={tag}
-            className={`rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wide ${tagColors[tag] ?? "bg-gray-100 text-gray-600"}`}
-          >
-            {tag}
-          </span>
-        ))}
       </div>
-
-      {article.powerChannels?.length ? (
-        <div className="mb-4 flex flex-wrap gap-2">
-          {article.powerChannels.map((channel) => (
-            <span
-              key={channel}
-              className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-slate-700"
-            >
-              {channelLabels[channel] ?? channel}
-            </span>
-          ))}
-        </div>
-      ) : null}
 
       {/* Title */}
       <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
@@ -207,7 +168,7 @@ export default async function NewsArticlePage({
       {/* Meta */}
       <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-gray-500">
         <span>{article.author}</span>
-        <span>&middot;</span>
+        <span className="hidden sm:inline" aria-hidden="true">&middot;</span>
         <span>
           {new Date(article.publishedAt).toLocaleDateString("en-US", {
             timeZone: "America/Chicago",
@@ -219,7 +180,7 @@ export default async function NewsArticlePage({
         </span>
         {article.sourceName && (
           <>
-            <span>&middot;</span>
+            <span className="hidden sm:inline" aria-hidden="true">&middot;</span>
             {article.sourceUrl ? (
               <a
                 href={article.sourceUrl}
@@ -236,47 +197,15 @@ export default async function NewsArticlePage({
         )}
         {article.sourceStatus === "source_linked" ? (
           <>
-            <span>&middot;</span>
-            <TrustLabel id="confirmed_public_record" />
+            <span className="hidden sm:inline" aria-hidden="true">&middot;</span>
+            <span className="rounded-full bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-800">Sources linked</span>
           </>
         ) : !article.sourceUrl ? (
           <>
-            <span>&middot;</span>
+            <span className="hidden sm:inline" aria-hidden="true">&middot;</span>
             <TrustLabel id="needs_source" />
           </>
         ) : null}
-      </div>
-
-      {(article.counties?.length || article.cities?.length || article.state) ? (
-        <div className="mt-4 flex flex-wrap gap-2">
-          {article.state ? (
-            <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-black text-blue-900">
-              {article.state}
-            </span>
-          ) : null}
-          {(article.counties ?? []).map((county) => (
-            <span key={county} className="rounded-full bg-slate-100 px-3 py-1 text-xs font-black text-slate-700">
-              {county} County
-            </span>
-          ))}
-          {(article.cities ?? []).map((city) => (
-            <span key={city} className="rounded-full bg-slate-100 px-3 py-1 text-xs font-black text-slate-700">
-              {city}
-            </span>
-          ))}
-        </div>
-      ) : null}
-
-      {/* Share */}
-      <div className="mt-4">
-        <ShareButtons
-          title={article.title}
-          description={article.summary}
-          path={`/news/${article.id}`}
-          template={article.sourceStatus === "needs_source_review" ? "missing_source" : "confirmed_record"}
-          subject={article.title}
-          sourceLabel={article.sourceName || article.sourceLinks?.[0]?.title || "linked public sources"}
-        />
       </div>
 
       {article.imageUrl ? (
@@ -298,14 +227,19 @@ export default async function NewsArticlePage({
         </figure>
       ) : null}
 
-      <RecordVisual
-        eyebrow={article.scope ? (scopeLabels[article.scope] ?? article.scope) : "Story file"}
-        title={article.title}
-        variant="story"
-        metric={{ label: "Sources", value: article.sourceLinks?.length || (article.sourceUrl ? 1 : 0) }}
-        secondaryMetric={{ label: "Officials", value: linkedOfficials.length }}
-        className="mt-6"
-      />
+      {/* Summary */}
+      <p className="mt-8 text-lg text-gray-700 font-medium leading-relaxed border-l-4 border-blue-500 pl-4">
+        {article.summary}
+      </p>
+
+      {/* Content */}
+      <div className="mt-8 prose prose-gray max-w-none">
+        {article.content.split("\n\n").map((paragraph, i) => (
+          paragraph.startsWith("## ") ?
+            <h2 key={i} className="mb-4 mt-9 text-2xl font-bold leading-tight text-blue-950">{paragraph.slice(3)}</h2> :
+            <p key={i} className="text-gray-700 leading-relaxed mb-4">{paragraph}</p>
+        ))}
+      </div>
 
       {article.publicPostEmbeds?.length ? (
         <section className="mt-6 space-y-4">
@@ -319,12 +253,109 @@ export default async function NewsArticlePage({
         </section>
       ) : null}
 
+      {article.internalLinks?.length ? (
+        <section className="mt-10 rounded-xl border border-blue-100 bg-blue-50 p-6">
+          <h2 className="text-sm font-bold uppercase tracking-wider text-blue-900">
+            Related RepWatchr records
+          </h2>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {article.internalLinks.map((item) => (
+              <Link
+                key={item.url}
+                href={item.url}
+                className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700"
+              >
+                {item.title}
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {article.sourceLinks?.length ? (
+        <section className="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
+          <h2 className="text-sm font-bold uppercase tracking-wider text-slate-500">
+            Source Packet
+          </h2>
+          <div className="mt-4 grid gap-3">
+            {article.sourceLinks.map((source) => (
+              <a
+                key={source.url}
+                href={source.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-blue-800 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md"
+              >
+                {source.title}
+              </a>
+            ))}
+          </div>
+          {article.reviewedAt && Number.isFinite(Date.parse(article.reviewedAt)) ? (
+            <p className="mt-4 text-xs leading-6 text-slate-600">
+              Source review recorded {new Date(article.reviewedAt).toLocaleDateString("en-US", { timeZone: "America/Chicago", month: "long", day: "numeric", year: "numeric" })}
+              {article.reviewedBy ? ` by ${article.reviewedBy}` : ""}.
+            </p>
+          ) : null}
+        </section>
+      ) : null}
+
+      {/* Linked Officials */}
+      {linkedOfficials.length > 0 && (
+        <div className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6">
+          <h2 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">
+            Officials Mentioned
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {linkedOfficials.map((official) => (
+              <Link
+                key={official!.id}
+                href={`/officials/${official!.id}`}
+                className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5"
+              >
+                <div className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-100 text-sm font-bold text-blue-700">
+                  {official!.firstName[0]}
+                  {official!.lastName[0]}
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-900">
+                    {official!.name}
+                  </p>
+                  <p className="text-xs text-gray-500">{official!.position}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {topics.length > 0 ? (
+        <div aria-label="Article topics and locations" className="mt-8 flex flex-wrap gap-2">
+          {topics.map((topic) => (
+            <span key={topic} className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-600">
+              {topic}
+            </span>
+          ))}
+        </div>
+      ) : null}
+
+      {/* Share */}
+      <div className="mt-4">
+        <ShareButtons
+          title={shareTitle}
+          description={article.summary}
+          path={`/news/${article.id}`}
+          template={article.sourceStatus === "source_linked" ? "sources_linked" : "missing_source"}
+          subject={shareTitle}
+          sourceLabel={article.sourceName || article.sourceLinks?.[0]?.title || "linked public sources"}
+        />
+      </div>
+
       <div className="mt-4 grid gap-3 lg:grid-cols-[1fr_auto] lg:items-start">
         <NextUsefulMove
           recordPath={`/dashboard?watch=${encodeURIComponent(`/news/${article.id}`)}&target=${encodeURIComponent(article.title)}`}
           sourcePath={`/submit-source?target=${encodeURIComponent(article.id)}`}
           packetPath={`/free-packet?target=${encodeURIComponent(article.title)}`}
-          safeShareLine={`RepWatchr story: ${article.title}. Read the receipt and source status before sharing a stronger claim.`}
+          safeShareLine={`RepWatchr story: ${shareTitle}. Read the receipt and source status before sharing a stronger claim.`}
           meetingQuestion="What public source confirms this story, and what record is still missing?"
         />
         <ReportButton
@@ -373,89 +404,6 @@ export default async function NewsArticlePage({
           </p>
         </div>
       </section>
-
-      {/* Summary */}
-      <p className="mt-8 text-lg text-gray-700 font-medium leading-relaxed border-l-4 border-blue-500 pl-4">
-        {article.summary}
-      </p>
-
-      {/* Content */}
-      <div className="mt-8 prose prose-gray max-w-none">
-        {article.content.split("\n\n").map((paragraph, i) => (
-          <p key={i} className="text-gray-700 leading-relaxed mb-4">
-            {paragraph}
-          </p>
-        ))}
-      </div>
-
-      {article.internalLinks?.length ? (
-        <section className="mt-10 rounded-xl border border-blue-100 bg-blue-50 p-6">
-          <h2 className="text-sm font-bold uppercase tracking-wider text-blue-900">
-            Related RepWatchr records
-          </h2>
-          <div className="mt-4 grid gap-3 sm:grid-cols-2">
-            {article.internalLinks.map((item) => (
-              <Link
-                key={item.url}
-                href={item.url}
-                className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700"
-              >
-                {item.title}
-              </Link>
-            ))}
-          </div>
-        </section>
-      ) : null}
-
-      {article.sourceLinks?.length ? (
-        <section className="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
-          <h2 className="text-sm font-bold uppercase tracking-wider text-slate-500">
-            Source Packet
-          </h2>
-          <div className="mt-4 grid gap-3">
-            {article.sourceLinks.map((source) => (
-              <a
-                key={source.url}
-                href={source.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-blue-800 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md"
-              >
-                {source.title}
-              </a>
-            ))}
-          </div>
-        </section>
-      ) : null}
-
-      {/* Linked Officials */}
-      {linkedOfficials.length > 0 && (
-        <div className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6">
-          <h2 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">
-            Officials Mentioned
-          </h2>
-          <div className="flex flex-wrap gap-3">
-            {linkedOfficials.map((official) => (
-              <Link
-                key={official!.id}
-                href={`/officials/${official!.id}`}
-                className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5"
-              >
-                <div className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-100 text-sm font-bold text-blue-700">
-                  {official!.firstName[0]}
-                  {official!.lastName[0]}
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-gray-900">
-                    {official!.name}
-                  </p>
-                  <p className="text-xs text-gray-500">{official!.position}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
 
       <section className="mt-10 rounded-xl border border-blue-100 bg-blue-50 p-6">
         <h2 className="text-sm font-bold uppercase tracking-wider text-blue-900">

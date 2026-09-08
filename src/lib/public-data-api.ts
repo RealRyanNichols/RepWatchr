@@ -102,7 +102,11 @@ export function normalizeApiAccessRequest(input: ApiAccessRequestInput): Normali
 export function validateApiAccessRequest(input: NormalizedApiAccessRequest) {
   if (!input.email) return "Add a valid email address.";
   if (!input.organization && !input.name) return "Add your name or organization.";
-  if (!input.useCase) return "Tell us how you want to use RepWatchr public data.";
+  if (input.useCase.length < 20) return "Describe the data and delivery you need in at least 20 characters.";
+  if (!input.jurisdictionFocus) return "Add the jurisdiction or coverage you need.";
+  if (!PUBLIC_API_SCOPES.some((scope) => scope === input.requestedScope && scope !== "admin_internal")) {
+    return "Choose a supported public data scope.";
+  }
   return "";
 }
 
@@ -290,15 +294,21 @@ export async function getPublicDataApiAdminData() {
     };
   }
 
+  // Request intake is available before key issuance and export delivery launch.
+  // Keep its real storage errors visible without querying unlaunched tables.
   const [requestsResponse, keysResponse, usageResponse, exportsResponse] = await Promise.all([
     supabase.from("api_access_requests").select("*").order("created_at", { ascending: false }).limit(300),
-    supabase
-      .from("api_keys")
-      .select("id,user_id,organization_name,key_prefix,label,status,scopes,rate_limit_per_day,created_at,last_used_at,revoked_at")
-      .order("created_at", { ascending: false })
-      .limit(100),
+    enabled
+      ? supabase
+          .from("api_keys")
+          .select("id,user_id,organization_name,key_prefix,label,status,scopes,rate_limit_per_day,created_at,last_used_at,revoked_at")
+          .order("created_at", { ascending: false })
+          .limit(100)
+      : Promise.resolve({ data: [], error: null }),
     supabase.from("api_usage_events").select("*").order("created_at", { ascending: false }).limit(300),
-    supabase.from("data_exports").select("*").order("created_at", { ascending: false }).limit(200),
+    enabled
+      ? supabase.from("data_exports").select("*").order("created_at", { ascending: false }).limit(200)
+      : Promise.resolve({ data: [], error: null }),
   ]);
 
   if (requestsResponse.error) errors.push(`api_access_requests: ${requestsResponse.error.message}`);
@@ -309,9 +319,9 @@ export async function getPublicDataApiAdminData() {
   const [accessRequests, newRequests, activeKeys, usageEvents, pendingExports] = await Promise.all([
     countRows("api_access_requests"),
     countRows("api_access_requests", { status: "new" }),
-    countRows("api_keys", { status: "active" }),
+    enabled ? countRows("api_keys", { status: "active" }) : Promise.resolve(0),
     countRows("api_usage_events"),
-    countRows("data_exports", { status: "pending" }),
+    enabled ? countRows("data_exports", { status: "pending" }) : Promise.resolve(0),
   ]);
 
   return {
