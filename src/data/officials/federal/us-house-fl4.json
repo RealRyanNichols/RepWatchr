@@ -4,7 +4,7 @@
   "firstName": "Aaron",
   "lastName": "Bean",
   "photo": "/images/officials/federal/aaron-bean.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/B001314.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/B001314.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "R",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/B001314.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/B001314.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

@@ -4,8 +4,8 @@
   "firstName": "Cole",
   "lastName": "Hefner",
   "photo": "/images/officials/texas-accountability/cole-hefner.jpg",
-  "photoSourceUrl": "https://directory.texastribune.org/static/images/headshots/Cole_Hefner.jpg",
-  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official Texas House roster.",
+  "photoSourceUrl": "https://vfairs-core-backend-prod.s3.amazonaws.com/V2/1000000283/users/Cole_Hefner_1770383609527.jpg",
+  "photoCredit": "SIAA Lone Star Summit 2026 speaker portrait; identity cross-checked against the official Texas House profile and current public campaign photographs.",
   "party": "R",
   "level": "state",
   "position": "State Representative",
@@ -154,7 +154,7 @@
     }
   ],
   "lastVerifiedAt": "2026-08-16",
-  "photoRights": "Stored with source attribution and site-terms provenance; reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "photoRights": "Published speaker portrait used with source attribution for editorial identification. No public-domain or open-license claim is made; additional redistribution requires rights review.",
   "nextElection": "2026 general election",
   "committeeAssignments": [
     "Congressional Redistricting, Select",
@@ -181,9 +181,9 @@
     },
     "portrait": {
       "status": "current",
-      "reviewedAt": "2026-08-16",
-      "sourceUrl": "https://directory.texastribune.org/static/images/headshots/Cole_Hefner.jpg",
-      "note": "1000x1000; 95120 stored bytes; downscaled only when the source exceeded 1600px and never upscaled."
+      "reviewedAt": "2026-09-08",
+      "sourceUrl": "https://vfairs-core-backend-prod.s3.amazonaws.com/V2/1000000283/users/Cole_Hefner_1770383609527.jpg",
+      "note": "1000x1000 published original; 28994 bytes. Visually reviewed for identity, framing, and improved facial detail. Stored unchanged without enlargement, AI generation, or retouching."
     },
     "contact": {
       "status": "current",

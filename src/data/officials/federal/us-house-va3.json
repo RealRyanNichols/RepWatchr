@@ -4,7 +4,7 @@
   "firstName": "Robert",
   "lastName": "Scott",
   "photo": "/images/officials/federal/robert-c-bobby-scott.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S000185.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/S000185.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "D",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/S000185.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/S000185.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

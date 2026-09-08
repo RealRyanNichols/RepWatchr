@@ -62,7 +62,10 @@
     "smoke:records": "node scripts/smoke-public-records-generator.mjs",
     "smoke:growth": "node scripts/smoke-growth-membership.mjs",
     "smoke:routes": "node scripts/smoke-route-quality.mjs",
-    "seo:report": "node scripts/seo-report.mjs"
+    "seo:report": "node scripts/seo-report.mjs",
+    "portraits:manifest": "node scripts/build-portrait-manifest.mjs",
+    "prebuild": "npm run portraits:manifest",
+    "predev": "npm run portraits:manifest"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "^5.2.9",
@@ -85,6 +88,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.3",
+    "sharp": "0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

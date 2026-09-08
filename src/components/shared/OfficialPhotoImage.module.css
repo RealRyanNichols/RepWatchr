@@ -1,0 +1,16 @@
+.portrait {
+  /* Keep scarce source detail at its native display density. Bigger originals
+     fill the frame; small originals remain centered without being stretched. */
+  --portrait-density: 1;
+  max-width: calc(var(--portrait-width) / var(--portrait-density));
+  max-height: calc(var(--portrait-height) / var(--portrait-density));
+  margin: auto;
+}
+
+@media (min-resolution: 1.5dppx) {
+  .portrait { --portrait-density: 2; }
+}
+
+@media (min-resolution: 2.5dppx) {
+  .portrait { --portrait-density: 3; }
+}

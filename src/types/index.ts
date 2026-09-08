@@ -59,9 +59,11 @@ export interface Official {
   photo?: string;
   photoSourceUrl?: string;
   photoCredit?: string;
+  photoMetadata?: { width: number; height: number; revision: string };
   featuredPhoto?: string;
   featuredPhotoSourceUrl?: string;
   featuredPhotoCredit?: string;
+  featuredPhotoMetadata?: { width: number; height: number; revision: string };
   party: Party;
   level: GovernmentLevel;
   position: string;

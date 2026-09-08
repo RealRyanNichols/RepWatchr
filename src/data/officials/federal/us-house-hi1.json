@@ -4,7 +4,7 @@
   "firstName": "Ed",
   "lastName": "Case",
   "photo": "/images/officials/federal/ed-case.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001055.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/C001055.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "D",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/C001055.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/C001055.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

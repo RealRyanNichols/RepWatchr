@@ -4,7 +4,7 @@
   "firstName": "Lauren",
   "lastName": "Underwood",
   "photo": "/images/officials/federal/lauren-underwood.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/U000040.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/U000040.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "D",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/U000040.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/U000040.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

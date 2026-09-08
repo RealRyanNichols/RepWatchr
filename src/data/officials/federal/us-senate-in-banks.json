@@ -3,9 +3,9 @@
   "name": "Jim Banks",
   "firstName": "Jim",
   "lastName": "Banks",
-  "photo": "/images/officials/federal/jim-banks.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/B001299.jpg",
-  "photoCredit": "UnitedStates project congressional image mirror",
+  "photo": "/images/officials/federal/jim-banks.webp",
+  "photoSourceUrl": "https://www.banks.senate.gov/wp-content/uploads/2025/07/Banks_OfficialPortrait.webp",
+  "photoCredit": "Official congressional website portrait",
   "party": "R",
   "level": "federal",
   "position": "U.S. Senator",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/B001299.jpg"
+      "url": "https://www.banks.senate.gov/wp-content/uploads/2025/07/Banks_OfficialPortrait.webp"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

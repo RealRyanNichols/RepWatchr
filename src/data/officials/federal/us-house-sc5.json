@@ -4,7 +4,7 @@
   "firstName": "Ralph",
   "lastName": "Norman",
   "photo": "/images/officials/federal/ralph-norman.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/N000190.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/N000190.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "R",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/N000190.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/N000190.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

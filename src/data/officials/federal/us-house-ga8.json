@@ -4,7 +4,7 @@
   "firstName": "Austin",
   "lastName": "Scott",
   "photo": "/images/officials/federal/austin-scott.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S001189.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/S001189.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "R",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/S001189.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/S001189.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

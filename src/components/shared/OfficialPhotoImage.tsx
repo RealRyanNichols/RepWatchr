@@ -1,11 +1,13 @@
 import Image from "next/image";
+import type { CSSProperties } from "react";
 import type { Official } from "@/types";
+import styles from "./OfficialPhotoImage.module.css";
 
 export const OFFICIAL_PHOTO_QUALITY = 96;
-export const FEATURED_OFFICIAL_PHOTO_QUALITY = 100;
+export const FEATURED_OFFICIAL_PHOTO_QUALITY = 96;
 
 type OfficialPhotoImageProps = {
-  official: Pick<Official, "firstName" | "lastName" | "name" | "photo" | "featuredPhoto">;
+  official: Pick<Official, "firstName" | "lastName" | "name" | "photo" | "featuredPhoto" | "photoMetadata" | "featuredPhotoMetadata">;
   sizes: string;
   alt?: string;
   className?: string;
@@ -13,7 +15,7 @@ type OfficialPhotoImageProps = {
   quality?: 75 | 90 | 96 | 100;
   preload?: boolean;
   adaptivePortrait?: boolean;
-  blurredBackdrop?: boolean;
+  blurredBackdrop?: false;
   featuredClassName?: string;
   portraitClassName?: string;
 };
@@ -41,67 +43,35 @@ export default function OfficialPhotoImage({
   quality = OFFICIAL_PHOTO_QUALITY,
   preload = false,
   adaptivePortrait = false,
-  blurredBackdrop = true,
   featuredClassName,
   portraitClassName,
 }: OfficialPhotoImageProps) {
   const photo = official.featuredPhoto ?? official.photo;
+  const metadata = official.featuredPhoto ? official.featuredPhotoMetadata : official.photoMetadata;
+  const src = photo && metadata ? `${photo}?v=${metadata.revision}` : photo;
   const bypassOptimizer = photo?.startsWith("https://www.txcourts.gov/") ?? false;
+  const nativeSize = adaptivePortrait && metadata ? {
+    "--portrait-width": `${metadata.width}px`,
+    "--portrait-height": `${metadata.height}px`,
+  } as CSSProperties : undefined;
 
-  if (photo) {
-    if (adaptivePortrait && !official.featuredPhoto) {
-      if (!blurredBackdrop) {
-        return (
-          <Image
-            src={photo}
-            alt={alt ?? `${official.name} profile photo`}
-            fill
-            sizes={sizes}
-            quality={quality}
-            preload={preload}
-            unoptimized={bypassOptimizer}
-            className={portraitClassName ?? "object-contain object-center"}
-          />
-        );
-      }
-
-      return (
-        <>
-          <Image
-            src={photo}
-            alt=""
-            aria-hidden="true"
-            fill
-            sizes={sizes}
-            quality={quality}
-            unoptimized={bypassOptimizer}
-            className="scale-110 object-cover object-center opacity-55 blur-2xl saturate-75"
-          />
-          <div aria-hidden="true" className="absolute inset-0 bg-slate-950/20" />
-          <Image
-            src={photo}
-            alt={alt ?? `${official.name} profile photo`}
-            fill
-            sizes={sizes}
-            quality={quality}
-            preload={preload}
-            unoptimized={bypassOptimizer}
-            className={portraitClassName ?? "object-contain object-center"}
-          />
-        </>
-      );
-    }
-
+  if (src) {
+    const imageClassName = adaptivePortrait
+      ? official.featuredPhoto
+        ? featuredClassName ?? "object-contain object-center"
+        : portraitClassName ?? "object-contain object-center"
+      : featuredClassName ?? className;
     return (
       <Image
-        src={photo}
+        src={src}
         alt={alt ?? `${official.name} profile photo`}
         fill
         sizes={sizes}
         quality={quality}
         preload={preload}
         unoptimized={bypassOptimizer}
-        className={featuredClassName ?? className}
+        className={`${nativeSize ? styles.portrait : ""} ${imageClassName}`}
+        style={nativeSize}
       />
     );
   }

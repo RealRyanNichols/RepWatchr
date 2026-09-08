@@ -4,7 +4,7 @@
   "firstName": "Brad",
   "lastName": "Sherman",
   "photo": "/images/officials/federal/brad-sherman.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S000344.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/S000344.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "D",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/S000344.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/S000344.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

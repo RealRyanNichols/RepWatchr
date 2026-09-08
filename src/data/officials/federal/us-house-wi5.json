@@ -4,7 +4,7 @@
   "firstName": "Scott",
   "lastName": "Fitzgerald",
   "photo": "/images/officials/federal/scott-fitzgerald.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/F000471.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/F000471.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "R",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/F000471.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/F000471.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

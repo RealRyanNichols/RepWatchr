@@ -4,7 +4,7 @@
   "firstName": "Mike",
   "lastName": "Collins",
   "photo": "/images/officials/federal/mike-collins.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001129.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/C001129.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "R",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/C001129.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/C001129.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

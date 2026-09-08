@@ -4,7 +4,7 @@
   "firstName": "Joe",
   "lastName": "Courtney",
   "photo": "/images/officials/federal/joe-courtney.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001069.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/C001069.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "D",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/C001069.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/C001069.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

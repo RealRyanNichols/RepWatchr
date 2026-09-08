@@ -4,7 +4,7 @@
   "firstName": "Ted",
   "lastName": "Lieu",
   "photo": "/images/officials/federal/ted-lieu.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/L000582.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/L000582.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "D",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/L000582.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/L000582.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

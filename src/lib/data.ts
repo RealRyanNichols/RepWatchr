@@ -26,6 +26,9 @@ import {
 } from "@/lib/power-watch";
 import { getCongressTradingDataset, getCongressTradingStats } from "@/lib/congress-trading";
 import { selectEditorialStories } from "@/lib/editorial-ranking";
+import portraitManifest from "@/data/portrait-manifest.json";
+
+const portraitMetadata: Record<string, NonNullable<Official["photoMetadata"]>> = portraitManifest;
 
 // Base path to the data directory
 const DATA_DIR = path.join(process.cwd(), "src", "data");
@@ -179,6 +182,8 @@ export function getAllOfficials(): Official[] {
   for (const file of files) {
     const official = readJsonFile<Official>(file);
     if (official) {
+      official.photoMetadata = official.photo ? portraitMetadata[official.photo] : undefined;
+      official.featuredPhotoMetadata = official.featuredPhoto ? portraitMetadata[official.featuredPhoto] : undefined;
       officials.push(official);
     }
   }

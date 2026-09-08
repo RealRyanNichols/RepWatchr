@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import ProfileActionDock from "@/components/officials/ProfileActionDock";
 import { getOfficeAccountabilityProfile } from "@/lib/official-accountability";
@@ -44,6 +45,13 @@ export function OfficialProfileHero({
     ? voteRecord.summary.yea + voteRecord.summary.nay + voteRecord.summary.present
     : 0;
   const recordedPositionRate = voteTotal > 0 ? `${((recordedPositionCount / voteTotal) * 100).toFixed(1)}%` : null;
+  const portraitMetadata = official.featuredPhoto ? official.featuredPhotoMetadata : official.photoMetadata;
+  const portraitStyle = portraitMetadata
+    ? {
+        "--profile-photo-width": `${portraitMetadata.width}px`,
+        "--profile-photo-ratio": `${portraitMetadata.width} / ${portraitMetadata.height}`,
+      } as CSSProperties
+    : undefined;
 
   return (
     <section className={styles.hero}>
@@ -124,15 +132,19 @@ export function OfficialProfileHero({
             </div>
           </div>
 
-          <div className={styles.portraitStage}>
+          <div
+            className={`${styles.portraitStage} ${portraitMetadata ? styles.portraitNative : ""}`}
+            style={portraitStyle}
+          >
             <figure className={styles.portraitFigure}>
               <div className={styles.portraitFrame}>
                 <OfficialPhotoImage
                   official={official}
-                  sizes="(min-width: 1024px) 520px, (min-width: 640px) 62vw, 88vw"
+                  sizes="(min-width: 1440px) 432px, (min-width: 1024px) 30vw, (min-width: 416px) 384px, calc(100vw - 32px)"
                   quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
                   preload
                   adaptivePortrait
+                  blurredBackdrop={false}
                   featuredClassName={styles.portraitImage}
                   portraitClassName={styles.portraitImageAdaptive}
                   fallbackClassName="grid h-full w-full place-items-center text-7xl font-black text-white/55"

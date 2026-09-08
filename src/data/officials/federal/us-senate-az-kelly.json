@@ -4,7 +4,7 @@
   "firstName": "Mark",
   "lastName": "Kelly",
   "photo": "/images/officials/federal/mark-kelly.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/K000377.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/K000377.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "D",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/K000377.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/K000377.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

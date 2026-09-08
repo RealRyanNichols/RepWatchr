@@ -5,7 +5,7 @@
   --rust: #a23a2b;
   --ochre: #d7b85f;
   --rule-dark: rgba(255, 255, 255, 0.2);
-  --muted-dark: #aebed4;
+  --muted-dark: #b9c7d8;
   position: relative;
   overflow: hidden;
   color: #f8fafc;
@@ -37,6 +37,11 @@
   color: #fff;
 }
 
+.breadcrumbItems a:focus-visible {
+  outline: 2px solid var(--ochre);
+  outline-offset: 4px;
+}
+
 .breadcrumbItems span:last-child {
   overflow: hidden;
   color: #fff;
@@ -50,7 +55,7 @@
     "intro"
     "portrait"
     "lower";
-  gap: 2rem;
+  gap: 1.75rem;
   align-items: start;
   padding-top: 1.5rem;
 }
@@ -75,7 +80,7 @@
 }
 
 .datelineMeta {
-  color: #8fa1ba;
+  color: #aebed4;
 }
 
 .sectionMark {
@@ -95,19 +100,21 @@
 }
 
 .heroName {
-  max-width: 10ch;
-  margin: 1rem 0 0;
+  max-width: 16ch;
+  margin: 0.9rem 0 0;
   color: #fff;
   font-family: "Fraunces Variable", Fraunces, Georgia, "Times New Roman", serif;
-  font-size: clamp(3.5rem, 15vw, 4.5rem);
+  font-size: clamp(2.8rem, 12vw, 4.25rem);
   font-variation-settings: "SOFT" 0, "WONK" 1;
   font-weight: 700;
-  letter-spacing: -0.045em;
-  line-height: 0.98;
+  letter-spacing: -0.04em;
+  line-height: 1.03;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
 }
 
 .jurisdiction {
-  margin: 1.2rem 0 0;
+  margin: 1rem 0 0;
   color: #f2dc99;
   font-size: 1.05rem;
   font-weight: 750;
@@ -115,18 +122,37 @@
 }
 
 .heroSummary {
-  max-width: 42rem;
+  max-width: 40rem;
   margin: 1rem 0 0;
   color: #d6dee8;
-  font-size: 1.0625rem;
-  font-weight: 520;
+  font-size: 1rem;
+  font-weight: 450;
   line-height: 1.65;
 }
 
 .portraitStage {
+  --profile-photo-density: 1;
   grid-area: portrait;
-  width: min(100%, 35rem);
+  width: min(100%, 24rem);
   margin-inline: auto;
+}
+
+.portraitNative .portraitFrame {
+  width: 100%;
+  max-width: min(
+    27rem,
+    calc(var(--profile-photo-width) / var(--profile-photo-density)),
+    calc(34rem * var(--profile-photo-ratio))
+  );
+  margin-inline: auto;
+}
+
+.portraitNative .portraitCaption {
+  justify-content: center;
+}
+
+.portraitNative .photoCredit {
+  text-align: center;
 }
 
 .portraitFigure {
@@ -136,37 +162,29 @@
 .portraitFrame {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 358 / 410;
+  aspect-ratio: var(--profile-photo-ratio, 4 / 5);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  background: #12233c;
+  background: #10243a;
 }
 
-.portraitImage {
-  object-fit: cover;
-  object-position: center top;
-  filter: saturate(0.96) contrast(1.03);
-}
-
+.portraitImage,
 .portraitImageAdaptive {
   object-fit: contain;
   object-position: center;
-  filter: saturate(0.96) contrast(1.03);
 }
 
 .portraitCaption {
   display: flex;
   justify-content: flex-end;
-  min-height: 2.35rem;
-  padding-top: 0.65rem;
-  border-bottom: 1px solid var(--rule-dark);
+  padding-top: 0.75rem;
 }
 
 .photoCredit {
   max-width: 100%;
-  color: #8fa1ba;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  line-height: 1.4;
+  color: #aebed4;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5;
   text-align: right;
 }
 
@@ -193,9 +211,9 @@
 .recordLabel {
   margin: 0;
   color: var(--muted-dark);
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   font-weight: 750;
-  line-height: 1.35;
+  line-height: 1.45;
 }
 
 .gradeValue,
@@ -207,10 +225,11 @@
 
 .gradeValue {
   margin: 0.45rem 0 0;
-  font-size: clamp(3rem, 13vw, 4rem);
+  font-size: clamp(2.5rem, 10vw, 3.5rem);
   font-weight: 700;
-  letter-spacing: -0.055em;
-  line-height: 0.95;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
 }
 
 .gradeDetail {
@@ -244,18 +263,18 @@
 
 .railValue {
   margin: 0.45rem 0 0;
-  font-size: clamp(1.25rem, 5vw, 1.75rem);
+  font-size: clamp(1.1rem, 4.5vw, 1.75rem);
   font-weight: 700;
   letter-spacing: -0.035em;
-  line-height: 1.05;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
 }
 
 .railDetail {
-  display: none;
   margin: 0.45rem 0 0;
-  color: #8fa1ba;
+  color: #aebed4;
   font-size: 0.6875rem;
-  font-weight: 620;
+  font-weight: 500;
   line-height: 1.45;
 }
 
@@ -268,22 +287,11 @@
   .railStat {
     padding-inline: 1rem;
   }
-
-  .railDetail {
-    display: block;
-  }
 }
 
 @media (min-width: 64rem) {
-  .hero {
-    color: #f8fafc;
-    background:
-      radial-gradient(circle at 78% 18%, rgba(35, 71, 106, 0.38), transparent 34%),
-      #07182f;
-  }
-
   .heroShell {
-    padding: 3rem clamp(2rem, 5.55vw, 5rem) 4.5rem;
+    padding: 2.5rem clamp(2rem, 5.55vw, 5rem) 3rem;
   }
 
   .breadcrumb {
@@ -293,54 +301,40 @@
   .heroGrid {
     grid-template-areas:
       "intro portrait"
-      "lower portrait";
-    grid-template-columns: minmax(0, 1fr) minmax(25rem, 30rem);
-    column-gap: clamp(3rem, 5vw, 5rem);
-    row-gap: 2.5rem;
+      "lower lower";
+    grid-template-columns: minmax(0, 1fr) minmax(0, 30vw);
+    column-gap: clamp(2.5rem, 5vw, 4.5rem);
+    row-gap: 2rem;
+    align-items: center;
     padding-top: 0;
   }
 
   .datelineRow {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 2rem;
+    gap: 0.4rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--rule-dark);
   }
 
   .dateline,
   .datelineMeta {
-    color: #cbd5e1;
     font-size: 0.8125rem;
   }
 
-  .datelineMeta {
-    color: #8fa1ba;
-    text-align: right;
-  }
-
   .sectionMark {
-    margin-top: 1.8rem;
-    color: #f2dc99;
-  }
-
-  .sectionMark span {
-    background: #d7b85f;
+    margin-top: 1.6rem;
   }
 
   .heroName {
-    max-width: 8ch;
-    margin-top: 1.2rem;
-    color: #fff;
-    font-size: clamp(4.25rem, 6.67vw, 6rem);
-    line-height: 1;
+    max-width: 14ch;
+    margin-top: 1rem;
+    font-size: clamp(3.8rem, 5.75vw, 5.25rem);
   }
 
   .jurisdiction {
     max-width: 32rem;
-    margin-top: 1.35rem;
-    color: #f2dc99;
+    margin-top: 1.25rem;
     font-family: "Fraunces Variable", Fraunces, Georgia, serif;
-    font-size: clamp(1.45rem, 2.15vw, 1.9375rem);
+    font-size: clamp(1.35rem, 1.9vw, 1.75rem);
     font-weight: 650;
     letter-spacing: -0.02em;
     line-height: 1.25;
@@ -348,34 +342,14 @@
 
   .heroSummary {
     margin-top: 1.25rem;
-    color: #d6dee8;
     font-size: 1.0625rem;
     line-height: 1.7;
   }
 
   .portraitStage {
     width: 100%;
-    max-width: 30rem;
+    max-width: 27rem;
     margin-inline: 0;
-  }
-
-  .portraitFrame {
-    aspect-ratio: 480 / 510;
-    border-color: rgba(255, 255, 255, 0.25);
-    background: #152a43;
-  }
-
-  .portraitCaption {
-    min-height: 2.5rem;
-    border-bottom-color: var(--rule-dark);
-  }
-
-  .photoCredit {
-    color: #8fa1ba;
-  }
-
-  .heroLower {
-    align-self: end;
   }
 
   .actionDock {
@@ -383,9 +357,8 @@
   }
 
   .recordLedger {
-    grid-template-columns: minmax(11rem, 0.75fr) minmax(0, 1.75fr);
+    grid-template-columns: minmax(12rem, 0.75fr) minmax(0, 2.25fr);
     margin-top: 0;
-    border-color: var(--rule-dark);
   }
 
   .gradeBlock {
@@ -394,30 +367,16 @@
     border-bottom: 0;
   }
 
-  .recordLabel {
-    color: var(--muted-dark);
-  }
-
-  .gradeValue,
-  .railValue {
-    color: #fff;
-  }
-
   .gradeValue {
-    font-size: clamp(3rem, 4.2vw, 3.75rem);
-  }
-
-  .gradeDetail {
-    color: #d9bd72;
+    font-size: clamp(2.5rem, 3.5vw, 3.25rem);
   }
 
   .railStat {
-    padding: 1.35rem 1.2rem;
-    border-right-color: rgba(255, 255, 255, 0.14);
+    padding: 1.35rem 1.5rem;
   }
 
   .railStat:first-child {
-    padding-left: 1.2rem;
+    padding-left: 1.5rem;
   }
 
   .railStat:last-child {
@@ -427,15 +386,32 @@
   .railValue {
     font-size: clamp(1.55rem, 2.2vw, 2rem);
   }
-
-  .railDetail {
-    color: #8fa1ba;
-  }
 }
 
 @media (min-width: 90rem) {
   .heroGrid {
-    grid-template-columns: minmax(0, 1fr) 30rem;
+    grid-template-columns: minmax(0, 1fr) 27rem;
+  }
+
+  .datelineRow {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1.5rem;
+  }
+
+  .datelineMeta {
+    text-align: right;
+  }
+}
+
+@media (min-resolution: 1.5dppx) {
+  .portraitStage {
+    --profile-photo-density: 2;
+  }
+}
+
+@media (min-resolution: 2.5dppx) {
+  .portraitStage {
+    --profile-photo-density: 3;
   }
 }
 

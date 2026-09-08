@@ -385,40 +385,43 @@ function OfficialSearchCard({ row }: { row: OfficialSearchRow }) {
     .join(" · ");
 
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-md border border-slate-300 bg-white transition-colors duration-200 hover:border-[#163b5c]">
-      <Link href={officialPath} className="relative block aspect-[16/11] overflow-hidden bg-gradient-to-br from-slate-200 to-slate-400">
+    <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-colors duration-200 hover:border-[#163b5c]">
+      <Link href={officialPath} className="block focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-700">
+        <div className="relative aspect-[4/3] overflow-hidden border-b border-slate-200 bg-[#edf0f2]">
         <OfficialPhotoImage
           official={row.official}
-          sizes="(min-width: 1280px) 30vw, (min-width: 768px) 48vw, 100vw"
+          sizes="(min-width: 1280px) 380px, (min-width: 768px) 45vw, calc(100vw - 48px)"
           adaptivePortrait
           blurredBackdrop={false}
-          featuredClassName="object-cover object-top"
+          featuredClassName="object-contain object-center"
           portraitClassName="object-contain object-center"
           fallbackClassName="grid h-full w-full place-items-center bg-gradient-to-br from-slate-200 via-slate-100 to-blue-100 text-6xl font-black text-slate-400"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/5 to-transparent" />
-        <div className="absolute inset-x-4 top-4 flex items-start justify-between gap-2">
-          <p className="max-w-[48%] border-b border-white/70 bg-slate-950/80 px-2 py-1 text-xs font-semibold leading-4 text-white">
+        </div>
+        <div className="px-5 pt-4">
+        <div className="flex items-start justify-between gap-2">
+          <p className="text-xs font-semibold leading-4 text-slate-600">
             {cardPartyLabel}
           </p>
-          <span className={`max-w-[48%] border-b px-2 py-1 text-right text-xs font-semibold leading-4 ${
+          <span className={`text-right text-xs font-semibold leading-4 ${
             row.missingSources
-              ? "border-amber-300 bg-slate-950/80 text-amber-200"
-              : "border-emerald-300 bg-slate-950/80 text-emerald-200"
+              ? "text-amber-800"
+              : "text-emerald-800"
           }`}>
             {row.missingSources ? "Research open" : "Source linked"}
           </span>
         </div>
-        <div className="absolute inset-x-0 bottom-0 p-5">
-          <p className="text-xs font-semibold text-amber-200">
+        <div className="pt-4">
+          <p className="text-xs font-semibold text-slate-500">
             {row.state || row.official.jurisdiction} · {levelLabels[row.official.level]}
           </p>
-          <h3 className="mt-1 font-serif text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl">{row.official.name}</h3>
-          <p className="mt-1 line-clamp-1 text-sm font-bold text-slate-200">{row.official.position}</p>
+          <h3 className="mt-1 font-serif text-2xl font-semibold leading-tight tracking-tight text-slate-950 group-hover:text-[#163b5c]">{row.official.name}</h3>
+          <p className="mt-1 text-sm font-medium text-slate-600">{row.official.position}</p>
+        </div>
         </div>
       </Link>
 
-      <div className="flex flex-1 flex-col p-5">
+      <div className="flex flex-1 flex-col px-5 pb-5 pt-3">
         <p className="line-clamp-2 min-h-10 text-sm font-medium leading-5 text-slate-600" title={officeLine}>
           {officeLine}
         </p>

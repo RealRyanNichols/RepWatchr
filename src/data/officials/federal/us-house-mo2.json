@@ -4,7 +4,7 @@
   "firstName": "Ann",
   "lastName": "Wagner",
   "photo": "/images/officials/federal/ann-wagner.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/W000812.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/W000812.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "R",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/W000812.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/W000812.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

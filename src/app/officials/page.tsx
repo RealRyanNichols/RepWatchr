@@ -329,20 +329,25 @@ function OfficialsCommandDeck({
   const quickStates = jurisdictions
     .filter((state) => (profileCountsByState[state.code] ?? 0) > 0)
     .slice(0, 12);
-  const featuredOfficials = spotlightOfficials.slice(0, 5);
-  const leadOfficial = featuredOfficials[0];
-  const supportingOfficials = featuredOfficials.slice(1);
+  const featuredOfficials = spotlightOfficials.slice(0, 3);
+  // Keep the same featured records, but use a sufficiently detailed original
+  // for the large frame. This changes presentation, never directory ranking.
+  const leadOfficial = featuredOfficials.find((official) => {
+    const photo = official.featuredPhotoMetadata ?? official.photoMetadata;
+    return photo && Math.min(photo.width, photo.height) >= 800;
+  }) ?? featuredOfficials[0];
+  const supportingOfficials = featuredOfficials.filter((official) => official.id !== leadOfficial?.id);
   const coveragePercent = totalOfficials > 0 ? Math.round((sourceLinkedCount / totalOfficials) * 100) : 0;
 
   return (
     <section className="relative isolate overflow-hidden border-y border-white/20 bg-[#06172f] text-white">
-      <div className="relative grid gap-10 p-5 sm:p-8 lg:p-10 xl:min-h-[680px] xl:grid-cols-[minmax(0,1.05fr)_minmax(34rem,0.95fr)] xl:items-center xl:p-12">
+      <div className="relative grid gap-8 p-5 sm:p-8 lg:p-10 xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] xl:items-center xl:gap-10 xl:p-12">
         <div className="min-w-0">
           <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-1 border-y border-white/20 py-3 text-sm text-slate-300">
             <p className="font-serif italic text-white">RepWatchr public record desk</p>
             <p>2026 midterm edition · {activeScope}</p>
           </div>
-          <h1 className="mt-8 max-w-3xl font-serif text-4xl font-semibold leading-[0.98] tracking-[-0.035em] text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mt-7 max-w-3xl text-balance font-serif text-4xl font-semibold leading-[1.06] tracking-[-0.03em] text-white sm:text-5xl lg:text-6xl">
             Know who represents you—and what their record shows.
           </h1>
           <p className="mt-6 max-w-2xl border-l border-amber-300/70 pl-5 text-base leading-7 text-slate-200 sm:text-lg">
@@ -395,19 +400,19 @@ function OfficialsCommandDeck({
             <HeroMetric value={formatNumber(federalOfficials)} label="federal profiles" />
           </div>
           <p className="mt-3 max-w-2xl text-xs font-semibold leading-5 text-slate-400">
-            Coverage is transparent: {formatNumber(photoCount)} profiles have photography, {formatNumber(completeProfiles)}
+            Coverage is transparent: {formatNumber(photoCount)} profiles have photography, {formatNumber(completeProfiles)}{" "}
             are fully built, and {formatNumber(incompleteProfiles)} remain visibly marked for research. National federal
             coverage: {formatNumber(federalProfilesLoaded)}/{formatNumber(federalExpectedSeats)} seats across {loadedFederalStates} states.
           </p>
         </div>
 
         <div className="relative mx-auto w-full max-w-5xl xl:max-w-none">
-          <div className="relative grid min-h-[28rem] grid-cols-1 gap-3 sm:aspect-[16/8] sm:min-h-0 sm:grid-cols-3 sm:grid-rows-2 xl:aspect-auto xl:h-[590px]">
+          <div className="relative grid h-[30rem] grid-cols-1 gap-3 sm:h-[34rem] sm:grid-cols-3 sm:grid-rows-2">
             {leadOfficial ? (
               <FeaturedPortrait official={leadOfficial} className="sm:col-span-2 sm:row-span-2" priority />
             ) : null}
             {supportingOfficials.slice(0, 2).map((official) => (
-              <FeaturedPortrait key={official.id} official={official} className="hidden sm:block" />
+              <FeaturedPortrait key={official.id} official={official} className="hidden sm:flex" />
             ))}
           </div>
           <div className="relative mt-4 flex flex-col gap-3 border-y border-white/15 bg-slate-950/45 px-1 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-4">
@@ -455,8 +460,9 @@ function FeaturedPortrait({
   return (
     <Link
       href={`/officials/${official.id}`}
-      className={`group relative isolate min-h-0 overflow-hidden rounded-md border border-white/20 bg-slate-800 hover:border-amber-200/60 ${className}`}
+      className={`group relative isolate flex min-h-0 flex-col overflow-hidden rounded-md border border-white/20 bg-[#10223a] transition-colors hover:border-amber-200/60 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-200 ${className}`}
     >
+      <div className="relative min-h-0 flex-1 bg-[#e7ebee]">
       <OfficialPhotoImage
         official={official}
         sizes={
@@ -467,15 +473,15 @@ function FeaturedPortrait({
         quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
         preload={priority}
         adaptivePortrait
-        featuredClassName="object-cover object-top transition duration-500 ease-out group-hover:scale-[1.025] motion-reduce:transform-none motion-reduce:transition-none"
-        portraitClassName="object-contain object-center transition duration-500 ease-out group-hover:scale-[1.015] motion-reduce:transform-none motion-reduce:transition-none"
+        featuredClassName="object-contain object-center"
+        portraitClassName="object-contain object-center"
         fallbackClassName="grid h-full w-full place-items-center bg-gradient-to-br from-slate-700 to-slate-950 text-5xl font-black text-white/50"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/10 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
-        <p className="text-lg font-black leading-tight text-white sm:text-xl">{official.name}</p>
-        <p className="mt-1 line-clamp-1 text-xs font-bold text-slate-200 sm:text-sm">{official.position}</p>
-        <p className="mt-2 text-xs font-semibold text-amber-200">
+      </div>
+      <div className={priority ? "border-t border-white/15 p-4 sm:p-5" : "border-t border-white/15 p-3"}>
+        <p className={`${priority ? "text-xl" : "text-base"} font-bold leading-tight text-white`}>{official.name}</p>
+        <p className="mt-1 text-xs leading-5 text-slate-300">{official.position}</p>
+        <p className="mt-2 text-xs font-semibold text-amber-200 group-hover:text-amber-100">
           {official.state ?? official.jurisdiction} · Open record ↗
         </p>
       </div>

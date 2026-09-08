@@ -4,7 +4,7 @@
   "firstName": "Rick",
   "lastName": "Larsen",
   "photo": "/images/officials/federal/rick-larsen.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/L000560.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/L000560.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "D",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/L000560.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/L000560.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

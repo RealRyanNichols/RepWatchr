@@ -4,7 +4,7 @@
   "firstName": "Bill",
   "lastName": "Foster",
   "photo": "/images/officials/federal/bill-foster.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/F000454.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/F000454.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "D",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/F000454.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/F000454.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

@@ -4,7 +4,7 @@
   "firstName": "Jake",
   "lastName": "Auchincloss",
   "photo": "/images/officials/federal/jake-auchincloss.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/A000148.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/original/A000148.jpg",
   "photoCredit": "UnitedStates project congressional image mirror",
   "party": "D",
   "level": "federal",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/A000148.jpg"
+      "url": "https://unitedstates.github.io/images/congress/original/A000148.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"
