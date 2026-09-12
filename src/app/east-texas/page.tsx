@@ -55,6 +55,12 @@ export default function EastTexasAccountabilityDesk() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-12 sm:px-8 lg:px-12">
+        <Link href="/elections/texas/texas-house-district-7-2026" className="mb-10 block border-l-4 border-[#a23a2b] bg-white p-6 transition-colors hover:bg-[#ede5d6] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#a23a2b]">
+          <p className="text-sm font-bold uppercase tracking-wider text-[#a23a2b]">HD7 public record desk · Updated September 12</p>
+          <h2 className="mt-2 font-[Fraunces] text-3xl font-semibold">Dean. Beckett. LaFleur.</h2>
+          <p className="mt-3 max-w-3xl leading-7 text-slate-700">House service, campaign positions, county budgets and tax decisions. Read the source documents and the questions still open.</p>
+          <span className="mt-4 inline-block font-bold">Open the HD7 records →</span>
+        </Link>
         <div className="grid gap-px border-y border-[#cabfae] bg-[#cabfae] md:grid-cols-3">
           {[
             ["Counties in scope", EAST_TEXAS_LAUNCH_JURISDICTIONS.counties.length],

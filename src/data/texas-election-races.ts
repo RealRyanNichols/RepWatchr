@@ -537,15 +537,54 @@ export const TEXAS_ELECTION_RACES: TexasElectionRace[] = [
     lane: "east-texas",
     region: "Longview and East Texas",
     electionDate: "November 3, 2026",
+    lastUpdatedAt: "2026-09-12",
     stage: "General election watch",
     priority: 90,
-    summary: "A core Longview/East Texas House race for property, schools, local government, criminal justice, and public-record issues.",
-    whyItMatters: "HD-7 is central to RepWatchr's East Texas home base. This page should become a simple election-season record hub.",
-    geography: "Longview and surrounding East Texas communities",
+    summary: "Open Jay Dean's House record, Melissa Beckett's primary campaign positions, and Leward LaFleur's county budget records in Gregg, Harrison and Marion counties.",
+    whyItMatters: "State votes, campaign positions and county decisions carry different authority. This desk links the public records and identifies the documents still needed to answer local questions.",
+    geography: "Gregg, Harrison and Marion counties, Texas",
     officialIds: ["jay-dean"],
-    recordFocus: ["House votes", "Longview-area issues", "property taxes", "school policy", "public safety"],
-    watchActions: ["Track House votes", "Collect Longview-area records", "Build source-backed share posts", "Invite voters to submit missing receipts"],
-    sourceLinks: [texasSosDates, texasSosOffices],
+    recordFocus: ["House legislation and committee work", "Campaign positions", "Campaign finance disclosures", "Adopted county budgets", "Tax-rate orders"],
+    watchActions: ["Attach certified election records", "Review the latest campaign finance reports", "Locate the final adopted 2027 county budget", "Match recorded votes to public statements"],
+    sourceLinks: [
+      texasSosDates,
+      {
+        title: "Texas Legislative Reference Library: Jay Dean's current HD7 service and counties",
+        url: "https://lrl.texas.gov/legeLeaders/members/memberDisplay.cfm?memberID=5818",
+      },
+      {
+        title: "Texas Legislature: Jay Dean's bills and committee assignments",
+        url: "https://capitol.texas.gov/members/MemberInfo.aspx?Chamber=H&Code=A3515&Leg=89",
+      },
+      {
+        title: "Texas Legislature: Insurance Committee membership",
+        url: "https://capitol.texas.gov/Committees/MembershipCmte.aspx?CmteCode=C320&LegSess=89R",
+      },
+      {
+        title: "Melissa Beckett campaign: published positions",
+        url: "https://www.melissafortexas.com/issues",
+      },
+      {
+        title: "Texas Legislature: March 8, 2023 Senate Education witness list",
+        url: "https://capitol.texas.gov/tlodocs/88R/witlistmtg/html/C5302023030809001.HTM",
+      },
+      {
+        title: "Marion County: adopted budgets and recorded votes",
+        url: "https://www.co.marion.tx.us/page/marion.Budgets",
+      },
+      {
+        title: "Marion County: proposed 2027 budget",
+        url: "https://www.co.marion.tx.us/upload/page/1269/docs/public%20notices/budget%20notices/2027/Proposed%20Budget.pdf",
+      },
+      {
+        title: "Marion County: August 31, 2026 tax-rate adoption order",
+        url: "https://www.co.marion.tx.us/upload/page/1263/2027/Tax%20Adoption%202026.pdf",
+      },
+      {
+        title: "MultiState: reported HD7 primary results (secondary source)",
+        url: "https://www.multistate.us/elections/district?chamber=House&d=7&st=TX",
+      },
+    ],
   },
   {
     slug: "texas-house-district-9-2026",

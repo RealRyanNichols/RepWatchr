@@ -176,6 +176,13 @@ export default async function OfficialProfilePage({
 
   const universalDashboard = (
     <>
+      {(id === "jay-dean" || id === "leward-j-lafleur-ii") && (
+        <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6">
+          <Link href={`/elections/texas/texas-house-district-7-2026#record-${id}`} className="block border-l-4 border-[#a23a2b] bg-white px-5 py-4 font-semibold text-[#204f77] underline underline-offset-4">
+            HD7 record desk: latest public documents and open questions →
+          </Link>
+        </div>
+      )}
       <OfficialAccountabilitySnapshot
         official={official}
         performanceGrade={applicablePerformanceGrade}

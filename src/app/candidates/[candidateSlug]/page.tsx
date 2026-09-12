@@ -40,13 +40,11 @@ export async function generateMetadata({
   if (!candidate) return { title: "Candidate Not Found" };
 
   return buildRepWatchrMetadata({
-    title: `${candidate.name} | Marion County Judge Candidate Profile`,
-    description:
-      "Open Dina K. Carroll's sourced Marion County Judge candidate profile: write-in status, independently supported community record, campaign claims, priorities, and evidence gaps.",
+    title: `${candidate.name} | ${candidate.officeSought} Candidate Profile`,
+    description: candidate.summary,
     path: candidate.path,
     imagePath: buildOgImageUrl("candidate", { slug: candidate.slug }),
-    imageAlt:
-      "Dina K. Carroll portrait with the headline Dina Carroll: open the write-in file",
+    imageAlt: `${candidate.name}: ${candidate.officeSought} public record`,
     type: "profile",
   });
 }
@@ -187,6 +185,12 @@ export default async function CandidateProfilePage({
   if (!candidate) notFound();
 
   const reviewedOn = formatReviewDate(candidate.lastVerifiedAt);
+  const isDinaCarroll = candidate.slug === "dina-k-carroll";
+  const recordLabel = candidate.recordLabel || (isDinaCarroll ? "Write-in file" : "Candidate record");
+  const electionYear = candidate.electionDate.match(/\b\d{4}\b/)?.[0];
+  const raceLinkLabel = candidate.raceLinkLabel || (isDinaCarroll ? "Open Dina Carroll vs. Leward LaFleur" : "Open the election record");
+  const initials = candidate.name.split(/\s+/).filter(Boolean).map((part) => part[0]).slice(0, 2).join("");
+  const hasContact = Object.values(candidate.contact).some(Boolean);
   const writeInRulesSource = candidate.sources.find(
     (source) => source.id === "texas-write-in-rules",
   );
@@ -208,16 +212,16 @@ export default async function CandidateProfilePage({
       "@id": `${absoluteRepWatchrUrl(candidate.path)}#candidate`,
       name: candidate.name,
       url: absoluteRepWatchrUrl(candidate.path),
-      image: absoluteRepWatchrUrl(candidate.portrait.src),
+      ...(candidate.portrait ? { image: absoluteRepWatchrUrl(candidate.portrait.src) } : {}),
       description: candidate.summary,
       sameAs: [
         candidate.contact.website,
         candidate.contact.facebook,
         candidate.contact.instagram,
-      ],
+      ].filter(Boolean),
       subjectOf: {
         "@type": "WebPage",
-        name: `${candidate.officeSought} 2026 race watch`,
+        name: `${candidate.officeSought} election record`,
         url: absoluteRepWatchrUrl(candidate.racePath),
       },
     },
@@ -225,7 +229,7 @@ export default async function CandidateProfilePage({
   const breadcrumbs = breadcrumbJsonLd([
     { name: "RepWatchr", path: "/" },
     { name: "Texas elections", path: "/elections/texas" },
-    { name: "Marion County Judge", path: candidate.racePath },
+    { name: candidate.officeSought, path: candidate.racePath },
     { name: candidate.name, path: candidate.path },
   ]);
 
@@ -246,42 +250,42 @@ export default async function CandidateProfilePage({
           <nav className={styles.breadcrumb} aria-label="Breadcrumb">
             <Link href="/elections/texas">Texas elections</Link>
             <span>/</span>
-            <Link href={candidate.racePath}>Marion County Judge</Link>
+            <Link href={candidate.racePath}>{candidate.officeSought}</Link>
             <span>/</span>
             <strong>{candidate.name}</strong>
           </nav>
 
           <div className={styles.heroGrid}>
             <div className={styles.heroCopy}>
-              <p className={styles.kicker}>Marion County · candidate record</p>
+              <p className={styles.kicker}>{candidate.jurisdiction} · {recordLabel}</p>
               <h1>{candidate.name}</h1>
               <p className={styles.office}>{candidate.officeSought}</p>
               <p className={styles.lede}>{candidate.summary}</p>
 
               <div className={styles.statusPanel}>
-                <p>Current ballot status</p>
+                <p>Ballot status for this election</p>
                 <strong>{candidate.ballotStatus}</strong>
                 <span>Last source review: {reviewedOn}</span>
               </div>
 
               <div className={styles.heroActions}>
                 <Link href={candidate.racePath} className={styles.primaryAction}>
-                  Compare the race
+                  {candidate.raceLinkLabel || "Compare the race"}
                 </Link>
-                <a
+                {candidate.contact.website ? <a
                   href={candidate.contact.website}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.secondaryAction}
                 >
                   Candidate website ↗
-                </a>
+                </a> : null}
               </div>
             </div>
 
             <figure className={styles.portrait}>
               <div className={styles.portraitFrame}>
-                <Image
+                {candidate.portrait ? <Image
                   src={candidate.portrait.src}
                   alt={candidate.portrait.alt}
                   fill
@@ -289,13 +293,18 @@ export default async function CandidateProfilePage({
                   quality={90}
                   sizes="(max-width: 860px) 92vw, 520px"
                   style={{ objectPosition: candidate.portrait.objectPosition }}
-                />
+                /> : (
+                  <div className={styles.portraitFallback}>
+                    <strong aria-hidden="true">{initials}</strong>
+                    <span>Verified portrait not available</span>
+                  </div>
+                )}
                 <div className={styles.portraitMark}>
-                  <span>Write-in file</span>
-                  <b>2026</b>
+                  <span>{recordLabel}</span>
+                  {electionYear ? <b>{electionYear}</b> : null}
                 </div>
               </div>
-              <figcaption>
+              {candidate.portrait ? <figcaption>
                 <span>Public candidate image</span>
                 <a
                   href={candidate.portrait.creditUrl}
@@ -304,7 +313,7 @@ export default async function CandidateProfilePage({
                 >
                   {candidate.portrait.credit} ↗
                 </a>
-              </figcaption>
+              </figcaption> : <figcaption>No sourced portrait is displayed.</figcaption>}
             </figure>
           </div>
 
@@ -321,13 +330,13 @@ export default async function CandidateProfilePage({
             </div>
             <div>
               <dt>Party status</dt>
-              <dd>Not located</dd>
-              <span>In reviewed public material</span>
+              <dd>{candidate.partyLabel || "Not located"}</dd>
+              <span>{candidate.partyLabel ? "For the election in this record" : "In reviewed public material"}</span>
             </div>
             <div>
               <dt>Election</dt>
-              <dd>Nov. 3</dd>
-              <span>2026 general election</span>
+              <dd>{candidate.electionLabel || (isDinaCarroll ? "Nov. 3" : candidate.electionDate)}</dd>
+              <span>{candidate.electionContext || (isDinaCarroll ? "2026 general election" : "Election covered by this profile")}</span>
             </div>
           </dl>
         </div>
@@ -349,14 +358,14 @@ export default async function CandidateProfilePage({
           <p className={styles.openingNumber}>01</p>
           <div>
             <p className={styles.eyebrow}>What voters should know first</p>
-            <h2>A public campaign is underway. Qualification is still a verification question.</h2>
-            <p>
+            <h2>{candidate.overviewTitle || (isDinaCarroll ? "A public campaign is underway. Qualification is still a verification question." : "Start with the election and the source record.")}</h2>
+            {candidate.overviewParagraphs ? candidate.overviewParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>) : isDinaCarroll ? <p>
               Carroll has announced a write-in campaign, and Marion County posts her
               campaign-treasurer appointment. RepWatchr has not located an accepted write-in
               declaration or county-published qualified-write-in roster naming her. Those are
               different records, so this page does not collapse them into one claim.
-            </p>
-            <p>
+            </p> : <p>{candidate.summary}</p>}
+            {writeInRulesSource ? <p>
               Texas sets 5 p.m. August 17, 2026 as the write-in filing deadline for this
               general election.
               {writeInRulesSource ? (
@@ -371,7 +380,7 @@ export default async function CandidateProfilePage({
                   </a>
                 </>
               ) : null}
-            </p>
+            </p> : null}
           </div>
           <aside>
             <span>Editorial posture</span>
@@ -386,9 +395,8 @@ export default async function CandidateProfilePage({
             eyebrow="Outside the campaign"
             title="What the public record supports"
           >
-            These items have an official record or independent reporting attached. They do not
-            prove readiness to run Marion County; they establish the public-service record voters
-            can inspect now.
+            These items have an official record or independent reporting attached. They establish
+            what readers can inspect; they are not an endorsement or a performance grade.
           </SectionHeading>
           <div className={styles.recordGrid}>
             {candidate.independentRecord.map((item) => (
@@ -407,7 +415,7 @@ export default async function CandidateProfilePage({
           <SectionHeading
             number="03"
             eyebrow="Candidate-published account"
-            title="What Carroll says about herself and the job"
+            title={`What ${candidate.name} has published about the job`}
           >
             These are campaign claims and campaign priorities. The labels stay visible so a
             reader never mistakes self-description for independent verification.
@@ -447,16 +455,16 @@ export default async function CandidateProfilePage({
 
         <section id="authority" className={styles.authoritySection}>
           <div>
-            <p className={styles.eyebrow}>The job she is asking voters to give her</p>
-            <h2>County judge is an executive, budget and court-administration office.</h2>
+            <p className={styles.eyebrow}>The office in this record</p>
+            <h2>{isDinaCarroll ? "County judge is an executive, budget and court-administration office." : `The responsibilities of ${candidate.officeSought}`}</h2>
             <p>
-              The title is broader than a courtroom role. Voters are choosing countywide
-              leadership over Commissioners Court, public administration and emergency response,
-              plus the applicable constitutional county-court docket.
+              {candidate.officeDescription || (isDinaCarroll
+                ? "The title is broader than a courtroom role. Voters are choosing countywide leadership over Commissioners Court, public administration and emergency response, plus the applicable constitutional county-court docket."
+                : "Read the responsibilities and source records for the office alongside the candidate's stated priorities.")}
             </p>
             <SourceLinks
               candidate={candidate}
-              sourceIds={["county-judge-office", "county-court-jurisdiction"]}
+              sourceIds={candidate.officeSourceIds || (isDinaCarroll ? ["county-judge-office", "county-court-jurisdiction"] : [])}
             />
           </div>
           <ol>
@@ -511,22 +519,23 @@ export default async function CandidateProfilePage({
             </p>
           </div>
           <address>
-            <a href={candidate.contact.website} target="_blank" rel="noopener noreferrer">
-              writeindina.com ↗
-            </a>
-            <a href={`mailto:${candidate.contact.email}`}>{candidate.contact.email}</a>
-            <a href={`tel:+1${candidate.contact.phone.replace(/\D/g, "")}`}>
+            {candidate.contact.website ? <a href={candidate.contact.website} target="_blank" rel="noopener noreferrer">
+              {candidate.contact.website.replace(/^https?:\/\//, "").replace(/\/$/, "")} ↗
+            </a> : null}
+            {candidate.contact.email ? <a href={`mailto:${candidate.contact.email}`}>{candidate.contact.email}</a> : null}
+            {candidate.contact.phone ? <a href={`tel:+1${candidate.contact.phone.replace(/\D/g, "")}`}>
               {candidate.contact.phone}
-            </a>
-            <span>{candidate.contact.mailingAddress}</span>
-            <div>
-              <a href={candidate.contact.facebook} target="_blank" rel="noopener noreferrer">
+            </a> : null}
+            {candidate.contact.mailingAddress ? <span>{candidate.contact.mailingAddress}</span> : null}
+            {candidate.contact.facebook || candidate.contact.instagram ? <div>
+              {candidate.contact.facebook ? <a href={candidate.contact.facebook} target="_blank" rel="noopener noreferrer">
                 Facebook ↗
-              </a>
-              <a href={candidate.contact.instagram} target="_blank" rel="noopener noreferrer">
+              </a> : null}
+              {candidate.contact.instagram ? <a href={candidate.contact.instagram} target="_blank" rel="noopener noreferrer">
                 Instagram ↗
-              </a>
-            </div>
+              </a> : null}
+            </div> : null}
+            {!hasContact ? <span>No current campaign contact details are included in the reviewed record.</span> : null}
           </address>
           <div className={styles.responseCard}>
             <span>Correction & response</span>
@@ -558,17 +567,18 @@ export default async function CandidateProfilePage({
 
         <section className={styles.shareSection}>
           <div>
-            <p className={styles.eyebrow}>Marion County race file</p>
-            <h2>Compare both candidates before sharing a conclusion.</h2>
+            <p className={styles.eyebrow}>{candidate.jurisdiction} election file</p>
+            <h2>Read the source record before sharing a conclusion.</h2>
             <p>
-              Open the complete race page for LaFleur&apos;s incumbent record, Carroll&apos;s
-              write-in challenge, the office-specific grade method and the full source ledger.
+              {isDinaCarroll
+                ? "Open the complete race page for LaFleur's incumbent record, Carroll's write-in challenge, the office-specific grade method and the full source ledger."
+                : "Open the linked election record for context, related profiles and the available public sources."}
             </p>
-            <Link href={candidate.racePath}>Open Dina Carroll vs. Leward LaFleur</Link>
+            <Link href={candidate.racePath}>{raceLinkLabel}</Link>
           </div>
           <ShareButtons
-            title={`${candidate.name}: Marion County Judge candidate profile`}
-            description="Write-in status, independently supported public service, campaign claims and visible evidence gaps."
+            title={`${candidate.name}: ${candidate.officeSought} candidate profile`}
+            description={candidate.summary}
             path={candidate.path}
             template="public_question"
             subject={candidate.name}

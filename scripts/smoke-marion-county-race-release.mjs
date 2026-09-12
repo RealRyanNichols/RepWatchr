@@ -170,7 +170,7 @@ for (const portrait of portraits) {
 
 for (const marker of [
   "Dina Carroll: open the write-in file",
-  "portraitImage: candidate.portrait.src",
+  "portraitImage: candidate.portrait?.src",
   "renderRepWatchrOgImage",
 ]) {
   if (!candidateOg.includes(marker)) {
@@ -202,7 +202,9 @@ if (
 }
 
 if (
-  !seoInventory.includes('path: "/candidates/dina-k-carroll"') ||
+  !seoInventory.includes("getElectionCandidates().map") ||
+  !seoInventory.includes("path: candidate.path") ||
+  !candidateData.includes('path: "/candidates/dina-k-carroll"') ||
   !seoInventory.includes('buildOgImageUrl("candidate"')
 ) {
   fail("the standalone candidate page is missing from the sitemap/OG inventory");

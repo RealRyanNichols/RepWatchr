@@ -7,6 +7,7 @@ import {
   getRepWatchrDataStats,
 } from "@/lib/data";
 import { getRepWatchrServices } from "@/data/repwatchr-services";
+import { getElectionCandidates } from "@/data/election-candidates";
 import { getTexasCountyHubs, getTexasDistrictHubs, getTexasRaceHubRaces } from "@/lib/race-hub";
 import {
   getAttorneyWatchProfiles,
@@ -400,20 +401,19 @@ function schoolBoardRecords(): SeoUrlRecord[] {
 
 function raceRecords(): SeoUrlRecord[] {
   const date = now();
-  const candidateProfiles = [
+  const candidateProfiles = getElectionCandidates().map((candidate) =>
     urlRecord({
       type: "races" as const,
-      path: "/candidates/dina-k-carroll",
-      title: "Dina K. Carroll | Marion County Judge Write-in Campaign",
-      description:
-        "Source-labeled profile of Dina K. Carroll's announced Marion County Judge write-in campaign, public-service background, platform, filing status, and open evidence gaps.",
-      lastModified: date,
+      path: candidate.path,
+      title: `${candidate.name} | ${candidate.officeSought}`,
+      description: candidate.summary,
+      lastModified: new Date(`${candidate.lastVerifiedAt}T12:00:00Z`),
       changeFrequency: "weekly",
       priority: 0.79,
-      imageUrl: buildOgImageUrl("candidate", { slug: "dina-k-carroll" }),
-      imageTitle: "Dina K. Carroll candidate profile preview",
+      imageUrl: buildOgImageUrl("candidate", { slug: candidate.slug }),
+      imageTitle: `${candidate.name} candidate profile preview`,
     }),
-  ];
+  );
   const races = getTexasRaceHubRaces().map((race) =>
     urlRecord({
       type: "races" as const,

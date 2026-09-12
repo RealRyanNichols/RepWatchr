@@ -261,7 +261,6 @@ export const EAST_TEXAS_COUNTY_HUBS: CountySeed[] = [
     priorityRaceSlugs: [
       "texas-1st-congressional-district-2026",
       "texas-senate-district-1-2026",
-      "texas-house-district-7-2026",
       "east-texas-school-board-watch-2026",
       "east-texas-county-election-watch-2026",
     ],
@@ -352,7 +351,7 @@ const raceCountyMap: Record<string, string[]> = {
   "texas-senate-district-3-2026": ["smith-county", "rusk-county", "nacogdoches-county"],
   "texas-house-district-1-2026": ["bowie-county"],
   "texas-house-district-5-2026": ["smith-county", "upshur-county"],
-  "texas-house-district-7-2026": ["gregg-county", "harrison-county", "upshur-county"],
+  "texas-house-district-7-2026": ["gregg-county", "harrison-county", "marion-county"],
   "texas-house-district-9-2026": ["nacogdoches-county", "panola-county"],
   "texas-house-district-11-2026": ["rusk-county", "smith-county"],
   "east-texas-county-election-watch-2026": EAST_TEXAS_COUNTY_HUBS.map((county) => county.slug),

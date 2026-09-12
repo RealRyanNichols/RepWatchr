@@ -26,7 +26,16 @@ export type ElectionCandidateProfile = {
   lastVerifiedAt: string;
   partyStatus: string;
   summary: string;
-  portrait: {
+  recordLabel?: string;
+  partyLabel?: string;
+  electionLabel?: string;
+  electionContext?: string;
+  raceLinkLabel?: string;
+  overviewTitle?: string;
+  overviewParagraphs?: string[];
+  officeDescription?: string;
+  officeSourceIds?: string[];
+  portrait?: {
     src: string;
     alt: string;
     credit: string;
@@ -255,7 +264,156 @@ const dinaCarroll: ElectionCandidateProfile = {
   ],
 };
 
-export const ELECTION_CANDIDATES: ElectionCandidateProfile[] = [dinaCarroll];
+const melissaBeckett: ElectionCandidateProfile = {
+  slug: "melissa-beckett",
+  name: "Melissa Beckett",
+  path: "/candidates/melissa-beckett",
+  officeSought: "Texas House District 7",
+  jurisdiction: "Texas House District 7",
+  electionDate: "March 3, 2026",
+  racePath: "/elections/texas/texas-house-district-7-2026",
+  recordLabel: "Former primary candidate",
+  partyLabel: "Republican",
+  electionLabel: "March 3",
+  electionContext: "2026 Republican primary",
+  raceLinkLabel: "Open the HD 7 record",
+  ballotStatus:
+    "Former 2026 Republican primary candidate. MultiState reports a primary loss to Jay Dean; the district canvass has not yet been attached to this profile.",
+  lastVerifiedAt: "2026-09-12",
+  partyStatus:
+    "Her campaign identified her as a Republican candidate for Texas House District 7. MultiState places her in the March 3, 2026 Republican primary.",
+  summary:
+    "Melissa Beckett ran in the 2026 Republican primary for Texas House District 7. This file separates her published platform, official witness-list entries and reported election result. It does not present her as the sitting representative.",
+  overviewTitle: "A primary campaign, a public platform and a witness record.",
+  overviewParagraphs: [
+    "MultiState reports that Beckett lost the March 3, 2026 Republican primary to Jay Dean. RepWatchr has not attached the district canvass and does not label the reported result as a certified count.",
+    "The official Senate witness list establishes appearances on specific bills. Campaign proposals establish what Beckett advocated. Neither is a legislative vote cast by an officeholder.",
+  ],
+  officeDescription:
+    "The Texas House considers laws and constitutional amendments with the Senate and participates in state appropriations. Revenue bills originate in the House. These are institutional powers, not actions one candidate can carry out alone.",
+  officeSourceIds: ["texas-house-duties"],
+  independentRecord: [
+    {
+      title: "Reported 2026 primary result",
+      detail:
+        "MultiState's election history identifies Beckett as losing the March 3, 2026 Republican HD 7 primary to Jay Dean. This is a secondary election reference, not a certified canvass displayed by RepWatchr.",
+      sourceIds: ["multistate-beckett"],
+    },
+    {
+      title: "Listed FOR SB 133 on March 8, 2023",
+      detail:
+        "The Senate Education Committee witness list names Melissa Beckett of Longview, representing herself and Texas Education 911, under FOR SB 133. This is a witness position, not a legislator's roll-call vote.",
+      sourceIds: ["senate-education-2023-03-08"],
+    },
+    {
+      title: "Listed ON four other education bills",
+      detail:
+        "The same list records Beckett ON SB 294, SB 357, SB 629 and SB 798. RepWatchr preserves that category without converting it into support or opposition.",
+      sourceIds: ["senate-education-2023-03-08"],
+    },
+  ],
+  campaignClaims: [
+    {
+      title: "Business and finance background",
+      detail:
+        "Her campaign biography describes experience in business, finance, commodity trading and data analysis. Employment and credential documentation is not attached here.",
+      sourceIds: ["beckett-biography"],
+    },
+    {
+      title: "Texas Education 911 leadership",
+      detail:
+        "Beckett's biography describes her as the founder and leader of Texas Education 911. The Senate witness list separately records that affiliation at the March 8, 2023 hearing; it does not establish every biographical claim.",
+      sourceIds: ["beckett-biography", "senate-education-2023-03-08"],
+    },
+  ],
+  campaignPriorities: [
+    {
+      title: "Property taxes and state spending",
+      detail:
+        "Beckett's issues page advocates eliminating property taxes and reducing state government and spending. A replacement-revenue model and program-by-program costings are not attached to this file.",
+      sourceIds: ["beckett-issues"],
+    },
+    {
+      title: "Education decisions",
+      detail:
+        "Her platform calls for greater decision-making by parents and teachers and criticizes centralized TEA control. These are campaign positions, not independently measured education outcomes.",
+      sourceIds: ["beckett-issues"],
+    },
+    {
+      title: "Water, land and corporate incentives",
+      detail:
+        "Her issues page opposes East Texas reservoir and water-export plans that displace landowners, corporate subsidies and taxpayer-funded lobbying. Specific bill language and implementation costs remain open records questions.",
+      sourceIds: ["beckett-issues"],
+    },
+  ],
+  evidenceGaps: [
+    "The official district canvass for the March 3, 2026 Republican HD 7 primary.",
+    "Texas Ethics Commission filer identifiers and the corresponding campaign-finance reports, amendments and reporting periods.",
+    "A costed proposal for property-tax elimination, replacement revenue and effects on local services.",
+    "Specific legislative text and fiscal analysis supporting the campaign's education, water and spending proposals.",
+    "A source-confirmed portrait suitable for publication at full display resolution.",
+  ],
+  officeAuthority: [
+    "Consider proposed state laws and resolutions alongside the Texas Senate.",
+    "Consider constitutional amendments for submission to Texas voters.",
+    "Vote on appropriations for state government; revenue bills originate in the House.",
+    "Elect the House speaker and adopt the chamber's rules.",
+  ],
+  contact: {
+    website: "https://www.melissafortexas.com/",
+    email: "",
+    phone: "",
+    mailingAddress: "",
+    facebook: "",
+    instagram: "",
+  },
+  sources: [
+    {
+      id: "beckett-campaign",
+      title: "Melissa Beckett campaign website",
+      url: "https://www.melissafortexas.com/",
+      kind: "campaign",
+      note: "Campaign-published identification as a Republican HD 7 candidate; retained campaign material is not current ballot certification.",
+    },
+    {
+      id: "beckett-biography",
+      title: "Beckett campaign biography",
+      url: "https://www.melissafortexas.com/meet-melissa",
+      kind: "campaign",
+      note: "Self-published background and organizational claims, labeled as campaign material.",
+    },
+    {
+      id: "beckett-issues",
+      title: "Beckett's published issue positions",
+      url: "https://www.melissafortexas.com/issues",
+      kind: "campaign",
+      note: "Primary source for what the campaign advocates; does not prove policy effects or fiscal feasibility.",
+    },
+    {
+      id: "senate-education-2023-03-08",
+      title: "Texas Senate Education witness list, March 8, 2023",
+      url: "https://capitol.texas.gov/tlodocs/88R/witlistmtg/html/C5302023030809001.HTM",
+      kind: "official",
+      note: "Lists Beckett FOR SB 133 and ON SB 294, SB 357, SB 629 and SB 798. Witness categories are preserved as printed.",
+    },
+    {
+      id: "multistate-beckett",
+      title: "MultiState: Texas HD 7 election history",
+      url: "https://www.multistate.us/elections/district?chamber=House&d=7&st=TX",
+      kind: "reporting",
+      note: "Secondary election compilation reports a March 3, 2026 Republican primary loss. RepWatchr has not attached the official district canvass.",
+    },
+    {
+      id: "texas-house-duties",
+      title: "Texas House: legislative duties and process",
+      url: "https://www.house.texas.gov/index.php/help",
+      kind: "official",
+      note: "Official explanation of the House's powers, legislative process and member responsibilities.",
+    },
+  ],
+};
+
+export const ELECTION_CANDIDATES: ElectionCandidateProfile[] = [dinaCarroll, melissaBeckett];
 
 export function getElectionCandidates() {
   return ELECTION_CANDIDATES;

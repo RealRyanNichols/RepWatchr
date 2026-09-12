@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import RaceHubAnalytics from "@/components/elections/RaceHubAnalytics";
 import FlagshipRaceExperience from "@/components/elections/FlagshipRaceExperience";
+import HD7RecordDesk from "@/components/elections/HD7RecordDesk";
 import TexasRacePublicContributions from "@/components/elections/TexasRacePublicContributions";
 import RaceMoneyTrailSection from "@/components/money/RaceMoneyTrailSection";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
@@ -11,6 +12,7 @@ import RecordVisual from "@/components/shared/RecordVisual";
 import ShareButtons from "@/components/shared/ShareButtons";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import { getOfficialById } from "@/lib/data";
+import { HD7_RACE_SLUG } from "@/data/hd7-records";
 import {
   getTexasElectionStaticSlugs,
   resolveTexasElectionSlug,
@@ -883,6 +885,31 @@ export default async function TexasElectionRacePage({
   const { raceSlug } = await params;
   const resolution = resolveTexasElectionSlug(raceSlug);
   if (!resolution) notFound();
+
+  if (raceSlug === HD7_RACE_SLUG && resolution.kind === "race") {
+    const race = resolution.race;
+    const breadcrumbStructuredData = breadcrumbJsonLd([
+      { name: "RepWatchr", path: "/" },
+      { name: "Elections", path: "/elections" },
+      { name: "Texas", path: "/elections/texas" },
+      { name: "House District 7", path: race.href },
+    ]);
+
+    return (
+      <div className="min-h-screen bg-[#f6f9fc]">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }} />
+        <RaceJsonLd race={race} />
+        <RaceHubAnalytics raceSlug={race.slug} raceTitle={race.title} routeKind="race" sourceCount={race.sourceCount} candidateCount={race.candidates.length} missingRecordCount={race.missingRecords.length} />
+        <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <Link href="/elections/texas" className="inline-flex min-h-11 items-center text-sm font-bold text-blue-800 hover:text-red-700">
+            &larr; Texas election records
+          </Link>
+          <HD7RecordDesk />
+          <TexasRacePublicContributions raceSlug={race.slug} />
+        </main>
+      </div>
+    );
+  }
 
   if (raceSlug === "marion-county-judge-2026" && resolution.kind === "race") {
     const breadcrumbStructuredData = breadcrumbJsonLd([

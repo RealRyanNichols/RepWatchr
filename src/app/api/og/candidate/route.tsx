@@ -32,23 +32,24 @@ export async function GET(request: Request) {
     });
   }
 
+  const isDinaCarroll = candidate.slug === "dina-k-carroll";
+
   return renderRepWatchrOgImage({
     requestUrl: request.url,
-    pageType: "Candidate profile",
-    headline: "Dina Carroll: open the write-in file",
-    supportLine:
-      "What is independently supported, what the campaign says, and what remains unconfirmed before Marion County votes.",
-    backgroundImage: "/images/races/marion-county-judge-2026-hero.webp",
+    pageType: candidate.recordLabel || "Candidate profile",
+    headline: isDinaCarroll ? "Dina Carroll: open the write-in file" : `${candidate.name}: open the record`,
+    supportLine: candidate.summary,
+    backgroundImage: isDinaCarroll ? "/images/races/marion-county-judge-2026-hero.webp" : REPWATCHR_EDITORIAL_OG_BACKGROUND,
     backgroundPosition: "center",
-    portraitImage: candidate.portrait.src,
-    visualCredit: candidate.portrait.credit,
+    portraitImage: candidate.portrait?.src,
+    visualCredit: candidate.portrait?.credit || "RepWatchr editorial background; no candidate portrait",
     jurisdiction: `${candidate.jurisdiction} / ${candidate.officeSought}`,
     metricValue: candidate.sources.length,
     metricLabel: "sources reviewed",
     path: candidate.path,
     badges: [
-      { label: "Ballot status", value: "Pending", tone: "gold" },
-      { label: "Election", value: "Nov. 3", tone: "blue" },
+      { label: "Record", value: candidate.recordLabel || (isDinaCarroll ? "Write-in pending" : "Candidate"), tone: "gold" },
+      { label: "Election", value: candidate.electionLabel || (isDinaCarroll ? "Nov. 3" : candidate.electionDate), tone: "blue" },
     ],
   });
 }
