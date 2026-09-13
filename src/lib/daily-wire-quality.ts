@@ -507,10 +507,18 @@ export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicate
   // their officeholders, or a county or town inside them outranks a generic
   // local match so the wire never buries the district it exists to cover.
   const isHomeDistrictItem =
+    // Everything passed here is matched against the article text. Texas from a
+    // state name in the story, or from a known Texas officeholder named in it,
+    // is real evidence and must not be thrown away with the unsafe value.
+    // input.state is the one thing deliberately excluded: the search source
+    // stamps it on every clip, so it would let an out-of-state result arriving
+    // through a home-district lane vouch for itself.
     coverageTierForText(articleText, {
       counties: countyMatches,
       cities: cityMatches,
-      state: texasEvidence ? "TX" : input.state,
+      texasEvidenceFromArticle:
+        stateMatches.includes("TX") ||
+        officialPeople.some((person) => person.state?.toUpperCase() === "TX"),
     }) === "home-district";
 
   let jurisdictionMatch: DailyWireJurisdictionMatch = "none";

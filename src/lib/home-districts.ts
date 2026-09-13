@@ -149,30 +149,78 @@ export const HOME_DISTRICT_COUNTIES: string[] = [
 ].sort();
 
 /**
- * Cities and towns used to catch home-district records that name a place
- * instead of a county. Kept deliberately short: a place only belongs here when
- * it sits inside HD-7 or TX-01.
+ * Cities and towns whose names are distinctive enough that appearing in a Texas
+ * story is evidence on its own. Ordinary headline wording counts here, because
+ * "Longview approves new budget" is unmistakable once a Texas signal is present.
  */
-export const HOME_DISTRICT_PLACES: string[] = [
-  "Atlanta",
+export const HOME_DISTRICT_DISTINCT_PLACES: string[] = [
   "Carthage",
-  "Center",
   "Gladewater",
   "Hallsville",
   "Harleton",
-  "Henderson",
-  "Jefferson",
   "Kilgore",
-  "Linden",
   "Longview",
-  "Marshall",
   "Nacogdoches",
   "Rusk",
   "San Augustine",
+  "Waskom",
+];
+
+/**
+ * Places whose names are common words or far bigger cities elsewhere: Center,
+ * Atlanta, Jefferson, Marshall, Tyler, Henderson. A Texas signal is not enough
+ * for these - "Texas data center" and "Tyler said" both carry one - so they
+ * additionally require locality syntax naming the place as a place.
+ */
+export const HOME_DISTRICT_AMBIGUOUS_PLACES: string[] = [
+  "Atlanta",
+  "Center",
+  "Henderson",
+  "Jefferson",
+  "Linden",
+  "Marshall",
   "Tatum",
   "Tyler",
-  "Waskom",
   "White Oak",
+];
+
+/** Every place in the footprint index. */
+export const HOME_DISTRICT_PLACES: string[] = [
+  ...HOME_DISTRICT_DISTINCT_PLACES,
+  ...HOME_DISTRICT_AMBIGUOUS_PLACES,
+].sort();
+
+/**
+ * Institutional compounds that contain a place name without being about the
+ * place. These are stripped BEFORE locality matching, because a civic-sounding
+ * word after one of them would otherwise resurrect the false positive:
+ * "Texas Medical Center police" must not read as Center, Texas.
+ */
+const PLACE_FALSE_POSITIVE_PHRASES: string[] = [
+  "data center",
+  "medical center",
+  "civic center",
+  "shopping center",
+  "convention center",
+  "detention center",
+  "call center",
+  "community center",
+  "distribution center",
+  "health center",
+  "visitor center",
+  "recreation center",
+  "research center",
+  "performing arts center",
+  "arts center",
+  "sports center",
+  "fitness center",
+  "welcome center",
+  "service center",
+  "training center",
+  "operations center",
+  "command center",
+  "senior center",
+  "youth center",
 ];
 
 /**
@@ -210,23 +258,31 @@ export const HOME_DISTRICT_TERMS: string[] = [
 ];
 
 /**
- * Phrases that contain a home-district place name but are not about the place.
- * "Center" is the Shelby County seat and a word in half the buildings in Texas.
+ * Locality syntax that marks a place name as the actual place rather than a
+ * word inside something else. "Center" is the Shelby County seat and also sits
+ * in research center, performing arts center, distribution center and every
+ * other compound nobody can finish enumerating, so a denylist of those phrases
+ * is unwinnable. Require positive evidence instead: the name has to appear with
+ * a state tag, a civic prefix, or a local-government noun beside it.
  */
-const PLACE_FALSE_POSITIVE_PHRASES: string[] = [
-  "data center",
-  "medical center",
-  "civic center",
-  "shopping center",
-  "convention center",
-  "detention center",
-  "call center",
-  "community center",
-  "distribution center",
-  "health center",
-  "visitor center",
-  "recreation center",
-];
+function localityPatternsFor(place: string) {
+  const p = place.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return [
+    // "Center, Texas" / "Center, TX"
+    new RegExp(`\\b${p}\\s*,\\s*(texas|tx)\\b`, "i"),
+    // "City of Center" / "Town of Center"
+    new RegExp(`\\b(city|town)\\s+of\\s+${p}\\b`, "i"),
+    // "Center ISD"
+    new RegExp(`\\b${p}\\s+isd\\b`, "i"),
+    // "Center city council", "Center mayor", "Center police", ...
+    new RegExp(
+      `\\b${p}\\s+(city\\s+council|council|mayor|city\\s+hall|city\\s+manager|police|fire|school|schools|trustees?|voters?|residents?)\\b`,
+      "i",
+    ),
+    // "mayor of Center", "council of Center"
+    new RegExp(`\\b(mayor|council|city\\s+council)\\s+of\\s+${p}\\b`, "i"),
+  ];
+}
 
 /**
  * Coverage tiers, most local first. The homepage, the wire, and profile
@@ -249,6 +305,17 @@ export function coverageTierRank(tier: CoverageTier) {
   return COVERAGE_TIERS.indexOf(tier);
 }
 
+const US_STATES_OTHER_THAN_TEXAS = [
+  "alabama", "alaska", "arizona", "arkansas", "california", "colorado", "connecticut",
+  "delaware", "florida", "georgia", "hawaii", "idaho", "illinois", "indiana", "iowa",
+  "kansas", "kentucky", "louisiana", "maine", "maryland", "massachusetts", "michigan",
+  "minnesota", "mississippi", "missouri", "montana", "nebraska", "nevada",
+  "new hampshire", "new jersey", "new mexico", "new york", "north carolina",
+  "north dakota", "ohio", "oklahoma", "oregon", "pennsylvania", "rhode island",
+  "south carolina", "south dakota", "tennessee", "utah", "vermont", "virginia",
+  "washington", "west virginia", "wisconsin", "wyoming",
+];
+
 function normalizedCounty(value?: string | null) {
   return (value ?? "").trim().toLowerCase().replace(/\s+county$/, "");
 }
@@ -268,9 +335,11 @@ function wholeWordPattern(needle: string) {
 }
 
 const HOME_PLACE_PATTERNS = HOME_PLACE_KEYS.map(wholeWordPattern);
+const PLACE_FALSE_POSITIVE_PATTERNS = PLACE_FALSE_POSITIVE_PHRASES.map(wholeWordPattern);
+const AMBIGUOUS_PLACE_KEYS = new Set(HOME_DISTRICT_AMBIGUOUS_PLACES.map((place) => place.toLowerCase()));
+const HOME_PLACE_LOCALITY_PATTERNS = HOME_DISTRICT_PLACES.map(localityPatternsFor);
 const HOME_UNAMBIGUOUS_TERM_PATTERNS = HOME_DISTRICT_UNAMBIGUOUS_TERMS.map(wholeWordPattern);
 const HOME_AMBIGUOUS_TERM_PATTERNS = HOME_DISTRICT_AMBIGUOUS_TERMS.map(wholeWordPattern);
-const PLACE_FALSE_POSITIVE_PATTERNS = PLACE_FALSE_POSITIVE_PHRASES.map(wholeWordPattern);
 
 function hasTexasSignal(haystack: string) {
   return /\btexas\b/i.test(haystack) || /(^|[^a-z])tx([^a-z]|$)/i.test(haystack);
@@ -314,13 +383,20 @@ export function coverageTierForOfficial(official: Official): CoverageTier {
 }
 
 /**
- * Structured jurisdiction evidence a caller already resolved, used to confirm a
- * county or place name is the Texas one. The wire carries this on every clip.
+ * Jurisdiction evidence a caller already resolved FROM THE ARTICLE, used to
+ * confirm a county or place name is the Texas one.
  */
 export type CoverageTierHints = {
   counties?: string[];
   cities?: string[];
-  state?: string | null;
+  /**
+   * Texas established by the ARTICLE - a Texas state name in the text, or a
+   * known Texas officeholder named in it. Deliberately not a `state` field: a
+   * search source stamps its own state on every clip it returns, and a field
+   * called `state` invites exactly that value being passed in. Only pass true
+   * for evidence found in the article itself.
+   */
+  texasEvidenceFromArticle?: boolean;
 };
 
 /**
@@ -339,9 +415,22 @@ export function coverageTierForText(text: string, hints: CoverageTierHints = {})
   // Texas-qualified district labels and officeholder names stand alone.
   if (HOME_UNAMBIGUOUS_TERM_PATTERNS.some((pattern) => pattern.test(haystack))) return "home-district";
 
+  // Only article-derived evidence counts. A search source stamps its own state
+  // on every clip it returns, so a caller must never hand that value down here.
+  // A county hint is a substring match against the article, so an Ohio story in
+  // a home-district lane still reports "Harrison". It only counts as Texas
+  // evidence when the article does not qualify that county as another state's.
+  const countyQualifiedElsewhere = (county: string) =>
+    US_STATES_OTHER_THAN_TEXAS.some((state) =>
+      new RegExp(`\\b${county} county,\\s*${state}\\b(?!\\s+city\\b)`, "i").test(haystack),
+    ) && !new RegExp(`\\b${county} county,\\s*(texas|tx)\\b`, "i").test(haystack);
+
   const structuredTexas =
-    hints.state?.toUpperCase() === "TX" ||
-    (hints.counties ?? []).some((county) => HOME_COUNTY_KEYS.has(normalizedCounty(county))) ||
+    hints.texasEvidenceFromArticle === true ||
+    (hints.counties ?? []).some(
+      (county) =>
+        HOME_COUNTY_KEYS.has(normalizedCounty(county)) && !countyQualifiedElsewhere(normalizedCounty(county)),
+    ) ||
     (hints.cities ?? []).some((city) => HOME_PLACE_KEYS.includes(city.trim().toLowerCase()));
 
   // County and place names need a Texas signal before they count. "Marshall",
@@ -351,25 +440,76 @@ export function coverageTierForText(text: string, hints: CoverageTierHints = {})
   // With a Texas signal established, a bare district number is ours.
   if (HOME_AMBIGUOUS_TERM_PATTERNS.some((pattern) => pattern.test(haystack))) return "home-district";
 
-  if ([...HOME_COUNTY_KEYS].some((county) => haystack.includes(`${county} county`))) return "home-district";
+  // Our county names are shared: Harrison County exists in Ohio, Marion in
+  // Indiana, Smith in Kansas. An explicit "<county> County, <other state>" is
+  // that state's, and the wire's countyMatches cannot settle it - those are
+  // substring matches against the article, so an Ohio story still reports
+  // "Harrison". Reject the foreign-qualified form before claiming the county.
+  const countyNamesForeignState = (county: string) =>
+    !new RegExp(`\\b${county} county,\\s*(texas|tx)\\b`, "i").test(haystack) &&
+    US_STATES_OTHER_THAN_TEXAS.some((state) =>
+      new RegExp(`\\b${county} county,\\s*${state}\\b(?!\\s+city\\b)`, "i").test(haystack),
+    );
+
+  if (
+    [...HOME_COUNTY_KEYS].some(
+      (county) => haystack.includes(`${county} county`) && !countyNamesForeignState(county),
+    )
+  ) {
+    return "home-district";
+  }
 
   // A town name that the same text uses as a county name belongs to that county,
   // not to this beat. Jefferson is a town in Marion County and also a Texas
   // county down on the Gulf; "Jefferson County" is not ours.
-  const namesForeignCounty = (place: string) =>
-    haystack.includes(`${place} county`) && !HOME_COUNTY_KEYS.has(place);
+  // An article can name both variants - "Longview, Texas coordinates with
+  // Longview, Washington" - and a text-wide veto would throw out the valid
+  // Texas occurrence along with the foreign one. An explicit Texas
+  // qualification of the same place wins over either veto below.
+  const explicitlyTexas = (place: string) =>
+    new RegExp(`\\b${place},\\s*(texas|tx)\\b`, "i").test(haystack);
 
-  // Strip the stock phrases first, so "data center" never reads as Center, Texas.
-  const withoutStockPhrases = PLACE_FALSE_POSITIVE_PATTERNS.reduce(
+  const namesForeignCounty = (place: string) =>
+    !explicitlyTexas(place) && haystack.includes(`${place} county`) && !HOME_COUNTY_KEYS.has(place);
+
+  // "Carthage, Missouri" and "Longview, Washington" are that state's town, even
+  // when Texas appears elsewhere in the same story.
+  //
+  // The state name needs a word boundary and must not be the start of a
+  // "<State> City" place: Missouri City, Kansas City and Texas City are all real
+  // municipalities, so a bare substring test rejects "Carthage, Missouri City"
+  // - a Texas dateline - as if it were Missouri's Carthage.
+  const namesForeignState = (place: string) =>
+    !explicitlyTexas(place) &&
+    US_STATES_OTHER_THAN_TEXAS.some((state) =>
+      new RegExp(`\\b${place},\\s*${state}\\b(?!\\s+city\\b)`, "i").test(haystack),
+    );
+
+  // Strip institutional compounds before any place matching. A civic-sounding
+  // word after one of them would otherwise resurrect the false positive, so
+  // "Texas Medical Center police" must not survive as Center, Texas.
+  const stripped = PLACE_FALSE_POSITIVE_PATTERNS.reduce(
     (text, pattern) => text.replace(new RegExp(pattern.source, "gi"), " "),
     haystack,
   );
 
+  // Two tiers. A distinctive name - Longview, Nacogdoches, Kilgore - is evidence
+  // on its own once the Texas signal above is established, so ordinary headline
+  // wording keeps its home-district slot. A name that is a common word or a
+  // bigger city elsewhere - Center, Atlanta, Tyler, Marshall - additionally has
+  // to be used as a place, because the Texas signal alone does not separate
+  // "Center, Texas" from "Texas data center".
+  //
+  // A structured city hint never waives the ambiguous tier's test: those hints
+  // are substring matches upstream, so "Texas research center" hands one back.
   if (
-    HOME_PLACE_KEYS.some(
-      (place, index) =>
-        !namesForeignCounty(place) && HOME_PLACE_PATTERNS[index].test(withoutStockPhrases),
-    )
+    HOME_PLACE_KEYS.some((place, index) => {
+      if (namesForeignCounty(place) || namesForeignState(place)) return false;
+      if (AMBIGUOUS_PLACE_KEYS.has(place)) {
+        return HOME_PLACE_LOCALITY_PATTERNS[index].some((pattern) => pattern.test(stripped));
+      }
+      return HOME_PLACE_PATTERNS[index].test(stripped);
+    })
   ) {
     return "home-district";
   }
