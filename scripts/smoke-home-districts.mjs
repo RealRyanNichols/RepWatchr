@@ -73,32 +73,67 @@ for (const qualified of ["texas house district 7", "tx-01", "jay dean", "nathani
 // Center is the Shelby County seat and also a word in half the buildings in
 // Texas. It belongs in the index, behind a stock-phrase guard.
 assert(districts.includes('"Center"'), "Center, the Shelby County seat, is missing from the place index.");
-// A denylist of generic compounds can never be finished - research center,
-// performing arts center, distribution center. Require positive locality syntax
-// instead, and apply it at the match site even when a structured city hint is
-// present, since those hints are substring-matched upstream.
+// Two tiers. A distinctive name is evidence on its own once a Texas signal is
+// established, so ordinary wording like "Longview approves new budget" keeps its
+// home-district slot. A common word or a bigger city elsewhere additionally has
+// to be used as a place.
+assert(
+  districts.includes("HOME_DISTRICT_DISTINCT_PLACES") && districts.includes("HOME_DISTRICT_AMBIGUOUS_PLACES"),
+  "Places must be split into distinctive and ambiguous tiers; one strict rule for all downgrades real coverage.",
+);
+for (const ambiguous of ["Center", "Atlanta", "Jefferson", "Marshall", "Tyler", "Henderson"]) {
+  const block = districts.split("HOME_DISTRICT_AMBIGUOUS_PLACES")[1]?.split("];")[0] ?? "";
+  assert(block.includes(`"${ambiguous}"`), `"${ambiguous}" is a common word or a bigger city elsewhere and must sit in the ambiguous tier.`);
+}
+for (const distinct of ["Longview", "Nacogdoches", "Kilgore", "Gladewater"]) {
+  const block = districts.split("HOME_DISTRICT_DISTINCT_PLACES")[1]?.split("];")[0] ?? "";
+  assert(block.includes(`"${distinct}"`), `"${distinct}" is distinctive and must not require locality syntax.`);
+}
 assert(
   districts.includes("localityPatternsFor") && districts.includes("HOME_PLACE_LOCALITY_PATTERNS"),
-  "Place matching must require positive locality syntax, not a phrase denylist.",
+  "Ambiguous places must require positive locality syntax.",
 );
 assert(
-  /HOME_PLACE_LOCALITY_PATTERNS\[index\]\.some\(\(pattern\) => pattern\.test\(haystack\)\)/.test(districts),
-  "Locality patterns are declared but not applied at the place-match site.",
+  /AMBIGUOUS_PLACE_KEYS\.has\(place\)[\s\S]{0,200}HOME_PLACE_LOCALITY_PATTERNS\[index\]/.test(districts),
+  "Locality patterns are declared but not applied to the ambiguous tier at the match site.",
 );
 assert(
   !districts.includes("structuredCities.has(place)"),
   "A structured city hint must not waive the locality test: those hints are substring matches.",
 );
 
-// A search source stamps its own state on every clip it returns, so source
-// metadata can never authenticate an out-of-state article as Texas.
+// Positive syntax alone is not enough: a civic word after an institutional
+// compound would resurrect the false positive, so compounds are stripped first.
 assert(
-  !/hints\.state\?\.toUpperCase\(\) === "TX"/.test(districts),
-  "structuredTexas must not trust a caller-supplied state: search sources stamp TX on everything.",
+  districts.includes("PLACE_FALSE_POSITIVE_PHRASES") && districts.includes('"medical center"'),
+  "Institutional compounds must still be stripped: 'Texas Medical Center police' reads as Center otherwise.",
 );
 assert(
-  !/state: texasEvidence \? "TX" : input\.state/.test(quality),
+  /const stripped = PLACE_FALSE_POSITIVE_PATTERNS\.reduce/.test(districts) &&
+    /pattern\.test\(stripped\)/.test(districts),
+  "Compound stripping is declared but the place match still runs against the raw text.",
+);
+
+// A search source stamps its own state on every clip it returns, so source
+// metadata can never authenticate an out-of-state article as Texas. The hint is
+// named for article evidence so that value has no natural way in.
+assert(
+  !/hints\.state/.test(districts),
+  "The hints type must not carry a `state` field: it invites the source-stamped value.",
+);
+// Assert it is CONSUMED, not merely declared on the type: dropping the clause
+// from structuredTexas would leave the field defined and this check passing.
+assert(
+  /const structuredTexas =[\s\S]{0,300}hints\.texasEvidenceFromArticle/.test(districts),
+  "structuredTexas must consume texasEvidenceFromArticle, or a named Texas official stops counting.",
+);
+assert(
+  !/input\.state/.test(quality.split("coverageTierForText(articleText")[1]?.slice(0, 600) ?? ""),
   "Quality engine must not pass source-level state into the home-district classifier.",
+);
+assert(
+  /texasEvidenceFromArticle:[\s\S]{0,200}officialPeople\.some/.test(quality),
+  "Texas established by an officeholder named in the article must reach the classifier.",
 );
 
 // The wire has to actively watch the beat, not hope a statewide lane catches it.
