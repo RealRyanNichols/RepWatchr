@@ -112,6 +112,13 @@ assert(
   /namesForeignCounty\(place\) \|\| namesForeignState\(place\)/.test(districts),
   "The foreign-state guard is declared but not applied at the place-match site.",
 );
+// Missouri City, Kansas City and Texas City are real municipalities, so the
+// state name needs a word boundary and a "<State> City" exception. A bare
+// substring test rejects "Carthage, Missouri City" - a Texas dateline.
+assert(
+  /\(\?!\\\\s\+city\\\\b\)/.test(districts),
+  "The foreign-state guard must not fire on '<State> City' place names.",
+);
 
 // Positive syntax alone is not enough: a civic word after an institutional
 // compound would resurrect the false positive, so compounds are stripped first.

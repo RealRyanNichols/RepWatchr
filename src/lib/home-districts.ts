@@ -439,8 +439,15 @@ export function coverageTierForText(text: string, hints: CoverageTierHints = {})
 
   // "Carthage, Missouri" and "Longview, Washington" are that state's town, even
   // when Texas appears elsewhere in the same story.
+  //
+  // The state name needs a word boundary and must not be the start of a
+  // "<State> City" place: Missouri City, Kansas City and Texas City are all real
+  // municipalities, so a bare substring test rejects "Carthage, Missouri City"
+  // - a Texas dateline - as if it were Missouri's Carthage.
   const namesForeignState = (place: string) =>
-    US_STATES_OTHER_THAN_TEXAS.some((state) => haystack.includes(`${place}, ${state}`));
+    US_STATES_OTHER_THAN_TEXAS.some((state) =>
+      new RegExp(`\\b${place},\\s*${state}\\b(?!\\s+city\\b)`, "i").test(haystack),
+    );
 
   // Strip institutional compounds before any place matching. A civic-sounding
   // word after one of them would otherwise resurrect the false positive, so
