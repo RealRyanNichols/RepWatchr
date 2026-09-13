@@ -434,8 +434,15 @@ export function coverageTierForText(text: string, hints: CoverageTierHints = {})
   // A town name that the same text uses as a county name belongs to that county,
   // not to this beat. Jefferson is a town in Marion County and also a Texas
   // county down on the Gulf; "Jefferson County" is not ours.
+  // An article can name both variants - "Longview, Texas coordinates with
+  // Longview, Washington" - and a text-wide veto would throw out the valid
+  // Texas occurrence along with the foreign one. An explicit Texas
+  // qualification of the same place wins over either veto below.
+  const explicitlyTexas = (place: string) =>
+    new RegExp(`\\b${place},\\s*(texas|tx)\\b`, "i").test(haystack);
+
   const namesForeignCounty = (place: string) =>
-    haystack.includes(`${place} county`) && !HOME_COUNTY_KEYS.has(place);
+    !explicitlyTexas(place) && haystack.includes(`${place} county`) && !HOME_COUNTY_KEYS.has(place);
 
   // "Carthage, Missouri" and "Longview, Washington" are that state's town, even
   // when Texas appears elsewhere in the same story.
@@ -445,6 +452,7 @@ export function coverageTierForText(text: string, hints: CoverageTierHints = {})
   // municipalities, so a bare substring test rejects "Carthage, Missouri City"
   // - a Texas dateline - as if it were Missouri's Carthage.
   const namesForeignState = (place: string) =>
+    !explicitlyTexas(place) &&
     US_STATES_OTHER_THAN_TEXAS.some((state) =>
       new RegExp(`\\b${place},\\s*${state}\\b(?!\\s+city\\b)`, "i").test(haystack),
     );

@@ -119,6 +119,18 @@ assert(
   /\(\?!\\\\s\+city\\\\b\)/.test(districts),
   "The foreign-state guard must not fire on '<State> City' place names.",
 );
+// One article can name both variants. A text-wide veto would throw out the
+// valid Texas occurrence along with the foreign one, so an explicit
+// "<place>, Texas" beats both the county and the state veto.
+assert(
+  districts.includes("explicitlyTexas"),
+  "An explicit '<place>, Texas' must override the foreign-place vetoes.",
+);
+assert(
+  /!explicitlyTexas\(place\) &&[\s\S]{0,120}US_STATES_OTHER_THAN_TEXAS/.test(districts) &&
+    /!explicitlyTexas\(place\) && haystack\.includes/.test(districts),
+  "The Texas override is declared but not applied to both the state and county vetoes.",
+);
 
 // Positive syntax alone is not enough: a civic word after an institutional
 // compound would resurrect the false positive, so compounds are stripped first.
