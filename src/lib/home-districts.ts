@@ -154,6 +154,7 @@ export const HOME_DISTRICT_COUNTIES: string[] = [
  * "Longview approves new budget" is unmistakable once a Texas signal is present.
  */
 export const HOME_DISTRICT_DISTINCT_PLACES: string[] = [
+  "Carthage",
   "Gladewater",
   "Hallsville",
   "Harleton",
@@ -173,7 +174,6 @@ export const HOME_DISTRICT_DISTINCT_PLACES: string[] = [
  */
 export const HOME_DISTRICT_AMBIGUOUS_PLACES: string[] = [
   "Atlanta",
-  "Carthage",
   "Center",
   "Henderson",
   "Jefferson",
@@ -305,6 +305,17 @@ export function coverageTierRank(tier: CoverageTier) {
   return COVERAGE_TIERS.indexOf(tier);
 }
 
+const US_STATES_OTHER_THAN_TEXAS = [
+  "alabama", "alaska", "arizona", "arkansas", "california", "colorado", "connecticut",
+  "delaware", "florida", "georgia", "hawaii", "idaho", "illinois", "indiana", "iowa",
+  "kansas", "kentucky", "louisiana", "maine", "maryland", "massachusetts", "michigan",
+  "minnesota", "mississippi", "missouri", "montana", "nebraska", "nevada",
+  "new hampshire", "new jersey", "new mexico", "new york", "north carolina",
+  "north dakota", "ohio", "oklahoma", "oregon", "pennsylvania", "rhode island",
+  "south carolina", "south dakota", "tennessee", "utah", "vermont", "virginia",
+  "washington", "west virginia", "wisconsin", "wyoming",
+];
+
 function normalizedCounty(value?: string | null) {
   return (value ?? "").trim().toLowerCase().replace(/\s+county$/, "");
 }
@@ -426,6 +437,11 @@ export function coverageTierForText(text: string, hints: CoverageTierHints = {})
   const namesForeignCounty = (place: string) =>
     haystack.includes(`${place} county`) && !HOME_COUNTY_KEYS.has(place);
 
+  // "Carthage, Missouri" and "Longview, Washington" are that state's town, even
+  // when Texas appears elsewhere in the same story.
+  const namesForeignState = (place: string) =>
+    US_STATES_OTHER_THAN_TEXAS.some((state) => haystack.includes(`${place}, ${state}`));
+
   // Strip institutional compounds before any place matching. A civic-sounding
   // word after one of them would otherwise resurrect the false positive, so
   // "Texas Medical Center police" must not survive as Center, Texas.
@@ -445,7 +461,7 @@ export function coverageTierForText(text: string, hints: CoverageTierHints = {})
   // are substring matches upstream, so "Texas research center" hands one back.
   if (
     HOME_PLACE_KEYS.some((place, index) => {
-      if (namesForeignCounty(place)) return false;
+      if (namesForeignCounty(place) || namesForeignState(place)) return false;
       if (AMBIGUOUS_PLACE_KEYS.has(place)) {
         return HOME_PLACE_LOCALITY_PATTERNS[index].some((pattern) => pattern.test(stripped));
       }

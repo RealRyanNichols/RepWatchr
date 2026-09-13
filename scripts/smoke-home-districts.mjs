@@ -85,7 +85,7 @@ for (const ambiguous of ["Center", "Atlanta", "Jefferson", "Marshall", "Tyler", 
   const block = districts.split("HOME_DISTRICT_AMBIGUOUS_PLACES")[1]?.split("];")[0] ?? "";
   assert(block.includes(`"${ambiguous}"`), `"${ambiguous}" is a common word or a bigger city elsewhere and must sit in the ambiguous tier.`);
 }
-for (const distinct of ["Longview", "Nacogdoches", "Kilgore", "Gladewater"]) {
+for (const distinct of ["Longview", "Nacogdoches", "Kilgore", "Gladewater", "Carthage"]) {
   const block = districts.split("HOME_DISTRICT_DISTINCT_PLACES")[1]?.split("];")[0] ?? "";
   assert(block.includes(`"${distinct}"`), `"${distinct}" is distinctive and must not require locality syntax.`);
 }
@@ -100,6 +100,17 @@ assert(
 assert(
   !districts.includes("structuredCities.has(place)"),
   "A structured city hint must not waive the locality test: those hints are substring matches.",
+);
+
+// A distinctive name is still shared with smaller towns elsewhere. "Carthage,
+// Missouri" is Missouri's even when Texas appears elsewhere in the story.
+assert(
+  districts.includes("namesForeignState") && districts.includes("US_STATES_OTHER_THAN_TEXAS"),
+  "Place matching must reject an explicit '<place>, <other state>'.",
+);
+assert(
+  /namesForeignCounty\(place\) \|\| namesForeignState\(place\)/.test(districts),
+  "The foreign-state guard is declared but not applied at the place-match site.",
 );
 
 // Positive syntax alone is not enough: a civic word after an institutional
