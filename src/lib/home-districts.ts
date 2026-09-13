@@ -156,6 +156,7 @@ export const HOME_DISTRICT_COUNTIES: string[] = [
 export const HOME_DISTRICT_PLACES: string[] = [
   "Atlanta",
   "Carthage",
+  "Center",
   "Gladewater",
   "Hallsville",
   "Harleton",
@@ -174,18 +175,57 @@ export const HOME_DISTRICT_PLACES: string[] = [
   "White Oak",
 ];
 
-/** Search terms that name the districts or their seats directly. */
-export const HOME_DISTRICT_TERMS: string[] = [
+/**
+ * Terms that identify these seats on their own. A state prefix or an
+ * officeholder's name is enough to place a story without further evidence.
+ */
+export const HOME_DISTRICT_UNAMBIGUOUS_TERMS: string[] = [
+  "texas house district 7",
+  "texas 1st congressional district",
+  "tx-01",
+  "tx-1",
+  "jay dean",
+  "nathaniel moran",
+];
+
+/**
+ * District labels that are NOT unique to Texas. Every state numbers its own
+ * house and congressional districts, and this site carries a news feed for all
+ * fifty of them, so "1st congressional district" on its own matches Arizona as
+ * readily as TX-01. These require a Texas signal before they count - otherwise
+ * an out-of-state race takes a reserved HD-7 / TX-01 slot on the homepage.
+ */
+export const HOME_DISTRICT_AMBIGUOUS_TERMS: string[] = [
   "house district 7",
   "hd-7",
   "hd 7",
-  "texas house district 7",
   "congressional district 1",
-  "tx-01",
-  "tx-1",
   "1st congressional district",
-  "jay dean",
-  "nathaniel moran",
+];
+
+/** Every district term, for search-query building where breadth is wanted. */
+export const HOME_DISTRICT_TERMS: string[] = [
+  ...HOME_DISTRICT_UNAMBIGUOUS_TERMS,
+  ...HOME_DISTRICT_AMBIGUOUS_TERMS,
+];
+
+/**
+ * Phrases that contain a home-district place name but are not about the place.
+ * "Center" is the Shelby County seat and a word in half the buildings in Texas.
+ */
+const PLACE_FALSE_POSITIVE_PHRASES: string[] = [
+  "data center",
+  "medical center",
+  "civic center",
+  "shopping center",
+  "convention center",
+  "detention center",
+  "call center",
+  "community center",
+  "distribution center",
+  "health center",
+  "visitor center",
+  "recreation center",
 ];
 
 /**
@@ -228,7 +268,9 @@ function wholeWordPattern(needle: string) {
 }
 
 const HOME_PLACE_PATTERNS = HOME_PLACE_KEYS.map(wholeWordPattern);
-const HOME_TERM_PATTERNS = HOME_DISTRICT_TERMS.map(wholeWordPattern);
+const HOME_UNAMBIGUOUS_TERM_PATTERNS = HOME_DISTRICT_UNAMBIGUOUS_TERMS.map(wholeWordPattern);
+const HOME_AMBIGUOUS_TERM_PATTERNS = HOME_DISTRICT_AMBIGUOUS_TERMS.map(wholeWordPattern);
+const PLACE_FALSE_POSITIVE_PATTERNS = PLACE_FALSE_POSITIVE_PHRASES.map(wholeWordPattern);
 
 function hasTexasSignal(haystack: string) {
   return /\btexas\b/i.test(haystack) || /(^|[^a-z])tx([^a-z]|$)/i.test(haystack);
@@ -294,8 +336,8 @@ export type CoverageTierHints = {
 export function coverageTierForText(text: string, hints: CoverageTierHints = {}): CoverageTier | null {
   const haystack = text.toLowerCase();
 
-  // District and officeholder names are specific enough to stand alone.
-  if (HOME_TERM_PATTERNS.some((pattern) => pattern.test(haystack))) return "home-district";
+  // Texas-qualified district labels and officeholder names stand alone.
+  if (HOME_UNAMBIGUOUS_TERM_PATTERNS.some((pattern) => pattern.test(haystack))) return "home-district";
 
   const structuredTexas =
     hints.state?.toUpperCase() === "TX" ||
@@ -305,6 +347,10 @@ export function coverageTierForText(text: string, hints: CoverageTierHints = {})
   // County and place names need a Texas signal before they count. "Marshall",
   // "Jefferson" and "Atlanta" exist in a lot of states.
   if (!structuredTexas && !hasTexasSignal(haystack)) return null;
+
+  // With a Texas signal established, a bare district number is ours.
+  if (HOME_AMBIGUOUS_TERM_PATTERNS.some((pattern) => pattern.test(haystack))) return "home-district";
+
   if ([...HOME_COUNTY_KEYS].some((county) => haystack.includes(`${county} county`))) return "home-district";
 
   // A town name that the same text uses as a county name belongs to that county,
@@ -312,9 +358,17 @@ export function coverageTierForText(text: string, hints: CoverageTierHints = {})
   // county down on the Gulf; "Jefferson County" is not ours.
   const namesForeignCounty = (place: string) =>
     haystack.includes(`${place} county`) && !HOME_COUNTY_KEYS.has(place);
+
+  // Strip the stock phrases first, so "data center" never reads as Center, Texas.
+  const withoutStockPhrases = PLACE_FALSE_POSITIVE_PATTERNS.reduce(
+    (text, pattern) => text.replace(new RegExp(pattern.source, "gi"), " "),
+    haystack,
+  );
+
   if (
     HOME_PLACE_KEYS.some(
-      (place, index) => !namesForeignCounty(place) && HOME_PLACE_PATTERNS[index].test(haystack),
+      (place, index) =>
+        !namesForeignCounty(place) && HOME_PLACE_PATTERNS[index].test(withoutStockPhrases),
     )
   ) {
     return "home-district";

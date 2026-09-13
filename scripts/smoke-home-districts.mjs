@@ -51,6 +51,34 @@ assert(
 assert(districts.includes("hasTexasSignal"), "Text classification lost its Texas-signal guard.");
 assert(districts.includes("namesForeignCounty"), "Text classification lost its foreign-county guard.");
 
+// Every state numbers its own districts, and this site carries a feed for all
+// fifty. A bare "1st congressional district" or "HD-7" must not claim a
+// reserved home-district slot without a Texas signal.
+assert(
+  districts.includes("HOME_DISTRICT_AMBIGUOUS_TERMS"),
+  "Generic district labels must be separated from the Texas-qualified ones.",
+);
+for (const generic of ["house district 7", "hd-7", "congressional district 1", "1st congressional district"]) {
+  const ambiguousBlock = districts.split("HOME_DISTRICT_AMBIGUOUS_TERMS")[1]?.split("];")[0] ?? "";
+  assert(ambiguousBlock.includes(`"${generic}"`), `"${generic}" must require a Texas signal.`);
+}
+for (const qualified of ["texas house district 7", "tx-01", "jay dean", "nathaniel moran"]) {
+  const unambiguousBlock = districts.split("HOME_DISTRICT_UNAMBIGUOUS_TERMS")[1]?.split("];")[0] ?? "";
+  assert(unambiguousBlock.includes(`"${qualified}"`), `"${qualified}" should identify the seat on its own.`);
+}
+
+// Center is the Shelby County seat and also a word in half the buildings in
+// Texas. It belongs in the index, behind a stock-phrase guard.
+assert(districts.includes('"Center"'), "Center, the Shelby County seat, is missing from the place index.");
+assert(districts.includes('"data center"'), "Stock-phrase list lost its entries.");
+// Assert the guard is actually applied at the match site, not merely declared:
+// an unused constant would satisfy a name check while the bug came back.
+assert(
+  districts.includes("withoutStockPhrases") &&
+    /HOME_PLACE_PATTERNS\[index\]\.test\(withoutStockPhrases\)/.test(districts),
+  "Place matching must test against the stock-phrase-stripped text, so 'data center' never reads as Center, Texas.",
+);
+
 // The wire has to actively watch the beat, not hope a statewide lane catches it.
 for (const lane of ["hd7-state-seat", "tx01-federal-seat", "home-district-government"]) {
   assert(sources.includes(`"${lane}"`), `Daily wire is missing the ${lane} query lane.`);
@@ -79,6 +107,35 @@ assert(
   "Homepage wire does not pull the home-district lane first.",
 );
 assert(home.includes("isHomeDistrictSeat"), "Homepage featured officials do not lead with the home seats.");
+
+// A fixed ticker cap below the sum of the reserved slots silently discards the
+// last lane's quota, which is how Washington's second slot was being dropped.
+assert(
+  home.includes("HOME_WIRE_RESERVED_SLOTS"),
+  "Ticker capacity must be derived from the reserved slots, not hard-coded.",
+);
+assert(
+  !/slice\(0, 10\)/.test(home),
+  "Ticker slice regressed to a hard-coded cap that can drop a reserved lane slot.",
+);
+
+// TX-01's boundary is not authenticated, so the homepage must not state its
+// geography as settled fact without showing that status.
+assert(
+  home.includes('district.boundaryStatus !== "verified"'),
+  "Homepage must flag an unauthenticated district boundary beside its summary.",
+);
+
+// Anything a home-district lane queries for must also be an ingestion term, or
+// the clip is fetched and then silently dropped by findTerms.
+assert(
+  sources.includes("homeDistrictPlaceTerms"),
+  "Home-district lanes must carry county and place names as ingestion terms.",
+);
+for (const signal of ["mayor", "sheriff", "open records"]) {
+  const govBlock = sources.split('"home-district-government"')[2] ?? sources;
+  assert(govBlock.includes(`"${signal}"`), `Local-government lane queries ${signal} but cannot ingest it.`);
+}
 
 // The policy has to be stated in public, linked, and indexed.
 assert(beatPage.includes("HD-7 for the state. TX-01 for the federal."), "Beat page lost its coverage statement.");

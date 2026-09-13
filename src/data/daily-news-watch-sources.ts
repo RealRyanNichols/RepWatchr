@@ -118,6 +118,15 @@ const homeDistrictPlaces: string[] = [...HOME_DISTRICT_PLACES];
 const hd7Counties = TX_HOUSE_DISTRICT_7.counties.map((county) => county.name);
 const tx01Counties = TX_CONGRESSIONAL_DISTRICT_1.counties.map((county) => county.name);
 
+// Every signal these lanes query for has to appear in the source's `terms` too:
+// parseRssClips drops an item when findTerms returns nothing, so a query-only
+// signal is fetched and then silently discarded. Counties and places are
+// included so "Shelby County sheriff announces..." survives ingestion.
+const homeDistrictPlaceTerms = [
+  ...homeDistrictCounties.map((county) => `${county.toLowerCase()} county`),
+  ...homeDistrictPlaces.map((place) => place.toLowerCase()),
+];
+
 const homeDistrictRequiredTerms = [
   ...HOME_DISTRICT_TERMS,
   ...homeDistrictCounties.map((county) => county.toLowerCase()),
@@ -408,7 +417,12 @@ const HOME_DISTRICT_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
     cities: homeDistrictPlaces,
     powerChannels: ["officials", "elections", "money", "courts"],
     sourceType: "public_news_search",
-    terms: ["house district 7", "state representative", "legislature", "bill", "vote", "campaign finance", "ethics", "election"],
+    terms: [
+      ...HOME_DISTRICT_TERMS,
+      ...homeDistrictPlaceTerms,
+      "state representative", "legislature", "bill", "vote", "campaign finance",
+      "ethics", "election", "runoff", "town hall",
+    ],
     ...texasControls,
     requiredTerms: homeDistrictRequiredTerms,
   },
@@ -425,7 +439,12 @@ const HOME_DISTRICT_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
     cities: homeDistrictPlaces,
     powerChannels: ["officials", "elections", "money", "courts"],
     sourceType: "public_news_search",
-    terms: ["congressional district 1", "congress", "representative", "roll call", "vote", "hearing", "oversight", "campaign finance"],
+    terms: [
+      ...HOME_DISTRICT_TERMS,
+      ...homeDistrictPlaceTerms,
+      "congress", "congressman", "representative", "roll call", "vote", "hearing",
+      "oversight", "campaign finance", "earmark", "town hall",
+    ],
     ...texasControls,
     requiredTerms: homeDistrictRequiredTerms,
   },
@@ -442,7 +461,13 @@ const HOME_DISTRICT_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
     cities: homeDistrictPlaces,
     powerChannels: ["officials", "school-boards", "public-safety", "money"],
     sourceType: "public_news_search",
-    terms: [...eastTexasCountyTerms, "city council", "school board", "trustee"],
+    terms: [
+      ...eastTexasCountyTerms,
+      ...homeDistrictPlaceTerms,
+      "city council", "council member", "mayor", "sheriff", "constable",
+      "justice of the peace", "school board", "trustee", "superintendent",
+      "open records", "open meetings",
+    ],
     ...texasControls,
     requiredTerms: homeDistrictRequiredTerms,
   },

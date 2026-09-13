@@ -170,7 +170,15 @@ const HOME_WIRE_HOME_DISTRICT_SLOTS = 4;
 const HOME_WIRE_EAST_TEXAS_SLOTS = 3;
 const HOME_WIRE_TEXAS_SLOTS = 2;
 const HOME_WIRE_NATIONAL_SLOTS = 2;
-const HOME_WIRE_TICKER_SLOTS = 10;
+// The display cap is derived from the reserved slots, never hard-coded: a fixed
+// cap smaller than their sum silently discards the last lane's quota, which is
+// how Washington's second slot was being dropped on a busy news day.
+const HOME_WIRE_RESERVED_SLOTS =
+  HOME_WIRE_HOME_DISTRICT_SLOTS +
+  HOME_WIRE_EAST_TEXAS_SLOTS +
+  HOME_WIRE_TEXAS_SLOTS +
+  HOME_WIRE_NATIONAL_SLOTS;
+const HOME_WIRE_TICKER_SLOTS = HOME_WIRE_RESERVED_SLOTS;
 
 function wireLaneLabel(clip: DailyWireClip) {
   if (clip.jurisdictionMatch === "home-district") return "HD-7 / TX-01";
@@ -289,7 +297,7 @@ export default async function HomePage() {
   ]) {
     tickerMap.set(item.title.toLowerCase(), item);
   }
-  const tickerItems = [...tickerMap.values()].slice(0, 10);
+  const tickerItems = [...tickerMap.values()].slice(0, HOME_WIRE_RESERVED_SLOTS);
   const jayDean = getOfficialById("jay-dean");
   const jayDeanWithPhoto = jayDean ? officialWithSafePhoto(jayDean) : undefined;
   const jayDeanMedia = getOfficialVerifiedBrief("jay-dean")?.media;
@@ -548,6 +556,11 @@ export default async function HomePage() {
                   {district.incumbentName} · {district.chamber}
                 </p>
                 <p className="mt-1 text-sm leading-6 text-slate-300">{district.summary}</p>
+                {district.boundaryStatus !== "verified" ? (
+                  <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-[#e1be64]">
+                    Boundary needs authentication · see the sources
+                  </p>
+                ) : null}
               </Link>
             ))}
           </div>
