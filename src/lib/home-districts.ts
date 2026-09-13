@@ -210,23 +210,31 @@ export const HOME_DISTRICT_TERMS: string[] = [
 ];
 
 /**
- * Phrases that contain a home-district place name but are not about the place.
- * "Center" is the Shelby County seat and a word in half the buildings in Texas.
+ * Locality syntax that marks a place name as the actual place rather than a
+ * word inside something else. "Center" is the Shelby County seat and also sits
+ * in research center, performing arts center, distribution center and every
+ * other compound nobody can finish enumerating, so a denylist of those phrases
+ * is unwinnable. Require positive evidence instead: the name has to appear with
+ * a state tag, a civic prefix, or a local-government noun beside it.
  */
-const PLACE_FALSE_POSITIVE_PHRASES: string[] = [
-  "data center",
-  "medical center",
-  "civic center",
-  "shopping center",
-  "convention center",
-  "detention center",
-  "call center",
-  "community center",
-  "distribution center",
-  "health center",
-  "visitor center",
-  "recreation center",
-];
+function localityPatternsFor(place: string) {
+  const p = place.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return [
+    // "Center, Texas" / "Center, TX"
+    new RegExp(`\\b${p}\\s*,\\s*(texas|tx)\\b`, "i"),
+    // "City of Center" / "Town of Center"
+    new RegExp(`\\b(city|town)\\s+of\\s+${p}\\b`, "i"),
+    // "Center ISD"
+    new RegExp(`\\b${p}\\s+isd\\b`, "i"),
+    // "Center city council", "Center mayor", "Center police", ...
+    new RegExp(
+      `\\b${p}\\s+(city\\s+council|council|mayor|city\\s+hall|city\\s+manager|police|fire|school|schools|trustees?|voters?|residents?)\\b`,
+      "i",
+    ),
+    // "mayor of Center", "council of Center"
+    new RegExp(`\\b(mayor|council|city\\s+council)\\s+of\\s+${p}\\b`, "i"),
+  ];
+}
 
 /**
  * Coverage tiers, most local first. The homepage, the wire, and profile
@@ -268,9 +276,9 @@ function wholeWordPattern(needle: string) {
 }
 
 const HOME_PLACE_PATTERNS = HOME_PLACE_KEYS.map(wholeWordPattern);
+const HOME_PLACE_LOCALITY_PATTERNS = HOME_DISTRICT_PLACES.map(localityPatternsFor);
 const HOME_UNAMBIGUOUS_TERM_PATTERNS = HOME_DISTRICT_UNAMBIGUOUS_TERMS.map(wholeWordPattern);
 const HOME_AMBIGUOUS_TERM_PATTERNS = HOME_DISTRICT_AMBIGUOUS_TERMS.map(wholeWordPattern);
-const PLACE_FALSE_POSITIVE_PATTERNS = PLACE_FALSE_POSITIVE_PHRASES.map(wholeWordPattern);
 
 function hasTexasSignal(haystack: string) {
   return /\btexas\b/i.test(haystack) || /(^|[^a-z])tx([^a-z]|$)/i.test(haystack);
@@ -339,8 +347,10 @@ export function coverageTierForText(text: string, hints: CoverageTierHints = {})
   // Texas-qualified district labels and officeholder names stand alone.
   if (HOME_UNAMBIGUOUS_TERM_PATTERNS.some((pattern) => pattern.test(haystack))) return "home-district";
 
+  // Only article-derived evidence counts. A search source stamps its own state
+  // on every clip it returns, so trusting hints.state would let an Ohio result
+  // arriving through a home-district lane authenticate itself as Texas.
   const structuredTexas =
-    hints.state?.toUpperCase() === "TX" ||
     (hints.counties ?? []).some((county) => HOME_COUNTY_KEYS.has(normalizedCounty(county))) ||
     (hints.cities ?? []).some((city) => HOME_PLACE_KEYS.includes(city.trim().toLowerCase()));
 
@@ -359,16 +369,17 @@ export function coverageTierForText(text: string, hints: CoverageTierHints = {})
   const namesForeignCounty = (place: string) =>
     haystack.includes(`${place} county`) && !HOME_COUNTY_KEYS.has(place);
 
-  // Strip the stock phrases first, so "data center" never reads as Center, Texas.
-  const withoutStockPhrases = PLACE_FALSE_POSITIVE_PATTERNS.reduce(
-    (text, pattern) => text.replace(new RegExp(pattern.source, "gi"), " "),
-    haystack,
-  );
-
+  // Locality syntax is required even when the caller supplied a structured city
+  // match. Those matches are substring-based upstream, so "Texas research
+  // center" hands back a Center hint; letting the hint waive this test would
+  // reopen the hole it is meant to close. A structured city can vouch for WHICH
+  // state a place is in (via structuredTexas above), never for whether the word
+  // is being used as the place at all.
   if (
     HOME_PLACE_KEYS.some(
       (place, index) =>
-        !namesForeignCounty(place) && HOME_PLACE_PATTERNS[index].test(withoutStockPhrases),
+        !namesForeignCounty(place) &&
+        HOME_PLACE_LOCALITY_PATTERNS[index].some((pattern) => pattern.test(haystack)),
     )
   ) {
     return "home-district";

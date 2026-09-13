@@ -120,12 +120,14 @@ const tx01Counties = TX_CONGRESSIONAL_DISTRICT_1.counties.map((county) => county
 
 // Every signal these lanes query for has to appear in the source's `terms` too:
 // parseRssClips drops an item when findTerms returns nothing, so a query-only
-// signal is fetched and then silently discarded. Counties and places are
-// included so "Shelby County sheriff announces..." survives ingestion.
-const homeDistrictPlaceTerms = [
-  ...homeDistrictCounties.map((county) => `${county.toLowerCase()} county`),
-  ...homeDistrictPlaces.map((place) => place.toLowerCase()),
-];
+// signal is fetched and then silently discarded.
+//
+// Geography deliberately stays OUT of `terms`. findTerms accepts a clip when
+// any single term matches, so a county name in this list would let "Shelby
+// County" alone clear the topic gate with no government signal in the story at
+// all. The counties and cities fields below already carry geography into
+// jurisdiction matching, which is where it belongs; `terms` stays topical so a
+// clip has to be about something.
 
 const homeDistrictRequiredTerms = [
   ...HOME_DISTRICT_TERMS,
@@ -419,7 +421,6 @@ const HOME_DISTRICT_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
     sourceType: "public_news_search",
     terms: [
       ...HOME_DISTRICT_TERMS,
-      ...homeDistrictPlaceTerms,
       "state representative", "legislature", "bill", "vote", "campaign finance",
       "ethics", "election", "runoff", "town hall",
     ],
@@ -441,7 +442,6 @@ const HOME_DISTRICT_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
     sourceType: "public_news_search",
     terms: [
       ...HOME_DISTRICT_TERMS,
-      ...homeDistrictPlaceTerms,
       "congress", "congressman", "representative", "roll call", "vote", "hearing",
       "oversight", "campaign finance", "earmark", "town hall",
     ],
@@ -463,7 +463,6 @@ const HOME_DISTRICT_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
     sourceType: "public_news_search",
     terms: [
       ...eastTexasCountyTerms,
-      ...homeDistrictPlaceTerms,
       "city council", "council member", "mayor", "sheriff", "constable",
       "justice of the peace", "school board", "trustee", "superintendent",
       "open records", "open meetings",

@@ -507,10 +507,14 @@ export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicate
   // their officeholders, or a county or town inside them outranks a generic
   // local match so the wire never buries the district it exists to cover.
   const isHomeDistrictItem =
+    // countyMatches and cityMatches are matched against the article text, so
+    // they are evidence. input.state is stamped by the search source on every
+    // clip it returns and is deliberately not passed: it would let an
+    // out-of-state result arriving through a home-district lane vouch for
+    // itself.
     coverageTierForText(articleText, {
       counties: countyMatches,
       cities: cityMatches,
-      state: texasEvidence ? "TX" : input.state,
     }) === "home-district";
 
   let jurisdictionMatch: DailyWireJurisdictionMatch = "none";

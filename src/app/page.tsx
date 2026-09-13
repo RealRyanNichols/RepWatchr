@@ -556,13 +556,19 @@ export default async function HomePage() {
                   {district.incumbentName} · {district.chamber}
                 </p>
                 <p className="mt-1 text-sm leading-6 text-slate-300">{district.summary}</p>
-                {district.boundaryStatus !== "verified" ? (
-                  <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-[#e1be64]">
-                    Boundary needs authentication · see the sources
-                  </p>
-                ) : null}
               </Link>
             ))}
+            {HOME_DISTRICTS.some((district) => district.boundaryStatus !== "verified") ? (
+              <Link
+                href="/home-district"
+                className="sm:col-span-2 block border-t border-white/15 pt-3 text-xs font-semibold uppercase tracking-wide text-[#e1be64] underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+              >
+                {HOME_DISTRICTS.filter((district) => district.boundaryStatus !== "verified")
+                  .map((district) => district.code)
+                  .join(" and ")}{" "}
+                boundary needs authentication · read the sources
+              </Link>
+            ) : null}
           </div>
 
           <nav aria-label="Explore RepWatchr" className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-slate-200">

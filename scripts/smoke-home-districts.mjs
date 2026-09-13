@@ -73,13 +73,32 @@ for (const qualified of ["texas house district 7", "tx-01", "jay dean", "nathani
 // Center is the Shelby County seat and also a word in half the buildings in
 // Texas. It belongs in the index, behind a stock-phrase guard.
 assert(districts.includes('"Center"'), "Center, the Shelby County seat, is missing from the place index.");
-assert(districts.includes('"data center"'), "Stock-phrase list lost its entries.");
-// Assert the guard is actually applied at the match site, not merely declared:
-// an unused constant would satisfy a name check while the bug came back.
+// A denylist of generic compounds can never be finished - research center,
+// performing arts center, distribution center. Require positive locality syntax
+// instead, and apply it at the match site even when a structured city hint is
+// present, since those hints are substring-matched upstream.
 assert(
-  districts.includes("withoutStockPhrases") &&
-    /HOME_PLACE_PATTERNS\[index\]\.test\(withoutStockPhrases\)/.test(districts),
-  "Place matching must test against the stock-phrase-stripped text, so 'data center' never reads as Center, Texas.",
+  districts.includes("localityPatternsFor") && districts.includes("HOME_PLACE_LOCALITY_PATTERNS"),
+  "Place matching must require positive locality syntax, not a phrase denylist.",
+);
+assert(
+  /HOME_PLACE_LOCALITY_PATTERNS\[index\]\.some\(\(pattern\) => pattern\.test\(haystack\)\)/.test(districts),
+  "Locality patterns are declared but not applied at the place-match site.",
+);
+assert(
+  !districts.includes("structuredCities.has(place)"),
+  "A structured city hint must not waive the locality test: those hints are substring matches.",
+);
+
+// A search source stamps its own state on every clip it returns, so source
+// metadata can never authenticate an out-of-state article as Texas.
+assert(
+  !/hints\.state\?\.toUpperCase\(\) === "TX"/.test(districts),
+  "structuredTexas must not trust a caller-supplied state: search sources stamp TX on everything.",
+);
+assert(
+  !/state: texasEvidence \? "TX" : input\.state/.test(quality),
+  "Quality engine must not pass source-level state into the home-district classifier.",
 );
 
 // The wire has to actively watch the beat, not hope a statewide lane catches it.
@@ -124,20 +143,65 @@ assert(
 
 // TX-01's boundary is not authenticated, so the homepage must not state its
 // geography as settled fact without showing that status.
+// The warning has to point AT the evidence. Inside the card's Link it opened the
+// officeholder profile, where the boundary sources are not rendered at all.
 assert(
   home.includes('district.boundaryStatus !== "verified"'),
-  "Homepage must flag an unauthenticated district boundary beside its summary.",
+  "Homepage must flag an unauthenticated district boundary.",
+);
+// Check the warning's OWN element, not "somewhere within 400 characters": the
+// loose version passed because an unrelated nav link to /home-district sits
+// nearby, so pointing the warning at /officials went undetected.
+const warningAt = home.toLowerCase().indexOf("boundary needs authentication");
+assert(warningAt !== -1, "Homepage lost its boundary-authentication warning text.");
+const warningElementStart = home.lastIndexOf("<Link", warningAt);
+assert(warningElementStart !== -1, "The boundary warning is not inside a link to its sources.");
+const warningElement = home.slice(warningElementStart, warningAt);
+assert(
+  warningElement.includes('href="/home-district"'),
+  "The boundary warning must link to /home-district, the page that renders its sources.",
 );
 
 // Anything a home-district lane queries for must also be an ingestion term, or
 // the clip is fetched and then silently dropped by findTerms.
-assert(
-  sources.includes("homeDistrictPlaceTerms"),
-  "Home-district lanes must carry county and place names as ingestion terms.",
-);
+// Isolate the actual source object, not "everything after this lane's name":
+// the loose version passed while the signal lived in some unrelated later lane.
+function laneTermsArray(laneId) {
+  const marker = `queryLane: "${laneId}"`;
+  const at = sources.indexOf(marker);
+  if (at === -1) return null;
+  const termsAt = sources.indexOf("terms: [", at);
+  if (termsAt === -1) return null;
+  const close = sources.indexOf("]", termsAt);
+  return close === -1 ? null : sources.slice(termsAt, close);
+}
+
+const govTerms = laneTermsArray("home-district-government");
+assert(govTerms, "Could not locate the home-district-government terms array.");
 for (const signal of ["mayor", "sheriff", "open records"]) {
-  const govBlock = sources.split('"home-district-government"')[2] ?? sources;
-  assert(govBlock.includes(`"${signal}"`), `Local-government lane queries ${signal} but cannot ingest it.`);
+  assert(
+    govTerms.includes(`"${signal}"`),
+    `Local-government lane queries ${signal} but cannot ingest it: findTerms will drop the clip.`,
+  );
+}
+
+// findTerms accepts a clip when ANY term matches, so geography in `terms` lets a
+// bare county name clear the topic gate with no government signal in the story.
+// Geography belongs in the counties/cities fields, which feed jurisdiction
+// matching instead.
+assert(
+  !sources.includes("homeDistrictPlaceTerms"),
+  "Geography must not sit in a lane's `terms`: a county name alone would satisfy the topic gate.",
+);
+for (const laneId of ["hd7-state-seat", "tx01-federal-seat", "home-district-government"]) {
+  const terms = laneTermsArray(laneId);
+  assert(terms, `Could not locate the ${laneId} terms array.`);
+  for (const geography of ["harrison county", "shelby county", "longview", "nacogdoches"]) {
+    assert(
+      !terms.toLowerCase().includes(`"${geography}"`),
+      `Lane ${laneId} lists ${geography} as a topic term, which lets locality alone pass the topic gate.`,
+    );
+  }
 }
 
 // The policy has to be stated in public, linked, and indexed.
