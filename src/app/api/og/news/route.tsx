@@ -30,6 +30,9 @@ export async function GET(request: Request) {
       imageFocalPoint: article.imageFocalPoint,
       imageCredit: article.imageCredit,
       imageAlt: article.imageAlt,
+      coverKey: article.id || article.title,
+      scope: article.scope,
+      visualTheme: article.visualTheme,
     });
   }
 

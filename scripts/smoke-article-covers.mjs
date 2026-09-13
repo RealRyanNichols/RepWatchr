@@ -22,7 +22,10 @@ const assert = (condition, message) => {
 const thumbnail = read("src/components/news/ArticleThumbnail.tsx");
 const cover = read("src/components/news/GeneratedCover.tsx");
 const coverLib = read("src/lib/generated-cover.ts");
+const coverMarkup = read("src/lib/generated-cover-markup.ts");
 const thumbnailCss = read("src/components/news/ArticleThumbnail.module.css");
+const articleOg = read("src/lib/article-og.tsx");
+const ogRoute = read("src/app/api/og/news/route.tsx");
 
 // The no-photo branch draws generated art, not an empty box.
 const fallbackBranch = thumbnail.slice(thumbnail.indexOf("hasPhoto && article.imageUrl ? ("));
@@ -54,13 +57,35 @@ const motifList = coverLib.match(/export const COVER_MOTIFS = \[([^\]]+)\]/);
 assert(motifList, "COVER_MOTIFS is missing from the generated-cover library.");
 const motifs = [...motifList[1].matchAll(/"([a-z]+)"/g)].map((match) => match[1]);
 assert(motifs.length >= 4, `Only ${motifs.length} cover motifs are defined; cards will look repetitive.`);
-const registry = cover.slice(cover.indexOf("const MOTIF_COMPONENTS"), cover.indexOf("export default function"));
+const registry = coverMarkup.slice(
+  coverMarkup.indexOf("const MOTIF_MARKUP"),
+  coverMarkup.indexOf("export function generatedCoverInnerSvg"),
+);
 for (const motif of motifs) {
   assert(
-    new RegExp(`\\b${motif}:\\s*[A-Z]`).test(registry),
-    `Motif "${motif}" can be selected but has no component in MOTIF_COMPONENTS, so its cards render blank.`,
+    new RegExp(`\\b${motif}[,:]`).test(registry),
+    `Motif "${motif}" can be selected but has no drawing in MOTIF_MARKUP, so its cards render blank.`,
   );
 }
+
+// One artwork module, drawn by both the page card and the share card, so they
+// can never drift apart.
+assert(
+  cover.includes("generatedCoverInnerSvg"),
+  "The article card no longer draws from the shared cover-art module.",
+);
+assert(
+  articleOg.includes("generatedCoverDataUri"),
+  "The share image no longer draws the same cover art as the article card.",
+);
+assert(
+  !articleOg.includes("washington-accountability-blue-hour"),
+  "The share image is back to falling back on a Washington photo, so local stories share as the Capitol.",
+);
+assert(
+  ogRoute.includes("coverKey: article.id || article.title"),
+  "The share-image route stopped passing the article identity, so its art no longer matches the page card.",
+);
 
 // Every palette a scope can resolve to actually exists.
 const paletteNames = [...coverLib.matchAll(/return "([A-Za-z]+)";/g)].map((match) => match[1]);

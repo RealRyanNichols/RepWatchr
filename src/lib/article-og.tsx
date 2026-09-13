@@ -2,6 +2,7 @@
 import { ImageResponse } from "next/og";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+import { generatedCoverDataUri } from "@/lib/generated-cover-markup";
 import { REPWATCHR_OG_SIZE } from "@/lib/repwatchr-seo";
 
 let headlineFont: ArrayBuffer | undefined;
@@ -21,6 +22,10 @@ type ArticleOgInput = {
   imageFocalPoint?: string;
   imageCredit?: string;
   imageAlt?: string;
+  /** Stable article identity, so the share card draws the same art as the page card. */
+  coverKey?: string;
+  scope?: string;
+  visualTheme?: string;
 };
 
 function imageSource(path: string, requestUrl: string) {
@@ -48,10 +53,17 @@ export function renderArticleOgImage(input: ArticleOgInput) {
     : /illustration|symbolic|artwork/i.test(`${input.imageCredit ?? ""} ${input.imageAlt ?? ""}`)
       ? "EDITORIAL ILLUSTRATION"
       : "STORY VISUAL";
-  const background = imageSource(
-    input.imageUrl ?? "/images/og/washington-accountability-blue-hour.jpg",
-    input.requestUrl,
-  );
+  const background = input.imageUrl
+    ? imageSource(input.imageUrl, input.requestUrl)
+    : // The same cover art the article card draws. A story with no photograph
+      // used to borrow a Washington photo, so an East Texas school bond shared
+      // as the Capitol. Share card and page card now match.
+      generatedCoverDataUri({ key: input.coverKey ?? "repwatchr", scope: input.scope, visualTheme: input.visualTheme });
+  // Photographs need the heavy wash to keep the headline readable. Generated
+  // cover art is already dark and controlled, so it gets a lighter one.
+  const wash = input.imageUrl
+    ? "linear-gradient(180deg, rgba(3,10,19,0.63) 0%, rgba(3,10,19,0.12) 24%, rgba(3,10,19,0.66) 44%, rgba(3,10,19,0.97) 85%)"
+    : "linear-gradient(180deg, rgba(3,10,19,0.10) 0%, rgba(3,10,19,0.04) 30%, rgba(3,10,19,0.52) 62%, rgba(3,10,19,0.94) 88%)";
 
   return new ImageResponse(
     <div
@@ -88,7 +100,7 @@ export function renderArticleOgImage(input: ArticleOgInput) {
           left: 0,
           width: "100%",
           height: "100%",
-          background: "linear-gradient(180deg, rgba(3,10,19,0.63) 0%, rgba(3,10,19,0.12) 24%, rgba(3,10,19,0.66) 44%, rgba(3,10,19,0.97) 85%)",
+          background: wash,
         }}
       />
       <div
