@@ -28,9 +28,12 @@ assert(districts.includes('incumbentOfficialId: "nathaniel-moran"'), "TX-01 is n
 for (const county of ["Gregg", "Harrison", "Marion"]) {
   assert(districts.includes(`name: "${county}"`), `HD-7 county ${county} is missing.`);
 }
-for (const county of ["Smith", "Rusk", "Panola", "Cass", "Cherokee", "Nacogdoches", "Shelby", "Sabine", "San Augustine", "Bowie"]) {
-  assert(districts.includes(`name: "${county}"`), `TX-01 county ${county} is missing.`);
-}
+// TX-01's county list is pending authentication and expected to change, so it
+// is checked for shape, not for specific names - see the derived check below.
+assert(
+  (districts.match(/\{\s*name:\s*"[^"]+",\s*inclusion:/g) ?? []).length >= 13,
+  "TX-01's county list looks truncated.",
+);
 
 // Boundary provenance has to stay honest: TX-01 rides a 2025 map still in
 // litigation, so its county list must not be published as a settled finding.
@@ -149,19 +152,28 @@ const rosterPage = read("src/app/home-district/roster/page.tsx");
 const search = read("src/lib/official-search.ts");
 const flags = read("src/lib/repwatchr-feature-flags.ts");
 
-// County names now live only in the canonical beat; the footprint derives them.
-// It still owns the per-county slug and seat, so every district county needs an
-// entry here or the ledger loses its data directory link.
-for (const county of [
-  "Bowie", "Cass", "Cherokee", "Gregg", "Harrison", "Marion", "Nacogdoches",
-  "Panola", "Rusk", "Sabine", "San Augustine", "Shelby", "Smith",
-]) {
-  assert(districts.includes(`name: "${county}"`), `Canonical beat is missing ${county} County.`);
+// County names live only in the canonical beat. Re-listing them here would
+// reinstate the second boundary list this module exists to remove: an
+// authenticated correction to TX-01 would fail a test that is itself wrong, and
+// a newly added county would never get its metadata checked. So derive the
+// expectation from home-districts.ts instead of hard-coding it.
+const canonicalCounties = [...districts.matchAll(/\{\s*name:\s*"([^"]+)",\s*inclusion:/g)].map((m) => m[1]);
+assert(
+  canonicalCounties.length >= 13,
+  `Expected the canonical beat to list at least 13 counties, found ${canonicalCounties.length}.`,
+);
+for (const county of new Set(canonicalCounties)) {
   const key = county.includes(" ") ? `"${county}"` : county;
   assert(
     new RegExp(`${key}:\\s*\\{\\s*slug:`).test(footprint),
-    `Footprint has no slug/seat metadata for ${county} County.`,
+    `Footprint has no slug/seat metadata for ${county} County. Add it to COUNTY_METADATA.`,
   );
+}
+
+// HD-7's three counties come from a primary record and are stable, so asserting
+// them by name is a real content check rather than a duplicated boundary.
+for (const county of ["Gregg", "Harrison", "Marion"]) {
+  assert(canonicalCounties.includes(county), `HD-7 county ${county} is missing from the canonical beat.`);
 }
 
 // The office slate is what turns an empty jurisdiction into a documented gap

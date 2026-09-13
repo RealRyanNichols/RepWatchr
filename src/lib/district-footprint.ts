@@ -106,7 +106,12 @@ export const FOOTPRINT_BOUNDARY_PROVENANCE = {
   status: TX_CONGRESSIONAL_DISTRICT_1.boundaryStatus,
   note: TX_CONGRESSIONAL_DISTRICT_1.boundaryNote,
   reviewedAt: TX_CONGRESSIONAL_DISTRICT_1.boundaryReviewedAt,
-  sources: TX_CONGRESSIONAL_DISTRICT_1.sources.filter((source) => source.supports.includes("boundaries")),
+  // The note makes three claims: the county list, the operative plan, and the
+  // litigation status. Filtering to "boundaries" alone dropped the timeline
+  // source that carries the last two, publishing claims without their proof.
+  sources: TX_CONGRESSIONAL_DISTRICT_1.sources.filter((source) =>
+    source.supports.some((claim) => ["boundaries", "operative_plan", "litigation_status"].includes(claim)),
+  ),
 };
 
 /**
@@ -176,18 +181,43 @@ export const FOOTPRINT_PLACE_PROVENANCE = {
  */
 export const OFFICE_SLATE_SOURCES = [
   {
-    label: "Texas Constitution, Article V: county judge, commissioners, sheriff, clerks, justices of the peace and constables",
+    label: "Texas Constitution, Article V: county judge, commissioners court, sheriff, clerks, justices of the peace and constables",
     url: "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm",
     supports: ["county-judge", "commissioner", "sheriff", "district-clerk", "county-clerk", "justice-of-the-peace", "constable"],
   },
   {
-    label: "Texas Constitution, Article XVI: county treasurer, tax assessor-collector and county attorney",
-    url: "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.16.htm",
-    supports: ["treasurer", "tax-assessor", "prosecutor"],
+    label: "Texas Constitution, Article V, Section 21: county attorneys and district attorneys",
+    url: "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm#5.21",
+    supports: ["prosecutor"],
   },
   {
-    label: "Texas Local Government Code: municipal officers in general-law and home-rule cities",
+    label: "Texas Constitution, Article VIII, Section 14: county assessor-collector of taxes",
+    url: "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.8.htm#8.14",
+    supports: ["tax-assessor"],
+  },
+  {
+    label: "Texas Constitution, Article XVI, Section 44: county treasurer",
+    url: "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.16.htm#16.44",
+    supports: ["treasurer"],
+  },
+  {
+    label: "Local Government Code Chapter 22: officers of a Type A general-law municipality",
     url: "https://statutes.capitol.texas.gov/Docs/LG/htm/LG.22.htm",
+    supports: ["mayor", "council"],
+  },
+  {
+    label: "Local Government Code Chapter 23: officers of a Type B general-law municipality",
+    url: "https://statutes.capitol.texas.gov/Docs/LG/htm/LG.23.htm",
+    supports: ["mayor", "council"],
+  },
+  {
+    label: "Local Government Code Chapter 24: officers of a Type C general-law municipality",
+    url: "https://statutes.capitol.texas.gov/Docs/LG/htm/LG.24.htm",
+    supports: ["mayor", "council"],
+  },
+  {
+    label: "Texas Constitution, Article XI, Section 5: home-rule cities adopt a charter that sets their own officers",
+    url: "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.11.htm#11.5",
     supports: ["mayor", "council"],
   },
 ] as const;
@@ -200,7 +230,7 @@ export const OFFICE_SLATE_SOURCES = [
  */
 export const OFFICE_SLATE_PROVENANCE = {
   status: "sourced_with_variable_counts" as const,
-  note: "The offices below are elective under the cited Texas constitutional and statutory provisions. The fixed counts are the standard slate. Counts marked variable are floors, not findings: precinct courts and council sizes are set locally and have to be confirmed per jurisdiction before a number is published as that jurisdiction's requirement.",
+  note: "The offices below are elective under the cited Texas constitutional and statutory provisions. Which municipal chapter governs a given city depends on its form - Type A, Type B, Type C, or home rule - and a home-rule city sets its own officers by charter, so the city slate is the common floor rather than a per-city requirement. The fixed county counts are the standard slate. Counts marked variable are floors, not findings: precinct courts and council sizes are set locally and have to be confirmed per jurisdiction before a number is published as that jurisdiction's requirement.",
   reviewedAt: "2026-09-13",
 };
 
