@@ -130,13 +130,15 @@ function attentionRank(clip: DailyWireClip, now: Date) {
   const quality = Math.round(Math.max(0, Math.min(100, clip.qualityScore)) * 0.45);
   const source = clip.sourceTier === "official_record" ? 24 : clip.sourceTier === "named_news" ? 18 : 8;
   const jurisdiction =
-    clip.jurisdictionMatch === "local"
-      ? 10
-      : clip.jurisdictionMatch === "texas" || clip.jurisdictionMatch === "state"
-        ? 8
-        : clip.jurisdictionMatch === "national"
-          ? 6
-          : 0;
+    clip.jurisdictionMatch === "home-district"
+      ? 12
+      : clip.jurisdictionMatch === "local"
+        ? 10
+        : clip.jurisdictionMatch === "texas" || clip.jurisdictionMatch === "state"
+          ? 8
+          : clip.jurisdictionMatch === "national"
+            ? 6
+            : 0;
   const geography =
     clip.geographicRelevance === "local"
       ? 6

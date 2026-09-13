@@ -7,6 +7,7 @@ import UserMenu from "@/components/auth/UserMenu";
 
 const primaryLinks = [
   { href: "/", label: "Home" },
+  { href: "/home-district", label: "HD-7 / TX-01" },
   { href: "/elections/texas", label: "Texas Races" },
   { href: "/officials", label: "Officials" },
   { href: "/school-boards", label: "School Boards" },

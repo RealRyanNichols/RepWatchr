@@ -12,6 +12,13 @@ This repo is for RepWatchr and LeadRep verification intelligence only. Do not ro
 
 RepWatchr turns public-source signals, proof packets, official records, vote/funding data, and verification gaps into lead intelligence, verified data packages, predictive analytics, web conversion improvements, and recurring revenue. The product should separate claims from proof, keep weak signals marked as unverified, and hand useful verification work to the right agent or human reviewer.
 
+## Coverage Beat
+
+- The politics of this site are anchored to two districts: **HD-7** (Texas House District 7) for state coverage and **TX-01** (Texas's 1st congressional district) for federal coverage.
+- Coverage order is HD-7 / TX-01 first, then the wider East Texas launch territory, then Texas, then Washington. Statewide and national records run when they reach these districts or are big enough that readers in these counties need them regardless.
+- `src/lib/home-districts.ts` is the single source of truth for the beat: counties, officeholders, boundary provenance, and coverage tiers. Do not hard-code district or county lists in pages, wire lanes, or ranking logic; read them from that module.
+- TX-01's county list is carried as `needs_authentication` pending the Texas Legislative Council county-district report for PlanC2333. Use it to aim coverage; do not publish it as an established boundary finding.
+
 ## Repo Rules
 
 - Work on the `main` branch unless Ryan explicitly instructs otherwise.

@@ -291,6 +291,13 @@ const staticSeoPages: StaticSeoPage[] = [
     imageParams: { page: "state-reps" },
   },
   {
+    path: "/home-district",
+    title: "HD-7 and TX-01: The RepWatchr Beat",
+    description: "Texas House District 7 and Texas's 1st congressional district are the districts RepWatchr covers first, with the rule for when Texas and Washington stories run here.",
+    imageKind: "home",
+    imageParams: { page: "home-district" },
+  },
+  {
     path: "/east-texas",
     title: "East Texas Accountability Desk",
     description: "Source-led profiles and reporting for elected officials serving communities within 75 road miles of Harleton, Texas.",
