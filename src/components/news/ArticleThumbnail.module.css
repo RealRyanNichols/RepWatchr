@@ -11,22 +11,27 @@
   color: white;
 }
 .image { object-fit: cover; }
+/* Generated cover art. Fills the frame the way the photo would. */
 .backdrop {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 95% 5%, #28527d, transparent 60%), linear-gradient(135deg, #193653, #081426 70%);
-}
-.backdrop::after {
-  content: "";
-  position: absolute;
-  inset: 12% -12% -70% 62%;
-  border: 1px solid rgb(214 179 90 / 25%);
-  transform: rotate(24deg);
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .shade {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgb(2 8 18 / 12%), rgb(2 8 18 / 8%) 20%, rgb(2 8 18 / 82%) 68%, rgb(2 8 18 / 97%));
+}
+
+/*
+ * Photographs need a heavy wash to keep the headline readable. Generated
+ * covers are already dark and controlled, so they get a lighter one and the
+ * artwork stays visible behind the copy.
+ */
+.generated .shade {
+  background: linear-gradient(180deg, rgb(2 8 18 / 0%), rgb(2 8 18 / 6%) 30%, rgb(2 8 18 / 62%) 66%, rgb(2 8 18 / 93%));
 }
 .brand {
   position: absolute;
