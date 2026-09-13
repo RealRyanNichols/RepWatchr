@@ -126,6 +126,24 @@ assert(
   districts.includes("explicitlyTexas"),
   "An explicit '<place>, Texas' must override the foreign-place vetoes.",
 );
+
+// County names are shared too - Harrison County, Ohio; Marion County, Indiana -
+// and the wire's countyMatches are substring matches, so an out-of-state story
+// in a home-district lane still reports our county. Both the county branch and
+// the structured-evidence gate must reject the foreign-qualified form, or that
+// story lands in the reserved HD-7 / TX-01 slots.
+assert(
+  districts.includes("countyNamesForeignState") && districts.includes("countyQualifiedElsewhere"),
+  "Foreign-qualified counties must be rejected at both the county branch and the evidence gate.",
+);
+assert(
+  /haystack\.includes\(`\$\{county\} county`\) && !countyNamesForeignState\(county\)/.test(districts),
+  "The county branch still claims a county the article qualifies as another state's.",
+);
+assert(
+  /HOME_COUNTY_KEYS\.has\(normalizedCounty\(county\)\) && !countyQualifiedElsewhere/.test(districts),
+  "A county hint qualified as another state's must not count as Texas evidence.",
+);
 assert(
   /!explicitlyTexas\(place\) &&[\s\S]{0,120}US_STATES_OTHER_THAN_TEXAS/.test(districts) &&
     /!explicitlyTexas\(place\) && haystack\.includes/.test(districts),

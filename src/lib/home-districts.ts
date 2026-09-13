@@ -417,9 +417,20 @@ export function coverageTierForText(text: string, hints: CoverageTierHints = {})
 
   // Only article-derived evidence counts. A search source stamps its own state
   // on every clip it returns, so a caller must never hand that value down here.
+  // A county hint is a substring match against the article, so an Ohio story in
+  // a home-district lane still reports "Harrison". It only counts as Texas
+  // evidence when the article does not qualify that county as another state's.
+  const countyQualifiedElsewhere = (county: string) =>
+    US_STATES_OTHER_THAN_TEXAS.some((state) =>
+      new RegExp(`\\b${county} county,\\s*${state}\\b(?!\\s+city\\b)`, "i").test(haystack),
+    ) && !new RegExp(`\\b${county} county,\\s*(texas|tx)\\b`, "i").test(haystack);
+
   const structuredTexas =
     hints.texasEvidenceFromArticle === true ||
-    (hints.counties ?? []).some((county) => HOME_COUNTY_KEYS.has(normalizedCounty(county))) ||
+    (hints.counties ?? []).some(
+      (county) =>
+        HOME_COUNTY_KEYS.has(normalizedCounty(county)) && !countyQualifiedElsewhere(normalizedCounty(county)),
+    ) ||
     (hints.cities ?? []).some((city) => HOME_PLACE_KEYS.includes(city.trim().toLowerCase()));
 
   // County and place names need a Texas signal before they count. "Marshall",
@@ -429,7 +440,24 @@ export function coverageTierForText(text: string, hints: CoverageTierHints = {})
   // With a Texas signal established, a bare district number is ours.
   if (HOME_AMBIGUOUS_TERM_PATTERNS.some((pattern) => pattern.test(haystack))) return "home-district";
 
-  if ([...HOME_COUNTY_KEYS].some((county) => haystack.includes(`${county} county`))) return "home-district";
+  // Our county names are shared: Harrison County exists in Ohio, Marion in
+  // Indiana, Smith in Kansas. An explicit "<county> County, <other state>" is
+  // that state's, and the wire's countyMatches cannot settle it - those are
+  // substring matches against the article, so an Ohio story still reports
+  // "Harrison". Reject the foreign-qualified form before claiming the county.
+  const countyNamesForeignState = (county: string) =>
+    !new RegExp(`\\b${county} county,\\s*(texas|tx)\\b`, "i").test(haystack) &&
+    US_STATES_OTHER_THAN_TEXAS.some((state) =>
+      new RegExp(`\\b${county} county,\\s*${state}\\b(?!\\s+city\\b)`, "i").test(haystack),
+    );
+
+  if (
+    [...HOME_COUNTY_KEYS].some(
+      (county) => haystack.includes(`${county} county`) && !countyNamesForeignState(county),
+    )
+  ) {
+    return "home-district";
+  }
 
   // A town name that the same text uses as a county name belongs to that county,
   // not to this beat. Jefferson is a town in Marion County and also a Texas
