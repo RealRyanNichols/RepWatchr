@@ -222,7 +222,14 @@ export function seatLedgerFor(
     districts: jurisdiction.districts,
     covered,
     expected,
-    percent: Math.min(100, Math.round((covered / expected) * 100)),
+    // A slate is only filled when every expected office family is covered.
+    // Raw headcount can reach or exceed the expected total while a single-seat
+    // office is still empty, because the variable offices are floors: a county
+    // with nine commissioners and no sheriff would otherwise read 100%. Capping
+    // at 99% while anything is missing keeps a documented gap from reading as
+    // finished work, which is the whole point of this ledger.
+    percent:
+      missingLabels.length === 0 ? 100 : Math.min(99, Math.round((covered / expected) * 100)),
     missingLabels,
   };
 }

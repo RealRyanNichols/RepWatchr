@@ -118,6 +118,20 @@ assert(
 assert(rosterPage.includes("seatLedgerFor"), "Roster page does not compute the seat ledger.");
 assert(rosterPage.includes("NOT STARTED"), "Roster page no longer flags jurisdictions with zero seats on file.");
 
+// A documented gap must never read as finished work. Percent is gated on office
+// families, not raw headcount: the variable offices are floors, so a county with
+// nine commissioners and no sheriff can reach the expected total while most of
+// its slate is empty. Without this gate the badge reads SLATE FILLED on a row
+// that names nine missing offices right beside it.
+assert(
+  footprint.includes("missingLabels.length === 0 ? 100 : Math.min(99"),
+  "Seat percent must cap below 100 whenever an office family is still missing.",
+);
+assert(
+  !/percent:\s*Math\.min\(100, Math\.round\(\(covered \/ expected\)/.test(footprint),
+  "Seat percent regressed to raw headcount, which lets an incomplete slate read as filled.",
+);
+
 // District focus: default the directory to the footprint, reversibly, and never
 // make an out-of-district record unreachable.
 assert(flags.includes("districtFocusOnly"), "The district-focus flag is missing.");
