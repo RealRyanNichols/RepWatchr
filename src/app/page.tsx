@@ -10,6 +10,7 @@ import { getOfficialVerifiedBrief } from "@/data/official-verified-briefs";
 import { getRepWatchrServices } from "@/data/repwatchr-services";
 import { getDailyWireClips, type DailyWireClip } from "@/lib/daily-wire";
 import { isInEastTexasLaunchTerritory } from "@/lib/east-texas-launch-territory";
+import { isInHomeDistricts, isHomeDistrictSeat, HOME_DISTRICTS } from "@/lib/home-districts";
 import { articleThumbnailMessage, toEditorialThumbnailMessage } from "@/lib/editorial-visuals";
 import { getPublicArticleCatalog } from "@/lib/article-catalog";
 import ArticleThumbnail from "@/components/news/ArticleThumbnail";
@@ -20,9 +21,9 @@ import type { NewsArticle, Official } from "@/types";
 export const revalidate = 3600;
 
 export const metadata: Metadata = buildRepWatchrMetadata({
-  title: "RepWatchr - Public Officials on the Record",
+  title: "RepWatchr - HD-7 and TX-01 on the Record",
   description:
-    "Find public officials, school boards, votes, funding, red flags, and source-backed accountability records voters can inspect and share.",
+    "East Texas accountability for Texas House District 7 and TX-01: officials, school boards, votes, funding, red flags, and source-backed records voters can inspect and share, plus the Texas and Washington decisions that reach the district.",
   path: "/",
   imagePath: buildOgImageUrl("home"),
   imageAlt: "RepWatchr homepage social preview",
@@ -32,13 +33,13 @@ const levelCards = [
   {
     level: "federal",
     title: "Federal",
-    description: "Congressional profiles, votes, money, and public signals",
+    description: "TX-01 first, then the congressional votes, money, and signals that reach it",
     href: "/officials?level=federal",
   },
   {
     level: "state",
     title: "State",
-    description: "Texas House and Senate profiles loaded first",
+    description: "HD-7 first, then the rest of the Texas House and Senate",
     href: "/officials?level=state",
   },
   {
@@ -161,15 +162,18 @@ function storyDateLabel(value: string | null) {
   });
 }
 
-// Reserved live-wire slots by lane. RepWatchr is an East Texas desk first, so the
-// ticker guarantees East Texas and Texas coverage instead of letting the national
-// query lanes win on recency alone.
-const HOME_WIRE_EAST_TEXAS_SLOTS = 4;
-const HOME_WIRE_TEXAS_SLOTS = 3;
-const HOME_WIRE_NATIONAL_SLOTS = 3;
+// Reserved live-wire slots by lane. RepWatchr covers HD-7 and TX-01 first, then
+// the wider East Texas territory, then Texas, then Washington. Sorting purely by
+// recency makes the ticker national by arithmetic, because the national query
+// lanes outnumber the home-district ones. Reserve slots instead of hoping.
+const HOME_WIRE_HOME_DISTRICT_SLOTS = 4;
+const HOME_WIRE_EAST_TEXAS_SLOTS = 3;
+const HOME_WIRE_TEXAS_SLOTS = 2;
+const HOME_WIRE_NATIONAL_SLOTS = 2;
 const HOME_WIRE_TICKER_SLOTS = 10;
 
 function wireLaneLabel(clip: DailyWireClip) {
+  if (clip.jurisdictionMatch === "home-district") return "HD-7 / TX-01";
   if (clip.jurisdictionMatch === "local") return "East Texas";
   if (clip.jurisdictionMatch === "texas") return "Texas";
   if (clip.jurisdictionMatch === "national") return "Washington";
@@ -249,7 +253,7 @@ export default async function HomePage() {
   const latestNews = allNews.slice(1, 4);
   const trustedWireClips = wireResult.clips
     .filter((clip) => clip.publicStatus === "source_linked")
-    .filter((clip) => ["local", "texas", "national"].includes(clip.jurisdictionMatch))
+    .filter((clip) => ["home-district", "local", "texas", "national"].includes(clip.jurisdictionMatch))
     .filter((clip) => clip.geographicRelevance !== "weak" && clip.qualityScore >= 60);
   const nationalLeadWire = trustedWireClips.find((clip) => clip.jurisdictionMatch === "national");
   const leadArticle = allNews[0];
@@ -266,17 +270,15 @@ export default async function HomePage() {
           publishedAt: null,
           lane: "Washington",
         };
-  // RepWatchr leads with East Texas, then Texas, then Washington. Sorting the wire
-  // purely by recency makes the ticker national by arithmetic, because national query
-  // lanes outnumber East Texas lanes. Reserve slots by lane instead of hoping.
   const wireByJurisdiction = (match: string) =>
     trustedWireClips.filter((clip) => clip.jurisdictionMatch === match);
   const laneOrderedWireClips = [
+    ...wireByJurisdiction("home-district").slice(0, HOME_WIRE_HOME_DISTRICT_SLOTS),
     ...wireByJurisdiction("local").slice(0, HOME_WIRE_EAST_TEXAS_SLOTS),
     ...wireByJurisdiction("texas").slice(0, HOME_WIRE_TEXAS_SLOTS),
     ...wireByJurisdiction("national").slice(0, HOME_WIRE_NATIONAL_SLOTS),
   ];
-  // Backfill from whatever is left so a quiet East Texas news day never empties the wire.
+  // Backfill from whatever is left so a quiet home-district news day never empties the wire.
   const laneOrderedIds = new Set(laneOrderedWireClips.map((clip) => clip.id));
   const backfillWireClips = trustedWireClips.filter((clip) => !laneOrderedIds.has(clip.id));
   const tickerMap = new Map<string, HomeDeskItem>();
@@ -327,19 +329,36 @@ export default async function HomePage() {
 
   // The previous selection was an accident of the global sort: at-large districts encode
   // as district 0, so six unrelated at-large House members permanently held the homepage.
-  // RepWatchr is an East Texas and Texas desk, so lead with Texas and fall back outward.
+  // RepWatchr covers HD-7 and TX-01 first, so the two home seats lead, then the rest of
+  // the home districts, then East Texas, then Texas, then everyone else.
   const featuredCandidates = officials.filter(
     (o) => o.level === "federal" || o.level === "state",
   );
-  const eastTexasFeatured = featuredCandidates.filter(isInEastTexasLaunchTerritory);
+  const homeSeats = featuredCandidates.filter(isHomeDistrictSeat);
+  const homeDistrictFeatured = featuredCandidates.filter(
+    (o) => isInHomeDistricts(o) && !homeSeats.includes(o),
+  );
+  const eastTexasFeatured = featuredCandidates.filter(
+    (o) => isInEastTexasLaunchTerritory(o) && !homeSeats.includes(o) && !homeDistrictFeatured.includes(o),
+  );
   const texasFeatured = featuredCandidates.filter(
-    (o) => o.state === "TX" && !eastTexasFeatured.includes(o),
+    (o) =>
+      o.state === "TX" &&
+      !homeSeats.includes(o) &&
+      !homeDistrictFeatured.includes(o) &&
+      !eastTexasFeatured.includes(o),
   );
   const featuredPool = [
+    ...homeSeats,
+    ...homeDistrictFeatured,
     ...eastTexasFeatured,
     ...texasFeatured,
     ...featuredCandidates.filter(
-      (o) => !eastTexasFeatured.includes(o) && !texasFeatured.includes(o),
+      (o) =>
+        !homeSeats.includes(o) &&
+        !homeDistrictFeatured.includes(o) &&
+        !eastTexasFeatured.includes(o) &&
+        !texasFeatured.includes(o),
     ),
   ];
   // A face people recognize beats a placeholder, so prefer profiles that have a portrait.
@@ -428,9 +447,11 @@ export default async function HomePage() {
         <div className="mx-auto max-w-[1440px] px-4 py-5 sm:px-6 sm:py-7 lg:px-8">
           <div className={styles.masthead}>
             <div>
-              <p className="text-[10px] font-black uppercase tracking-[0.18em] text-[#e1be64]">On the public record</p>
+              <p className="text-[10px] font-black uppercase tracking-[0.18em] text-[#e1be64]">
+                HD-7 and TX-01 first · Texas and Washington when it reaches us
+              </p>
               <h1 className={styles.heading}>
-                East Texas. Texas. Washington.
+                HD-7. TX-01. Texas. Washington.
               </h1>
             </div>
             <form action="/officials" role="search" aria-label="Find a public official" className="flex min-w-0 gap-2 rounded-xl border border-white/20 bg-white p-1.5">
@@ -513,7 +534,26 @@ export default async function HomePage() {
             </div>
           </div>
 
+          <div className="mt-5 grid gap-3 rounded-xl border border-white/15 bg-white/[0.04] p-4 sm:grid-cols-2">
+            {HOME_DISTRICTS.map((district) => (
+              <Link
+                key={district.id}
+                href={district.seatHref}
+                className="group block rounded-lg px-1 py-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+              >
+                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-[#e1be64]">
+                  {district.code} · {district.level === "state" ? "State seat" : "Federal seat"}
+                </p>
+                <p className="mt-1 font-semibold text-white group-hover:underline">
+                  {district.incumbentName} · {district.chamber}
+                </p>
+                <p className="mt-1 text-sm leading-6 text-slate-300">{district.summary}</p>
+              </Link>
+            ))}
+          </div>
+
           <nav aria-label="Explore RepWatchr" className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-slate-200">
+            <Link href="/home-district" className="py-1 underline-offset-4 hover:text-white hover:underline">HD-7 &amp; TX-01</Link>
             <Link href="/blog" className="py-1 underline-offset-4 hover:text-white hover:underline">Latest reporting</Link>
             <Link href="/east-texas" className="py-1 underline-offset-4 hover:text-white hover:underline">East Texas</Link>
             <Link href="/elections" className="py-1 underline-offset-4 hover:text-white hover:underline">Elections</Link>

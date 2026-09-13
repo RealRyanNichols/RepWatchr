@@ -8,6 +8,7 @@ import {
 import { getAllOfficials } from "@/lib/data";
 import { getSchoolBoardDossiers } from "@/lib/school-board-research";
 import { classifyProfileSource, type ProfileSourceTier } from "@/lib/profile-overlays";
+import { coverageTierForText } from "@/lib/home-districts";
 import type { NewsPowerChannel, NewsScope } from "@/types";
 
 export type DailyWireStatus =
@@ -20,7 +21,13 @@ export type DailyWireStatus =
   | "promoted_to_story";
 
 export type DailyWirePublicStatus = "source_linked" | "needs_review" | "hidden";
-export type DailyWireJurisdictionMatch = "local" | "texas" | "state" | "national" | "none";
+export type DailyWireJurisdictionMatch =
+  | "home-district"
+  | "local"
+  | "texas"
+  | "state"
+  | "national"
+  | "none";
 export type DailyWireGeographicRelevance = "local" | "state" | "national" | "weak" | "none";
 export type DailyWireQuarantineStatus = "clear" | "needs_review" | "quarantined" | "duplicate" | "irrelevant";
 
@@ -496,13 +503,28 @@ export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicate
   else if (hasExplicitUsMarker || hasKnownFederalOfficial) geographicRelevance = "national";
   else if (input.scope === "national" && !missingRequiredTerms) geographicRelevance = "weak";
 
+  // HD-7 and TX-01 are the home beat. An item that names one of those districts,
+  // their officeholders, or a county or town inside them outranks a generic
+  // local match so the wire never buries the district it exists to cover.
+  const isHomeDistrictItem =
+    coverageTierForText(articleText, {
+      counties: countyMatches,
+      cities: cityMatches,
+      state: texasEvidence ? "TX" : input.state,
+    }) === "home-district";
+
   let jurisdictionMatch: DailyWireJurisdictionMatch = "none";
-  if (geographicRelevance === "local") jurisdictionMatch = "local";
+  if (isHomeDistrictItem) jurisdictionMatch = "home-district";
+  else if (geographicRelevance === "local") jurisdictionMatch = "local";
   else if (texasEvidence) jurisdictionMatch = "texas";
   else if (stateMatches.length) jurisdictionMatch = "state";
   else if (geographicRelevance === "national") {
     jurisdictionMatch = "national";
   }
+
+  // A home-district item is local by definition, even when its counties and
+  // cities were not carried on the source row.
+  if (isHomeDistrictItem && geographicRelevance !== "local") geographicRelevance = "local";
 
   const reviewReasons: string[] = [];
   if (sourceDenied) reviewReasons.push(`Denied source domain: ${sourceDomain}`);
@@ -530,7 +552,8 @@ export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicate
 
   if (sourceAllowed) score += 6;
   if (matchedRequiredTerms.length) score += 10;
-  if (jurisdictionMatch === "local") score += 22;
+  if (jurisdictionMatch === "home-district") score += 26;
+  else if (jurisdictionMatch === "local") score += 22;
   else if (jurisdictionMatch === "texas" || jurisdictionMatch === "state") score += 18;
   else if (jurisdictionMatch === "national") score += 14;
   else score -= 22;
@@ -587,6 +610,7 @@ export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicate
   const publicLabels = [
     ...(publicStatus === "source_linked" ? ["Source-linked"] : []),
     ...(publicStatus === "needs_review" ? ["Needs review"] : []),
+    ...(jurisdictionMatch === "home-district" ? ["HD-7 / TX-01 relevance confirmed"] : []),
     ...(geographicRelevance === "local" || jurisdictionMatch === "texas"
       ? ["Texas / Local relevance confirmed"]
       : []),

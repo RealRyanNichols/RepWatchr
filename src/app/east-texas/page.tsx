@@ -8,6 +8,7 @@ import {
   eastTexasProfileReadiness,
   isInEastTexasLaunchTerritory,
 } from "@/lib/east-texas-launch-territory";
+import { TX_CONGRESSIONAL_DISTRICT_1, TX_HOUSE_DISTRICT_7 } from "@/lib/home-districts";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
 export const metadata: Metadata = buildRepWatchrMetadata({
@@ -40,6 +41,14 @@ export default function EastTexasAccountabilityDesk() {
                 RepWatchr is building the complete accountability desk for officials serving communities within
                 {` ${HARLETON_COVERAGE_CENTER.roadRadiusMiles} road miles of ${HARLETON_COVERAGE_CENTER.label}. `}
                 Praise must have receipts. Criticism must have receipts. Missing work stays visible until it is finished.
+              </p>
+              <p className="mt-5 max-w-3xl leading-7 text-slate-700">
+                Inside this territory, two districts come first:{" "}
+                <Link href="/home-district" className="font-semibold underline underline-offset-4">
+                  {TX_HOUSE_DISTRICT_7.code} for the state seat and {TX_CONGRESSIONAL_DISTRICT_1.code} for the federal
+                  seat
+                </Link>
+                . Everything else in East Texas is covered around them.
               </p>
             </div>
             <div className="border-l-4 border-[#a23a2b] pl-6">

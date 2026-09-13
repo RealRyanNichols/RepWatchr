@@ -1,4 +1,11 @@
 import { EAST_TEXAS_LAUNCH_JURISDICTIONS } from "@/lib/east-texas-launch-territory";
+import {
+  HOME_DISTRICT_COUNTIES,
+  HOME_DISTRICT_PLACES,
+  HOME_DISTRICT_TERMS,
+  TX_CONGRESSIONAL_DISTRICT_1,
+  TX_HOUSE_DISTRICT_7,
+} from "@/lib/home-districts";
 import type { NewsPowerChannel, NewsScope, SourceCredit } from "@/types";
 
 export interface DailyNewsWatchSource {
@@ -101,6 +108,32 @@ const eastTexasCountyQuery = eastTexasCounties.map((county) => `"${county} Count
 const eastTexasCityQuery = eastTexasCities.map((city) => `"${city}"`).join(" OR ");
 const eastTexasSchoolDistrictQuery = eastTexasSchoolDistricts.map((district) => `"${district}"`).join(" OR ");
 
+// HD-7 and TX-01 are the home beat, so they get their own lanes instead of
+// competing for slots inside the wider East Texas searches. TX-01 also reaches
+// counties the 75-mile Harleton radius never covered - Cherokee, Nacogdoches,
+// Sabine, San Augustine and Shelby - and those would otherwise stay unwatched.
+const homeDistrictCounties: string[] = [...HOME_DISTRICT_COUNTIES];
+const homeDistrictPlaces: string[] = [...HOME_DISTRICT_PLACES];
+
+const hd7Counties = TX_HOUSE_DISTRICT_7.counties.map((county) => county.name);
+const tx01Counties = TX_CONGRESSIONAL_DISTRICT_1.counties.map((county) => county.name);
+
+const homeDistrictRequiredTerms = [
+  ...HOME_DISTRICT_TERMS,
+  ...homeDistrictCounties.map((county) => county.toLowerCase()),
+  ...homeDistrictPlaces.map((place) => place.toLowerCase()),
+];
+
+const hd7Query = `("${TX_HOUSE_DISTRICT_7.label}" OR "House District 7" OR "HD-7" OR "${TX_HOUSE_DISTRICT_7.incumbentName}" OR ${hd7Counties
+  .map((county) => `"${county} County"`)
+  .join(" OR ")})`;
+
+const tx01Query = `("${TX_CONGRESSIONAL_DISTRICT_1.incumbentName}" OR "TX-01" OR "Texas 1st Congressional District" OR "1st Congressional District" OR ${tx01Counties
+  .map((county) => `"${county} County"`)
+  .join(" OR ")})`;
+
+const homeDistrictCountyQuery = homeDistrictCounties.map((county) => `"${county} County"`).join(" OR ");
+
 function googleNewsSearchUrl(query: string) {
   return `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=en-US&gl=US&ceid=US%3Aen`;
 }
@@ -126,6 +159,18 @@ const nationalControls = {
 } satisfies Partial<DailyNewsWatchSource>;
 
 export const DAILY_WIRE_QUERY_LANE_CONTROLS: Record<string, Partial<DailyNewsWatchSource>> = {
+  "hd7-state-seat": {
+    ...texasControls,
+    requiredTerms: homeDistrictRequiredTerms,
+  },
+  "tx01-federal-seat": {
+    ...texasControls,
+    requiredTerms: homeDistrictRequiredTerms,
+  },
+  "home-district-government": {
+    ...texasControls,
+    requiredTerms: homeDistrictRequiredTerms,
+  },
   "texas-rss": texasControls,
   "texas-school-boards": {
     ...texasControls,
@@ -346,6 +391,63 @@ const STATE_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = stateNewsTargets.
   requiredTerms: [name, code, "state representative", "state senator", "governor", "attorney general"],
 }));
 
+// The home beat runs first. These lanes are what keep HD-7 and TX-01 on the
+// wire on a slow news day, when a statewide or national search would otherwise
+// fill every slot.
+const HOME_DISTRICT_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
+  {
+    id: "google-news-hd7-state-seat",
+    label: "Public news search: Texas House District 7",
+    url: googleNewsSearchUrl(
+      `${hd7Query} ("state representative" OR legislature OR bill OR vote OR "campaign finance" OR ethics OR election OR runoff OR "town hall") when:1d`,
+    ),
+    queryLane: "hd7-state-seat",
+    scope: "east-texas",
+    state: "TX",
+    counties: hd7Counties,
+    cities: homeDistrictPlaces,
+    powerChannels: ["officials", "elections", "money", "courts"],
+    sourceType: "public_news_search",
+    terms: ["house district 7", "state representative", "legislature", "bill", "vote", "campaign finance", "ethics", "election"],
+    ...texasControls,
+    requiredTerms: homeDistrictRequiredTerms,
+  },
+  {
+    id: "google-news-tx01-federal-seat",
+    label: "Public news search: Texas 1st Congressional District",
+    url: googleNewsSearchUrl(
+      `${tx01Query} (congress OR congressman OR representative OR "roll call" OR vote OR hearing OR oversight OR "campaign finance" OR earmark OR "town hall") when:1d`,
+    ),
+    queryLane: "tx01-federal-seat",
+    scope: "east-texas",
+    state: "TX",
+    counties: tx01Counties,
+    cities: homeDistrictPlaces,
+    powerChannels: ["officials", "elections", "money", "courts"],
+    sourceType: "public_news_search",
+    terms: ["congressional district 1", "congress", "representative", "roll call", "vote", "hearing", "oversight", "campaign finance"],
+    ...texasControls,
+    requiredTerms: homeDistrictRequiredTerms,
+  },
+  {
+    id: "google-news-home-district-government",
+    label: "Public news search: HD-7 and TX-01 local government",
+    url: googleNewsSearchUrl(
+      `(${homeDistrictCountyQuery}) ("commissioners court" OR "county judge" OR "city council" OR mayor OR sheriff OR "district attorney" OR "school board" OR trustee OR budget OR "tax rate" OR bond OR "open records") when:1d`,
+    ),
+    queryLane: "home-district-government",
+    scope: "east-texas",
+    state: "TX",
+    counties: homeDistrictCounties,
+    cities: homeDistrictPlaces,
+    powerChannels: ["officials", "school-boards", "public-safety", "money"],
+    sourceType: "public_news_search",
+    terms: [...eastTexasCountyTerms, "city council", "school board", "trustee"],
+    ...texasControls,
+    requiredTerms: homeDistrictRequiredTerms,
+  },
+];
+
 const BASE_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
   {
     id: "texas-tribune-main",
@@ -525,6 +627,12 @@ const BASE_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
 ];
 
 export const DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
+  ...HOME_DISTRICT_DAILY_NEWS_WATCH_SOURCES,
   ...BASE_DAILY_NEWS_WATCH_SOURCES,
   ...STATE_DAILY_NEWS_WATCH_SOURCES,
 ];
+
+/** Lane ids that belong to the HD-7 / TX-01 home beat. */
+export const HOME_DISTRICT_QUERY_LANES: string[] = HOME_DISTRICT_DAILY_NEWS_WATCH_SOURCES.map(
+  (source) => source.queryLane ?? source.id,
+);
