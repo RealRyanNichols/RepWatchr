@@ -149,11 +149,19 @@ const rosterPage = read("src/app/home-district/roster/page.tsx");
 const search = read("src/lib/official-search.ts");
 const flags = read("src/lib/repwatchr-feature-flags.ts");
 
+// County names now live only in the canonical beat; the footprint derives them.
+// It still owns the per-county slug and seat, so every district county needs an
+// entry here or the ledger loses its data directory link.
 for (const county of [
   "Bowie", "Cass", "Cherokee", "Gregg", "Harrison", "Marion", "Nacogdoches",
   "Panola", "Rusk", "Sabine", "San Augustine", "Shelby", "Smith",
 ]) {
-  assert(footprint.includes(`name: "${county}"`), `Footprint is missing ${county} County.`);
+  assert(districts.includes(`name: "${county}"`), `Canonical beat is missing ${county} County.`);
+  const key = county.includes(" ") ? `"${county}"` : county;
+  assert(
+    new RegExp(`${key}:\\s*\\{\\s*slug:`).test(footprint),
+    `Footprint has no slug/seat metadata for ${county} County.`,
+  );
 }
 
 // The office slate is what turns an empty jurisdiction into a documented gap
@@ -173,6 +181,64 @@ assert(
 );
 
 assert(rosterPage.includes("seatLedgerFor"), "Roster page does not compute the seat ledger.");
+
+// The officials dataset is nationwide and East Texas shares town names with far
+// bigger places. A bare substring match counted Atlanta's, Jacksonville's,
+// Henderson's and Jefferson's out-of-state mayors as footprint coverage and
+// inflated the published ledger.
+assert(
+  footprint.includes("officialsForPlace") && footprint.includes("officialsForCounty"),
+  "Footprint must expose scoped seat matchers instead of substring search.",
+);
+assert(
+  /\(official\.state \?\? "TX"\)\.toUpperCase\(\) !== "TX"/.test(footprint) ||
+    /\(official\.state \?\? "TX"\)\.toUpperCase\(\) === "TX"/.test(footprint),
+  "Seat matching must reject an explicitly non-Texas record.",
+);
+assert(
+  footprint.includes("placeCounties.has(normalizedCounty(county))"),
+  "City seat matching must require one of the place's own counties.",
+);
+assert(
+  !/jurisdiction \?\? ""\)\.toLowerCase\(\)\.includes\(place\.name/.test(rosterPage),
+  "Roster regressed to unscoped substring matching on jurisdiction.",
+);
+
+// The footprint must not keep its own copy of the county list: a second copy
+// silently keeps the old boundary when TX-01's pending list is authenticated.
+assert(
+  footprint.includes("for (const district of HOME_DISTRICTS)"),
+  "Footprint counties must be built from HOME_DISTRICTS.",
+);
+// The invariant that matters is the assignment: FOOTPRINT_COUNTIES has to come
+// from a call, never an array literal. A literal is the regression - it keeps
+// the old boundary when TX-01's pending list is authenticated or corrected.
+assert(
+  /export const FOOTPRINT_COUNTIES: FootprintCounty\[\] = [A-Za-z_$][\w$]*\(\);/.test(footprint),
+  "FOOTPRINT_COUNTIES must be assigned from a derivation, not a hard-coded array.",
+);
+
+// District labels are only as settled as the map they come from, so TX-01's
+// pending status has to travel with them onto the ledger.
+assert(
+  footprint.includes("FOOTPRINT_BOUNDARY_PROVENANCE"),
+  "Footprint must carry TX-01's boundary provenance.",
+);
+assert(
+  rosterPage.includes("FOOTPRINT_BOUNDARY_PROVENANCE.status !== \"verified\""),
+  "Ledger must show that its TX-01 labels are not an authenticated boundary.",
+);
+
+// The slate drives every expected total and every reported gap, so it cites the
+// provisions that make those offices elective.
+assert(
+  footprint.includes("OFFICE_SLATE_SOURCES") && footprint.includes("statutes.capitol.texas.gov"),
+  "Office slate must carry primary sources.",
+);
+assert(
+  rosterPage.includes("OFFICE_SLATE_SOURCES"),
+  "Ledger must publish the sources behind its expected slate.",
+);
 assert(rosterPage.includes("NOT STARTED"), "Roster page no longer flags jurisdictions with zero seats on file.");
 
 // A documented gap must never read as finished work. Percent is gated on office
