@@ -6,9 +6,14 @@ import {
   COUNTY_OFFICE_SLATE,
   EXPECTED_CITY_SEATS,
   EXPECTED_COUNTY_SEATS,
+  FOOTPRINT_BOUNDARY_PROVENANCE,
   FOOTPRINT_COUNTIES,
+  FOOTPRINT_PLACES,
   FOOTPRINT_PLACE_PROVENANCE,
-  footprintJurisdictions,
+  OFFICE_SLATE_PROVENANCE,
+  OFFICE_SLATE_SOURCES,
+  officialsForCounty,
+  officialsForPlace,
   seatLedgerFor,
   type SeatLedgerRow,
 } from "@/lib/district-footprint";
@@ -22,10 +27,6 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   imagePath: buildOgImageUrl("home", { page: "home-district-roster" }),
   imageAlt: "RepWatchr HD-7 and TX-01 seat ledger",
 });
-
-function normalizedCounty(value?: string | null) {
-  return (value ?? "").trim().toLowerCase().replace(/\s+county$/, "");
-}
 
 function LedgerTable({ rows, caption }: { rows: SeatLedgerRow[]; caption: string }) {
   if (!rows.length) return null;
@@ -79,31 +80,35 @@ function LedgerTable({ rows, caption }: { rows: SeatLedgerRow[]; caption: string
 
 export default function HomeDistrictRosterPage() {
   const officials = getAllOfficials();
-  const { counties, places } = footprintJurisdictions();
 
-  const countyRows = counties.map((county) =>
+  // Scoped matchers, not substring search: the dataset is nationwide and East
+  // Texas shares town names with far bigger places.
+  const countyRows = FOOTPRINT_COUNTIES.map((county) =>
     seatLedgerFor(
       "county",
-      county,
-      officials.filter(
-        (official) =>
-          official.level === "county" &&
-          official.county.some((name) => normalizedCounty(name) === county.county.toLowerCase()),
-      ),
+      {
+        slug: county.slug,
+        name: `${county.name} County`,
+        county: county.name,
+        districts: county.districts,
+      },
+      officialsForCounty(county, officials),
     ),
   );
 
-  const placeRows = places.map((place) =>
-    seatLedgerFor(
+  const placeRows = FOOTPRINT_PLACES.map((place) => {
+    const county = FOOTPRINT_COUNTIES.find((row) => row.name === place.county);
+    return seatLedgerFor(
       "city",
-      place,
-      officials.filter(
-        (official) =>
-          official.level === "city" &&
-          (official.jurisdiction ?? "").toLowerCase().includes(place.name.toLowerCase()),
-      ),
-    ),
-  );
+      {
+        slug: place.slug,
+        name: place.name,
+        county: place.county,
+        districts: county?.districts ?? ["TX-01"],
+      },
+      officialsForPlace(place, officials),
+    );
+  });
 
   const allRows = [...countyRows, ...placeRows];
   const seatsOnFile = allRows.reduce((total, row) => total + row.covered, 0);
@@ -141,7 +146,7 @@ export default function HomeDistrictRosterPage() {
         <div className="grid gap-px border-y border-[#cabfae] bg-[#cabfae] md:grid-cols-4">
           {[
             ["Counties", FOOTPRINT_COUNTIES.length],
-            ["Cities and towns", places.length],
+            ["Cities and towns", FOOTPRINT_PLACES.length],
             ["Seats on file", seatsOnFile],
             ["Jurisdictions not started", notStarted],
           ].map(([label, value]) => (
@@ -151,6 +156,30 @@ export default function HomeDistrictRosterPage() {
             </div>
           ))}
         </div>
+
+        {FOOTPRINT_BOUNDARY_PROVENANCE.status !== "verified" ? (
+          <section className="mt-6 border-l-4 border-[#a23a2b] bg-[#f7ece9] p-5">
+            <p className="text-sm font-bold uppercase tracking-wide">
+              The TX-01 labels below are not an authenticated boundary
+            </p>
+            <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-700">
+              {FOOTPRINT_BOUNDARY_PROVENANCE.note}
+            </p>
+            <ul className="mt-3 space-y-1 text-sm">
+              {FOOTPRINT_BOUNDARY_PROVENANCE.sources.map((source) => (
+                <li key={source.url}>
+                  <a href={source.url} target="_blank" rel="noopener noreferrer" className="font-semibold underline underline-offset-4">
+                    {source.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-sm text-slate-600">
+              Reviewed {FOOTPRINT_BOUNDARY_PROVENANCE.reviewedAt}. HD-7&rsquo;s three counties are carried by a primary
+              record and are not affected.
+            </p>
+          </section>
+        ) : null}
 
         <p className="mt-6 max-w-3xl leading-7 text-slate-700">
           {seatsOnFile.toLocaleString()} of roughly {seatsExpected.toLocaleString()} expected elected seats are on file
@@ -194,6 +223,21 @@ export default function HomeDistrictRosterPage() {
 
         <section className="mt-16">
           <h2 className="font-[Fraunces] text-4xl font-semibold">The expected slate</h2>
+          <div className="mt-5 border-l-4 border-[#2f6b4f] bg-[#eef5f0] p-5">
+            <p className="text-sm font-bold uppercase tracking-wide">Where the slate comes from</p>
+            <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-700">{OFFICE_SLATE_PROVENANCE.note}</p>
+            <ul className="mt-3 space-y-1 text-sm">
+              {OFFICE_SLATE_SOURCES.map((source) => (
+                <li key={source.url}>
+                  <a href={source.url} target="_blank" rel="noopener noreferrer" className="font-semibold underline underline-offset-4">
+                    {source.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-sm text-slate-600">Reviewed {OFFICE_SLATE_PROVENANCE.reviewedAt}.</p>
+          </div>
+
           <div className="mt-6 grid gap-10 lg:grid-cols-2">
             <div>
               <h3 className="font-[Fraunces] text-2xl font-semibold">County offices</h3>

@@ -40,24 +40,79 @@ export type FootprintCounty = {
 };
 
 /**
- * Counties in the footprint. HD-7 is a subset of TX-01, so every HD-7 county
- * carries both labels.
+ * County metadata that belongs to the footprint rather than to the districts:
+ * the data directory slug and the county seat. Everything about WHICH counties
+ * are in scope, and which district each sits in, is derived from HOME_DISTRICTS
+ * below - never copied. A hard-coded second copy would silently keep the old
+ * boundary when TX-01's pending PlanC2333 list is authenticated or corrected.
  */
-export const FOOTPRINT_COUNTIES: FootprintCounty[] = [
-  { slug: "bowie-county", name: "Bowie", districts: ["TX-01"], inclusion: "partial", seat: "Boston" },
-  { slug: "cass-county", name: "Cass", districts: ["TX-01"], inclusion: "whole", seat: "Linden" },
-  { slug: "cherokee-county", name: "Cherokee", districts: ["TX-01"], inclusion: "whole", seat: "Rusk" },
-  { slug: "gregg-county", name: "Gregg", districts: ["HD-7", "TX-01"], inclusion: "whole", seat: "Longview" },
-  { slug: "harrison-county", name: "Harrison", districts: ["HD-7", "TX-01"], inclusion: "whole", seat: "Marshall" },
-  { slug: "marion-county", name: "Marion", districts: ["HD-7", "TX-01"], inclusion: "whole", seat: "Jefferson" },
-  { slug: "nacogdoches-county", name: "Nacogdoches", districts: ["TX-01"], inclusion: "whole", seat: "Nacogdoches" },
-  { slug: "panola-county", name: "Panola", districts: ["TX-01"], inclusion: "whole", seat: "Carthage" },
-  { slug: "rusk-county", name: "Rusk", districts: ["TX-01"], inclusion: "whole", seat: "Henderson" },
-  { slug: "sabine-county", name: "Sabine", districts: ["TX-01"], inclusion: "whole", seat: "Hemphill" },
-  { slug: "san-augustine-county", name: "San Augustine", districts: ["TX-01"], inclusion: "whole", seat: "San Augustine" },
-  { slug: "shelby-county", name: "Shelby", districts: ["TX-01"], inclusion: "whole", seat: "Center" },
-  { slug: "smith-county", name: "Smith", districts: ["TX-01"], inclusion: "whole", seat: "Tyler" },
-];
+function normalizedCounty(value?: string | null) {
+  return (value ?? "").trim().toLowerCase().replace(/\s+county$/, "");
+}
+
+const COUNTY_METADATA: Record<string, { slug: string; seat: string }> = {
+  Bowie: { slug: "bowie-county", seat: "Boston" },
+  Cass: { slug: "cass-county", seat: "Linden" },
+  Cherokee: { slug: "cherokee-county", seat: "Rusk" },
+  Gregg: { slug: "gregg-county", seat: "Longview" },
+  Harrison: { slug: "harrison-county", seat: "Marshall" },
+  Marion: { slug: "marion-county", seat: "Jefferson" },
+  Nacogdoches: { slug: "nacogdoches-county", seat: "Nacogdoches" },
+  Panola: { slug: "panola-county", seat: "Carthage" },
+  Rusk: { slug: "rusk-county", seat: "Henderson" },
+  Sabine: { slug: "sabine-county", seat: "Hemphill" },
+  "San Augustine": { slug: "san-augustine-county", seat: "San Augustine" },
+  Shelby: { slug: "shelby-county", seat: "Center" },
+  Smith: { slug: "smith-county", seat: "Tyler" },
+};
+
+function deriveFootprintCounties(): FootprintCounty[] {
+  const byName = new Map<string, FootprintCounty>();
+
+  for (const district of HOME_DISTRICTS) {
+    const code = district.code as "HD-7" | "TX-01";
+    for (const county of district.counties) {
+      const existing = byName.get(county.name);
+      if (existing) {
+        if (!existing.districts.includes(code)) existing.districts.push(code);
+        // Any district that only takes part of a county makes it partial here.
+        if (county.inclusion === "partial") existing.inclusion = "partial";
+        continue;
+      }
+      const meta = COUNTY_METADATA[county.name];
+      byName.set(county.name, {
+        slug: meta?.slug ?? `${county.name.toLowerCase().replace(/\s+/g, "-")}-county`,
+        name: county.name,
+        districts: [code],
+        inclusion: county.inclusion,
+        seat: meta?.seat ?? "",
+      });
+    }
+  }
+
+  return [...byName.values()].sort((a, b) => a.name.localeCompare(b.name));
+}
+
+/** Counties in the footprint, derived from the canonical beat. */
+export const FOOTPRINT_COUNTIES: FootprintCounty[] = deriveFootprintCounties();
+
+/**
+ * The footprint inherits TX-01's boundary provenance. The district labels in
+ * the ledger are only as settled as the map they come from, so the pending
+ * PlanC2333 status has to travel with them instead of stopping at
+ * /home-district.
+ */
+export const FOOTPRINT_BOUNDARY_PROVENANCE = {
+  status: TX_CONGRESSIONAL_DISTRICT_1.boundaryStatus,
+  note: TX_CONGRESSIONAL_DISTRICT_1.boundaryNote,
+  reviewedAt: TX_CONGRESSIONAL_DISTRICT_1.boundaryReviewedAt,
+  // The note makes three claims: the county list, the operative plan, and the
+  // litigation status. Filtering to "boundaries" alone dropped the timeline
+  // source that carries the last two, publishing claims without their proof.
+  sources: TX_CONGRESSIONAL_DISTRICT_1.sources.filter((source) =>
+    source.supports.some((claim) => ["boundaries", "operative_plan", "litigation_status"].includes(claim)),
+  ),
+};
 
 /**
  * Cities and towns inside the footprint that RepWatchr already tracks or has
@@ -119,6 +174,66 @@ export const FOOTPRINT_PLACE_PROVENANCE = {
  * many precinct seats they seat and whether they elect a county attorney, a
  * district attorney, or both, so precinct counts are expressed as a range.
  */
+/**
+ * Where the expected slates come from. The ledger's totals and every reported
+ * gap rest on these assertions, so they carry their own citations rather than
+ * asking a reader to take the counts on faith.
+ */
+export const OFFICE_SLATE_SOURCES = [
+  {
+    label: "Texas Constitution, Article V: county judge, commissioners court, sheriff, clerks, justices of the peace and constables",
+    url: "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm",
+    supports: ["county-judge", "commissioner", "sheriff", "district-clerk", "county-clerk", "justice-of-the-peace", "constable"],
+  },
+  {
+    label: "Texas Constitution, Article V, Section 21: county attorneys and district attorneys",
+    url: "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm#5.21",
+    supports: ["prosecutor"],
+  },
+  {
+    label: "Texas Constitution, Article VIII, Section 14: county assessor-collector of taxes",
+    url: "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.8.htm#8.14",
+    supports: ["tax-assessor"],
+  },
+  {
+    label: "Texas Constitution, Article XVI, Section 44: county treasurer",
+    url: "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.16.htm#16.44",
+    supports: ["treasurer"],
+  },
+  {
+    label: "Local Government Code Chapter 22: officers of a Type A general-law municipality",
+    url: "https://statutes.capitol.texas.gov/Docs/LG/htm/LG.22.htm",
+    supports: ["mayor", "council"],
+  },
+  {
+    label: "Local Government Code Chapter 23: officers of a Type B general-law municipality",
+    url: "https://statutes.capitol.texas.gov/Docs/LG/htm/LG.23.htm",
+    supports: ["mayor", "council"],
+  },
+  {
+    label: "Local Government Code Chapter 24: officers of a Type C general-law municipality",
+    url: "https://statutes.capitol.texas.gov/Docs/LG/htm/LG.24.htm",
+    supports: ["mayor", "council"],
+  },
+  {
+    label: "Texas Constitution, Article XI, Section 5: home-rule cities adopt a charter that sets their own officers",
+    url: "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.11.htm#11.5",
+    supports: ["mayor", "council"],
+  },
+] as const;
+
+/**
+ * Review status for the slates themselves. The offices are established by the
+ * cited constitutional and statutory provisions; the per-jurisdiction COUNT of
+ * variable offices is not, because precinct counts and council sizes are set
+ * locally. Those are marked variable and read as floors.
+ */
+export const OFFICE_SLATE_PROVENANCE = {
+  status: "sourced_with_variable_counts" as const,
+  note: "The offices below are elective under the cited Texas constitutional and statutory provisions. Which municipal chapter governs a given city depends on its form - Type A, Type B, Type C, or home rule - and a home-rule city sets its own officers by charter, so the city slate is the common floor rather than a per-city requirement. The fixed county counts are the standard slate. Counts marked variable are floors, not findings: precinct courts and council sizes are set locally and have to be confirmed per jurisdiction before a number is published as that jurisdiction's requirement.",
+  reviewedAt: "2026-09-13",
+};
+
 export const COUNTY_OFFICE_SLATE = [
   { key: "county-judge", label: "County Judge", expected: 1 },
   { key: "commissioner", label: "County Commissioner", expected: 4 },
@@ -144,11 +259,44 @@ export const CITY_OFFICE_SLATE = [
 
 export const FOOTPRINT_COUNTY_NAMES: string[] = FOOTPRINT_COUNTIES.map((county) => county.name);
 
-const FOOTPRINT_COUNTY_KEYS = new Set(FOOTPRINT_COUNTY_NAMES.map((name) => name.toLowerCase()));
+/**
+ * Records that belong to one footprint municipality.
+ *
+ * The officials dataset is nationwide, and East Texas shares its town names
+ * with much larger places: Atlanta, Henderson, Jacksonville and Jefferson all
+ * exist in other states. A bare substring match on the jurisdiction counted
+ * Atlanta's and Jacksonville's mayors as HD-7 / TX-01 coverage and inflated the
+ * ledger, so a match now has to be in Texas AND in one of the place's own
+ * counties.
+ */
+export function officialsForPlace(place: FootprintPlace, officials: Official[]) {
+  const placeCounties = new Set(
+    [place.county, ...(place.alsoInCounties ?? [])].map((county) => county.toLowerCase()),
+  );
+  const placeName = place.name.toLowerCase();
 
-function normalizedCounty(value?: string | null) {
-  return (value ?? "").trim().toLowerCase().replace(/\s+county$/, "");
+  return officials.filter((official) => {
+    if (official.level !== "city") return false;
+    // Local records carry no state field; an explicit non-Texas state is a
+    // different place with the same name.
+    if ((official.state ?? "TX").toUpperCase() !== "TX") return false;
+    if (!official.county.some((county) => placeCounties.has(normalizedCounty(county)))) return false;
+    const jurisdiction = (official.jurisdiction ?? "").toLowerCase();
+    return jurisdiction.includes(placeName);
+  });
 }
+
+/** Records that belong to one footprint county government. */
+export function officialsForCounty(county: FootprintCounty, officials: Official[]) {
+  return officials.filter(
+    (official) =>
+      official.level === "county" &&
+      (official.state ?? "TX").toUpperCase() === "TX" &&
+      official.county.some((name) => normalizedCounty(name) === county.name.toLowerCase()),
+  );
+}
+
+const FOOTPRINT_COUNTY_KEYS = new Set(FOOTPRINT_COUNTY_NAMES.map((name) => name.toLowerCase()));
 
 /**
  * True when a record belongs to the footprint: it is one of the two home
