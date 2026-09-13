@@ -10,4 +10,9 @@ export const repwatchrFeatureFlags = Object.freeze({
   // The database poll status is the primary launch/close control. Setting this
   // server-only switch to "false" remains an independent emergency kill switch.
   racePollsV1: process.env.ENABLE_RACE_POLLS_V1 !== "false",
+  // Scope the public directory to the HD-7 / TX-01 footprint. On by default:
+  // RepWatchr covers its own districts first, and out-of-district records stay
+  // on disk and reachable, they just do not fill the default listing. Set
+  // NEXT_PUBLIC_DISTRICT_FOCUS_ONLY="false" to open the directory back up.
+  districtFocusOnly: process.env.NEXT_PUBLIC_DISTRICT_FOCUS_ONLY !== "false",
 });

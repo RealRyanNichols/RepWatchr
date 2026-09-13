@@ -298,6 +298,13 @@ const staticSeoPages: StaticSeoPage[] = [
     imageParams: { page: "home-district" },
   },
   {
+    path: "/home-district/roster",
+    title: "HD-7 and TX-01 Seat Ledger",
+    description: "Every county, city and town inside Texas House District 7 and TX-01, the elected seats each carries, and which seats are still missing.",
+    imageKind: "home",
+    imageParams: { page: "home-district-roster" },
+  },
+  {
     path: "/east-texas",
     title: "East Texas Accountability Desk",
     description: "Source-led profiles and reporting for elected officials serving communities within 75 road miles of Harleton, Texas.",

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllOfficials, getRepWatchrDataStats } from "@/lib/data";
+import { repwatchrFeatureFlags } from "@/lib/repwatchr-feature-flags";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialsCommandSearchForm from "@/components/officials/OfficialsCommandSearchForm";
 import OfficialSearchPanel from "@/components/officials/OfficialSearchPanel";
@@ -193,6 +194,30 @@ export default async function OfficialsPage({
           completeProfiles={buildoutStats.completeProfiles}
           incompleteProfiles={buildoutStats.incompleteProfiles}
         />
+
+        {repwatchrFeatureFlags.districtFocusOnly ? (
+          <section className="mt-5 rounded-2xl border border-[#cabfae] bg-[#f7f2e6] p-5">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#a23a2b]">
+              Scoped to the home districts
+            </p>
+            <h2 className="mt-1 font-serif text-2xl font-bold text-slate-950">
+              The directory is showing HD-7 and TX-01 first.
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-700">
+              RepWatchr is building the complete record for Texas House District 7 and Texas&rsquo;s 1st congressional
+              district before it widens back out. Records outside those districts are still here: search a name, or
+              pick a state, county, city or office level, and they come right back.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-4 text-sm font-bold">
+              <Link href="/home-district" className="text-[#163b5c] underline underline-offset-4">
+                What the beat covers
+              </Link>
+              <Link href="/home-district/roster" className="text-[#163b5c] underline underline-offset-4">
+                Every seat and every gap
+              </Link>
+            </div>
+          </section>
+        ) : null}
 
         <div id="official-directory" className="mt-5 scroll-mt-24">
           <OfficialSearchPanel result={searchResult} />

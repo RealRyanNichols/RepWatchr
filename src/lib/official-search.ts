@@ -8,6 +8,8 @@ import {
   getScoreCard,
 } from "@/lib/data";
 import { buildOfficialCompletionSnapshot, type ProfileCompletionKey } from "@/lib/profile-completion";
+import { isInFootprint } from "@/lib/district-footprint";
+import { repwatchrFeatureFlags } from "@/lib/repwatchr-feature-flags";
 import { getMoneyTrailForOfficial } from "@/lib/money-trail";
 import { getSupabaseAdminClient } from "@/lib/supabase-admin";
 import { countyName, officialCounties, officialState } from "@/lib/official-coverage";
@@ -552,7 +554,24 @@ function hasSearchMatch(row: OfficialSearchRow, query: string) {
   return terms.length === 0 || terms.every((term) => row.searchText.includes(term));
 }
 
+/**
+ * District focus. RepWatchr covers HD-7 and TX-01 first, so the default
+ * directory is scoped to that footprint. Out-of-district records stay on disk
+ * and stay reachable by direct link, by an explicit state, county, city or
+ * level filter, or by a name search - they just do not fill the default list
+ * while the beat is the two home districts.
+ */
+function passesDistrictFocus(row: OfficialSearchRow, params: OfficialSearchParams) {
+  if (!repwatchrFeatureFlags.districtFocusOnly) return true;
+  const userNarrowedTheQuery = Boolean(
+    params.search || params.state || params.county || params.city || params.level !== "all",
+  );
+  if (userNarrowedTheQuery) return true;
+  return isInFootprint(row.official);
+}
+
 function matchesFilters(row: OfficialSearchRow, params: OfficialSearchParams) {
+  if (!passesDistrictFocus(row, params)) return false;
   if (params.search && !hasSearchMatch(row, params.search)) return false;
   if (params.recordType !== "all" && row.recordKind !== params.recordType) return false;
   if (params.state && row.state !== params.state) return false;

@@ -19,6 +19,13 @@ RepWatchr turns public-source signals, proof packets, official records, vote/fun
 - `src/lib/home-districts.ts` is the single source of truth for the beat: counties, officeholders, boundary provenance, and coverage tiers. Do not hard-code district or county lists in pages, wire lanes, or ranking logic; read them from that module.
 - TX-01's county list is carried as `needs_authentication` pending the Texas Legislative Council county-district report for PlanC2333. Use it to aim coverage; do not publish it as an established boundary finding.
 
+## Buildout Footprint
+
+- The current buildout target is every elected seat in every county, city and town inside HD-7 and TX-01, and nothing outside it for now.
+- `src/lib/district-footprint.ts` holds that footprint: the 13 counties, the confirmed municipalities, and the expected elected-office slate for each kind of jurisdiction. `/home-district/roster` publishes the resulting seat ledger, including what is missing.
+- The municipality list is a working set flagged `needs_authentication`, not a certified census of incorporated places. A town absent from it is a gap to fill, never a place ruled out of the footprint.
+- `districtFocusOnly` (`NEXT_PUBLIC_DISTRICT_FOCUS_ONLY`) scopes the public directory to the footprint. It is reversible and never makes an out-of-district record unreachable: a name search or an explicit state, county, city or level filter still returns it. Do not delete out-of-district profiles to achieve focus.
+
 ## Repo Rules
 
 - Work on the `main` branch unless Ryan explicitly instructs otherwise.

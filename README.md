@@ -8,6 +8,8 @@ RepWatchr covers **Texas House District 7 (HD-7)** for state politics and **Texa
 
 `src/lib/home-districts.ts` is the single source of truth for that beat: district identity, counties, officeholders, boundary provenance, and the coverage tiers the homepage, the news wire, and profile ranking all sort on. Change the beat there, not in individual pages. The public statement of the policy lives at `/home-district`.
 
+The current buildout target is every elected seat in every county, city and town inside those two districts. `src/lib/district-footprint.ts` holds that footprint and the expected office slate per jurisdiction; `/home-district/roster` publishes the seat ledger with the gaps visible. The `districtFocusOnly` flag (`NEXT_PUBLIC_DISTRICT_FOCUS_ONLY`) scopes the public directory to the footprint without deleting or hiding anything: a name search or an explicit state, county, city or level filter still reaches out-of-district records.
+
 TX-01's county list follows published summaries of PlanC2333, the congressional map governing the 2026 elections. It is carried as `needs_authentication` and is used to aim coverage, not published as an established boundary finding, until the Texas Legislative Council county-district report is pulled and cited.
 
 > **Important:** RepWatchr is not an election authority, candidate filing system, endorsement service, or scientific polling organization. Candidate and ballot status must be confirmed with the relevant election authority. Community votes, grades, and approval figures reflect participating RepWatchr users; they are not representative polls, election results, forecasts, or evidence of public consensus.

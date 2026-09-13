@@ -79,6 +79,12 @@ export default function HomeDistrictBeatPage() {
               Open the HD-7 record desk
             </Link>
             <Link
+              href="/home-district/roster"
+              className="min-h-11 border border-[#111b24] px-5 py-3 hover:bg-[#111b24] hover:text-white"
+            >
+              Every seat and every gap
+            </Link>
+            <Link
               href="/east-texas"
               className="min-h-11 border border-[#111b24] px-5 py-3 hover:bg-[#111b24] hover:text-white"
             >

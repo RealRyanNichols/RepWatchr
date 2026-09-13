@@ -86,4 +86,49 @@ assert(header.includes('href: "/home-district"'), "The beat page is not linked f
 assert(seoInventory.includes('path: "/home-district"'), "The beat page is not in the SEO inventory.");
 assert(agents.includes("## Coverage Beat"), "AGENTS.md does not record the coverage beat.");
 
+// The buildout footprint: which jurisdictions are in scope and what seats they carry.
+const footprint = read("src/lib/district-footprint.ts");
+const rosterPage = read("src/app/home-district/roster/page.tsx");
+const search = read("src/lib/official-search.ts");
+const flags = read("src/lib/repwatchr-feature-flags.ts");
+
+for (const county of [
+  "Bowie", "Cass", "Cherokee", "Gregg", "Harrison", "Marion", "Nacogdoches",
+  "Panola", "Rusk", "Sabine", "San Augustine", "Shelby", "Smith",
+]) {
+  assert(footprint.includes(`name: "${county}"`), `Footprint is missing ${county} County.`);
+}
+
+// The office slate is what turns an empty jurisdiction into a documented gap
+// instead of silence. Losing it would make thin coverage look complete.
+for (const office of [
+  "County Judge", "County Commissioner", "Sheriff", "District Clerk", "County Clerk",
+  "Tax Assessor-Collector", "County Treasurer", "Justice of the Peace", "Constable",
+]) {
+  assert(footprint.includes(`"${office}"`), `County office slate is missing ${office}.`);
+}
+assert(footprint.includes('"Mayor"') && footprint.includes('"City Council Member"'), "City office slate is incomplete.");
+
+// The place list is a working set, not a certified census of incorporated places.
+assert(
+  footprint.includes('status: "needs_authentication"'),
+  "The footprint place list must stay flagged as an incomplete working set.",
+);
+
+assert(rosterPage.includes("seatLedgerFor"), "Roster page does not compute the seat ledger.");
+assert(rosterPage.includes("NOT STARTED"), "Roster page no longer flags jurisdictions with zero seats on file.");
+
+// District focus: default the directory to the footprint, reversibly, and never
+// make an out-of-district record unreachable.
+assert(flags.includes("districtFocusOnly"), "The district-focus flag is missing.");
+assert(
+  flags.includes('process.env.NEXT_PUBLIC_DISTRICT_FOCUS_ONLY !== "false"'),
+  "District focus must default on and stay switchable off.",
+);
+assert(search.includes("passesDistrictFocus"), "Officials search does not apply district focus.");
+assert(
+  search.includes("userNarrowedTheQuery"),
+  "District focus must let a name search or an explicit filter reach out-of-district records.",
+);
+
 console.log("Home district (HD-7 / TX-01) smoke check passed.");
