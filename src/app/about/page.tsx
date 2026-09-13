@@ -5,7 +5,7 @@ import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 export const metadata: Metadata = buildRepWatchrMetadata({
   title: "About",
   description:
-    "About RepWatchr, the Texas public-record map for officials, school boards, votes, sources, and citizen accountability.",
+    "RepWatchr is an independent accountability desk covering Texas House District 7 and TX-01: officials, school boards, county government, votes, funding, and the public records behind them.",
   path: "/about",
   imagePath: buildOgImageUrl("home", { page: "about" }),
   imageAlt: "About RepWatchr preview",
@@ -24,7 +24,10 @@ export default function AboutPage() {
             When public records are scattered, make the record clear.
           </h1>
           <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-slate-700">
-            RepWatchr exists to help Texans find the people who hold public power, the records that support each profile, the scores and flags tied to public sources, and the citizen feedback attached to that record.
+            RepWatchr is an independent accountability desk. It covers Texas House District 7 and Texas&rsquo;s 1st congressional district first, then the rest of East Texas, then the Austin and Washington decisions that land here. It publishes the people who hold public power, the records behind each profile, the scores and flags tied to public sources, and the citizen feedback attached to that record.
+          </p>
+          <p className="mt-3 max-w-3xl text-sm font-bold leading-6 text-blue-950/70">
+            Not a party organ. Not a campaign. Not a press release service. If a claim cannot be traced to a record a reader can open, it says so on the page.
           </p>
         </div>
       </section>
@@ -33,8 +36,9 @@ export default function AboutPage() {
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-3">Our Mission</h2>
           <p className="leading-relaxed">
-            The mission is simple: build a source-backed public record for
-            Texas government. That means federal, state, county, city, school
+            The mission is simple: report the public record of the officials
+            who govern HD-7 and TX-01, and build that record where nobody else
+            has bothered to. That means federal, state, county, city, school
             board, and public-board profiles where the officeholder, office,
             jurisdiction, term, votes, funding, praise, concerns, and open gaps
             can be checked against records normal citizens can inspect.

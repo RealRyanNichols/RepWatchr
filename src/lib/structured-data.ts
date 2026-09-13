@@ -1,3 +1,4 @@
+import { HOME_DISTRICT_COUNTIES } from "@/lib/home-districts";
 import { REPWATCHR_ORIGIN, absoluteRepWatchrUrl, buildOgImageUrl } from "@/lib/repwatchr-seo";
 
 type BreadcrumbItem = {
@@ -33,14 +34,40 @@ type NewsArticleInput = {
   about?: Array<{ name: string; path: string; jobTitle?: string }>;
 };
 
+/**
+ * NewsMediaOrganization, not a bare Organization.
+ *
+ * A plain Organization is what a vendor or a SaaS product emits. This desk
+ * publishes source-backed reporting on a named beat, so it declares itself the
+ * way an outlet does, points at its published standards, and names the ground
+ * it covers. Search engines read `areaServed` and `publishingPrinciples` when
+ * deciding who is a local authority on a place.
+ */
 export function organizationJsonLd() {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "NewsMediaOrganization",
     name: "RepWatchr",
     url: REPWATCHR_ORIGIN,
     logo: absoluteRepWatchrUrl("/images/repwatchr-logo-america-first.png"),
     slogan: "Search. Grade. Source. Share.",
+    description:
+      "Source-backed accountability reporting on Texas House District 7 and Texas's 1st congressional district: officials, school boards, county government, votes, funding, and the public records behind them.",
+    publishingPrinciples: absoluteRepWatchrUrl("/methodology"),
+    ethicsPolicy: absoluteRepWatchrUrl("/methodology"),
+    correctionsPolicy: absoluteRepWatchrUrl("/methodology"),
+    knowsAbout: [
+      "Texas House District 7",
+      "Texas's 1st congressional district",
+      "East Texas local government",
+      "Texas school boards",
+      "Texas public records",
+    ],
+    areaServed: HOME_DISTRICT_COUNTIES.map((county) => ({
+      "@type": "AdministrativeArea",
+      name: `${county} County, Texas`,
+    })),
+    founder: { "@type": "Person", name: "Ryan Nichols" },
     sameAs: ["https://x.com/RepWatchr", "https://www.facebook.com/RepWatchr"],
   };
 }

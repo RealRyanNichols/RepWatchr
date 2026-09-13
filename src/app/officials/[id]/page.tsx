@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
+  getAllOfficials,
   getFundingSummary,
   getNewsByOfficialId,
   getOfficialWithScores,
@@ -8,6 +9,8 @@ import {
   getRedFlags,
   getScoreCard,
 } from "@/lib/data";
+import { isInFootprint } from "@/lib/district-footprint";
+import { officialProfileTitle } from "@/lib/official-titles";
 import { OfficialProfileHero } from "@/components/officials/OfficialProfileExperience";
 import OfficialAccountabilitySnapshot from "@/components/officials/OfficialAccountabilitySnapshot";
 import OfficialStoryProfile from "@/components/officials/OfficialStoryProfile";
@@ -28,11 +31,22 @@ import { getOfficialPerformanceGrade } from "@/data/official-performance-grades"
 import { getOfficeAccountabilityProfile } from "@/lib/official-accountability";
 
 export const revalidate = 86400;
-export const dynamic = "force-dynamic";
 export const dynamicParams = true;
 
+/**
+ * Prebuild the beat.
+ *
+ * This page used to be force-dynamic with no prebuilt params, so all 8,914
+ * profiles rendered cold on every request and every one sat in the sitemap at
+ * equal weight. Crawl budget went to national records while the HD-7 / TX-01
+ * profiles - the ones this desk is accountable for - got no priority at all.
+ * The footprint is built at deploy time; everything else still renders on
+ * demand and caches.
+ */
 export async function generateStaticParams() {
-  return [];
+  return getAllOfficials()
+    .filter((official) => isInFootprint(official))
+    .map((official) => ({ id: official.id }));
 }
 
 export async function generateMetadata({
@@ -44,7 +58,7 @@ export async function generateMetadata({
   const official = getOfficialWithScores(id);
   if (!official) return { title: "Official Not Found" };
 
-  const title = `${official.name} - ${official.position}`;
+  const title = officialProfileTitle(official);
   const description = `Source-backed RepWatchr profile for ${official.name}, ${official.position} serving ${official.jurisdiction}.`;
   return buildRepWatchrMetadata({
     title,

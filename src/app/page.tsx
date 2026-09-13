@@ -7,7 +7,6 @@ import OfficialCard from "@/components/officials/OfficialCard";
 import EditorialThumbnail from "@/components/shared/EditorialThumbnail";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import { getOfficialVerifiedBrief } from "@/data/official-verified-briefs";
-import { getRepWatchrServices } from "@/data/repwatchr-services";
 import { getDailyWireClips, type DailyWireClip } from "@/lib/daily-wire";
 import { isInEastTexasLaunchTerritory } from "@/lib/east-texas-launch-territory";
 import { isInHomeDistricts, isHomeDistrictSeat, HOME_DISTRICTS } from "@/lib/home-districts";
@@ -100,6 +99,35 @@ const sourceDeskActions = [
     label: "Check the rules",
     href: "/methodology",
     detail: "Keep facts, public claims, inferences, and missing proof clearly separated.",
+  },
+];
+
+/**
+ * What a reader can hold this desk to. These are the standards a newsroom
+ * publishes, and they are also what makes the underlying record worth anything
+ * to anyone who wants to use it.
+ */
+const EDITORIAL_STANDARDS = [
+  {
+    eyebrow: "Source standard",
+    href: "/methodology",
+    title: "Filing, vote, or agenda. Not a screenshot.",
+    summary:
+      "Every claim traces to a record a reader can open. Where the proof is thin, the page says so instead of rounding up.",
+  },
+  {
+    eyebrow: "Review status",
+    href: "/data-reports",
+    title: "What is confirmed, and what still is not.",
+    summary:
+      "Profiles carry their review state in the open, including the seats and sources this desk has not finished checking.",
+  },
+  {
+    eyebrow: "Coverage area",
+    href: "/home-district",
+    title: "HD-7 and TX-01, county by county.",
+    summary:
+      "Thirteen counties and every city, school board, and county seat inside them, plus the Austin and Washington votes that land here.",
   },
 ];
 
@@ -333,7 +361,6 @@ export default async function HomePage() {
     },
   ];
 
-  const serviceHighlights = getRepWatchrServices().slice(0, 3);
 
   // The previous selection was an accident of the global sort: at-large districts encode
   // as district 0, so six unrelated at-large House members permanently held the homepage.
@@ -684,52 +711,49 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Services Funnel */}
+      {/* Editorial Standards */}
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Research services</p>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">How this desk works</p>
               <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
-                When a public record needs more work, request a packet.
+                Every profile starts with a record you can open.
               </h2>
               <p className="mt-4 max-w-3xl text-sm font-semibold leading-6 text-blue-950/70">
-                Free tools cover search, source intake, and public lanes. Paid services are for
-                deeper research, race pages, clean writeups, and source-backed public-record packets.
+                Nothing here runs on rumor. A claim carries the filing, the vote, the agenda, or
+                the agency response behind it, and anything still unverified says so on its face.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <Link
-                  href="/services"
-                  className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
+                  href="/methodology"
+                  className="rounded-xl bg-blue-950 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-red-700"
                 >
-                  View Services
+                  Read the standard
                 </Link>
                 <Link
-                  href="/elections/texas/contribute"
+                  href="/submit-source"
                   className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3 text-sm font-black uppercase tracking-wide text-amber-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
                 >
-                  Build Free Packet
+                  Send a record
                 </Link>
               </div>
             </div>
             <div className="grid gap-4 md:grid-cols-3">
-              {serviceHighlights.map((service) => (
+              {EDITORIAL_STANDARDS.map((standard) => (
                 <Link
-                  key={service.slug}
-                  href={`/services/${service.slug}`}
+                  key={standard.href}
+                  href={standard.href}
                   className="group rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white hover:shadow-md"
                 >
-                  <div className="flex items-center justify-between gap-3">
-                    <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
-                      {service.eyebrow}
-                    </span>
-                    <span className="text-lg font-black text-red-700">{service.priceLabel}</span>
-                  </div>
+                  <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
+                    {standard.eyebrow}
+                  </span>
                   <h3 className="mt-4 text-xl font-black leading-tight text-blue-950 group-hover:text-red-700">
-                    {service.name}
+                    {standard.title}
                   </h3>
                   <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-                    {service.summary}
+                    {standard.summary}
                   </p>
                 </Link>
               ))}
@@ -844,8 +868,8 @@ export default async function HomePage() {
             Do not just watch the record. Move it.
           </h2>
           <p className="text-blue-950/70 text-lg mb-8 max-w-2xl mx-auto">
-            Search a profile, package the missing source, request deeper research, and
-            share the page with people who need to open it before the next vote.
+            Search a profile, send the source that is missing, and share the page with
+            people who need to open it before the next vote.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
@@ -855,10 +879,10 @@ export default async function HomePage() {
               Build Free Packet
             </Link>
             <Link
-              href="/services"
+              href="/home-district"
               className="rounded-xl border-2 border-blue-200 px-8 py-3.5 text-sm font-bold text-blue-900 hover:bg-blue-50 transition-all"
             >
-              View Services
+              HD-7 / TX-01 Desk
             </Link>
             <Link
               href="/officials"
