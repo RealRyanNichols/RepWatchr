@@ -19,7 +19,24 @@ const DISTRICT_CODE = /^[A-Za-z]{1,3}-?\d+$/;
  * Representative", so where a district is on the record it wins.
  */
 const INSTITUTION_JURISDICTION =
-  /\b(house of representatives|senate|congress|legislature|general assembly|assembly|court of appeals|supreme court|district court|court of criminal appeals)\b/i;
+  /\b(house of representatives|senate|congress|legislature|general assembly|assembly|court of appeals|supreme court|district court|court of criminal appeals|department of|railroad commission|land office|commission of|board of)\b/i;
+
+/**
+ * Some records carry a jurisdiction that describes the office rather than
+ * naming a place: "Texas statewide public office", "Alabama statewide public
+ * office". Passing that whole string into a title yields "Kay Ivey - Alabama
+ * statewide public office Governor" instead of "Kay Ivey - Alabama Governor".
+ * 193 records have this shape.
+ */
+const DESCRIPTIVE_JURISDICTION =
+  /\b(statewide|public office|at[- ]large|elected position|government|office of)\b/i;
+
+/** "Alabama statewide public office" -> "Alabama". */
+function placeFromDescriptiveJurisdiction(jurisdiction: string) {
+  return jurisdiction
+    .replace(/\s*\b(statewide|public office|at[- ]large|elected position|government|office of)\b.*$/i, "")
+    .trim();
+}
 
 /**
  * "City of Athens Mayor" is not how anyone searches. "Athens Mayor" is.
@@ -27,6 +44,23 @@ const INSTITUTION_JURISDICTION =
  */
 function placeSearchName(jurisdiction: string) {
   return jurisdiction.replace(/^(?:city|town|village|borough) of\s+/i, "").trim() || jurisdiction;
+}
+
+/**
+ * Drops the parts of a place the office already names.
+ *
+ * An appellate record carries position "Chief Justice, First Court of Appeals"
+ * and district "First Court of Appeals, Place 1". Joined naively that reads
+ * "Chief Justice, First Court of Appeals, First Court of Appeals, Place 1".
+ * Only the segment that adds something survives.
+ */
+function placeRemainder(office: string, place: string) {
+  const lowerOffice = office.toLowerCase();
+  const kept = place
+    .split(",")
+    .map((segment) => segment.trim())
+    .filter((segment) => segment && !lowerOffice.includes(segment.toLowerCase()));
+  return kept.join(", ");
 }
 
 export function officeSearchLabel(position?: string, jurisdiction?: string) {
@@ -50,7 +84,10 @@ export function officeSearchLabel(position?: string, jurisdiction?: string) {
 
   // "U.S. Representative, Texas District 1" beats "Texas District 1 U.S.
   // Representative".
-  if (TRAILING_JURISDICTION.test(place) || DISTRICT_CODE.test(place)) return `${office}, ${place}`;
+  if (TRAILING_JURISDICTION.test(place) || DISTRICT_CODE.test(place)) {
+    const remainder = placeRemainder(office, place);
+    return remainder ? `${office}, ${remainder}` : office;
+  }
 
   return `${place} ${office}`;
 }
@@ -62,14 +99,31 @@ export function officialProfileTitle(official: {
   jurisdiction?: string;
   district?: string;
 }) {
-  const district = (official.district ?? "").replace(/\s+/g, " ").trim();
+  const rawDistrict = (official.district ?? "").replace(/\s+/g, " ").trim();
+  const district = DESCRIPTIVE_JURISDICTION.test(rawDistrict)
+    ? placeFromDescriptiveJurisdiction(rawDistrict) || rawDistrict
+    : rawDistrict;
   const jurisdiction = (official.jurisdiction ?? "").replace(/\s+/g, " ").trim();
-  const place = INSTITUTION_JURISDICTION.test(jurisdiction) ? district || jurisdiction : jurisdiction;
+
+  let place = jurisdiction;
+  if (INSTITUTION_JURISDICTION.test(jurisdiction)) {
+    // A chamber or bench. The district is the place.
+    place = district || jurisdiction;
+  } else if (DESCRIPTIVE_JURISDICTION.test(jurisdiction)) {
+    // An office description. Keep the state or district it names.
+    place = district || placeFromDescriptiveJurisdiction(jurisdiction) || jurisdiction;
+  }
 
   let office = officeSearchLabel(official.position, place);
   // A county or city seat that also runs by precinct keeps both.
-  if (district && place !== district && !office.toLowerCase().includes(district.toLowerCase())) {
-    office = `${office}, ${district}`;
+  if (district && place !== district) {
+    const remainder = placeRemainder(office, district);
+    if (remainder) office = `${office}, ${remainder}`;
   }
+  // Some records are a seat with no incumbent named yet, so the "name" is
+  // itself an office string. Titling those "Council Member, District 1 -
+  // Longview City Council Member, District 1" helps nobody; the office alone
+  // is both accurate and what a person searches.
+  if (office && office.toLowerCase().includes(official.name.trim().toLowerCase())) return office;
   return office ? `${official.name} - ${office}` : official.name;
 }

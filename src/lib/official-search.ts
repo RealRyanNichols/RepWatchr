@@ -786,6 +786,41 @@ export function officialSearchQuery(params: OfficialSearchParams, overrides: Par
   return value ? `/officials?${value}` : "/officials";
 }
 
+/**
+ * The counties and cities this directory actually carries.
+ *
+ * The indexable place-facet set is only finite if it is checked against real
+ * values: parseOfficialSearchParams accepts any string, so without this an
+ * arbitrary ?city= mints an indexable empty page, and casing variants mint
+ * more of the same page under different canonicals.
+ */
+const getKnownPlaceFacets = cache(() => {
+  const counties = new Set<string>();
+  const cities = new Set<string>();
+  for (const row of getStaticOfficialRows()) {
+    for (const county of row.countyValues) {
+      const name = countyName(county).trim();
+      if (name) counties.add(name.toLowerCase());
+    }
+    if (row.city) cities.add(row.city.trim().toLowerCase());
+  }
+  return { counties, cities };
+});
+
+/** The stored spelling of a place, so one place keeps one canonical URL. */
+export function canonicalPlaceFacet(kind: "county" | "city", value: string) {
+  const wanted = (kind === "county" ? countyName(value) : value).trim();
+  if (!wanted) return "";
+  const known = kind === "county" ? getKnownPlaceFacets().counties : getKnownPlaceFacets().cities;
+  return known.has(wanted.toLowerCase()) ? wanted : "";
+}
+
+export function isKnownPlaceFacet(params: OfficialSearchParams) {
+  if (params.county) return Boolean(canonicalPlaceFacet("county", params.county));
+  if (params.city) return Boolean(canonicalPlaceFacet("city", params.city));
+  return true;
+}
+
 export function isOfficialSearchIndexable(params: OfficialSearchParams) {
   if (params.recordType !== "all") return false;
   if (params.search || params.page > 1 || params.sort !== "relevance" || params.perPage !== 24) return false;
@@ -795,6 +830,9 @@ export function isOfficialSearchIndexable(params: OfficialSearchParams) {
   // linked straight into them, so the county tiles pointed crawlers at a wall.
   // Both facets at once is a crossed filter and stays out.
   if (params.county && params.city) return false;
+  // Only a place we actually carry. An unknown or misspelled facet returns an
+  // empty directory, which must never be indexable.
+  if (!isKnownPlaceFacet(params)) return false;
   if (
     params.officeType ||
     params.party !== "all" ||

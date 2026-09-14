@@ -127,7 +127,7 @@ const EDITORIAL_STANDARDS = [
     href: "/home-district",
     title: "HD-7 and TX-01, county by county.",
     summary:
-      "Thirteen counties and every city, school board, and county seat inside them, plus the Austin and Washington votes that land here.",
+      "HD-7 is Gregg, Harrison and Marion, confirmed on the record. The wider TX-01 county list is the working footprint and stays marked unauthenticated until the state's plan is pulled and cited.",
   },
 ];
 

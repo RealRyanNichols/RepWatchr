@@ -128,6 +128,61 @@ assert(
   "Title building lost the district-code rule, so Jay Dean stops reading as HD-7.",
 );
 
+// --- Findings from the Codex review of #27, each with its own guard --------
+
+// The homepage must not state the 13-county footprint as an established
+// boundary while TX-01 is still needs_authentication.
+assert(
+  !/Thirteen counties and every city, school board, and county seat inside them/.test(homepage),
+  "The homepage states the 13-county footprint as an established boundary, but TX-01 is still needs_authentication.",
+);
+assert(
+  /unauthenticated|needs authentication|working footprint/i.test(homepage),
+  "The homepage coverage card no longer carries the TX-01 boundary status, so it publishes an unauthenticated boundary as fact.",
+);
+
+// AGENTS.md forbids hard-coding district and county lists in ranking logic.
+const layout = read("src/app/layout.tsx");
+assert(
+  layout.includes("HOME_DISTRICT_BEAT_TERMS"),
+  "Metadata keywords hard-code the beat again instead of deriving it from the home-district module.",
+);
+for (const hardCoded of ['"Gregg County"', '"Harrison County"', '"Marion County"', '"TX-01"']) {
+  assert(
+    !layout.includes(hardCoded),
+    `Metadata keywords hard-code ${hardCoded}; a beat change in home-districts.ts will not reach this ranking surface.`,
+  );
+}
+assert(
+  structuredData.includes("HOME_DISTRICT_BEAT_TERMS"),
+  "Organization knowsAbout hard-codes the beat instead of deriving it.",
+);
+
+// An indexable place facet needs metadata naming the place, or it is a
+// near-duplicate of the plain state page.
+const officialsIndex = read("src/app/officials/page.tsx");
+assert(
+  officialsIndex.includes("params.county") && /const place =/.test(officialsIndex),
+  "The officials directory no longer names the selected county or city in its metadata, so indexable place facets duplicate the state page.",
+);
+
+// An unknown place facet must never be indexable.
+assert(
+  officialSearch.includes("isKnownPlaceFacet"),
+  "Unknown county and city facets are indexable again, so an arbitrary ?city= mints an indexable empty page.",
+);
+assert(
+  indexable.includes("if (!isKnownPlaceFacet(params)) return false;"),
+  "isOfficialSearchIndexable stopped checking the place facet against places actually carried.",
+);
+
+// The probe runner has to be a declared dependency.
+const pkg = JSON.parse(read("package.json"));
+assert(
+  Boolean(pkg.devDependencies?.tsx || pkg.dependencies?.tsx),
+  "The smoke probe shells out to tsx, which is not declared in package.json; a clean install without registry access fails before any assertion runs.",
+);
+
 // --- The titles themselves, checked against the real records ---------------
 
 let probeResult;

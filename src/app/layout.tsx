@@ -11,6 +11,7 @@ import MobileAppShell from "@/components/mobile/MobileAppShell";
 import ReferralAttributionTracker from "@/components/referrals/ReferralAttributionTracker";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { HOME_DISTRICT_BEAT_TERMS } from "@/lib/home-districts";
 import { jsonLd, organizationJsonLd } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
@@ -23,13 +24,9 @@ export const metadata: Metadata = {
   keywords: [
     "RepWatchr",
     "East Texas news",
-    "Texas House District 7",
-    "TX-01",
-    "Gregg County",
-    "Harrison County",
-    "Marion County",
-    "Longview news",
-    "Marshall Texas news",
+    // The beat itself comes from the home-district module, so a boundary or
+    // coverage change there reaches this ranking surface instead of drifting.
+    ...HOME_DISTRICT_BEAT_TERMS,
     "local government accountability",
     "elected officials",
     "United States representatives",
