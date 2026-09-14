@@ -69,6 +69,12 @@ export default function MethodologyPage() {
             <a href="#publication-gates" className="rounded-xl border border-white/20 px-5 py-3 text-sm font-black text-white hover:bg-white/10">
               See publication gates
             </a>
+            <Link
+              href="/methodology/scorecards"
+              className="rounded-xl border border-white/20 px-5 py-3 text-sm font-black text-white hover:bg-white/10"
+            >
+              How the vote-record scorecard is calculated
+            </Link>
           </div>
         </div>
       </section>
@@ -91,6 +97,8 @@ export default function MethodologyPage() {
             title="Vote and issue alignment"
             body="The sourced vote plus an optional comparison to a member's own priorities. Policy direction never changes the performance grade."
             tone="amber"
+            href="/methodology/scorecards"
+            linkLabel="See the scorecard algorithm"
           />
           <MethodCard
             number="03"
@@ -288,11 +296,15 @@ function MethodCard({
   title,
   body,
   tone,
+  href,
+  linkLabel,
 }: {
   number: string;
   title: string;
   body: string;
   tone: "blue" | "amber" | "green";
+  href?: string;
+  linkLabel?: string;
 }) {
   const tones = {
     blue: "border-blue-200 bg-blue-50 text-blue-950",
@@ -305,6 +317,11 @@ function MethodCard({
       <p className="text-xs font-black uppercase tracking-[0.18em] opacity-65">{number}</p>
       <h2 className="mt-3 text-2xl font-black tracking-tight">{title}</h2>
       <p className="mt-3 text-sm font-semibold leading-6 opacity-80">{body}</p>
+      {href && linkLabel ? (
+        <Link href={href} className="mt-4 inline-flex text-sm font-black underline underline-offset-2 hover:no-underline">
+          {linkLabel} &rarr;
+        </Link>
+      ) : null}
     </article>
   );
 }

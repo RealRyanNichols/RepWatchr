@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import VectorArt from "@/components/shared/VectorArt";
 import { getIssueCategories, getAllBills } from "@/lib/data";
+import { ISSUE_ART_VIEWBOX, issueArtInnerSvg } from "@/lib/issue-art";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
@@ -45,6 +47,12 @@ export default function IssuesPage() {
           These are the issues we score officials on. Each one directly affects
           Texas residents and communities.
         </p>
+        <Link
+          href="/methodology/scorecards"
+          className="mt-3 inline-flex text-sm font-semibold text-blue-600 hover:underline"
+        >
+          How the scoring works, step by step &rarr;
+        </Link>
       </div>
 
       <div className="space-y-6">
@@ -55,9 +63,17 @@ export default function IssuesPage() {
           return (
             <div
               key={cat.id}
-              className="bg-white rounded-lg border border-gray-200 p-6"
+              className="overflow-hidden bg-white rounded-lg border border-gray-200"
             >
-              <div className="flex items-start gap-4">
+              <Link href={`/issues/${cat.id}`} className="group block aspect-[32/9] w-full overflow-hidden bg-slate-950">
+                <VectorArt
+                  inner={issueArtInnerSvg(cat.id, cat.color)}
+                  viewBox={ISSUE_ART_VIEWBOX}
+                  className="h-full w-full transition-transform duration-500 group-hover:scale-105"
+                  label={`${cat.name} illustration`}
+                />
+              </Link>
+              <div className="flex items-start gap-4 p-6">
                 <div
                   className="w-4 h-4 rounded-full mt-1 shrink-0"
                   style={{ backgroundColor: cat.color }}
@@ -95,7 +111,13 @@ export default function IssuesPage() {
                     </div>
                   )}
 
-                  <div className="mt-4">
+                  <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
+                    <Link
+                      href={`/issues/${cat.id}`}
+                      className="text-sm font-medium text-blue-600 hover:underline"
+                    >
+                      Open the {cat.name} page →
+                    </Link>
                     <Link
                       href={`/scorecards/${cat.id}`}
                       className="text-sm font-medium text-blue-600 hover:underline"

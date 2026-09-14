@@ -15,6 +15,10 @@ import {
   HOME_DISTRICTS,
   TX_HOUSE_DISTRICT_7,
 } from "@/lib/home-districts";
+import { FOOTPRINT_COUNTY_NAMES, isInFootprint } from "@/lib/district-footprint";
+import { ISSUE_ART_VIEWBOX, issueArtInnerSvg } from "@/lib/issue-art";
+import { STANDARD_ART_VIEWBOX, standardArtInnerSvg } from "@/lib/standard-art";
+import VectorArt from "@/components/shared/VectorArt";
 import { articleThumbnailMessage, toEditorialThumbnailMessage } from "@/lib/editorial-visuals";
 import { getPublicArticleCatalog } from "@/lib/article-catalog";
 import ArticleThumbnail from "@/components/news/ArticleThumbnail";
@@ -125,6 +129,7 @@ function formatCountyList(counties: string[]) {
  */
 const EDITORIAL_STANDARDS = [
   {
+    art: "source-standard",
     eyebrow: "Source standard",
     href: "/methodology",
     title: "Filing, vote, or agenda. Not a screenshot.",
@@ -132,6 +137,7 @@ const EDITORIAL_STANDARDS = [
       "Every claim traces to a record a reader can open. Where the proof is thin, the page says so instead of rounding up.",
   },
   {
+    art: "review-status",
     eyebrow: "Review status",
     href: "/data-reports",
     title: "What is confirmed, and what still is not.",
@@ -139,6 +145,7 @@ const EDITORIAL_STANDARDS = [
       "Profiles carry their review state in the open, including the seats and sources this desk has not finished checking.",
   },
   {
+    art: "coverage-area",
     eyebrow: "Coverage area",
     href: "/home-district",
     title: "HD-7 and TX-01, county by county.",
@@ -353,16 +360,22 @@ export default async function HomePage() {
   const allPublicProfileCount = electedProfileCount + dataStats.publicPowerProfiles;
   const allPublicSourceUrls = dataStats.publicSourceUrls + schoolBoardStats.sourceCount;
 
+  // The headline says HD-7 and TX-01, so the district number leads. The
+  // all-states total is real and stays on the page, but it is labelled as a
+  // national archive rather than left beside the district claim where a reader
+  // in Longview would read it as coverage of their own ballot.
+  const footprintProfileCount = officials.filter(isInFootprint).length;
+
   const stats = [
     {
-      label: "Public Profiles",
-      value: formatNumber(allPublicProfileCount),
-      caption: "people and institutions on the record",
+      label: "HD-7 / TX-01 Profiles",
+      value: formatNumber(footprintProfileCount),
+      caption: `seats loaded inside the ${FOOTPRINT_COUNTY_NAMES.length}-county footprint`,
     },
     {
-      label: "Federal/State",
-      value: formatNumber(dataStats.federalAndStateOfficeProfilesLoaded),
-      caption: `${dataStats.nationalFederalStateCompletionPercent}% broad benchmark loaded`,
+      label: "All-State Archive",
+      value: formatNumber(allPublicProfileCount),
+      caption: "records nationwide, most outside the district",
     },
     {
       label: "Authority Roles",
@@ -747,17 +760,26 @@ export default async function HomePage() {
                 <Link
                   key={standard.href}
                   href={standard.href}
-                  className="group rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white hover:shadow-md"
+                  className="group overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white hover:shadow-md"
                 >
-                  <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
-                    {standard.eyebrow}
-                  </span>
-                  <h3 className="mt-4 text-xl font-black leading-tight text-blue-950 group-hover:text-red-700">
-                    {standard.title}
-                  </h3>
-                  <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-                    {standard.summary}
-                  </p>
+                  <div className="relative aspect-[12/5] w-full overflow-hidden border-b border-slate-200 bg-white">
+                    <VectorArt
+                      inner={standardArtInnerSvg(standard.art)}
+                      viewBox={STANDARD_ART_VIEWBOX}
+                      className="h-full w-full transition-transform duration-500 group-hover:scale-[1.03]"
+                    />
+                    <span className="absolute left-3 top-3 rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
+                      {standard.eyebrow}
+                    </span>
+                  </div>
+                  <div className="p-5">
+                    <h3 className="text-xl font-black leading-tight text-blue-950 group-hover:text-red-700">
+                      {standard.title}
+                    </h3>
+                    <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
+                      {standard.summary}
+                    </p>
+                  </div>
                 </Link>
               ))}
             </div>
@@ -809,28 +831,40 @@ export default async function HomePage() {
             {issueCategories.map((issue) => (
               <Link
                 key={issue.id}
-                href={`/scorecards/${issue.id}`}
-                className="group block rounded-2xl border border-gray-200 bg-white p-5 transition-all hover:shadow-lg hover:-translate-y-1"
+                href={`/issues/${issue.id}`}
+                className="group block overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all hover:shadow-lg hover:-translate-y-1"
               >
-                <div
-                  className="w-10 h-1 rounded-full mb-4"
-                  style={{ backgroundColor: issue.color }}
-                />
-                <h3 className="font-bold text-gray-900 text-sm group-hover:text-blue-600 transition-colors">
-                  {issue.name}
-                </h3>
-                <p className="text-xs text-gray-500 mt-2 leading-relaxed line-clamp-2">
-                  {issue.description}
-                </p>
-                <p
-                  className="text-xs font-bold mt-3"
-                  style={{ color: issue.color }}
-                >
-                  {issue.weight}% of overall score
-                </p>
+                <div className="aspect-[16/9] w-full overflow-hidden bg-slate-950">
+                  <VectorArt
+                    inner={issueArtInnerSvg(issue.id, issue.color)}
+                    viewBox={ISSUE_ART_VIEWBOX}
+                    className="h-full w-full transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="font-bold text-gray-900 text-sm group-hover:text-blue-600 transition-colors">
+                    {issue.name}
+                  </h3>
+                  <p className="text-xs text-gray-500 mt-2 leading-relaxed line-clamp-2">
+                    {issue.description}
+                  </p>
+                  <p
+                    className="text-xs font-bold mt-3"
+                    style={{ color: issue.color }}
+                  >
+                    {issue.weight}% of the vote-record score
+                  </p>
+                </div>
               </Link>
             ))}
           </div>
+          <p className="mt-6 text-center text-sm font-semibold text-gray-500">
+            Every number here is arithmetic you can check.{" "}
+            <Link href="/methodology/scorecards" className="text-blue-600 underline underline-offset-2 hover:text-blue-800">
+              Read how the scorecard is calculated
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

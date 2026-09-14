@@ -3,20 +3,15 @@ import Link from "next/link";
 import { getAllOfficials, getAllScoreCards, getIssueCategories } from "@/lib/data";
 import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
 import PartyBadge from "@/components/officials/PartyBadge";
+import VectorArt from "@/components/shared/VectorArt";
+import { ISSUE_ART_VIEWBOX, issueArtInnerSvg } from "@/lib/issue-art";
 import { calculateLetterGrade } from "@/lib/scoring";
+import { CATEGORY_KEY_BY_ISSUE_ID, categoryKeyForIssueId } from "@/lib/vote-record-score";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
-const categoryKeyMap: Record<string, string> = {
-  "water-rights": "waterRights",
-  "land-and-property-rights": "landAndPropertyRights",
-  taxes: "taxes",
-  "government-transparency": "governmentTransparency",
-  "voting-record": "votingRecord",
-};
-
 export async function generateStaticParams() {
-  return Object.keys(categoryKeyMap).map((category) => ({ category }));
+  return Object.keys(CATEGORY_KEY_BY_ISSUE_ID).map((category) => ({ category }));
 }
 
 export async function generateMetadata({
@@ -46,7 +41,7 @@ export default async function CategoryScorecardPage({
   const scoreCards = getAllScoreCards();
   const issueCategories = getIssueCategories();
   const issueCat = issueCategories.find((c) => c.id === category);
-  const catKey = categoryKeyMap[category];
+  const catKey = categoryKeyForIssueId(category);
 
   if (!issueCat || !catKey) {
     return (
@@ -99,20 +94,43 @@ export default async function CategoryScorecardPage({
         >
           &larr; All Scorecards
         </Link>
-        <div className="flex items-center gap-3 mt-2">
-          <span
-            className="w-4 h-4 rounded-full"
-            style={{ backgroundColor: issueCat.color }}
+        <div className="relative mt-3 overflow-hidden rounded-3xl bg-slate-950">
+          <VectorArt
+            inner={issueArtInnerSvg(issueCat.id, issueCat.color)}
+            viewBox={ISSUE_ART_VIEWBOX}
+            className="h-48 w-full sm:h-64"
+            label={`${issueCat.name} illustration`}
           />
-          <h1 className="text-3xl font-bold text-gray-900">
-            {issueCat.name} Scorecard
-          </h1>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/45 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
+            <span
+              className="inline-flex rounded-full px-3 py-1 text-[11px] font-black uppercase tracking-wide text-slate-950"
+              style={{ backgroundColor: issueCat.color }}
+            >
+              {issueCat.weight}% of the vote-record score
+            </span>
+            <h1 className="mt-3 text-3xl font-black tracking-[-0.03em] text-white sm:text-4xl">
+              {issueCat.name} Scorecard
+            </h1>
+          </div>
         </div>
-        <p className="mt-2 text-gray-600 max-w-2xl">{issueCat.description}</p>
-        <p className="mt-1 text-sm text-gray-500">
-          Weight: {issueCat.weight}% of the legacy source-backed vote-record model. Community responses live on
-          the main scorecards page and public profile pages.
+        <p className="mt-4 text-gray-600 max-w-2xl">{issueCat.description}</p>
+        <p className="mt-2 text-sm text-gray-500 max-w-2xl">
+          Each score below is the weight of an official&apos;s aligned votes divided by the weight of the votes they
+          actually cast in this category.{" "}
+          <Link href="/methodology/scorecards" className="font-semibold text-blue-600 hover:underline">
+            See the full calculation
+          </Link>
+          . Community responses are a separate signal and live on the main scorecards page and public profile pages.
         </p>
+        <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
+          <Link href={`/issues/${issueCat.id}`} className="text-sm font-semibold text-blue-600 hover:underline">
+            Why {issueCat.name.toLowerCase()} matters here &rarr;
+          </Link>
+          <Link href="/issues" className="text-sm font-semibold text-blue-600 hover:underline">
+            All five issues &rarr;
+          </Link>
+        </div>
       </div>
 
       <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">

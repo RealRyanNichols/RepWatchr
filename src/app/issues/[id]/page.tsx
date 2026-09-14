@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getIssueCategories, getAllOfficials, getScoreCard } from "@/lib/data";
+import { getAllBills, getIssueCategories, getAllOfficials, getScoreCard, getScoreCardGateReport } from "@/lib/data";
 import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
+import VectorArt from "@/components/shared/VectorArt";
+import { ISSUE_ART_VIEWBOX, issueArtInnerSvg } from "@/lib/issue-art";
+import { categoryKeyForIssueId } from "@/lib/vote-record-score";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
@@ -132,11 +135,9 @@ export default async function IssueDetailPage({
   }
 
   const details = issueDetails[id];
-  const categoryKey = id === "water-rights" ? "waterRights"
-    : id === "land-and-property-rights" ? "landAndPropertyRights"
-    : id === "government-transparency" ? "governmentTransparency"
-    : id === "voting-record" ? "votingRecord"
-    : id;
+  const categoryKey = categoryKeyForIssueId(id) ?? id;
+  const gate = getScoreCardGateReport();
+  const trackedBills = getAllBills().filter((bill) => bill.categories.includes(id));
 
   // Get officials with scores for this category
   const officials = getAllOfficials().filter(
@@ -181,14 +182,25 @@ export default async function IssueDetailPage({
         &larr; All Issues
       </Link>
 
-      <div className="flex items-center gap-3 mb-4">
-        <div
-          className="w-12 h-1.5 rounded-full"
-          style={{ backgroundColor: category.color }}
+      <div className="relative mb-8 overflow-hidden rounded-3xl bg-slate-950">
+        <VectorArt
+          inner={issueArtInnerSvg(category.id, category.color)}
+          viewBox={ISSUE_ART_VIEWBOX}
+          className="h-56 w-full sm:h-72"
+          label={`${category.name} illustration`}
         />
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
-          {category.name}
-        </h1>
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/45 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
+          <span
+            className="inline-flex rounded-full px-3 py-1 text-[11px] font-black uppercase tracking-wide text-slate-950"
+            style={{ backgroundColor: category.color }}
+          >
+            {category.weight}% of the vote-record score
+          </span>
+          <h1 className="mt-3 text-3xl font-black tracking-[-0.03em] text-white sm:text-5xl">
+            {category.name}
+          </h1>
+        </div>
       </div>
 
       <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -234,8 +246,80 @@ export default async function IssueDetailPage({
         </>
       )}
 
+      {/* How this issue is scored */}
+      <section className="mb-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+        <h2 className="text-xl font-black text-slate-950">
+          How a {category.name.toLowerCase()} score is calculated
+        </h2>
+        <p className="mt-3 text-sm font-semibold leading-6 text-slate-600">
+          Each vote in this category is compared to a declared district position and carries a weight from 1 to 10 set
+          when the bill was reviewed. The score is the weight of the aligned votes divided by the weight of the votes
+          the official actually cast. Absences are shown but never scored as wrong votes, and a category with no
+          reviewed votes gets no grade at all.
+        </p>
+        <div className="mt-5 rounded-xl bg-slate-950 p-4 font-mono text-xs leading-6 text-blue-100 sm:text-sm">
+          {category.name.toLowerCase()} score = aligned weight ÷ weight cast × 100
+        </div>
+        <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2">
+          <Link
+            href="/methodology/scorecards"
+            className="text-sm font-bold text-blue-700 hover:underline"
+          >
+            Read the full algorithm &rarr;
+          </Link>
+          <Link href="/submit-source" className="text-sm font-bold text-blue-700 hover:underline">
+            Argue with a vote or a weight &rarr;
+          </Link>
+        </div>
+      </section>
+
+      {/* Bills tracked in this category */}
+      {trackedBills.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">
+            Bills tracked in this category ({trackedBills.length})
+          </h2>
+          <div className="space-y-2">
+            {trackedBills.map((bill) => (
+              <Link
+                key={bill.id}
+                href={`/votes/${bill.id}`}
+                className="flex items-start justify-between gap-4 rounded-xl border border-gray-200 bg-white p-4 transition-all hover:-translate-y-0.5 hover:shadow-md"
+              >
+                <div>
+                  <p className="font-bold text-gray-900">{bill.title}</p>
+                  <p className="mt-0.5 text-sm text-gray-500">
+                    {bill.id.toUpperCase()} &middot; {bill.session} &middot; district position: {bill.proEastTexasPosition}
+                  </p>
+                </div>
+                <span className="shrink-0 text-sm font-semibold text-blue-600">Open the vote &rarr;</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Officials ranked on this issue */}
-      {scoredOfficials.length > 0 && (
+      {scoredOfficials.length === 0 ? (
+        <section className="rounded-2xl border border-amber-200 bg-amber-50 p-6 sm:p-8">
+          <h2 className="text-xl font-black text-amber-950">
+            No {category.name.toLowerCase()} scores have cleared review yet
+          </h2>
+          <p className="mt-3 text-sm font-semibold leading-6 text-amber-900">
+            {gate.onFile} scorecard{gate.onFile === 1 ? "" : "s"} are drafted and {gate.withheldTotal} are withheld
+            because their votes have not been corroborated against the bill files they cite. An empty table is not a
+            clean record for anyone listed on this site. Read it as not checked yet.
+          </p>
+          <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2">
+            <Link href="/methodology/scorecards" className="text-sm font-bold text-amber-900 underline hover:no-underline">
+              What the gate requires &rarr;
+            </Link>
+            <Link href="/submit-source" className="text-sm font-bold text-amber-900 underline hover:no-underline">
+              Send a roll call that would fill this in &rarr;
+            </Link>
+          </div>
+        </section>
+      ) : (
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-4">
             How Your Reps Score on {category.name}

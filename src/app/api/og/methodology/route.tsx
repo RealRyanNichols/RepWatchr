@@ -1,4 +1,5 @@
 import { getBillById, getIssueCategories, getRepWatchrDataStats } from "@/lib/data";
+import { issueArtDataUri } from "@/lib/issue-art";
 import {
   REPWATCHR_EDITORIAL_OG_BACKGROUND,
   renderRepWatchrOgImage,
@@ -102,7 +103,11 @@ export async function GET(request: Request) {
     pageType,
     headline,
     supportLine,
-    backgroundImage: REPWATCHR_EDITORIAL_OG_BACKGROUND,
+    // An issue card carries its own drawing so the five issues are
+    // distinguishable in a feed instead of sharing one stock newsroom photo.
+    backgroundImage: issue
+      ? issueArtDataUri(issue.id, issue.color)
+      : REPWATCHR_EDITORIAL_OG_BACKGROUND,
     backgroundPosition: "center 45%",
     jurisdiction: "RepWatchr method and source rules",
     metricValue: categories.length,

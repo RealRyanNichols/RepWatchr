@@ -26,6 +26,7 @@ import {
 } from "@/lib/power-watch";
 import { getCongressTradingDataset, getCongressTradingStats } from "@/lib/congress-trading";
 import { selectEditorialStories } from "@/lib/editorial-ranking";
+import { withDerivedScores } from "@/lib/vote-record-score";
 import portraitManifest from "@/data/portrait-manifest.json";
 
 const portraitMetadata: Record<string, NonNullable<Official["photoMetadata"]>> = portraitManifest;
@@ -71,18 +72,69 @@ function scoreCardVotes(scoreCard: ScoreCard) {
   return Object.values(scoreCard.categories).flatMap((category) => category.votes);
 }
 
-function isPublishableScoreCard(scoreCard: ScoreCard) {
-  if (!isPublishedEvidenceStatus(scoreCard.reviewStatus)) return false;
+/** Why a scorecard on file is not publishable. Null means it clears the gate. */
+export type ScoreCardGateFailure = "review_status" | "no_votes" | "vote_not_corroborated";
+
+function scoreCardGateFailure(scoreCard: ScoreCard): ScoreCardGateFailure | null {
+  if (!isPublishedEvidenceStatus(scoreCard.reviewStatus)) return "review_status";
+
+  const votes = scoreCardVotes(scoreCard);
+  if (votes.length === 0) return "no_votes";
 
   const publishedBills = new Map(getAllBills().map((bill) => [bill.id, bill]));
-  const votes = scoreCardVotes(scoreCard);
-  if (votes.length === 0) return false;
-
-  return votes.every((vote) => {
+  const everyVoteCorroborated = votes.every((vote) => {
     const bill = publishedBills.get(vote.billId);
     const sourceVote = bill?.votes.find((row) => row.officialId === scoreCard.officialId);
     return Boolean(sourceVote && sourceVote.vote === vote.officialVote);
   });
+
+  return everyVoteCorroborated ? null : "vote_not_corroborated";
+}
+
+function isPublishableScoreCard(scoreCard: ScoreCard) {
+  return scoreCardGateFailure(scoreCard) === null;
+}
+
+/**
+ * How many scorecards exist, how many clear the gate, and why the rest do not.
+ *
+ * Counts only — a withheld card's scores never leave this function. /methodology
+ * publishes this so the empty scorecard tables read as "nothing has cleared
+ * review yet" rather than "these officials have no record."
+ */
+export function getScoreCardGateReport() {
+  const scoresDir = path.join(DATA_DIR, "scores");
+  let files: string[] = [];
+  try {
+    files = fs.readdirSync(scoresDir).filter((file) => file.endsWith(".json"));
+  } catch {
+    files = [];
+  }
+
+  const withheld: Record<ScoreCardGateFailure, number> = {
+    review_status: 0,
+    no_votes: 0,
+    vote_not_corroborated: 0,
+  };
+  let published = 0;
+  let votesOnFile = 0;
+
+  for (const file of files) {
+    const scoreCard = readJsonFile<ScoreCard>(path.join(scoresDir, file));
+    if (!scoreCard) continue;
+    votesOnFile += scoreCardVotes(scoreCard).length;
+    const failure = scoreCardGateFailure(scoreCard);
+    if (failure) withheld[failure] += 1;
+    else published += 1;
+  }
+
+  return {
+    onFile: files.length,
+    published,
+    withheld,
+    withheldTotal: withheld.review_status + withheld.no_votes + withheld.vote_not_corroborated,
+    votesOnFile,
+  };
 }
 
 // ---------------------------------------------------------------------------
@@ -237,8 +289,12 @@ export function getScoreCard(officialId: string): ScoreCard | undefined {
   const scoreCard = readJsonFile<ScoreCard>(filePath);
 
   if (scoreCard && isPublishableScoreCard(scoreCard)) {
-    scoreCardCache.set(officialId, scoreCard);
-    return scoreCard;
+    // Publish the arithmetic, not the stored number. Scores and letters are
+    // recomputed from the vote rows so a reader can check them against the
+    // votes the same page shows. See src/lib/vote-record-score.ts.
+    const derived = withDerivedScores(scoreCard, getIssueCategories());
+    scoreCardCache.set(officialId, derived);
+    return derived;
   }
 
   return undefined;

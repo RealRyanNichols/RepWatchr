@@ -6,6 +6,8 @@ import { getProfileScorecardTargetType } from "@/lib/universal-scorecards";
 import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
 import PartyBadge from "@/components/officials/PartyBadge";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
+import VectorArt from "@/components/shared/VectorArt";
+import { ISSUE_ART_VIEWBOX, issueArtInnerSvg } from "@/lib/issue-art";
 import { calculateLetterGrade, getScoreDescription } from "@/lib/scoring";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
@@ -158,18 +160,31 @@ export default function ScorecardsPage() {
             </div>
           </div>
 
-          <div className="mt-4 flex flex-wrap gap-3">
+          <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
             {issueCategories.map((cat) => (
               <Link
                 key={cat.id}
                 href={`/scorecards/${cat.id}`}
-                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-black text-slate-700 transition-all hover:border-blue-300 hover:shadow-sm"
+                className="group overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all hover:-translate-y-1 hover:border-blue-300 hover:shadow-md"
               >
-                <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: cat.color }} />
-                {cat.name}
+                <div className="aspect-[16/9] w-full overflow-hidden bg-slate-950">
+                  <VectorArt
+                    inner={issueArtInnerSvg(cat.id, cat.color)}
+                    viewBox={ISSUE_ART_VIEWBOX}
+                    className="h-full w-full transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <p className="px-3 py-3 text-sm font-black text-slate-700 group-hover:text-blue-700">{cat.name}</p>
               </Link>
             ))}
           </div>
+          <p className="mt-4 text-sm font-semibold text-slate-600">
+            Every vote-record number on this page is weighted arithmetic over the votes shown on the profile.{" "}
+            <Link href="/methodology/scorecards" className="text-blue-700 underline underline-offset-2 hover:no-underline">
+              Read the algorithm
+            </Link>
+            .
+          </p>
 
           <div className="mt-5 overflow-hidden rounded-2xl border border-slate-300 bg-white shadow-sm">
             <div className="overflow-x-auto">
