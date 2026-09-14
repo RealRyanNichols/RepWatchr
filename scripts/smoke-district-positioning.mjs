@@ -176,6 +176,41 @@ assert(
   "isOfficialSearchIndexable stopped checking the place facet against places actually carried.",
 );
 
+// Both lockfiles have to carry the runner. Vercel installs with pnpm and a
+// frozen lockfile, so a stale pnpm-lock.yaml fails the production deploy.
+const pnpmLock = read("pnpm-lock.yaml");
+assert(
+  /\btsx@/.test(pnpmLock),
+  "pnpm-lock.yaml does not carry tsx. Vercel installs with --frozen-lockfile and the production deploy will fail with ERR_PNPM_OUTDATED_LOCKFILE.",
+);
+
+// The homepage names its verified counties from the module, not by hand.
+assert(
+  homepage.includes("HOME_DISTRICT_VERIFIED_COUNTIES"),
+  "The homepage hard-codes its county list again, so a boundary change will not reach the page.",
+);
+for (const hardCoded of ["Gregg, Harrison and Marion, confirmed"]) {
+  assert(
+    !homepage.includes(hardCoded),
+    `The homepage hard-codes "${hardCoded}" instead of deriving it.`,
+  );
+}
+
+// One place, one canonical URL, scoped to its state, including the places only
+// the school-research index carries.
+assert(
+  officialSearch.includes("byStateAndPlace"),
+  "Place facets are no longer scoped to their state, so ?state=CA&county=Gregg is an indexable empty page.",
+);
+assert(
+  officialSearch.includes("getSchoolBoardSearchIndex().rows]"),
+  "Known place facets are built from official rows alone again, so counties only the school-research index carries are wrongly noindexed.",
+);
+assert(
+  /canonicalPlaceFacet\("county", params\.county, params\.state\)/.test(officialSearch),
+  "The canonical path no longer uses the stored spelling, so ?county=gregg and ?county=Gregg become two canonical URLs for one place.",
+);
+
 // The probe runner has to be a declared dependency.
 const pkg = JSON.parse(read("package.json"));
 assert(

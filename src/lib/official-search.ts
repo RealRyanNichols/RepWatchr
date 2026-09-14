@@ -787,37 +787,58 @@ export function officialSearchQuery(params: OfficialSearchParams, overrides: Par
 }
 
 /**
- * The counties and cities this directory actually carries.
+ * The counties and cities this directory actually carries, keyed by state and
+ * by bare name, holding the stored spelling of each.
  *
- * The indexable place-facet set is only finite if it is checked against real
- * values: parseOfficialSearchParams accepts any string, so without this an
- * arbitrary ?city= mints an indexable empty page, and casing variants mint
- * more of the same page under different canonicals.
+ * Three things depend on this. A place facet is only indexable if it names a
+ * place we carry, or an arbitrary ?city= mints an indexable empty page. It has
+ * to be scoped to the state, or ?state=CA&county=Gregg passes because Gregg
+ * exists in Texas and returns an empty directory. And it has to return the
+ * stored spelling, or ?county=gregg and ?county=Gregg canonicalise to two URLs
+ * for one place, which is the duplication this is here to prevent.
+ *
+ * School-research rows count: the index carries counties the static official
+ * rows do not, so building this from officials alone noindexed real results.
  */
 const getKnownPlaceFacets = cache(() => {
-  const counties = new Set<string>();
-  const cities = new Set<string>();
-  for (const row of getStaticOfficialRows()) {
-    for (const county of row.countyValues) {
-      const name = countyName(county).trim();
-      if (name) counties.add(name.toLowerCase());
-    }
-    if (row.city) cities.add(row.city.trim().toLowerCase());
+  const byStateAndPlace = new Map<string, string>();
+  const byPlace = new Map<string, string>();
+
+  const remember = (kind: "county" | "city", state: string, raw: string) => {
+    const name = raw.trim();
+    if (!name) return;
+    const stateKey = (state ?? "").toUpperCase();
+    const placeKey = `${kind}|${name.toLowerCase()}`;
+    if (!byPlace.has(placeKey)) byPlace.set(placeKey, name);
+    const scopedKey = `${stateKey}|${placeKey}`;
+    if (!byStateAndPlace.has(scopedKey)) byStateAndPlace.set(scopedKey, name);
+  };
+
+  for (const row of [...getStaticOfficialRows(), ...getSchoolBoardSearchIndex().rows]) {
+    const state = row.state ?? "";
+    for (const county of row.countyValues) remember("county", state, countyName(county));
+    if (row.city) remember("city", state, row.city);
   }
-  return { counties, cities };
+
+  return { byStateAndPlace, byPlace };
 });
 
-/** The stored spelling of a place, so one place keeps one canonical URL. */
-export function canonicalPlaceFacet(kind: "county" | "city", value: string) {
+/**
+ * The stored spelling of a place, so one place keeps one canonical URL.
+ * Returns "" when the place is not carried, or not carried in that state.
+ */
+export function canonicalPlaceFacet(kind: "county" | "city", value: string, state?: string) {
   const wanted = (kind === "county" ? countyName(value) : value).trim();
   if (!wanted) return "";
-  const known = kind === "county" ? getKnownPlaceFacets().counties : getKnownPlaceFacets().cities;
-  return known.has(wanted.toLowerCase()) ? wanted : "";
+  const { byStateAndPlace, byPlace } = getKnownPlaceFacets();
+  const placeKey = `${kind}|${wanted.toLowerCase()}`;
+  if (state) return byStateAndPlace.get(`${state.toUpperCase()}|${placeKey}`) ?? "";
+  return byPlace.get(placeKey) ?? "";
 }
 
 export function isKnownPlaceFacet(params: OfficialSearchParams) {
-  if (params.county) return Boolean(canonicalPlaceFacet("county", params.county));
-  if (params.city) return Boolean(canonicalPlaceFacet("city", params.city));
+  if (params.county) return Boolean(canonicalPlaceFacet("county", params.county, params.state));
+  if (params.city) return Boolean(canonicalPlaceFacet("city", params.city, params.state));
   return true;
 }
 
@@ -853,5 +874,11 @@ export function isOfficialSearchIndexable(params: OfficialSearchParams) {
 
 export function officialSearchCanonicalPath(params: OfficialSearchParams) {
   if (!isOfficialSearchIndexable(params)) return "/officials";
-  return officialSearchQuery(params, { page: 1, sort: "relevance", perPage: 24 });
+  return officialSearchQuery(params, {
+    page: 1,
+    sort: "relevance",
+    perPage: 24,
+    county: params.county ? canonicalPlaceFacet("county", params.county, params.state) : params.county,
+    city: params.city ? canonicalPlaceFacet("city", params.city, params.state) : params.city,
+  });
 }

@@ -9,7 +9,12 @@ import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/component
 import { getOfficialVerifiedBrief } from "@/data/official-verified-briefs";
 import { getDailyWireClips, type DailyWireClip } from "@/lib/daily-wire";
 import { isInEastTexasLaunchTerritory } from "@/lib/east-texas-launch-territory";
-import { isInHomeDistricts, isHomeDistrictSeat, HOME_DISTRICTS } from "@/lib/home-districts";
+import {
+  isInHomeDistricts,
+  isHomeDistrictSeat,
+  HOME_DISTRICTS,
+  HOME_DISTRICT_VERIFIED_COUNTIES,
+} from "@/lib/home-districts";
 import { articleThumbnailMessage, toEditorialThumbnailMessage } from "@/lib/editorial-visuals";
 import { getPublicArticleCatalog } from "@/lib/article-catalog";
 import ArticleThumbnail from "@/components/news/ArticleThumbnail";
@@ -102,6 +107,12 @@ const sourceDeskActions = [
   },
 ];
 
+/** "Gregg, Harrison and Marion" from the module, never typed by hand. */
+function formatCountyList(counties: string[]) {
+  if (counties.length <= 1) return counties[0] ?? "";
+  return `${counties.slice(0, -1).join(", ")} and ${counties[counties.length - 1]}`;
+}
+
 /**
  * What a reader can hold this desk to. These are the standards a newsroom
  * publishes, and they are also what makes the underlying record worth anything
@@ -126,8 +137,7 @@ const EDITORIAL_STANDARDS = [
     eyebrow: "Coverage area",
     href: "/home-district",
     title: "HD-7 and TX-01, county by county.",
-    summary:
-      "HD-7 is Gregg, Harrison and Marion, confirmed on the record. The wider TX-01 county list is the working footprint and stays marked unauthenticated until the state's plan is pulled and cited.",
+    summary: `HD-7 is ${formatCountyList(HOME_DISTRICT_VERIFIED_COUNTIES)}, confirmed on the record. The wider TX-01 county list is the working footprint and stays marked unauthenticated until the state's plan is pulled and cited.`,
   },
 ];
 
