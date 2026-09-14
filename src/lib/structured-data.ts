@@ -1,4 +1,4 @@
-import { HOME_DISTRICT_COUNTIES } from "@/lib/home-districts";
+import { HOME_DISTRICT_BEAT_TERMS, HOME_DISTRICT_COUNTIES } from "@/lib/home-districts";
 import { REPWATCHR_ORIGIN, absoluteRepWatchrUrl, buildOgImageUrl } from "@/lib/repwatchr-seo";
 
 type BreadcrumbItem = {
@@ -56,9 +56,10 @@ export function organizationJsonLd() {
     publishingPrinciples: absoluteRepWatchrUrl("/methodology"),
     ethicsPolicy: absoluteRepWatchrUrl("/methodology"),
     correctionsPolicy: absoluteRepWatchrUrl("/methodology"),
+    // Derived from the home-district module so the beat cannot drift from the
+    // declared source of truth.
     knowsAbout: [
-      "Texas House District 7",
-      "Texas's 1st congressional district",
+      ...HOME_DISTRICT_BEAT_TERMS,
       "East Texas local government",
       "Texas school boards",
       "Texas public records",

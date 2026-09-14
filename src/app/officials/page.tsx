@@ -55,11 +55,30 @@ export async function generateMetadata({
   const isIndexable = isOfficialSearchIndexable(params);
   const hasSafeFilter = params.state || params.level !== "all";
 
-  return buildRepWatchrMetadata({
-    title: hasSafeFilter ? `${scope} ${levelLabel} Officials` : "National Elected Officials Directory",
-    description: hasSafeFilter
+  // A place facet is its own page, so it gets its own title. Without this,
+  // ?county=Gregg is indexable while reading "Texas Elected Officials", a
+  // near-duplicate of ?state=TX.
+  const place = params.county
+    ? `${params.county} County${selectedState ? `, ${selectedState.name}` : ""}`
+    : params.city
+      ? `${params.city}${selectedState ? `, ${selectedState.name}` : ""}`
+      : "";
+
+  const title = place
+    ? `${place} ${levelLabel} Officials`
+    : hasSafeFilter
+      ? `${scope} ${levelLabel} Officials`
+      : "National Elected Officials Directory";
+
+  const description = place
+    ? `Every ${levelLabel.toLowerCase()} official RepWatchr carries for ${place}, with public sources, voting records, funding data, and the records still being researched.`
+    : hasSafeFilter
       ? `Browse source-backed ${levelLabel.toLowerCase()} official profiles for ${scope}. Compare voting records, public sources, funding data, and records still being researched.`
-      : "Search and filter RepWatchr elected-official profiles by state, county, city, office level, party, public sources, funding data, and voting records.",
+      : "Search and filter RepWatchr elected-official profiles by state, county, city, office level, party, public sources, funding data, and voting records.";
+
+  return buildRepWatchrMetadata({
+    title,
+    description,
     path: officialSearchCanonicalPath(params),
     imagePath: buildOgImageUrl("home", { page: "officials" }),
     imageAlt: "RepWatchr officials directory preview",

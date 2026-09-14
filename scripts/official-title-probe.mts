@@ -16,14 +16,36 @@ function walk(dir: string): string[] {
   });
 }
 
-/** Titles that name an institution where a place belongs. */
-const READS_AS_INSTITUTION =
-  /(House of Representatives|Senate|Court of Appeals)\s+(State|U\.S\.|Justice|Judge)/i;
+/**
+ * An office description standing where a place belongs. These are never right
+ * in a title: "Kay Ivey - Alabama statewide public office Governor". The
+ * original check only looked for chambers, so 193 of these shipped. Agency
+ * names like "Railroad Commission of Texas" are legitimate in a position and
+ * are deliberately not listed here.
+ */
+const OFFICE_DESCRIPTION = /\b(statewide|public office)\b/i;
+
+/** A chamber standing where a place belongs. */
+const CHAMBER_AS_PLACE = /(House of Representatives|Senate)\s+(State|U\.S\.|Justice|Judge)/i;
+
+/**
+ * The same phrase twice, which is what an un-deduplicated office and district
+ * produce: "Chief Justice, First Court of Appeals, First Court of Appeals,
+ * Place 1". A court naming itself once is correct and expected.
+ */
+function repeatsASegment(title: string) {
+  const segments = title
+    .split(/[-,]/)
+    .map((segment) => segment.trim().toLowerCase())
+    .filter((segment) => segment.length > 3);
+  return new Set(segments).size !== segments.length;
+}
 
 const EXPECTED = new Map([
   ["gregg-county-sheriff", "Maxey Cerliano - Gregg County Sheriff"],
   ["jay-dean", "Jay Dean - State Representative, HD-7"],
   ["nathaniel-moran", "Nathaniel Moran - U.S. Representative, TX-1"],
+  ["greg-abbott", "Greg Abbott - Texas Governor"],
 ]);
 
 let scanned = 0;
@@ -42,7 +64,14 @@ for (const file of walk("src/data/officials")) {
   scanned += 1;
 
   const title = officialProfileTitle(record as never);
-  if (/\s{2,}/.test(title) || /,\s*$/.test(title) || title.endsWith(" -") || READS_AS_INSTITUTION.test(title)) {
+  if (
+    /\s{2,}/.test(title) ||
+    /,\s*$/.test(title) ||
+    title.endsWith(" -") ||
+    OFFICE_DESCRIPTION.test(title) ||
+    CHAMBER_AS_PLACE.test(title) ||
+    repeatsASegment(title)
+  ) {
     awkward += 1;
     if (awkwardSamples.length < 5) awkwardSamples.push(title);
   }

@@ -143,6 +143,40 @@ export const TX_CONGRESSIONAL_DISTRICT_1: HomeDistrict = {
 
 export const HOME_DISTRICTS: HomeDistrict[] = [TX_HOUSE_DISTRICT_7, TX_CONGRESSIONAL_DISTRICT_1];
 
+/** Counties from districts whose boundary is confirmed on the record. */
+export const HOME_DISTRICT_VERIFIED_COUNTIES: string[] = [
+  ...new Set(
+    HOME_DISTRICTS.filter((district) => district.boundaryStatus === "verified").flatMap((district) =>
+      district.counties.map((county) => county.name),
+    ),
+  ),
+].sort();
+
+/**
+ * Counties carried only by a district whose boundary still needs
+ * authentication. These aim coverage; they are never published as an
+ * established boundary finding.
+ */
+export const HOME_DISTRICT_WORKING_COUNTIES: string[] = [
+  ...new Set(
+    HOME_DISTRICTS.filter((district) => district.boundaryStatus !== "verified").flatMap((district) =>
+      district.counties.map((county) => county.name),
+    ),
+  ),
+]
+  .filter((county) => !HOME_DISTRICT_VERIFIED_COUNTIES.includes(county))
+  .sort();
+
+/**
+ * Search and schema terms for the beat, derived so a boundary or beat change
+ * in this module propagates to every ranking surface instead of drifting.
+ * These aim coverage, which is a different act from asserting a boundary.
+ */
+export const HOME_DISTRICT_BEAT_TERMS: string[] = [
+  ...HOME_DISTRICTS.flatMap((district) => [district.code, district.label]),
+  ...HOME_DISTRICTS.flatMap((district) => district.counties.map((county) => `${county.name} County`)),
+];
+
 /** Every county touched by either home district, deduplicated and sorted. */
 export const HOME_DISTRICT_COUNTIES: string[] = [
   ...new Set(HOME_DISTRICTS.flatMap((district) => district.counties.map((county) => county.name))),
