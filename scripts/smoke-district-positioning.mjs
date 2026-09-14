@@ -158,6 +158,37 @@ assert(
   "Organization knowsAbout hard-codes the beat instead of deriving it.",
 );
 
+// One organization identity across the whole graph. The homepage used to
+// hand-write its own top-level Organization block, and creator/publisher
+// fields nested anonymous Organization nodes, which state a relationship
+// without referencing the canonical entity. Evaluated, not string-matched:
+// a source check cannot tell a reference from a second declaration.
+const homepageTopLevelOrgs = [...homepage.matchAll(/"@context": "https:\/\/schema\.org",\s*\n\s*"@type": "Organization"/g)];
+assert(
+  homepageTopLevelOrgs.length === 0,
+  "The homepage emits its own top-level Organization block again, competing with the NewsMediaOrganization the layout already declares for the same URL.",
+);
+assert(
+  homepage.includes("repwatchrOrganizationRef()"),
+  "The homepage dataset no longer references the canonical organization, so it declares another anonymous RepWatchr entity.",
+);
+
+let orgProbe;
+try {
+  const output = execFileSync(
+    "npx",
+    ["tsx", "--tsconfig", "tsconfig.json", "scripts/organization-schema-probe.mts"],
+    { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] },
+  );
+  orgProbe = JSON.parse(output.trim().split("\n").pop());
+} catch (error) {
+  assert(false, `Could not evaluate the organization schema graph: ${error.message}`);
+}
+assert(
+  orgProbe.problems.length === 0,
+  `RepWatchr is not one entity in the emitted JSON-LD: ${orgProbe.problems.join(" ")}`,
+);
+
 // An indexable place facet needs metadata naming the place, or it is a
 // near-duplicate of the plain state page.
 const officialsIndex = read("src/app/officials/page.tsx");

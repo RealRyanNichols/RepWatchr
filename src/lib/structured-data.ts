@@ -35,6 +35,21 @@ type NewsArticleInput = {
 };
 
 /**
+ * The one stable identifier for RepWatchr as an entity.
+ *
+ * Nesting an Organization node inside a creator or publisher field states the
+ * relationship but creates an ANONYMOUS node: it is not a reference to the
+ * canonical entity, so consumers see several RepWatchr organizations. Every
+ * mention points at this @id instead.
+ */
+export const REPWATCHR_ORGANIZATION_ID = `${REPWATCHR_ORIGIN}/#organization`;
+
+/** A reference to the canonical organization, not a second declaration of it. */
+export function repwatchrOrganizationRef() {
+  return { "@id": REPWATCHR_ORGANIZATION_ID };
+}
+
+/**
  * NewsMediaOrganization, not a bare Organization.
  *
  * A plain Organization is what a vendor or a SaaS product emits. This desk
@@ -46,6 +61,7 @@ type NewsArticleInput = {
 export function organizationJsonLd() {
   return {
     "@context": "https://schema.org",
+    "@id": REPWATCHR_ORGANIZATION_ID,
     "@type": "NewsMediaOrganization",
     name: "RepWatchr",
     url: REPWATCHR_ORIGIN,
@@ -122,11 +138,7 @@ export function datasetJsonLd(input: DatasetInput) {
     description: input.description,
     keywords: input.keywords,
     dateModified: input.dateModified,
-    creator: {
-      "@type": "Organization",
-      name: "RepWatchr",
-      url: REPWATCHR_ORIGIN,
-    },
+    creator: repwatchrOrganizationRef(),
     license: absoluteRepWatchrUrl("/terms"),
     isAccessibleForFree: true,
   };
@@ -147,14 +159,7 @@ export function newsArticleJsonLd(input: NewsArticleInput) {
       "@type": "Organization",
       name: input.authorName,
     },
-    publisher: {
-      "@type": "Organization",
-      name: "RepWatchr",
-      logo: {
-        "@type": "ImageObject",
-        url: absoluteRepWatchrUrl("/images/repwatchr-logo-america-first.png"),
-      },
-    },
+    publisher: repwatchrOrganizationRef(),
     isBasedOn: input.sourceLinks?.map((source) => ({
       "@type": "CreativeWork",
       name: source.title,

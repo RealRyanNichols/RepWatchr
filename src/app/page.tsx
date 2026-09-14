@@ -20,6 +20,7 @@ import { getPublicArticleCatalog } from "@/lib/article-catalog";
 import ArticleThumbnail from "@/components/news/ArticleThumbnail";
 import styles from "./HomePage.module.css";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { repwatchrOrganizationRef } from "@/lib/structured-data";
 import type { NewsArticle, Official } from "@/types";
 
 export const revalidate = 3600;
@@ -434,15 +435,6 @@ export default async function HomePage() {
     },
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "RepWatchr",
-      url: "https://www.repwatchr.com",
-      logo: "https://www.repwatchr.com/images/repwatchr-logo-america-first.png",
-      description:
-        "A public accountability index built around official profiles, public records, voting data, school-board rosters, and citizen source submissions.",
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "Dataset",
       name: "RepWatchr public accountability profiles",
       url: "https://www.repwatchr.com",
@@ -457,10 +449,7 @@ export default async function HomePage() {
         "citizen grades",
         "public records",
       ],
-      creator: {
-        "@type": "Organization",
-        name: "RepWatchr",
-      },
+      creator: repwatchrOrganizationRef(),
       spatialCoverage: "United States",
       variableMeasured: [
         "public profiles",
