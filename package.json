@@ -64,6 +64,7 @@
     "smoke:planner": "npx tsx scripts/social-planner-probe.mts",
     "smoke:visitor-geo": "npx tsx scripts/visitor-geo-probe.mts",
     "smoke:email-templates": "node scripts/smoke-email-templates.mjs",
+    "smoke:og-sections": "tsx scripts/smoke-og-sections.ts",
     "qa:static": "node scripts/qa-static-checks.mjs",
     "qa:routes": "node scripts/qa-route-smoke.mjs",
     "smoke:records": "node scripts/smoke-public-records-generator.mjs",

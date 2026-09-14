@@ -3,7 +3,10 @@ import type { Metadata } from "next";
 export const REPWATCHR_ORIGIN = "https://www.repwatchr.com";
 export const REPWATCHR_TAGLINE = "Search. Grade. Source. Share.";
 export const REPWATCHR_OG_SIZE = { width: 1200, height: 630 } as const;
-export const REPWATCHR_OG_VERSION = "4";
+// Bumped whenever a card's artwork changes. Facebook and X cache a scraped
+// preview against the image URL, so without a new `v` the old picture keeps
+// being served to every share for days.
+export const REPWATCHR_OG_VERSION = "5";
 
 type RepWatchrMetadataInput = {
   title: string;
