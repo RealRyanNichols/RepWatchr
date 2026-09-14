@@ -3,6 +3,7 @@ import {
   type PerformanceDimensionInput,
   type PerformanceGradeResult,
 } from "@/lib/performance-grade";
+import { withDerivedPerformanceInputs } from "@/lib/derived-performance-inputs";
 
 const inputsByOfficial: Record<string, readonly PerformanceDimensionInput[]> = {
   "jay-dean": [
@@ -65,5 +66,9 @@ const inputsByOfficial: Record<string, readonly PerformanceDimensionInput[]> = {
 };
 
 export function getOfficialPerformanceGrade(officialId: string): PerformanceGradeResult {
-  return calculatePerformanceGrade(inputsByOfficial[officialId] ?? []);
+  // Dimensions the loaded record can compute are filled in from that record
+  // rather than left null. A dimension with no derivation keeps its null, so
+  // the grade still reports "not rated" instead of inventing a number.
+  const inputs = withDerivedPerformanceInputs(officialId, inputsByOfficial[officialId] ?? []);
+  return calculatePerformanceGrade(inputs);
 }
