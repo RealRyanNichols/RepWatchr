@@ -434,15 +434,6 @@ export default async function HomePage() {
     },
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "RepWatchr",
-      url: "https://www.repwatchr.com",
-      logo: "https://www.repwatchr.com/images/repwatchr-logo-america-first.png",
-      description:
-        "A public accountability index built around official profiles, public records, voting data, school-board rosters, and citizen source submissions.",
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "Dataset",
       name: "RepWatchr public accountability profiles",
       url: "https://www.repwatchr.com",

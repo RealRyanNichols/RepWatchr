@@ -158,6 +158,15 @@ assert(
   "Organization knowsAbout hard-codes the beat instead of deriving it.",
 );
 
+// One organization identity per URL. The homepage used to hand-write its own
+// top-level Organization block alongside the NewsMediaOrganization the layout
+// emits, so the site declared itself twice with conflicting types.
+const homepageTopLevelOrgs = [...homepage.matchAll(/"@context": "https:\/\/schema\.org",\s*\n\s*"@type": "Organization"/g)];
+assert(
+  homepageTopLevelOrgs.length === 0,
+  "The homepage emits its own top-level Organization block again, competing with the NewsMediaOrganization the layout already declares for the same URL.",
+);
+
 // An indexable place facet needs metadata naming the place, or it is a
 // near-duplicate of the plain state page.
 const officialsIndex = read("src/app/officials/page.tsx");
