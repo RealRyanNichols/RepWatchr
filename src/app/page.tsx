@@ -24,7 +24,7 @@ import { getPublicArticleCatalog } from "@/lib/article-catalog";
 import ArticleThumbnail from "@/components/news/ArticleThumbnail";
 import styles from "./HomePage.module.css";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
-import { repwatchrOrganizationRef } from "@/lib/structured-data";
+import { homepageStructuredData } from "@/lib/homepage-structured-data";
 import type { NewsArticle, Official } from "@/types";
 
 export const revalidate = 3600;
@@ -71,28 +71,6 @@ const levelCards = [
   },
 ];
 
-const recordLoop = [
-  {
-    step: "Search",
-    title: "Find the person fast",
-    detail: "Start with a name, district, office, or school board and get to the record fast.",
-  },
-  {
-    step: "Grade",
-    title: "Let citizens put pressure on the record",
-    detail: "Profiles are not static biographies. They are public accountability pages people can rate, revisit, and watch.",
-  },
-  {
-    step: "Source",
-    title: "Turn claims into receipts",
-    detail: "Every useful tip should become a source, missing-record lead, vote, funding trail, or red flag for review.",
-  },
-  {
-    step: "Share",
-    title: "Make every profile easy to share",
-    detail: "The page should give voters a clean link they can post before meetings, elections, hearings, and news cycles.",
-  },
-];
 
 const sourceDeskActions = [
   {
@@ -432,60 +410,7 @@ export default async function HomePage() {
     .map(officialWithSafePhoto)
     .slice(0, 6);
 
-  const homeStructuredData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      name: "RepWatchr",
-      url: "https://www.repwatchr.com",
-      description:
-        "Search public officials, school boards, votes, funding, red flags, source links, and citizen grades.",
-      potentialAction: {
-        "@type": "SearchAction",
-        target: "https://www.repwatchr.com/faretta-ai?q={search_term_string}",
-        "query-input": "required name=search_term_string",
-      },
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Dataset",
-      name: "RepWatchr public accountability profiles",
-      url: "https://www.repwatchr.com",
-      description:
-        "Source-backed public profiles covering officials, school boards, power profiles, votes, campaign finance, red flags, and public source links.",
-      keywords: [
-        "public officials",
-        "school boards",
-        "voting records",
-        "campaign finance",
-        "red flags",
-        "citizen grades",
-        "public records",
-      ],
-      creator: repwatchrOrganizationRef(),
-      spatialCoverage: "United States",
-      variableMeasured: [
-        "public profiles",
-        "source links",
-        "citizen grades",
-        "voting records",
-        "campaign finance",
-        "school-board rosters",
-      ],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      name: "How to use RepWatchr",
-      description: "A four-step public accountability loop for voters.",
-      step: recordLoop.map((item, index) => ({
-        "@type": "HowToStep",
-        position: index + 1,
-        name: item.title,
-        text: item.detail,
-      })),
-    },
-  ];
+  const homeStructuredData = homepageStructuredData();
 
   return (
     <div className="pb-24 md:pb-0">

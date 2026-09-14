@@ -161,16 +161,15 @@ assert(
 // One organization identity across the whole graph. The homepage used to
 // hand-write its own top-level Organization block, and creator/publisher
 // fields nested anonymous Organization nodes, which state a relationship
-// without referencing the canonical entity. Evaluated, not string-matched:
-// a source check cannot tell a reference from a second declaration.
-const homepageTopLevelOrgs = [...homepage.matchAll(/"@context": "https:\/\/schema\.org",\s*\n\s*"@type": "Organization"/g)];
+// without referencing the canonical entity.
+//
+// The homepage graph is no longer checked here by substring. It moved to
+// src/lib/homepage-structured-data.ts so the probe below can build the real
+// thing and walk it — a source check cannot tell a reference from a second
+// declaration, which is exactly the distinction that matters.
 assert(
-  homepageTopLevelOrgs.length === 0,
-  "The homepage emits its own top-level Organization block again, competing with the NewsMediaOrganization the layout already declares for the same URL.",
-);
-assert(
-  homepage.includes("repwatchrOrganizationRef()"),
-  "The homepage dataset no longer references the canonical organization, so it declares another anonymous RepWatchr entity.",
+  homepage.includes("homepageStructuredData()"),
+  "The homepage builds its own structured data inline again, putting the site's most-crawled graph out of reach of the schema probe.",
 );
 
 let orgProbe;
