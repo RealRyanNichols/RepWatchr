@@ -113,8 +113,16 @@ create trigger repwatchr_social_drafts_touch
 
 -- Drafts are never public. They hold unreviewed claims about named people and,
 -- for Fieldy leads, the names of people recorded in a private conversation.
+--
+-- Unlike repwatchr_articles there is no public-read policy and no column-level
+-- select grant, because no row in this table is ever meant for a reader. The
+-- published artifact is the post on the platform, not the draft.
 alter table public.repwatchr_social_drafts enable row level security;
 
-revoke all on public.repwatchr_social_drafts from anon, authenticated;
+revoke all on public.repwatchr_social_drafts from public, anon, authenticated;
+grant all on public.repwatchr_social_drafts to service_role;
+
+comment on table public.repwatchr_social_drafts is
+  'Private social drafts awaiting human review. Never expose to public queries: rows hold unreviewed claims and, for Fieldy leads, the names of people recorded in a private conversation.';
 
 commit;
