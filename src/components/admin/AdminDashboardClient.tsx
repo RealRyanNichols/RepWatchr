@@ -354,6 +354,7 @@ export default function AdminDashboardClient({
                 <Link href="/admin/quality" className="secondary-button">Quality</Link>
                 <Link href="/admin/partners" className="secondary-button">Partners</Link>
                 <Link href="/admin/planner" className="secondary-button">Social Planner</Link>
+                <Link href="/admin/audience" className="secondary-button">Audience</Link>
                 <Link href="/admin/share-campaigns" className="secondary-button">Share Campaigns</Link>
                 <Link href="/admin/content-review" className="secondary-button">Old Review</Link>
                 <Link href="/admin/control-center" className="secondary-button">Control Center</Link>
@@ -386,6 +387,7 @@ export default function AdminDashboardClient({
             ["Quality", "/admin/quality"],
             ["Partners", "/admin/partners"],
             ["Social planner", "/admin/planner"],
+            ["Audience", "/admin/audience"],
             ["Share campaigns", "/admin/share-campaigns"],
             ["Content", "#content-desk"],
             ["Health", "#data-health"],
