@@ -6,16 +6,78 @@ import { createClient } from "@/lib/supabase";
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
 import { safeNextPath } from "@/lib/safe-next-path";
 
-type SocialProvider = "facebook" | "twitter";
+/**
+ * Sign-in providers.
+ *
+ * Each of these is only half a feature: the button calls Supabase, and Supabase
+ * only answers if that provider has been enabled in the project's Auth settings
+ * with a client id and secret from the provider's own developer console. A
+ * provider that is not configured returns "provider is not enabled", which is
+ * handled below by pointing the reader at email signup rather than leaving them
+ * on a dead button.
+ *
+ * Order is deliberate. Google carries the most accounts, Apple is what iPhone
+ * users reach for, and Facebook is where this audience already is.
+ */
+type SocialProvider = "google" | "apple" | "facebook" | "twitter";
 
 type SocialAuthButtonsProps = {
   nextPath?: string;
   compact?: boolean;
 };
 
-const providerLabels: Record<SocialProvider, string> = {
-  facebook: "Continue with Facebook",
-  twitter: "Continue with X",
+const PROVIDERS: Array<{
+  id: SocialProvider;
+  label: string;
+  mark: string;
+  className: string;
+  /** Set the matching NEXT_PUBLIC_ flag to "false" to hide a provider you have not configured yet. */
+  flag: string;
+}> = [
+  {
+    id: "google",
+    label: "Continue with Google",
+    mark: "G",
+    className: "bg-white text-slate-800 border border-slate-300 hover:bg-slate-50",
+    flag: "NEXT_PUBLIC_AUTH_GOOGLE",
+  },
+  {
+    id: "apple",
+    label: "Continue with Apple",
+    mark: "",
+    className: "bg-black text-white hover:bg-slate-800",
+    flag: "NEXT_PUBLIC_AUTH_APPLE",
+  },
+  {
+    id: "facebook",
+    label: "Continue with Facebook",
+    mark: "f",
+    className: "bg-[#1877f2] text-white hover:bg-[#1268d3]",
+    flag: "NEXT_PUBLIC_AUTH_FACEBOOK",
+  },
+  {
+    id: "twitter",
+    label: "Continue with X",
+    mark: "X",
+    className: "bg-black text-white hover:bg-slate-800",
+    flag: "NEXT_PUBLIC_AUTH_TWITTER",
+  },
+];
+
+// Read at module scope: NEXT_PUBLIC_ values are inlined at build time, so they
+// cannot be looked up from a variable key at runtime.
+const ENABLED: Record<string, boolean> = {
+  NEXT_PUBLIC_AUTH_GOOGLE: process.env.NEXT_PUBLIC_AUTH_GOOGLE !== "false",
+  NEXT_PUBLIC_AUTH_APPLE: process.env.NEXT_PUBLIC_AUTH_APPLE !== "false",
+  NEXT_PUBLIC_AUTH_FACEBOOK: process.env.NEXT_PUBLIC_AUTH_FACEBOOK !== "false",
+  NEXT_PUBLIC_AUTH_TWITTER: process.env.NEXT_PUBLIC_AUTH_TWITTER !== "false",
+};
+
+const PROVIDER_NAMES: Record<SocialProvider, string> = {
+  google: "Google",
+  apple: "Apple",
+  facebook: "Facebook",
+  twitter: "X",
 };
 
 export default function SocialAuthButtons({
@@ -25,6 +87,9 @@ export default function SocialAuthButtons({
   const supabase = useMemo(() => createClient(), []);
   const [loadingProvider, setLoadingProvider] = useState<SocialProvider | null>(null);
   const [error, setError] = useState("");
+
+  const providers = PROVIDERS.filter((provider) => ENABLED[provider.flag]);
+  if (providers.length === 0) return null;
 
   async function startSocialLogin(provider: SocialProvider) {
     setError("");
@@ -41,7 +106,7 @@ export default function SocialAuthButtons({
       if (oauthError) {
         setError(
           /provider is not enabled/i.test(oauthError.message)
-            ? `${provider === "facebook" ? "Facebook" : "X"} sign-in is temporarily unavailable. Use email signup below while the connection is restored.`
+            ? `${PROVIDER_NAMES[provider]} sign-in is not connected yet. Use email below, it works now.`
             : oauthError.message,
         );
         setLoadingProvider(null);
@@ -60,24 +125,24 @@ export default function SocialAuthButtons({
 
   return (
     <div>
-      <div className={`grid gap-2 ${compact ? "sm:grid-cols-2" : ""}`}>
-        {(Object.keys(providerLabels) as SocialProvider[]).map((provider) => (
+      <div className={`grid gap-2 ${compact ? "sm:grid-cols-2" : "sm:grid-cols-2"}`}>
+        {providers.map((provider) => (
           <button
-            key={provider}
+            key={provider.id}
             type="button"
-            onClick={() => startSocialLogin(provider)}
+            onClick={() => startSocialLogin(provider.id)}
             disabled={Boolean(loadingProvider)}
-            className={`flex items-center justify-center gap-2 rounded-xl px-4 font-black text-white transition disabled:cursor-wait disabled:opacity-60 ${
+            className={`flex items-center justify-center gap-2 rounded-xl px-4 font-black transition disabled:cursor-wait disabled:opacity-60 ${
               compact ? "py-2.5 text-xs" : "py-3 text-sm"
-            } ${provider === "facebook" ? "bg-[#1877f2] hover:bg-[#1268d3]" : "bg-black hover:bg-slate-800"}`}
+            } ${provider.className}`}
           >
             <span
               aria-hidden="true"
-              className="grid h-6 w-6 place-items-center rounded-full bg-white/15 text-sm"
+              className="grid h-6 w-6 place-items-center rounded-full bg-current/10 text-sm"
             >
-              {provider === "facebook" ? "f" : "X"}
+              {provider.mark}
             </span>
-            {loadingProvider === provider ? "Connecting…" : providerLabels[provider]}
+            {loadingProvider === provider.id ? "Connecting…" : provider.label}
           </button>
         ))}
       </div>

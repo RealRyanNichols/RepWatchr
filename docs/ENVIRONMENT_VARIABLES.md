@@ -15,6 +15,16 @@ These may be visible to the browser:
 - `NEXT_PUBLIC_ENABLE_REPWATCHR_BRAIN_V2`
 - `NEXT_PUBLIC_ENABLE_MEMBER_DASHBOARD_V2`
 - `NEXT_PUBLIC_TURNSTILE_SITE_KEY` (public site key; the matching secret stays server-side or in Supabase Auth settings)
+- `NEXT_PUBLIC_AUTH_GOOGLE`, `NEXT_PUBLIC_AUTH_APPLE`, `NEXT_PUBLIC_AUTH_FACEBOOK`, `NEXT_PUBLIC_AUTH_TWITTER`
+
+Sign-in provider buttons show by default. Set one to `"false"` to hide a
+provider you have not connected yet, so nobody lands on a button that cannot
+work. Showing the button is only half the feature: the provider must also be
+enabled in Supabase under Authentication -> Providers, with a client id and
+secret from that provider's own developer console and the Supabase callback
+URL (`https://<project-ref>.supabase.co/auth/v1/callback`) registered there.
+A provider that is not enabled returns "provider is not enabled", and the
+button falls back to pointing at email signup.
 
 Never prefix a server secret with `NEXT_PUBLIC_`.
 
