@@ -1,4 +1,5 @@
 import { getBillById, getIssueCategories, getRepWatchrDataStats } from "@/lib/data";
+import { issueArtDataUri } from "@/lib/issue-art";
 import {
   REPWATCHR_EDITORIAL_OG_BACKGROUND,
   renderRepWatchrOgImage,
@@ -18,6 +19,15 @@ const viewCopy = {
     headline: "A score must show its work.",
     supportLine: "Open the evidence, weighting, review state, and missing record behind every published grade.",
     path: "/scorecards",
+  },
+  // Its own view, not a reuse of `scorecards`: the renderer prints `path` on
+  // the card, so sharing the method page would have advertised /scorecards.
+  "scorecard-method": {
+    pageType: "Scorecard method",
+    headline: "Show your work, or do not show a grade.",
+    supportLine:
+      "The whole calculation: how a vote is corroborated, how alignment is weighted, and what the publication gate withholds.",
+    path: "/methodology/scorecards",
   },
   votes: {
     pageType: "Vote records",
@@ -102,7 +112,11 @@ export async function GET(request: Request) {
     pageType,
     headline,
     supportLine,
-    backgroundImage: REPWATCHR_EDITORIAL_OG_BACKGROUND,
+    // An issue card carries its own drawing so the five issues are
+    // distinguishable in a feed instead of sharing one stock newsroom photo.
+    backgroundImage: issue
+      ? issueArtDataUri(issue.id, issue.color)
+      : REPWATCHR_EDITORIAL_OG_BACKGROUND,
     backgroundPosition: "center 45%",
     jurisdiction: "RepWatchr method and source rules",
     metricValue: categories.length,

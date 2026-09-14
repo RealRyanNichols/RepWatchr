@@ -17,6 +17,7 @@ import type {
   OfficialWithScores,
   NewsArticle,
   PublicVoteRecord,
+  ScoredVote,
   SourceReviewStatus,
 } from "@/types";
 import {
@@ -26,6 +27,7 @@ import {
 } from "@/lib/power-watch";
 import { getCongressTradingDataset, getCongressTradingStats } from "@/lib/congress-trading";
 import { selectEditorialStories } from "@/lib/editorial-ranking";
+import { CATEGORY_KEY_BY_ISSUE_ID, isScoreableVote, withDerivedScores } from "@/lib/vote-record-score";
 import portraitManifest from "@/data/portrait-manifest.json";
 
 const portraitMetadata: Record<string, NonNullable<Official["photoMetadata"]>> = portraitManifest;
@@ -71,18 +73,147 @@ function scoreCardVotes(scoreCard: ScoreCard) {
   return Object.values(scoreCard.categories).flatMap((category) => category.votes);
 }
 
-function isPublishableScoreCard(scoreCard: ScoreCard) {
-  if (!isPublishedEvidenceStatus(scoreCard.reviewStatus)) return false;
+/** Why a scorecard on file is not publishable. Null means it clears the gate. */
+export type ScoreCardGateFailure =
+  | "review_status"
+  | "no_votes"
+  | "no_scoreable_votes"
+  | "invalid_vote_weight"
+  | "duplicate_vote_row"
+  | "category_mismatch"
+  | "vote_not_corroborated"
+  | "position_not_corroborated";
 
-  const publishedBills = new Map(getAllBills().map((bill) => [bill.id, bill]));
+/** Every vote paired with the category key it is filed under. */
+function scoreCardVotesByCategory(scoreCard: ScoreCard) {
+  return (Object.entries(scoreCard.categories) as Array<[string, { votes: ScoredVote[] }]>).flatMap(
+    ([key, category]) => (category.votes ?? []).map((vote) => ({ key, vote })),
+  );
+}
+
+/**
+ * A weight has to have been set by a reviewer, not invented here.
+ *
+ * Score files are read through an unchecked cast, so a missing, null, zero, or
+ * out-of-range weight reaches this code as-is. Clamping it would silently turn
+ * a typo like 100 into the maximum valid weight and swing a published grade,
+ * while the methodology tells readers the number was set during review.
+ */
+function hasReviewedWeight(vote: ScoredVote) {
+  return typeof vote.weight === "number" && Number.isInteger(vote.weight) && vote.weight >= 1 && vote.weight <= 10;
+}
+
+/**
+ * `bills` is injectable so the gate can be exercised against every branch.
+ *
+ * No bill on file is published today, so the corroboration branches are
+ * unreachable from real data — and an untested gate is the one thing standing
+ * between a typo and a published grade.
+ */
+export function scoreCardGateFailure(
+  scoreCard: ScoreCard,
+  bills: Bill[] = getAllBills(),
+): ScoreCardGateFailure | null {
+  if (!isPublishedEvidenceStatus(scoreCard.reviewStatus)) return "review_status";
+
   const votes = scoreCardVotes(scoreCard);
-  if (votes.length === 0) return false;
+  if (votes.length === 0) return "no_votes";
 
-  return votes.every((vote) => {
+  // Rows the official did not cast a position on cannot produce a score. A card
+  // made entirely of absences would otherwise clear the gate and publish as a
+  // zero, which every consumer renders as an F.
+  if (!votes.some(isScoreableVote)) return "no_scoreable_votes";
+
+  if (!votes.every(hasReviewedWeight)) return "invalid_vote_weight";
+
+  const filedVotes = scoreCardVotesByCategory(scoreCard);
+
+  // Two copies of one roll call would both clear the corroboration check below
+  // against the same single bill row, then be added twice by the weighted mean.
+  // One duplicated row can move a published percentage and letter grade.
+  const rowKeys = filedVotes.map(({ key, vote }) => `${key}::${vote.billId}`);
+  if (new Set(rowKeys).size !== rowKeys.length) return "duplicate_vote_row";
+
+  // A row filed under the wrong category scores against the wrong issue. The
+  // corroboration checks below flatten the categories away, so this is the only
+  // place the container is compared to what the row says it is.
+  const categoryMismatch = filedVotes.some(({ key, vote }) => {
+    if (!vote.category) return false;
+    const expected = CATEGORY_KEY_BY_ISSUE_ID[vote.category];
+    return expected !== undefined && expected !== key;
+  });
+  if (categoryMismatch) return "category_mismatch";
+
+  const publishedBills = new Map(bills.map((bill) => [bill.id, bill]));
+
+  const everyVoteCorroborated = votes.every((vote) => {
     const bill = publishedBills.get(vote.billId);
     const sourceVote = bill?.votes.find((row) => row.officialId === scoreCard.officialId);
     return Boolean(sourceVote && sourceVote.vote === vote.officialVote);
   });
+  if (!everyVoteCorroborated) return "vote_not_corroborated";
+
+  // Alignment is the vote measured against the district position, so the
+  // position has to be corroborated too. Checking only the vote left the
+  // scorecard's own copy of the position trusted, and one mistyped `yea` there
+  // would invert a published vote's alignment and move every derived score.
+  const everyPositionCorroborated = votes.every((vote) => {
+    const bill = publishedBills.get(vote.billId);
+    return Boolean(bill && bill.proEastTexasPosition === vote.proEastTexasPosition);
+  });
+
+  return everyPositionCorroborated ? null : "position_not_corroborated";
+}
+
+function isPublishableScoreCard(scoreCard: ScoreCard) {
+  return scoreCardGateFailure(scoreCard) === null;
+}
+
+/**
+ * How many scorecards exist, how many clear the gate, and why the rest do not.
+ *
+ * Counts only — a withheld card's scores never leave this function. /methodology
+ * publishes this so the empty scorecard tables read as "nothing has cleared
+ * review yet" rather than "these officials have no record."
+ */
+export function getScoreCardGateReport() {
+  const scoresDir = path.join(DATA_DIR, "scores");
+  let files: string[] = [];
+  try {
+    files = fs.readdirSync(scoresDir).filter((file) => file.endsWith(".json"));
+  } catch {
+    files = [];
+  }
+
+  const withheld: Record<ScoreCardGateFailure, number> = {
+    review_status: 0,
+    no_votes: 0,
+    no_scoreable_votes: 0,
+    invalid_vote_weight: 0,
+    duplicate_vote_row: 0,
+    category_mismatch: 0,
+    vote_not_corroborated: 0,
+    position_not_corroborated: 0,
+  };
+  let published = 0;
+  let votesOnFile = 0;
+
+  for (const file of files) {
+    const scoreCard = readJsonFile<ScoreCard>(path.join(scoresDir, file));
+    if (!scoreCard) continue;
+    votesOnFile += scoreCardVotes(scoreCard).length;
+    const failure = scoreCardGateFailure(scoreCard);
+    if (failure) withheld[failure] += 1;
+    else published += 1;
+  }
+
+  return {
+    onFile: files.length,
+    published,
+    withheld,
+    withheldTotal: Object.values(withheld).reduce((sum, count) => sum + count, 0),
+    votesOnFile,
+  };
 }
 
 // ---------------------------------------------------------------------------
@@ -237,8 +368,12 @@ export function getScoreCard(officialId: string): ScoreCard | undefined {
   const scoreCard = readJsonFile<ScoreCard>(filePath);
 
   if (scoreCard && isPublishableScoreCard(scoreCard)) {
-    scoreCardCache.set(officialId, scoreCard);
-    return scoreCard;
+    // Publish the arithmetic, not the stored number. Scores and letters are
+    // recomputed from the vote rows so a reader can check them against the
+    // votes the same page shows. See src/lib/vote-record-score.ts.
+    const derived = withDerivedScores(scoreCard, getIssueCategories());
+    scoreCardCache.set(officialId, derived);
+    return derived;
   }
 
   return undefined;

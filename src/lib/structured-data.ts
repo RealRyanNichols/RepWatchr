@@ -21,6 +21,8 @@ type DatasetInput = {
   description: string;
   keywords?: string[];
   dateModified?: string;
+  spatialCoverage?: string;
+  variableMeasured?: string[];
 };
 
 type NewsArticleInput = {
@@ -141,6 +143,8 @@ export function datasetJsonLd(input: DatasetInput) {
     creator: repwatchrOrganizationRef(),
     license: absoluteRepWatchrUrl("/terms"),
     isAccessibleForFree: true,
+    spatialCoverage: input.spatialCoverage,
+    variableMeasured: input.variableMeasured,
   };
 }
 

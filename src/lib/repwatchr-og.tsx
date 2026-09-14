@@ -124,6 +124,9 @@ function embeddedAssetData(pathOrUrl: string) {
 
 function assetUrl(pathOrUrl: string, requestUrl?: string) {
   if (pathOrUrl.startsWith("http://") || pathOrUrl.startsWith("https://")) return pathOrUrl;
+  // Drawn artwork arrives already inlined; resolving it against the request
+  // origin would turn it into a broken relative path.
+  if (pathOrUrl.startsWith("data:")) return pathOrUrl;
   const embedded = embeddedAssetData(pathOrUrl);
   if (embedded) return embedded;
   if (!requestUrl) return absoluteRepWatchrUrl(pathOrUrl);
