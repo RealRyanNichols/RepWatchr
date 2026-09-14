@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
 import { getSupabaseAdminClient } from "@/lib/supabase-admin";
 import { cleanText, recordPaymentEvent } from "@/lib/payment-records";
+import { visitorGeoFromHeaders } from "@/lib/visitor-geo";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -254,6 +255,9 @@ export async function POST(request: Request) {
   const serviceSlug = cleanText(body?.serviceSlug, 120) || cleanText(metadata.service_slug, 120) || null;
   const userAgent = request.headers.get("user-agent") ?? "";
   const userId = await getOptionalUserId();
+  // Read from the platform headers, never from the body: the client does not
+  // get to declare where it is.
+  const geo = visitorGeoFromHeaders(request.headers);
 
   const admin = getSupabaseAdminClient();
   if (admin) {
@@ -270,6 +274,10 @@ export async function POST(request: Request) {
       utm_content: cleanText(body?.utm_content, 255) || null,
       device_kind: deviceKind(userAgent),
       browser_name: browserKind(userAgent),
+      visitor_tier: geo.tier,
+      visitor_city: geo.city,
+      visitor_region: geo.region,
+      visitor_country: geo.country,
       metadata,
     });
 
