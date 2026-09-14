@@ -179,15 +179,24 @@ assert(
 // Both lockfiles have to carry the runner. Vercel installs with pnpm and a
 // frozen lockfile, so a stale pnpm-lock.yaml fails the production deploy.
 const pnpmLock = read("pnpm-lock.yaml");
+const rootImporter = pnpmLock.slice(
+  pnpmLock.indexOf("importers:"),
+  pnpmLock.indexOf("\npackages:") === -1 ? undefined : pnpmLock.indexOf("\npackages:"),
+);
+const declaredTsx = (JSON.parse(read("package.json")).devDependencies?.tsx ?? "").trim();
 assert(
-  /\btsx@/.test(pnpmLock),
-  "pnpm-lock.yaml does not carry tsx. Vercel installs with --frozen-lockfile and the production deploy will fail with ERR_PNPM_OUTDATED_LOCKFILE.",
+  new RegExp(`\\n\\s+tsx:\\n\\s+specifier: ${declaredTsx.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\n`).test(rootImporter),
+  `pnpm-lock.yaml's root importer does not declare tsx at ${declaredTsx}. Vercel installs with --frozen-lockfile and the production deploy fails with ERR_PNPM_OUTDATED_LOCKFILE. A tsx package snapshot elsewhere in the lockfile does not satisfy it.`,
 );
 
 // The homepage names its verified counties from the module, not by hand.
 assert(
-  homepage.includes("HOME_DISTRICT_VERIFIED_COUNTIES"),
-  "The homepage hard-codes its county list again, so a boundary change will not reach the page.",
+  homepage.includes("TX_HOUSE_DISTRICT_7.counties"),
+  "The homepage no longer reads HD-7's counties from the HD-7 district entry, so it either hard-codes them or absorbs TX-01's the day that boundary is authenticated.",
+);
+assert(
+  !homepage.includes("HOME_DISTRICT_VERIFIED_COUNTIES"),
+  "The homepage HD-7 sentence is back to the union of all verified districts, which will publish TX-01's counties as HD-7's once TX-01 is authenticated.",
 );
 for (const hardCoded of ["Gregg, Harrison and Marion, confirmed"]) {
   assert(
@@ -202,9 +211,21 @@ assert(
   officialSearch.includes("byStateAndPlace"),
   "Place facets are no longer scoped to their state, so ?state=CA&county=Gregg is an indexable empty page.",
 );
+const facetBuilder = officialSearch.slice(
+  officialSearch.indexOf("const getKnownPlaceFacets = cache("),
+  officialSearch.indexOf("function lookupPlaceFacet"),
+);
 assert(
-  officialSearch.includes("getSchoolBoardSearchIndex().rows]"),
-  "Known place facets are built from official rows alone again, so counties only the school-research index carries are wrongly noindexed.",
+  facetBuilder.includes("getSchoolBoardSearchIndex().rows"),
+  "The place-facet builder is back to official rows alone, so counties only the school-research index carries are wrongly noindexed.",
+);
+assert(
+  facetBuilder.includes("row.official.level"),
+  "The place-facet builder stopped recording levels, so an empty place-and-level combination becomes indexable.",
+);
+assert(
+  /place\.levels\.has\(params\.level\)/.test(officialSearch),
+  "A place facet is indexable at any level again, so ?county=Dallas&level=federal is an indexable empty page.",
 );
 assert(
   /canonicalPlaceFacet\("county", params\.county, params\.state\)/.test(officialSearch),

@@ -800,46 +800,69 @@ export function officialSearchQuery(params: OfficialSearchParams, overrides: Par
  * School-research rows count: the index carries counties the static official
  * rows do not, so building this from officials alone noindexed real results.
  */
-const getKnownPlaceFacets = cache(() => {
-  const byStateAndPlace = new Map<string, string>();
-  const byPlace = new Map<string, string>();
+type KnownPlace = { name: string; levels: Set<string> };
 
-  const remember = (kind: "county" | "city", state: string, raw: string) => {
+const getKnownPlaceFacets = cache(() => {
+  const byStateAndPlace = new Map<string, KnownPlace>();
+  const byPlace = new Map<string, KnownPlace>();
+
+  const remember = (kind: "county" | "city", state: string, raw: string, level: string) => {
     const name = raw.trim();
     if (!name) return;
-    const stateKey = (state ?? "").toUpperCase();
     const placeKey = `${kind}|${name.toLowerCase()}`;
-    if (!byPlace.has(placeKey)) byPlace.set(placeKey, name);
-    const scopedKey = `${stateKey}|${placeKey}`;
-    if (!byStateAndPlace.has(scopedKey)) byStateAndPlace.set(scopedKey, name);
+    const scopedKey = `${(state ?? "").toUpperCase()}|${placeKey}`;
+    for (const [map, key] of [
+      [byPlace, placeKey],
+      [byStateAndPlace, scopedKey],
+    ] as const) {
+      const existing = map.get(key);
+      if (existing) existing.levels.add(level);
+      else map.set(key, { name, levels: new Set([level]) });
+    }
   };
 
   for (const row of [...getStaticOfficialRows(), ...getSchoolBoardSearchIndex().rows]) {
     const state = row.state ?? "";
-    for (const county of row.countyValues) remember("county", state, countyName(county));
-    if (row.city) remember("city", state, row.city);
+    const level = row.official.level;
+    for (const county of row.countyValues) remember("county", state, countyName(county), level);
+    if (row.city) remember("city", state, row.city, level);
   }
 
   return { byStateAndPlace, byPlace };
 });
+
+/** The place entry a request resolves to, or undefined when we carry no such place. */
+function lookupPlaceFacet(kind: "county" | "city", value: string, state?: string) {
+  const wanted = (kind === "county" ? countyName(value) : value).trim();
+  if (!wanted) return undefined;
+  const { byStateAndPlace, byPlace } = getKnownPlaceFacets();
+  const placeKey = `${kind}|${wanted.toLowerCase()}`;
+  return state ? byStateAndPlace.get(`${state.toUpperCase()}|${placeKey}`) : byPlace.get(placeKey);
+}
 
 /**
  * The stored spelling of a place, so one place keeps one canonical URL.
  * Returns "" when the place is not carried, or not carried in that state.
  */
 export function canonicalPlaceFacet(kind: "county" | "city", value: string, state?: string) {
-  const wanted = (kind === "county" ? countyName(value) : value).trim();
-  if (!wanted) return "";
-  const { byStateAndPlace, byPlace } = getKnownPlaceFacets();
-  const placeKey = `${kind}|${wanted.toLowerCase()}`;
-  if (state) return byStateAndPlace.get(`${state.toUpperCase()}|${placeKey}`) ?? "";
-  return byPlace.get(placeKey) ?? "";
+  return lookupPlaceFacet(kind, value, state)?.name ?? "";
 }
 
+/**
+ * A place facet is indexable only when we carry that place AND carry it at the
+ * requested level. Otherwise ?county=Dallas&level=federal - a county the
+ * school-research index carries with no federal rows - is an indexable page
+ * with nothing on it.
+ */
 export function isKnownPlaceFacet(params: OfficialSearchParams) {
-  if (params.county) return Boolean(canonicalPlaceFacet("county", params.county, params.state));
-  if (params.city) return Boolean(canonicalPlaceFacet("city", params.city, params.state));
-  return true;
+  const place = params.county
+    ? lookupPlaceFacet("county", params.county, params.state)
+    : params.city
+      ? lookupPlaceFacet("city", params.city, params.state)
+      : undefined;
+  if (!params.county && !params.city) return true;
+  if (!place) return false;
+  return params.level === "all" || place.levels.has(params.level);
 }
 
 export function isOfficialSearchIndexable(params: OfficialSearchParams) {

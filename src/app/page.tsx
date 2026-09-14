@@ -13,7 +13,7 @@ import {
   isInHomeDistricts,
   isHomeDistrictSeat,
   HOME_DISTRICTS,
-  HOME_DISTRICT_VERIFIED_COUNTIES,
+  TX_HOUSE_DISTRICT_7,
 } from "@/lib/home-districts";
 import { articleThumbnailMessage, toEditorialThumbnailMessage } from "@/lib/editorial-visuals";
 import { getPublicArticleCatalog } from "@/lib/article-catalog";
@@ -107,7 +107,11 @@ const sourceDeskActions = [
   },
 ];
 
-/** "Gregg, Harrison and Marion" from the module, never typed by hand. */
+/**
+ * "Gregg, Harrison and Marion" from the module, never typed by hand.
+ * Read from the HD-7 entry specifically: the aggregate of verified districts
+ * would silently absorb TX-01's counties the day its boundary is authenticated.
+ */
 function formatCountyList(counties: string[]) {
   if (counties.length <= 1) return counties[0] ?? "";
   return `${counties.slice(0, -1).join(", ")} and ${counties[counties.length - 1]}`;
@@ -137,7 +141,7 @@ const EDITORIAL_STANDARDS = [
     eyebrow: "Coverage area",
     href: "/home-district",
     title: "HD-7 and TX-01, county by county.",
-    summary: `HD-7 is ${formatCountyList(HOME_DISTRICT_VERIFIED_COUNTIES)}, confirmed on the record. The wider TX-01 county list is the working footprint and stays marked unauthenticated until the state's plan is pulled and cited.`,
+    summary: `HD-7 is ${formatCountyList(TX_HOUSE_DISTRICT_7.counties.map((county) => county.name))}, confirmed on the record. The wider TX-01 county list is the working footprint and stays marked unauthenticated until the state's plan is pulled and cited.`,
   },
 ];
 
