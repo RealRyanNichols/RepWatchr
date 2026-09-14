@@ -308,7 +308,7 @@ export default function ProfileScorecardVote({
   targetPath,
   compact = false,
 }: ProfileScorecardVoteProps) {
-  const { user, profile, loading: authLoading } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const supabase = useMemo(() => createClient(), []);
   const [summary, setSummary] = useState<SummaryRow | null>(null);
   const [scopeRows, setScopeRows] = useState<ScopeSummaryRow[]>([]);
@@ -393,7 +393,7 @@ export default function ProfileScorecardVote({
   }, [supabase, targetId, targetType, user]);
 
   async function saveGrade(grade: Grade) {
-    if (!repwatchrFeatureFlags.communityVotingV2 || !user || !profile?.verified || saving) return;
+    if (!repwatchrFeatureFlags.communityVotingV2 || !user || saving) return;
 
     setSaving(true);
     setMessage("");
@@ -401,15 +401,14 @@ export default function ProfileScorecardVote({
     const trimmedRationale = compact ? "" : rationale.trim();
 
     if (compact && currentGrade === grade && !trimmedRationale) {
-      const { error } = await supabase
-        .from("profile_scorecard_votes")
-        .delete()
-        .eq("user_id", user.id)
-        .eq("target_type", targetType)
-        .eq("target_id", targetId);
+      const response = await fetch(
+        `/api/scorecards/vote?targetType=${encodeURIComponent(targetType)}&targetId=${encodeURIComponent(targetId)}`,
+        { method: "DELETE" },
+      );
+      const result = await response.json().catch(() => ({ ok: false, error: "Could not reach the vote service." }));
 
-      if (error) {
-        setMessage(error.message);
+      if (!response.ok || !result.ok) {
+        setMessage(result.error ?? "Your vote could not be removed.");
       } else {
         setSummary((current) => applySummaryChange(current, targetType, targetId, currentGrade, null));
         setCurrentGrade(null);
@@ -438,45 +437,51 @@ export default function ProfileScorecardVote({
       top_issue: compact ? null : topIssue.trim() || null,
     };
 
-    let { error } = await supabase.from("profile_scorecard_votes").upsert(
-      richPayload,
-      { onConflict: "user_id,target_type,target_id" },
-    );
+    // The browser no longer writes this table. The server resolves who is
+    // voting from the session, so a caller cannot vote as anyone else.
+    const response = await fetch("/api/scorecards/vote", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        targetType,
+        targetId,
+        targetName,
+        targetPath,
+        grade,
+        rationale: richPayload.rationale,
+        wouldVoteAgain: richPayload.would_vote_again,
+        votedForLastTime: richPayload.voted_for_last_time,
+        approvalAfterVote: richPayload.approval_after_vote,
+        topIssue: richPayload.top_issue,
+      }),
+    });
+    const result = await response.json().catch(() => ({ ok: false, error: "Could not reach the vote service." }));
 
-    if (error && /column|schema|cache|voter_|would_vote_again|voted_for_last_time|approval_after_vote|top_issue/i.test(error.message)) {
-      const fallback = await supabase.from("profile_scorecard_votes").upsert(
-        basePayload,
-        { onConflict: "user_id,target_type,target_id" },
-      );
-      error = fallback.error;
-    }
-
-    if (error) {
-      setMessage(error.message);
+    if (!response.ok || !result.ok) {
+      setMessage(result.error ?? "Your grade could not be saved.");
     } else {
       setSummary((current) => applySummaryChange(current, targetType, targetId, currentGrade, grade));
       setCurrentGrade(grade);
-      setMessage("Your verified citizen scorecard is saved.");
+      setMessage("Your response is saved. It is counted as participant sentiment, separately from the performance grade.");
     }
 
     setSaving(false);
   }
 
   async function removeVote() {
-    if (!user || !profile?.verified || saving || !currentGrade) return;
+    if (!user || saving || !currentGrade) return;
 
     setSaving(true);
     setMessage("");
 
-    const { error } = await supabase
-      .from("profile_scorecard_votes")
-      .delete()
-      .eq("user_id", user.id)
-      .eq("target_type", targetType)
-      .eq("target_id", targetId);
+    const response = await fetch(
+      `/api/scorecards/vote?targetType=${encodeURIComponent(targetType)}&targetId=${encodeURIComponent(targetId)}`,
+      { method: "DELETE" },
+    );
+    const result = await response.json().catch(() => ({ ok: false, error: "Could not reach the vote service." }));
 
-    if (error) {
-      setMessage(error.message);
+    if (!response.ok || !result.ok) {
+      setMessage(result.error ?? "Your vote could not be removed.");
     } else {
       setSummary((current) => applySummaryChange(current, targetType, targetId, currentGrade, null));
       setCurrentGrade(null);
@@ -588,25 +593,11 @@ export default function ProfileScorecardVote({
               </Link>
             ) : null}
           </div>
-        ) : !profile?.verified ? (
-          <div className={compact ? "text-xs font-semibold text-amber-700" : "text-center"}>
-            <p>Verify your identity before your citizen scorecard counts.</p>
-            {!compact ? (
-              <p className="mx-auto mt-1 max-w-xl text-sm font-semibold leading-6 text-amber-800">
-                RepWatchr should require real identity and voter-area verification before a profile can move constituent data. Outside responses can be collected, but they must stay labeled separately.
-              </p>
-            ) : null}
-            {!compact ? (
-              <Link href="/auth/verify" className="mt-2 inline-flex rounded-lg bg-amber-600 px-3 py-2 text-sm font-black text-white hover:bg-amber-700">
-                Verify profile
-              </Link>
-            ) : null}
-          </div>
         ) : (
           <>
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <p className="text-xs font-black uppercase tracking-wide text-slate-500">Your verified citizen response</p>
+                <p className="text-xs font-black uppercase tracking-wide text-slate-500">Your response</p>
                 {!compact ? (
                   <p className="mt-1 text-xs font-semibold leading-5 text-slate-500">
                     Current scope: <span className="font-black text-slate-800">{scopeLabels[voterScope]}</span>.

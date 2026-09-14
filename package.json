@@ -61,6 +61,8 @@
     "smoke:home-districts": "node scripts/smoke-home-districts.mjs",
     "smoke:district-positioning": "node scripts/smoke-district-positioning.mjs",
     "smoke:issue-scorecards": "node scripts/smoke-issue-scorecards.mjs",
+    "smoke:planner": "npx tsx scripts/social-planner-probe.mts",
+    "smoke:visitor-geo": "npx tsx scripts/visitor-geo-probe.mts",
     "qa:static": "node scripts/qa-static-checks.mjs",
     "qa:routes": "node scripts/qa-route-smoke.mjs",
     "smoke:records": "node scripts/smoke-public-records-generator.mjs",
