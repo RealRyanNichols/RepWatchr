@@ -5,16 +5,18 @@ import Image from "next/image";
 import Link from "next/link";
 import UserMenu from "@/components/auth/UserMenu";
 
+// The top row is the beat: where a reader goes to read the record. Research
+// and packet work stays reachable, one level down, so the masthead reads as a
+// newsroom rather than a storefront.
 const primaryLinks = [
   { href: "/", label: "Home" },
   { href: "/home-district", label: "HD-7 / TX-01" },
+  { href: "/news", label: "Stories" },
   { href: "/elections/texas", label: "Texas Races" },
   { href: "/officials", label: "Officials" },
   { href: "/school-boards", label: "School Boards" },
   { href: "/votes", label: "Votes" },
   { href: "/blog", label: "Blog" },
-  { href: "/services", label: "Services" },
-  { href: "/elections/texas/contribute", label: "Free Packet" },
 ];
 
 const moreLinks = [
@@ -28,10 +30,11 @@ const moreLinks = [
   { href: "/red-flags", label: "Red Flags" },
   { href: "/scorecards", label: "Scorecards" },
   { href: "/issues", label: "Issues" },
-  { href: "/news", label: "Story Archive" },
   { href: "/feed", label: "Social Feed" },
   { href: "/methodology", label: "Methodology" },
   { href: "/about", label: "About" },
+  { href: "/elections/texas/contribute", label: "Free Packet" },
+  { href: "/services", label: "Research Services" },
 ];
 
 export default function Header() {

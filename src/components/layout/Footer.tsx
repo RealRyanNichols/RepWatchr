@@ -1,24 +1,31 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const quickLinks = [
+// The coverage column is the beat. Research and data work lives in its own
+// column so it reads as something this desk also offers, not as the point of
+// the site.
+const coverageLinks = [
+  { href: "/home-district", label: "HD-7 / TX-01" },
+  { href: "/news", label: "Stories" },
   { href: "/elections/texas", label: "Texas Races" },
   { href: "/officials", label: "Officials" },
   { href: "/school-boards", label: "School Boards" },
   { href: "/votes", label: "Votes" },
   { href: "/blog", label: "Blog" },
-  { href: "/services", label: "Services" },
-  { href: "/packages/public-data-api", label: "Data Access" },
-  { href: "/for-candidates", label: "For Candidates" },
-  { href: "/elections/texas/contribute", label: "Free Packet" },
   { href: "/authority-watch", label: "Authority Watch" },
   { href: "/funding", label: "Funding" },
   { href: "/money", label: "Money Trail" },
   { href: "/red-flags", label: "Red Flags" },
-  { href: "/news", label: "Story Archive" },
   { href: "/methodology", label: "Methodology" },
   { href: "/submit-source", label: "Submit Source" },
+];
+
+const researchLinks = [
   { href: "/tools/public-records-response", label: "Records Response" },
+  { href: "/elections/texas/contribute", label: "Free Packet" },
+  { href: "/for-candidates", label: "For Candidates" },
+  { href: "/services", label: "Research Services" },
+  { href: "/packages/public-data-api", label: "Data Access" },
 ];
 
 export default function Footer() {
@@ -26,7 +33,7 @@ export default function Footer() {
     <footer className="border-t border-white/10 bg-[#06172f] text-slate-100">
       <div className="h-1.5 w-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_31%,#d6b35a_31%,#d6b35a_42%,#ffffff_42%,#ffffff_58%,#1d4ed8_58%,#1d4ed8_100%)]" />
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
             <Image
@@ -53,17 +60,36 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Quick Links */}
+          {/* Coverage */}
           <div>
             <h4 className="text-sm font-black uppercase tracking-wider text-[#d6b35a]">
-              Quick Links
+              Coverage
             </h4>
             <ul className="mt-3 space-y-2">
-              {quickLinks.map((link) => (
+              {coverageLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     className="text-sm font-semibold text-slate-300 transition-colors hover:text-white"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Research and data */}
+          <div>
+            <h4 className="text-sm font-black uppercase tracking-wider text-[#d6b35a]">
+              Research and Data
+            </h4>
+            <ul className="mt-3 space-y-2">
+              {researchLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm font-semibold text-slate-400 transition-colors hover:text-white"
                   >
                     {link.label}
                   </Link>
@@ -116,7 +142,7 @@ export default function Footer() {
           </div>
           <p className="text-center text-sm font-semibold text-slate-400">
             &copy; {new Date().getFullYear()} RepWatchr. All rights
-            reserved. A product of RealRyanNichols.
+            reserved. Published by Ryan Nichols.
           </p>
         </div>
       </div>

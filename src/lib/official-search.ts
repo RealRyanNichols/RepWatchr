@@ -789,9 +789,13 @@ export function officialSearchQuery(params: OfficialSearchParams, overrides: Par
 export function isOfficialSearchIndexable(params: OfficialSearchParams) {
   if (params.recordType !== "all") return false;
   if (params.search || params.page > 1 || params.sort !== "relevance" || params.perPage !== 24) return false;
+  // A single place facet is the highest-intent query this site can answer -
+  // "Gregg County officials", "Longview officials" - and the set is finite and
+  // canonical, one URL per place. These used to be noindexed while /coverage
+  // linked straight into them, so the county tiles pointed crawlers at a wall.
+  // Both facets at once is a crossed filter and stays out.
+  if (params.county && params.city) return false;
   if (
-    params.county ||
-    params.city ||
     params.officeType ||
     params.party !== "all" ||
     params.scoreRange !== "all" ||
