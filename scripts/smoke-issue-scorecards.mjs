@@ -102,11 +102,64 @@ for (const [file, label] of linkers) {
   );
 }
 
-// The category-key mapping must exist in exactly one place.
 const categoryScorecard = read("src/app/scorecards/[category]/page.tsx");
+
+// The category-key mapping must exist in exactly one place.
 check(
   !/const categoryKeyMap/.test(categoryScorecard),
   "The category scorecard page re-declares its own issue-id-to-score-key map; it must read the shared one.",
+);
+
+// --------------------------------------------------------------------------
+// Claims the pages make about themselves have to stay true
+// --------------------------------------------------------------------------
+
+// AGENTS.md: TX-01's county list is needs_authentication. The homepage may aim
+// coverage with it but must not publish it as a settled boundary.
+check(
+  /FOOTPRINT_BOUNDARY_PROVENANCE\.status === "verified"/.test(homepage),
+  "The homepage prints the county-count footprint without checking its boundary provenance, publishing an unauthenticated TX-01 boundary as an established finding.",
+);
+
+// The method page promises the rows are printed where the score is. If the
+// category scorecard stops rendering them, that promise becomes false.
+check(
+  /the votes behind/.test(categoryScorecard) && /isAlignedVote\(vote\)/.test(categoryScorecard),
+  "The category scorecard no longer prints the vote rows behind each score, so the published arithmetic cannot be checked by a reader.",
+);
+check(
+  /÷ \{castWeight\} × 100 = \{catScore\.score\}/.test(categoryScorecard),
+  "The category scorecard no longer shows the sum that produces its score.",
+);
+check(
+  /isScoredCategory\(catScore\)/.test(categoryScorecard),
+  "The category scorecard ranks officials without excluding unscored categories, so an unreviewed category becomes a last-place F.",
+);
+check(
+  /isScoredCategory\(category\)/.test(read("src/app/scorecards/page.tsx")),
+  "The scorecards index grades every category from its raw score, turning an unreviewed category into an F.",
+);
+
+// Two published pages must not state opposite rules for a missed vote.
+const issueDetail = read("src/app/issues/[id]/page.tsx");
+check(
+  !/Missed votes are votes against your interests/.test(issueDetail),
+  "The voting-record issue page still says missed votes count against an official, which contradicts the scoring rule that excludes them.",
+);
+check(
+  /gate\.withheld\[reason\]/.test(issueDetail),
+  "The empty-state copy asserts a withholding reason instead of reporting the counts the gate actually recorded.",
+);
+
+// The share card prints its own path, so reusing another view advertises the
+// wrong destination.
+check(
+  /"scorecard-method"/.test(read("src/app/api/og/methodology/route.tsx")),
+  "The scorecard method page has no share-image view of its own, so its social card advertises a different route than the page.",
+);
+check(
+  /view: "scorecard-method"/.test(read("src/app/methodology/scorecards/page.tsx")),
+  "The scorecard method page does not request its own share-image view.",
 );
 
 // --------------------------------------------------------------------------

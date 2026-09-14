@@ -26,7 +26,7 @@ import {
 } from "@/lib/power-watch";
 import { getCongressTradingDataset, getCongressTradingStats } from "@/lib/congress-trading";
 import { selectEditorialStories } from "@/lib/editorial-ranking";
-import { withDerivedScores } from "@/lib/vote-record-score";
+import { isScoreableVote, withDerivedScores } from "@/lib/vote-record-score";
 import portraitManifest from "@/data/portrait-manifest.json";
 
 const portraitMetadata: Record<string, NonNullable<Official["photoMetadata"]>> = portraitManifest;
@@ -73,22 +73,53 @@ function scoreCardVotes(scoreCard: ScoreCard) {
 }
 
 /** Why a scorecard on file is not publishable. Null means it clears the gate. */
-export type ScoreCardGateFailure = "review_status" | "no_votes" | "vote_not_corroborated";
+export type ScoreCardGateFailure =
+  | "review_status"
+  | "no_votes"
+  | "no_scoreable_votes"
+  | "vote_not_corroborated"
+  | "position_not_corroborated";
 
-function scoreCardGateFailure(scoreCard: ScoreCard): ScoreCardGateFailure | null {
+/**
+ * `bills` is injectable so the gate can be exercised against every branch.
+ *
+ * No bill on file is published today, so the corroboration branches are
+ * unreachable from real data — and an untested gate is the one thing standing
+ * between a typo and a published grade.
+ */
+export function scoreCardGateFailure(
+  scoreCard: ScoreCard,
+  bills: Bill[] = getAllBills(),
+): ScoreCardGateFailure | null {
   if (!isPublishedEvidenceStatus(scoreCard.reviewStatus)) return "review_status";
 
   const votes = scoreCardVotes(scoreCard);
   if (votes.length === 0) return "no_votes";
 
-  const publishedBills = new Map(getAllBills().map((bill) => [bill.id, bill]));
+  // Rows the official did not cast a position on cannot produce a score. A card
+  // made entirely of absences would otherwise clear the gate and publish as a
+  // zero, which every consumer renders as an F.
+  if (!votes.some(isScoreableVote)) return "no_scoreable_votes";
+
+  const publishedBills = new Map(bills.map((bill) => [bill.id, bill]));
+
   const everyVoteCorroborated = votes.every((vote) => {
     const bill = publishedBills.get(vote.billId);
     const sourceVote = bill?.votes.find((row) => row.officialId === scoreCard.officialId);
     return Boolean(sourceVote && sourceVote.vote === vote.officialVote);
   });
+  if (!everyVoteCorroborated) return "vote_not_corroborated";
 
-  return everyVoteCorroborated ? null : "vote_not_corroborated";
+  // Alignment is the vote measured against the district position, so the
+  // position has to be corroborated too. Checking only the vote left the
+  // scorecard's own copy of the position trusted, and one mistyped `yea` there
+  // would invert a published vote's alignment and move every derived score.
+  const everyPositionCorroborated = votes.every((vote) => {
+    const bill = publishedBills.get(vote.billId);
+    return Boolean(bill && bill.proEastTexasPosition === vote.proEastTexasPosition);
+  });
+
+  return everyPositionCorroborated ? null : "position_not_corroborated";
 }
 
 function isPublishableScoreCard(scoreCard: ScoreCard) {
@@ -114,7 +145,9 @@ export function getScoreCardGateReport() {
   const withheld: Record<ScoreCardGateFailure, number> = {
     review_status: 0,
     no_votes: 0,
+    no_scoreable_votes: 0,
     vote_not_corroborated: 0,
+    position_not_corroborated: 0,
   };
   let published = 0;
   let votesOnFile = 0;
@@ -132,7 +165,7 @@ export function getScoreCardGateReport() {
     onFile: files.length,
     published,
     withheld,
-    withheldTotal: withheld.review_status + withheld.no_votes + withheld.vote_not_corroborated,
+    withheldTotal: Object.values(withheld).reduce((sum, count) => sum + count, 0),
     votesOnFile,
   };
 }

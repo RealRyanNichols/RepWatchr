@@ -6,7 +6,14 @@ import PartyBadge from "@/components/officials/PartyBadge";
 import VectorArt from "@/components/shared/VectorArt";
 import { ISSUE_ART_VIEWBOX, issueArtInnerSvg } from "@/lib/issue-art";
 import { calculateLetterGrade } from "@/lib/scoring";
-import { CATEGORY_KEY_BY_ISSUE_ID, categoryKeyForIssueId } from "@/lib/vote-record-score";
+import {
+  CATEGORY_KEY_BY_ISSUE_ID,
+  categoryKeyForIssueId,
+  isAlignedVote,
+  isScoreableVote,
+  isScoredCategory,
+  voteWeight,
+} from "@/lib/vote-record-score";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
@@ -61,6 +68,10 @@ export default async function CategoryScorecardPage({
       const catScore =
         sc.categories[catKey as keyof typeof sc.categories];
       if (!catScore) return null;
+      // No reviewed votes in this category means no grade. Ranking on the
+      // placeholder zero would put an official at the bottom of the table for
+      // evidence nobody has checked yet.
+      if (!isScoredCategory(catScore)) return null;
       return { official, catScore, scoreCard: sc };
     })
     .filter(Boolean)
@@ -214,6 +225,72 @@ export default async function CategoryScorecardPage({
                 );
               })
             )}
+            {/* The rows the score is made of. A grade nobody can recompute is
+                an assertion, not a record, so every scored vote is printed
+                with the weight and district position that moved the number. */}
+            {ranked.map((item) => {
+              const { official, catScore } = item!;
+              const scoreable = catScore.votes.filter(isScoreableVote);
+              const alignedWeight = scoreable
+                .filter(isAlignedVote)
+                .reduce((sum, vote) => sum + voteWeight(vote), 0);
+              const castWeight = scoreable.reduce((sum, vote) => sum + voteWeight(vote), 0);
+              return (
+                <tr key={`${official.id}-rows`} className="bg-slate-50/60">
+                  <td colSpan={6} className="px-4 py-5">
+                    <p className="text-xs font-black uppercase tracking-wide text-slate-500">
+                      {official.name} &mdash; the votes behind {catScore.score}/100
+                    </p>
+                    <div className="mt-3 overflow-x-auto">
+                      <table className="min-w-full text-left text-sm">
+                        <thead>
+                          <tr className="text-[11px] font-black uppercase tracking-wide text-slate-400">
+                            <th className="py-1 pr-4">Bill</th>
+                            <th className="py-1 pr-4">District position</th>
+                            <th className="py-1 pr-4">Vote cast</th>
+                            <th className="py-1 pr-4">Weight</th>
+                            <th className="py-1">Counts</th>
+                          </tr>
+                        </thead>
+                        <tbody className="text-slate-700">
+                          {catScore.votes.map((vote) => {
+                            const counted = isScoreableVote(vote);
+                            const aligned = isAlignedVote(vote);
+                            return (
+                              <tr key={`${vote.billId}-${vote.date}`} className="border-t border-slate-200">
+                                <td className="py-2 pr-4">
+                                  <Link href={`/votes/${vote.billId}`} className="font-semibold text-blue-700 hover:underline">
+                                    {vote.billTitle}
+                                  </Link>
+                                  <span className="ml-2 text-xs text-slate-400">{vote.billId.toUpperCase()}</span>
+                                </td>
+                                <td className="py-2 pr-4">{vote.proEastTexasPosition}</td>
+                                <td className={`py-2 pr-4 font-semibold ${counted ? (aligned ? "text-emerald-700" : "text-red-700") : "text-slate-500"}`}>
+                                  {vote.officialVote}
+                                </td>
+                                <td className="py-2 pr-4 font-mono">{counted ? voteWeight(vote) : "—"}</td>
+                                <td className="py-2 text-xs font-semibold">
+                                  {!counted ? (
+                                    <span className="text-slate-500">not scored &mdash; no position taken</span>
+                                  ) : aligned ? (
+                                    <span className="text-emerald-700">aligned &middot; {voteWeight(vote)}</span>
+                                  ) : (
+                                    <span className="text-red-700">not aligned &middot; 0</span>
+                                  )}
+                                </td>
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                      </table>
+                    </div>
+                    <p className="mt-3 font-mono text-xs text-slate-600">
+                      {alignedWeight} ÷ {castWeight} × 100 = {catScore.score}
+                    </p>
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>

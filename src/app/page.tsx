@@ -15,7 +15,7 @@ import {
   HOME_DISTRICTS,
   TX_HOUSE_DISTRICT_7,
 } from "@/lib/home-districts";
-import { FOOTPRINT_COUNTY_NAMES, isInFootprint } from "@/lib/district-footprint";
+import { FOOTPRINT_BOUNDARY_PROVENANCE, FOOTPRINT_COUNTY_NAMES, isInFootprint } from "@/lib/district-footprint";
 import { ISSUE_ART_VIEWBOX, issueArtInnerSvg } from "@/lib/issue-art";
 import { STANDARD_ART_VIEWBOX, standardArtInnerSvg } from "@/lib/standard-art";
 import VectorArt from "@/components/shared/VectorArt";
@@ -348,7 +348,14 @@ export default async function HomePage() {
     {
       label: "HD-7 / TX-01 Profiles",
       value: formatNumber(footprintProfileCount),
-      caption: `seats loaded inside the ${FOOTPRINT_COUNTY_NAMES.length}-county footprint`,
+      // The county count is only as settled as TX-01's boundary, which is
+      // carried as needs_authentication pending the state's PlanC2333 report.
+      // Printing "13-county footprint" flat would publish a working coverage
+      // target as an established boundary finding.
+      caption:
+        FOOTPRINT_BOUNDARY_PROVENANCE.status === "verified"
+          ? `seats loaded inside the ${FOOTPRINT_COUNTY_NAMES.length}-county footprint`
+          : `seats loaded inside the working ${FOOTPRINT_COUNTY_NAMES.length}-county footprint (TX-01 boundary pending authentication)`,
     },
     {
       label: "All-State Archive",

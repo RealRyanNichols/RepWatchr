@@ -1,8 +1,22 @@
-import { getAllScoreCards, getIssueCategories, getScoreCardGateReport } from "@/lib/data";
+import { getAllScoreCards, getIssueCategories, getScoreCardGateReport, scoreCardGateFailure } from "@/lib/data";
 import { hasIssueArt, issueArtDataUri, issueArtInnerSvg } from "@/lib/issue-art";
 import { hasStandardArt, standardArtInnerSvg } from "@/lib/standard-art";
-import { computeCategoryScore, computeOverallScore, letterGradeBands } from "@/lib/vote-record-score";
-import type { ScoredVote } from "@/types";
+import {
+  computeCategoryScore,
+  computeOverallScore,
+  isScoredCategory,
+  letterGradeBands,
+  withDerivedScores,
+} from "@/lib/vote-record-score";
+import type { Bill, IssueCategory, ScoreCard, ScoredVote } from "@/types";
+
+const issueCategoriesForProbe: IssueCategory[] = [
+  { id: "water-rights", name: "Water Rights", description: "", icon: "", weight: 20, color: "#000" },
+  { id: "land-and-property-rights", name: "Land", description: "", icon: "", weight: 20, color: "#000" },
+  { id: "taxes", name: "Taxes", description: "", icon: "", weight: 20, color: "#000" },
+  { id: "government-transparency", name: "Transparency", description: "", icon: "", weight: 20, color: "#000" },
+  { id: "voting-record", name: "Voting Record", description: "", icon: "", weight: 20, color: "#000" },
+];
 
 /**
  * Checks the published vote-record model against the data actually on disk.
@@ -73,6 +87,51 @@ if (computeCategoryScore([lying])?.score !== 0) {
   problems.push("computeCategoryScore trusted the stored `aligned` flag instead of comparing the vote to the position.");
 }
 
+/**
+ * An unscored category must be MARKED unscored, not merely given "NR".
+ *
+ * Five call sites recompute the letter from the numeric score
+ * (`calculateLetterGrade(cat.score)`), so a letterGrade of "NR" beside a
+ * placeholder 0 is discarded downstream and the category renders as an F.
+ * `scored: false` is what consumers can actually act on.
+ */
+const mixedCard = withDerivedScores(
+  {
+    officialId: "probe",
+    overall: 0,
+    letterGrade: "",
+    lastUpdated: "2026-01-01",
+    categories: {
+      waterRights: { score: 0, letterGrade: "", weight: 20, votes: [vote("yea", "yea", 5)] },
+      landAndPropertyRights: { score: 0, letterGrade: "", weight: 20, votes: [] },
+      taxes: { score: 0, letterGrade: "", weight: 20, votes: [vote("absent", "yea", 5)] },
+      governmentTransparency: { score: 0, letterGrade: "", weight: 20, votes: [] },
+      votingRecord: { score: 0, letterGrade: "", weight: 20, votes: [] },
+    },
+  },
+  issueCategoriesForProbe,
+);
+if (mixedCard.categories.waterRights.scored !== true) {
+  problems.push("A category with a scoreable vote was not marked scored.");
+}
+if (mixedCard.categories.landAndPropertyRights.scored !== false) {
+  problems.push("A category with no votes was not marked unscored, so consumers will render its placeholder 0 as an F.");
+}
+if (mixedCard.categories.taxes.scored !== false) {
+  problems.push("A category holding only an absence was not marked unscored; that placeholder 0 renders as an F.");
+}
+if (isScoredCategory(mixedCard.categories.taxes)) {
+  problems.push("isScoredCategory treated an absence-only category as graded.");
+}
+if (!isScoredCategory(mixedCard.categories.waterRights)) {
+  problems.push("isScoredCategory rejected a category that has a scoreable vote.");
+}
+if (mixedCard.overall !== 100) {
+  problems.push(
+    `One perfect category among four unscored ones should read 100, got ${mixedCard.overall} — empty categories are being counted as zeros.`,
+  );
+}
+
 /** Categories with no reviewed votes drop out of the mean rather than scoring zero. */
 const emptyCategory = { score: 0, letterGrade: "NR", votes: [] as ScoredVote[], weight: 20 };
 const overall = computeOverallScore(
@@ -89,6 +148,82 @@ if (overall?.score !== 100 || overall.scoredCategories !== 1) {
   problems.push(
     `One perfect category and four empty ones should read 100 over 1 scored category, got ${overall?.score} over ${overall?.scoredCategories}.`,
   );
+}
+
+/**
+ * Every branch of the publication gate, against injected bills.
+ *
+ * No bill on file is published right now, so none of the corroboration
+ * branches can be reached from real data. That is exactly why they are tested
+ * here: the gate is the only thing standing between a mistyped row and a
+ * published grade.
+ */
+function cardWith(votes: ScoredVote[], reviewStatus = "verified"): ScoreCard {
+  const empty = { score: 0, letterGrade: "", weight: 20, votes: [] as ScoredVote[] };
+  return {
+    officialId: "probe-official",
+    reviewStatus: reviewStatus as ScoreCard["reviewStatus"],
+    overall: 0,
+    letterGrade: "",
+    lastUpdated: "2026-01-01",
+    categories: {
+      waterRights: { ...empty, votes },
+      landAndPropertyRights: { ...empty },
+      taxes: { ...empty },
+      governmentTransparency: { ...empty },
+      votingRecord: { ...empty },
+    },
+  };
+}
+
+function billWith(id: string, position: "yea" | "nay", officialVote: ScoredVote["officialVote"]): Bill {
+  return {
+    id,
+    reviewStatus: "verified",
+    title: "probe",
+    summary: "probe",
+    session: "probe",
+    level: "state",
+    chamber: "house",
+    status: "passed",
+    categories: ["water-rights"],
+    eastTexasImpact: "probe",
+    proEastTexasPosition: position,
+    votes: [{ officialId: "probe-official", vote: officialVote }],
+    dateVoted: "2026-01-01",
+    sourceUrl: "https://example.org/probe",
+  };
+}
+
+const goodVote = vote("yea", "yea", 5);
+goodVote.billId = "probe-bill";
+const goodBill = billWith("probe-bill", "yea", "yea");
+
+const gateCases: Array<[string, string | null, ScoreCard, Bill[]]> = [
+  ["a card still in review", "review_status", cardWith([goodVote], "needs_source_review"), [goodBill]],
+  ["a card with no votes", "no_votes", cardWith([]), [goodBill]],
+  [
+    "a card holding only absences",
+    "no_scoreable_votes",
+    cardWith([{ ...goodVote, officialVote: "absent" }]),
+    [goodBill],
+  ],
+  ["a vote the bill record does not show", "vote_not_corroborated", cardWith([goodVote]), [billWith("probe-bill", "yea", "nay")]],
+  ["a vote whose bill is not published", "vote_not_corroborated", cardWith([goodVote]), []],
+  [
+    "a district position the bill record contradicts",
+    "position_not_corroborated",
+    cardWith([goodVote]),
+    [billWith("probe-bill", "nay", "yea")],
+  ],
+  ["a fully corroborated card", null, cardWith([goodVote]), [goodBill]],
+];
+
+for (const [label, expected, card, bills] of gateCases) {
+  const actual = scoreCardGateFailure(card, bills);
+  if (actual !== expected) {
+    problems.push(`The gate should return ${JSON.stringify(expected)} for ${label}, got ${JSON.stringify(actual)}.`);
+  }
 }
 
 const bands = letterGradeBands();

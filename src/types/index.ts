@@ -104,6 +104,13 @@ export interface CategoryScore {
   letterGrade: string;
   votes: ScoredVote[];
   weight: number;
+  /**
+   * False when no vote in this category could be scored, so `score` is a
+   * placeholder rather than a grade. Consumers must not render an unscored
+   * category as a number or a letter: a zero there reads as an F, which turns
+   * missing evidence into a failing grade.
+   */
+  scored?: boolean;
 }
 
 export interface ScoreCard {

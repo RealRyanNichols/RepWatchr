@@ -78,7 +78,7 @@ const issueDetails: Record<string, { fullDescription: string; whyItMatters: stri
     whyItMatters: [
       "Politicians say one thing on the campaign trail and vote differently in Austin or DC",
       "Party leadership often pressures representatives to vote against their district's interests",
-      "Missed votes are votes against your interests -- they count",
+      "Missed votes are tracked and shown, but they move the attendance dimension of the performance grade rather than the vote-record score",
       "Committee assignments and procedural votes shape legislation before it ever reaches the floor",
       "Voting patterns reveal who a representative actually serves -- their district or their donors",
     ],
@@ -306,10 +306,30 @@ export default async function IssueDetailPage({
             No {category.name.toLowerCase()} scores have cleared review yet
           </h2>
           <p className="mt-3 text-sm font-semibold leading-6 text-amber-900">
-            {gate.onFile} scorecard{gate.onFile === 1 ? "" : "s"} are drafted and {gate.withheldTotal} are withheld
-            because their votes have not been corroborated against the bill files they cite. An empty table is not a
-            clean record for anyone listed on this site. Read it as not checked yet.
+            {gate.onFile} scorecard{gate.onFile === 1 ? "" : "s"} are drafted and {gate.withheldTotal} are withheld at
+            the publication gate. An empty table is not a clean record for anyone listed on this site. Read it as not
+            checked yet.
           </p>
+          {/* Name the reason the gate actually recorded. Stating a
+              corroboration failure for a card that stopped at review status
+              asserts a check the gate never ran. */}
+          <ul className="mt-3 space-y-1 text-sm font-semibold text-amber-900">
+            {(
+              [
+                ["review_status", "held for source review"],
+                ["no_votes", "no votes on the card"],
+                ["no_scoreable_votes", "no vote where a position was taken"],
+                ["vote_not_corroborated", "a vote does not match its bill record"],
+                ["position_not_corroborated", "a district position does not match its bill record"],
+              ] as const
+            )
+              .filter(([reason]) => gate.withheld[reason] > 0)
+              .map(([reason, label]) => (
+                <li key={reason}>
+                  <span className="font-mono">{gate.withheld[reason]}</span> {label}
+                </li>
+              ))}
+          </ul>
           <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2">
             <Link href="/methodology/scorecards" className="text-sm font-bold text-amber-900 underline hover:no-underline">
               What the gate requires &rarr;

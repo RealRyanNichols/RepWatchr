@@ -42,6 +42,20 @@ export function categoryKeyForIssueId(issueId: string): CategoryScoreKey | undef
 }
 
 /**
+ * Whether a category carries a real grade.
+ *
+ * A card may be published with votes in only some categories. The empty ones
+ * are not zeros, and every page that ranks, grades, or averages must exclude
+ * them rather than reading their placeholder score.
+ */
+export function isScoredCategory(category: Pick<CategoryScore, "scored" | "votes">) {
+  if (typeof category.scored === "boolean") return category.scored;
+  // A card that never went through withDerivedScores falls back to the same
+  // test rather than being assumed graded.
+  return (category.votes ?? []).some(isScoreableVote);
+}
+
+/**
  * A vote counts toward a category only when the official actually took a
  * position on it. An absence is not scored as a wrong vote — it is not scored
  * at all, because "missing evidence is never converted into a zero" is the same
@@ -54,6 +68,12 @@ export function isScoreableVote(vote: ScoredVote) {
 /**
  * Alignment is computed, never trusted from the file. The stored `aligned`
  * field is a convenience for display; this is what moves the number.
+ *
+ * `proEastTexasPosition` is the scorecard's copy of the district position. It
+ * is only safe to compare against because the publication gate in
+ * src/lib/data.ts refuses any card whose copy disagrees with the reviewed bill
+ * record — without that, a single mistyped position would silently invert a
+ * vote's alignment and move every derived score.
  */
 export function isAlignedVote(vote: ScoredVote) {
   return isScoreableVote(vote) && vote.officialVote === vote.proEastTexasPosition;
@@ -157,8 +177,13 @@ export function withDerivedScores(scoreCard: ScoreCard, issueCategories: IssueCa
           key,
           {
             ...category,
+            // `scored: false` is the load-bearing part. The 0 below is a
+            // placeholder, and several consumers recompute a letter from the
+            // number rather than reading `letterGrade` — so an unscored
+            // category that only carried "NR" would still render as an F.
             score: computed?.score ?? 0,
             letterGrade: computed?.letterGrade ?? "NR",
+            scored: Boolean(computed),
           },
         ];
       },

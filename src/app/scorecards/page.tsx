@@ -8,6 +8,7 @@ import PartyBadge from "@/components/officials/PartyBadge";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import VectorArt from "@/components/shared/VectorArt";
 import { ISSUE_ART_VIEWBOX, issueArtInnerSvg } from "@/lib/issue-art";
+import { isScoredCategory } from "@/lib/vote-record-score";
 import { calculateLetterGrade, getScoreDescription } from "@/lib/scoring";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
@@ -262,15 +263,33 @@ export default function ScorecardsPage() {
                               compact
                             />
                           </td>
-                          {categoryKeys.map((key) => (
-                            <td key={key} className="hidden px-4 py-4 text-center lg:table-cell">
-                              <LetterGradeBadge
-                                grade={calculateLetterGrade(scoreCard.categories[key].score)}
-                                score={scoreCard.categories[key].score}
-                                size="sm"
-                              />
-                            </td>
-                          ))}
+                          {categoryKeys.map((key) => {
+                            const category = scoreCard.categories[key];
+                            // A category with no scoreable votes has no grade.
+                            // Rendering its placeholder zero would publish an F
+                            // for evidence that was never reviewed.
+                            if (!isScoredCategory(category)) {
+                              return (
+                                <td key={key} className="hidden px-4 py-4 text-center lg:table-cell">
+                                  <span
+                                    className="inline-flex rounded-md border border-slate-200 bg-slate-50 px-2 py-1 text-[11px] font-black text-slate-400"
+                                    title="No reviewed votes in this category yet. Not a zero."
+                                  >
+                                    NR
+                                  </span>
+                                </td>
+                              );
+                            }
+                            return (
+                              <td key={key} className="hidden px-4 py-4 text-center lg:table-cell">
+                                <LetterGradeBadge
+                                  grade={calculateLetterGrade(category.score)}
+                                  score={category.score}
+                                  size="sm"
+                                />
+                              </td>
+                            );
+                          })}
                         </tr>
                       );
                     })

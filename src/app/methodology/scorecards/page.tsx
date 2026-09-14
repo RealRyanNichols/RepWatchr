@@ -12,7 +12,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "The full vote-record scorecard algorithm: how a vote is corroborated, how alignment is weighted, how a category score is produced, the letter scale, and the gate that withholds a scorecard until every vote checks out.",
   path: "/methodology/scorecards",
-  imagePath: buildOgImageUrl("methodology", { view: "scorecards" }),
+  imagePath: buildOgImageUrl("methodology", { view: "scorecard-method" }),
   imageAlt: "RepWatchr scorecard algorithm",
 });
 
@@ -25,12 +25,12 @@ const steps = [
   {
     number: "02",
     title: "Alignment is computed, never read off the file",
-    body: "Each bill carries a declared district position. A vote is aligned when the official's recorded vote matches that position. The stored `aligned` flag on a row is for display only. The arithmetic re-derives it, so a mistyped flag cannot inflate anyone's score.",
+    body: "Each bill carries a declared district position, and the gate refuses any card whose copy of that position disagrees with the reviewed bill. A vote is aligned when the official's recorded vote matches it. The stored `aligned` flag on a row is for display only; the arithmetic re-derives it, so neither a mistyped flag nor a mistyped position can move anyone's score.",
   },
   {
     number: "03",
     title: "An absence is not a wrong vote",
-    body: "Only yea and nay are scored. Absent, abstain, and not-applicable rows are counted and shown, but they are removed from both sides of the division instead of being converted into a zero. Missing evidence never becomes a deduction.",
+    body: "Only yea and nay are scored here. Absent, abstain, and not-applicable rows are counted and shown, but they are removed from both sides of the division instead of being converted into a zero. Attendance is graded separately, under the performance grade — it is simply not what this number measures.",
   },
   {
     number: "04",
@@ -166,8 +166,8 @@ export default function ScorecardMethodPage() {
                 10 ÷ 11 × 100 = <span className="text-amber-300">91</span>
               </div>
               <p className="mt-4 text-sm font-semibold leading-6 text-slate-300">
-                Counted as two equal votes it would read 50. The weights are the reason it does not, and the weights are
-                printed on the profile beside every vote.
+                Counted as two equal votes it would read 50. The weights are the reason it does not, and every category
+                scorecard prints the rows, weights and positions underneath the table so you can redo this sum yourself.
               </p>
             </aside>
           </div>
@@ -254,14 +254,24 @@ export default function ScorecardMethodPage() {
               body: "The card has not been signed off by the source desk. Its votes reference bill records that were not corroborated against their cited sources, so the whole card stays unpublished.",
             },
             {
-              label: "No reviewed votes",
+              label: "No votes on the card",
               count: gate.withheld.no_votes,
-              body: "There is a card but nothing scoreable on it. A card with no votes is never published as a zero.",
+              body: "There is a card but nothing on it. A card with no votes is never published as a zero.",
+            },
+            {
+              label: "No scoreable vote",
+              count: gate.withheld.no_scoreable_votes,
+              body: "Every row is an absence, an abstention, or not applicable. Nothing there can produce a percentage, so the card is withheld rather than published as a zero that reads like an F.",
             },
             {
               label: "Vote not corroborated",
               count: gate.withheld.vote_not_corroborated,
               body: "At least one vote on the card does not match the published bill file for that official. One mismatch withholds the entire scorecard, not just the row.",
+            },
+            {
+              label: "Position not corroborated",
+              count: gate.withheld.position_not_corroborated,
+              body: "The district position on a row does not match the reviewed bill. Alignment is the vote measured against that position, so an uncorroborated position could invert a score exactly as a wrong vote would.",
             },
           ].map((row, index) => (
             <div

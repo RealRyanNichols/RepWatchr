@@ -20,6 +20,15 @@ const viewCopy = {
     supportLine: "Open the evidence, weighting, review state, and missing record behind every published grade.",
     path: "/scorecards",
   },
+  // Its own view, not a reuse of `scorecards`: the renderer prints `path` on
+  // the card, so sharing the method page would have advertised /scorecards.
+  "scorecard-method": {
+    pageType: "Scorecard method",
+    headline: "Show your work, or do not show a grade.",
+    supportLine:
+      "The whole calculation: how a vote is corroborated, how alignment is weighted, and what the publication gate withholds.",
+    path: "/methodology/scorecards",
+  },
   votes: {
     pageType: "Vote records",
     headline: "The roll call is the receipt.",
