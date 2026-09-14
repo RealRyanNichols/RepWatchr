@@ -180,7 +180,7 @@ export default function ScorecardsPage() {
             ))}
           </div>
           <p className="mt-4 text-sm font-semibold text-slate-600">
-            Every vote-record number on this page is weighted arithmetic over the votes shown on the profile.{" "}
+            Every vote-record number on this page is weighted arithmetic. Open a category above to see the rows it is made of — each bill, its weight, the district position, and the sum.{" "}
             <Link href="/methodology/scorecards" className="text-blue-700 underline underline-offset-2 hover:no-underline">
               Read the algorithm
             </Link>

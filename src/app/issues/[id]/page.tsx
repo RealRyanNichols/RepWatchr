@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import type { CategoryScore } from "@/types";
 import Link from "next/link";
 import { getAllBills, getIssueCategories, getAllOfficials, getScoreCard, getScoreCardGateReport } from "@/lib/data";
 import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
 import VectorArt from "@/components/shared/VectorArt";
 import { ISSUE_ART_VIEWBOX, issueArtInnerSvg } from "@/lib/issue-art";
-import { categoryKeyForIssueId } from "@/lib/vote-record-score";
+import { categoryKeyForIssueId, isScoredCategory } from "@/lib/vote-record-score";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
@@ -147,8 +148,12 @@ export default async function IssueDetailPage({
     .map((o) => {
       const sc = getScoreCard(o.id);
       if (!sc) return null;
-      const catScore = (sc.categories as Record<string, { score: number; letterGrade: string }>)[categoryKey];
+      const catScore = (sc.categories as Record<string, CategoryScore>)[categoryKey];
       if (!catScore) return null;
+      // The same rule the two scorecard routes apply. An official with votes in
+      // other categories but none in this one has no grade here, and ranking
+      // them on the placeholder zero would publish an F for unreviewed evidence.
+      if (!isScoredCategory(catScore)) return null;
       return { official: o, score: catScore.score, grade: catScore.letterGrade };
     })
     .filter(Boolean)

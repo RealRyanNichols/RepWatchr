@@ -17,6 +17,7 @@ import type {
   OfficialWithScores,
   NewsArticle,
   PublicVoteRecord,
+  ScoredVote,
   SourceReviewStatus,
 } from "@/types";
 import {
@@ -26,7 +27,7 @@ import {
 } from "@/lib/power-watch";
 import { getCongressTradingDataset, getCongressTradingStats } from "@/lib/congress-trading";
 import { selectEditorialStories } from "@/lib/editorial-ranking";
-import { isScoreableVote, withDerivedScores } from "@/lib/vote-record-score";
+import { CATEGORY_KEY_BY_ISSUE_ID, isScoreableVote, withDerivedScores } from "@/lib/vote-record-score";
 import portraitManifest from "@/data/portrait-manifest.json";
 
 const portraitMetadata: Record<string, NonNullable<Official["photoMetadata"]>> = portraitManifest;
@@ -77,8 +78,30 @@ export type ScoreCardGateFailure =
   | "review_status"
   | "no_votes"
   | "no_scoreable_votes"
+  | "invalid_vote_weight"
+  | "duplicate_vote_row"
+  | "category_mismatch"
   | "vote_not_corroborated"
   | "position_not_corroborated";
+
+/** Every vote paired with the category key it is filed under. */
+function scoreCardVotesByCategory(scoreCard: ScoreCard) {
+  return (Object.entries(scoreCard.categories) as Array<[string, { votes: ScoredVote[] }]>).flatMap(
+    ([key, category]) => (category.votes ?? []).map((vote) => ({ key, vote })),
+  );
+}
+
+/**
+ * A weight has to have been set by a reviewer, not invented here.
+ *
+ * Score files are read through an unchecked cast, so a missing, null, zero, or
+ * out-of-range weight reaches this code as-is. Clamping it would silently turn
+ * a typo like 100 into the maximum valid weight and swing a published grade,
+ * while the methodology tells readers the number was set during review.
+ */
+function hasReviewedWeight(vote: ScoredVote) {
+  return typeof vote.weight === "number" && Number.isInteger(vote.weight) && vote.weight >= 1 && vote.weight <= 10;
+}
 
 /**
  * `bills` is injectable so the gate can be exercised against every branch.
@@ -100,6 +123,26 @@ export function scoreCardGateFailure(
   // made entirely of absences would otherwise clear the gate and publish as a
   // zero, which every consumer renders as an F.
   if (!votes.some(isScoreableVote)) return "no_scoreable_votes";
+
+  if (!votes.every(hasReviewedWeight)) return "invalid_vote_weight";
+
+  const filedVotes = scoreCardVotesByCategory(scoreCard);
+
+  // Two copies of one roll call would both clear the corroboration check below
+  // against the same single bill row, then be added twice by the weighted mean.
+  // One duplicated row can move a published percentage and letter grade.
+  const rowKeys = filedVotes.map(({ key, vote }) => `${key}::${vote.billId}`);
+  if (new Set(rowKeys).size !== rowKeys.length) return "duplicate_vote_row";
+
+  // A row filed under the wrong category scores against the wrong issue. The
+  // corroboration checks below flatten the categories away, so this is the only
+  // place the container is compared to what the row says it is.
+  const categoryMismatch = filedVotes.some(({ key, vote }) => {
+    if (!vote.category) return false;
+    const expected = CATEGORY_KEY_BY_ISSUE_ID[vote.category];
+    return expected !== undefined && expected !== key;
+  });
+  if (categoryMismatch) return "category_mismatch";
 
   const publishedBills = new Map(bills.map((bill) => [bill.id, bill]));
 
@@ -146,6 +189,9 @@ export function getScoreCardGateReport() {
     review_status: 0,
     no_votes: 0,
     no_scoreable_votes: 0,
+    invalid_vote_weight: 0,
+    duplicate_vote_row: 0,
+    category_mismatch: 0,
     vote_not_corroborated: 0,
     position_not_corroborated: 0,
   };

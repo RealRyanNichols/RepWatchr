@@ -35,7 +35,7 @@ const steps = [
   {
     number: "04",
     title: "Every vote carries its own weight, 1 to 10",
-    body: "Weight is how much the bill actually decides, set when the bill is reviewed. A weight-10 bill moves a category ten times as far as a weight-1 bill, so a long list of trivial votes cannot bury one that mattered.",
+    body: "Weight is how much the bill actually decides, set when the bill is reviewed. A weight-10 bill moves a category ten times as far as a weight-1 bill, so a long list of trivial votes cannot bury one that mattered. A row whose weight is missing or outside 1-10 is not quietly repaired to something usable — it withholds the card.",
   },
   {
     number: "05",
@@ -76,8 +76,9 @@ export default function ScorecardMethodPage() {
             Show your work, or do not show a grade.
           </h1>
           <p className="mt-6 max-w-3xl text-lg font-semibold leading-8 text-slate-300">
-            Every number on a RepWatchr scorecard is arithmetic over votes printed on the same page. No secret model,
-            no hand-typed grade, no adjustment anyone has to take on faith. This page is the whole calculation.
+            Every number on a RepWatchr scorecard is arithmetic over rows printed beneath it on the category page. No
+            secret model, no hand-typed grade, no adjustment anyone has to take on faith. This page is the whole
+            calculation.
           </p>
           <div className="mt-8 rounded-2xl border border-white/10 bg-white/5 p-5 font-mono text-xs leading-7 text-blue-100 sm:text-sm">
             category score = weight of aligned votes ÷ weight of votes cast × 100
@@ -251,7 +252,7 @@ export default function ScorecardMethodPage() {
             {
               label: "Held for source review",
               count: gate.withheld.review_status,
-              body: "The card has not been signed off by the source desk. Its votes reference bill records that were not corroborated against their cited sources, so the whole card stays unpublished.",
+              body: "The source desk has not signed the card off. Nothing further is asserted about its rows: the gate stops here, before any bill record is examined, so a card counted in this row may or may not have corroborated votes.",
             },
             {
               label: "No votes on the card",
@@ -262,6 +263,21 @@ export default function ScorecardMethodPage() {
               label: "No scoreable vote",
               count: gate.withheld.no_scoreable_votes,
               body: "Every row is an absence, an abstention, or not applicable. Nothing there can produce a percentage, so the card is withheld rather than published as a zero that reads like an F.",
+            },
+            {
+              label: "Invalid vote weight",
+              count: gate.withheld.invalid_vote_weight,
+              body: "A row's weight is missing, not a whole number, or outside 1 to 10. Clamping it would invent a weight the reviewer never set and move the grade, so the card is withheld instead.",
+            },
+            {
+              label: "Duplicate row",
+              count: gate.withheld.duplicate_vote_row,
+              body: "The same bill appears twice in one category. Both copies would corroborate against the single real roll call and then be counted twice by the weighted mean.",
+            },
+            {
+              label: "Row filed under the wrong issue",
+              count: gate.withheld.category_mismatch,
+              body: "A row's own category does not match the category it is filed under, so it would score against the wrong issue and change both that issue's number and the overall grade.",
             },
             {
               label: "Vote not corroborated",

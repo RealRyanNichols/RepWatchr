@@ -197,6 +197,7 @@ function billWith(id: string, position: "yea" | "nay", officialVote: ScoredVote[
 
 const goodVote = vote("yea", "yea", 5);
 goodVote.billId = "probe-bill";
+goodVote.category = "water-rights";
 const goodBill = billWith("probe-bill", "yea", "yea");
 
 const gateCases: Array<[string, string | null, ScoreCard, Bill[]]> = [
@@ -206,6 +207,17 @@ const gateCases: Array<[string, string | null, ScoreCard, Bill[]]> = [
     "a card holding only absences",
     "no_scoreable_votes",
     cardWith([{ ...goodVote, officialVote: "absent" }]),
+    [goodBill],
+  ],
+  ["a row with no weight", "invalid_vote_weight", cardWith([{ ...goodVote, weight: undefined as unknown as number }]), [goodBill]],
+  ["a row weighted 0", "invalid_vote_weight", cardWith([{ ...goodVote, weight: 0 }]), [goodBill]],
+  ["a row weighted 100", "invalid_vote_weight", cardWith([{ ...goodVote, weight: 100 }]), [goodBill]],
+  ["a row weighted 2.5", "invalid_vote_weight", cardWith([{ ...goodVote, weight: 2.5 }]), [goodBill]],
+  ["the same bill twice in one category", "duplicate_vote_row", cardWith([goodVote, { ...goodVote }]), [goodBill]],
+  [
+    "a row filed under the wrong issue",
+    "category_mismatch",
+    cardWith([{ ...goodVote, category: "taxes" }]),
     [goodBill],
   ],
   ["a vote the bill record does not show", "vote_not_corroborated", cardWith([goodVote]), [billWith("probe-bill", "yea", "nay")]],

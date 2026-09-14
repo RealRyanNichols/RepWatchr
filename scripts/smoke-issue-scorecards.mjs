@@ -139,6 +139,20 @@ check(
   /isScoredCategory\(category\)/.test(read("src/app/scorecards/page.tsx")),
   "The scorecards index grades every category from its raw score, turning an unreviewed category into an F.",
 );
+// Three routes read a category score. All three must apply the same rule; the
+// issue route was the one that kept being missed.
+check(
+  /isScoredCategory\(catScore\)/.test(read("src/app/issues/[id]/page.tsx")),
+  "The issue detail route ranks officials without excluding unscored categories, so an unreviewed category becomes a published 0/100.",
+);
+check(
+  !/votes shown on the profile/.test(read("src/app/scorecards/page.tsx")),
+  "The scorecards index sends readers to the profile for the vote rows, which no profile mounts. The rows live on the category pages.",
+);
+check(
+  !/reference bill records that were not corroborated/.test(methodPage),
+  "The methodology gate table asserts a corroboration failure for cards that stop at review status, before any bill is examined.",
+);
 
 // Two published pages must not state opposite rules for a missed vote.
 const issueDetail = read("src/app/issues/[id]/page.tsx");
