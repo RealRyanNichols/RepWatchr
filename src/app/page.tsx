@@ -20,6 +20,7 @@ import { getPublicArticleCatalog } from "@/lib/article-catalog";
 import ArticleThumbnail from "@/components/news/ArticleThumbnail";
 import styles from "./HomePage.module.css";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { repwatchrOrganizationRef } from "@/lib/structured-data";
 import type { NewsArticle, Official } from "@/types";
 
 export const revalidate = 3600;
@@ -448,10 +449,7 @@ export default async function HomePage() {
         "citizen grades",
         "public records",
       ],
-      creator: {
-        "@type": "Organization",
-        name: "RepWatchr",
-      },
+      creator: repwatchrOrganizationRef(),
       spatialCoverage: "United States",
       variableMeasured: [
         "public profiles",
