@@ -42,8 +42,12 @@ create table if not exists public.repwatchr_social_drafts (
 
   editorial_status text not null default 'in_review'
     check (editorial_status in ('in_review', 'approved', 'rejected')),
+  -- 'posting' is a reservation. A run claims a draft by moving it here before
+  -- it calls the platform, so a second run cannot select the same row and post
+  -- it twice. A row stuck in 'posting' means a send happened whose result was
+  -- never recorded, which is a state to inspect rather than silently retry.
   publish_status text not null default 'draft'
-    check (publish_status in ('draft', 'posted', 'failed', 'archived')),
+    check (publish_status in ('draft', 'posting', 'posted', 'failed', 'archived')),
   reviewed_by text,
   reviewed_at timestamptz,
   review_note text,

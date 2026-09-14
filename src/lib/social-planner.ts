@@ -360,9 +360,11 @@ export async function reviewDraft(input: {
 /**
  * Drafts cleared to post: approved, not yet posted, and due.
  *
- * This is what the cron consumes instead of picking its own stories.
+ * This only reads. Nothing here may be sent to a platform without first
+ * winning `claimDraftForPosting`, because selecting a row does not stop
+ * another run from selecting the same one.
  */
-export async function claimDueDrafts(limit = 3) {
+export async function listDueDrafts(limit = 3) {
   const client = getSupabaseAdminClient();
   if (!client) return { ok: false as const, problems: ["Supabase service role is not configured."], drafts: [] };
 
@@ -377,6 +379,43 @@ export async function claimDueDrafts(limit = 3) {
 
   if (error) return { ok: false as const, problems: [error.message], drafts: [] };
   return { ok: true as const, problems: [], drafts: (data ?? []) as SocialDraftRow[] };
+}
+
+/**
+ * Take exclusive ownership of a draft before sending it.
+ *
+ * The update is conditional on the row still being 'draft', so if two runs
+ * overlap exactly one of them moves it and the other gets nothing back. Without
+ * this, a send that succeeds but whose result fails to record leaves the row
+ * selectable and the next run posts it again, duplicating it under Ryan's name.
+ *
+ * Returns true only when this caller is the one that moved the row.
+ */
+export async function claimDraftForPosting(id: string) {
+  const client = getSupabaseAdminClient();
+  if (!client) return false;
+
+  const { data, error } = await client
+    .from(TABLE)
+    .update({ publish_status: "posting" })
+    .eq("id", id)
+    .eq("publish_status", "draft")
+    .eq("editorial_status", "approved")
+    .select("id");
+
+  return !error && (data?.length ?? 0) === 1;
+}
+
+/** Hand a claimed draft back when it turns out it cannot be sent. */
+export async function releaseDraftClaim(id: string) {
+  const client = getSupabaseAdminClient();
+  if (!client) return { ok: false as const };
+  const { error } = await client
+    .from(TABLE)
+    .update({ publish_status: "draft" })
+    .eq("id", id)
+    .eq("publish_status", "posting");
+  return { ok: !error };
 }
 
 export async function markDraftPosted(id: string, postUrl: string | null) {
