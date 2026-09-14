@@ -356,6 +356,63 @@ async function postToX(clip: DailyWireClip): Promise<PlatformPostResponse> {
   return { platformPostId, payload };
 }
 
+/**
+ * Post copy a human approved, rather than copy this module composed.
+ *
+ * The planner lane writes its own body and has it approved in /admin/planner,
+ * so it needs the platform plumbing here (token refresh, error shapes) without
+ * the story selection and templated messages above.
+ */
+export async function publishApprovedText(
+  platform: SocialPlatform,
+  body: string,
+  link?: string | null,
+): Promise<PlatformPostResponse> {
+  if (platform === "facebook") {
+    const pageId = process.env.FACEBOOK_PAGE_ID;
+    const pageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
+    const graphVersion = process.env.FACEBOOK_GRAPH_VERSION ?? "v24.0";
+
+    if (!pageId || !pageToken) {
+      throw new Error("Missing FACEBOOK_PAGE_ID or FACEBOOK_PAGE_ACCESS_TOKEN");
+    }
+
+    const form = new URLSearchParams({ message: body });
+    if (link) form.set("link", link);
+
+    const response = await fetch(`https://graph.facebook.com/${graphVersion}/${pageId}/feed`, {
+      method: "POST",
+      headers: {
+        authorization: `Bearer ${pageToken}`,
+        "content-type": "application/x-www-form-urlencoded",
+      },
+      body: form,
+    });
+    const payload = await readResponsePayload(response);
+    if (!response.ok) {
+      throw new Error(payloadError(payload) ?? `Facebook Graph API returned HTTP ${response.status}`);
+    }
+    const platformPostId =
+      typeof (payload as { id?: unknown } | null)?.id === "string" ? (payload as { id: string }).id : null;
+    return { platformPostId, payload };
+  }
+
+  const userToken = await getXAccessToken();
+  const apiUrl = process.env.X_POST_ENDPOINT ?? "https://api.x.com/2/tweets";
+  const response = await fetch(apiUrl, {
+    method: "POST",
+    headers: { authorization: `Bearer ${userToken}`, "content-type": "application/json" },
+    body: JSON.stringify({ text: body }),
+  });
+  const payload = await readResponsePayload(response);
+  if (!response.ok) {
+    throw new Error(payloadError(payload) ?? `X API returned HTTP ${response.status}`);
+  }
+  const data = (payload as { data?: { id?: unknown } } | null)?.data;
+  const platformPostId = typeof data?.id === "string" ? data.id : null;
+  return { platformPostId, payload };
+}
+
 function tokenExpiresSoon(value: string | null) {
   if (!value) return true;
   const time = new Date(value).getTime();
