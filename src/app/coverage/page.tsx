@@ -12,7 +12,7 @@ export const metadata = buildRepWatchrMetadata({
   description:
     "See actual RepWatchr profile and school-district coverage, source dates, remaining gaps, and the Harleton-to-national research priorities.",
   path: "/coverage",
-  imagePath: buildOgImageUrl("home", { page: "officials" }),
+  imagePath: buildOgImageUrl("home", { page: "coverage" }),
   imageAlt: "RepWatchr official directory coverage",
 });
 

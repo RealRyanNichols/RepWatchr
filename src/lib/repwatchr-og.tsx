@@ -43,6 +43,51 @@ const toneColors: Record<NonNullable<RepWatchrOgBadge["tone"]>, string> = {
 };
 
 const defaultBadges: RepWatchrOgBadge[] = [{ label: "Sources", value: "Review", tone: "blue" }];
+
+/**
+ * How many badges fit on the footer line before one runs off the card.
+ *
+ * The footer is a single non-wrapping flex row, so an extra badge does not
+ * push the layout down, it walks off the right edge and is gone. This was
+ * previously handled by a flat `.slice(0, 2)`, which meant a caller could pass
+ * three badges and silently publish two, and every card was held to two even
+ * when three short ones would have fit comfortably.
+ *
+ * Widths are estimated rather than measured because satori does the real
+ * layout later and offers no measurement hook here. The per-character figures
+ * come from the weights and sizes used below; they are deliberately a little
+ * generous, since a card one badge short still reads fine and a card one badge
+ * over is visibly broken.
+ */
+function fitBadges(candidates: RepWatchrOgBadge[], metricValue: string, metricLabel: string) {
+  /** 1200 wide, 50px of padding each side, and the path label parked on the right. */
+  const AVAILABLE = 1100 - 150;
+  const GAP = 26;
+
+  const metricWidth = metricValue.length * 19.8 + 10 + metricLabel.length * 9.9;
+  let used = metricWidth;
+
+  const kept: RepWatchrOgBadge[] = [];
+  for (const badge of candidates) {
+    const width = String(badge.value).length * 14.9 + 8 + truncate(badge.label, 24).length * 8.7;
+    if (used + GAP + width > AVAILABLE) break;
+    used += GAP + width;
+    kept.push(badge);
+  }
+
+  // Never return an empty row: one badge slightly over budget still renders,
+  // and a bare metric with nothing beside it looks like a mistake.
+  return kept.length > 0 ? kept : candidates.slice(0, 1);
+}
+
+/** What `fitBadges` would keep, for build-time checks that copy is not being dropped. */
+export function badgesThatFit(
+  candidates: RepWatchrOgBadge[],
+  metricValue: string,
+  metricLabel: string,
+) {
+  return fitBadges(candidates, metricValue, truncate(clean(metricLabel, "Source status"), 28));
+}
 const embeddedAssetCache = new Map<string, ArrayBuffer>();
 
 function clean(value: string | undefined, fallback: string) {
@@ -153,7 +198,11 @@ export function renderRepWatchrOgImage(input: RepWatchrOgInput) {
   const metricLabel = truncate(clean(input.metricLabel, "Source status"), 28);
   const metricValue = truncate(String(input.metricValue ?? "Review"), 18);
   const path = truncate(clean(input.path, REPWATCHR_ORIGIN), 78);
-  const badges: RepWatchrOgBadge[] = (input.badges?.length ? input.badges : defaultBadges).slice(0, 2);
+  const badges = fitBadges(
+    input.badges?.length ? input.badges : defaultBadges,
+    metricValue,
+    metricLabel,
+  );
   const backgroundImage = input.backgroundImage
     ? assetUrl(input.backgroundImage, input.requestUrl)
     : undefined;

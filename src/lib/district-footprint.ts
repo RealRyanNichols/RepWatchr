@@ -332,6 +332,19 @@ function expectedSeats(kind: JurisdictionKind) {
 export const EXPECTED_COUNTY_SEATS = expectedSeats("county");
 export const EXPECTED_CITY_SEATS = expectedSeats("city");
 
+/**
+ * Expected elected seats across the whole footprint.
+ *
+ * The two constants above are the slate for a SINGLE county and a SINGLE city,
+ * which is what the roster page prints beside each row. Adding them together
+ * gives one county's slate plus one city's slate and describes no real place,
+ * so anything reporting a footprint total has to multiply by the number of
+ * jurisdictions. Exported here so the roster page and its share card cannot
+ * end up quoting different numbers for the same claim.
+ */
+export const FOOTPRINT_EXPECTED_SEATS =
+  FOOTPRINT_COUNTIES.length * EXPECTED_COUNTY_SEATS + FOOTPRINT_PLACES.length * EXPECTED_CITY_SEATS;
+
 function matchesOffice(position: string, key: string, label: string) {
   const text = position.toLowerCase();
   if (key === "commissioner") return text.includes("commissioner");
