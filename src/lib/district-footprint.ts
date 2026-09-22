@@ -273,7 +273,13 @@ export function officialsForPlace(place: FootprintPlace, officials: Official[]) 
   const placeCounties = new Set(
     [place.county, ...(place.alsoInCounties ?? [])].map((county) => county.toLowerCase()),
   );
-  const placeName = place.name.toLowerCase();
+  const placeName = place.name.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  // Match the whole municipal name, not a word inside another place (London
+  // versus New London), an agency, or a school district. Local profiles use
+  // "City of <name>"; also accept the plain name and a Texas state suffix.
+  const jurisdictionPattern = new RegExp(
+    `^(?:(?:city|town|village) of )?${placeName}(?:,? (?:texas|tx))?$`,
+  );
 
   return officials.filter((official) => {
     if (official.level !== "city") return false;
@@ -281,8 +287,8 @@ export function officialsForPlace(place: FootprintPlace, officials: Official[]) 
     // different place with the same name.
     if ((official.state ?? "TX").toUpperCase() !== "TX") return false;
     if (!official.county.some((county) => placeCounties.has(normalizedCounty(county)))) return false;
-    const jurisdiction = (official.jurisdiction ?? "").toLowerCase();
-    return jurisdiction.includes(placeName);
+    const jurisdiction = (official.jurisdiction ?? "").trim().toLowerCase().replace(/\s+/g, " ");
+    return jurisdictionPattern.test(jurisdiction);
   });
 }
 
@@ -304,6 +310,7 @@ const FOOTPRINT_COUNTY_KEYS = new Set(FOOTPRINT_COUNTY_NAMES.map((name) => name.
  * that are not the TX-01 seat are outside the footprint by design.
  */
 export function isInFootprint(official: Official) {
+  if ((official.state ?? "TX").toUpperCase() !== "TX") return false;
   if (coverageTierForOfficial(official) === "home-district") return true;
   return official.county.some((county) => FOOTPRINT_COUNTY_KEYS.has(normalizedCounty(county)));
 }
@@ -345,13 +352,19 @@ export const EXPECTED_CITY_SEATS = expectedSeats("city");
 export const FOOTPRINT_EXPECTED_SEATS =
   FOOTPRINT_COUNTIES.length * EXPECTED_COUNTY_SEATS + FOOTPRINT_PLACES.length * EXPECTED_CITY_SEATS;
 
-function matchesOffice(position: string, key: string, label: string) {
-  const text = position.toLowerCase();
-  if (key === "commissioner") return text.includes("commissioner");
-  if (key === "county-judge") return text.includes("county judge");
-  if (key === "prosecutor") return text.includes("attorney");
-  if (key === "council") return text.includes("council");
-  if (key === "justice-of-the-peace") return text.includes("justice of the peace");
+export function matchesOffice(position: string, key: string, label: string) {
+  const text = position.toLowerCase().replace(/[-–—/]/g, " ").replace(/\s+/g, " ").trim();
+  // Staff and campaign titles do not establish a record for an elected office.
+  if (/\b(?:assistant|deputy|candidate|former)\b/.test(text)) return false;
+  if (key === "commissioner") return /\bcommissioner\b/.test(text);
+  if (key === "county-judge") return /\bcounty judge\b/.test(text);
+  if (key === "prosecutor") return /\b(?:county|district) attorney\b/.test(text);
+  if (key === "council") {
+    return /\bcouncil(?:member|man|woman|person)?\b|\balder(?:man|woman|person)\b|\bmayor pro tem(?:pore)?\b/.test(text);
+  }
+  if (key === "mayor") return /\bmayor\b/.test(text) && !/\bpro tem(?:pore)?\b/.test(text);
+  if (key === "tax-assessor") return /\btax assessor(?: collector)?\b/.test(text);
+  if (key === "justice-of-the-peace") return /\bjustice of the peace\b/.test(text);
   return text.includes(label.toLowerCase());
 }
 

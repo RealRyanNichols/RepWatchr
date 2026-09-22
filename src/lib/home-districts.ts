@@ -390,21 +390,35 @@ export function isHomeDistrictSeat(official: Official) {
  * two seats themselves always match even with an empty county array.
  */
 export function isInHomeDistricts(official: Official) {
+  // Shared county names do not override an explicit state. Older local
+  // records can omit state, so their scoped county metadata still counts.
+  const state = official.state?.trim().toUpperCase();
+  if (state && state !== "TX") return false;
   if (isHomeDistrictSeat(official)) return true;
   if (official.county.some((county) => HOME_COUNTY_KEYS.has(normalizedCounty(county)))) return true;
 
-  const isTexasRecord = official.state?.toUpperCase() === "TX";
-  if (!isTexasRecord) return false;
+  if (state !== "TX") return false;
 
   const districtText = (official.district ?? "").toLowerCase();
   if (official.level === "state" && /\bhd[-\s]?0*7\b/.test(districtText)) return true;
   if (official.level === "federal" && /\btx[-\s]?0*1\b/.test(districtText)) return true;
 
-  const placeText = [official.jurisdiction, official.district, official.contactInfo.office]
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-  return HOME_PLACE_PATTERNS.some((pattern) => pattern.test(placeText));
+  // A structured jurisdiction can be the city name alone. Elsewhere require
+  // civic locality syntax such as "City of Center" or "Tyler, TX". Building
+  // and street names like "Justice Center" and "Center St" do not locate an
+  // official in Center, Texas.
+  const jurisdictions = [official.jurisdiction, official.district ?? ""]
+    .map((value) => value.trim().toLowerCase());
+  if (jurisdictions.some((value) => HOME_PLACE_KEYS.includes(value))) return true;
+
+  const placeFields = [...jurisdictions, official.contactInfo.office ?? ""];
+  return placeFields.some((value) => {
+    const stripped = PLACE_FALSE_POSITIVE_PATTERNS.reduce(
+      (text, pattern) => text.replace(new RegExp(pattern.source, "gi"), " "),
+      value,
+    );
+    return HOME_PLACE_LOCALITY_PATTERNS.some((patterns) => patterns.some((pattern) => pattern.test(stripped)));
+  });
 }
 
 /** The tier an official's record belongs to. */

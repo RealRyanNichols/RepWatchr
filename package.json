@@ -59,6 +59,8 @@
     "smoke:neutrality": "node scripts/smoke-editorial-neutrality.mjs",
     "smoke:east-texas": "node scripts/smoke-east-texas-editorial.mjs",
     "smoke:home-districts": "node scripts/smoke-home-districts.mjs",
+    "smoke:local-records": "node scripts/test-jurisdiction-explorer.mjs && tsx scripts/test-roster-navigation.mts && tsx scripts/smoke-official-scope.mts && node scripts/test-mobile-shell-links.mjs",
+    "smoke:local-record-routes": "tsx scripts/smoke-local-record-routes.mts",
     "smoke:district-positioning": "node scripts/smoke-district-positioning.mjs",
     "smoke:issue-scorecards": "node scripts/smoke-issue-scorecards.mjs",
     "smoke:planner": "npx tsx scripts/social-planner-probe.mts",

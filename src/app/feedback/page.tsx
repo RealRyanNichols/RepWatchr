@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import SourceSubmissionForm from "@/components/source-submissions/SourceSubmissionForm";
 import ShareButtons from "@/components/shared/ShareButtons";
 import NextUsefulMove from "@/components/shared/NextUsefulMove";
 import PublicContentRulesPanel from "@/components/shared/PublicContentRulesPanel";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { getRosterSourceContext } from "@/lib/roster-source-context";
 
 export const metadata: Metadata = {
   ...buildRepWatchrMetadata({
@@ -16,9 +18,22 @@ export const metadata: Metadata = {
   }),
 };
 
-export default function FeedbackPage() {
+export default async function FeedbackPage({ searchParams }: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const params = searchParams ? await searchParams : {};
+  const value = (key: string) => {
+    const raw = params[key];
+    return (Array.isArray(raw) ? raw[0] ?? "" : raw ?? "").trim().slice(0, 200);
+  };
+  const rosterContext = getRosterSourceContext(value("from"));
   return (
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8">
+      {rosterContext ? (
+        <Link href={rosterContext.href} className="mb-5 inline-flex min-h-11 items-center text-sm font-semibold text-[#163b5c] underline underline-offset-4">
+          ← Back to {rosterContext.name} records
+        </Link>
+      ) : null}
       <section className="mb-8 overflow-hidden rounded-2xl border border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#f8fbff_48%,#fff7ed_100%)] shadow-sm">
         <div className="h-1.5 w-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_33%,#ffffff_33%,#ffffff_66%,#002868_66%,#002868_100%)]" />
         <div className="p-6">
@@ -26,15 +41,17 @@ export default function FeedbackPage() {
             Source drop
           </p>
           <h1 className="mt-3 text-3xl font-black tracking-tight text-blue-950">
-            Put a missing receipt in the record.
+            {rosterContext ? `Help complete the ${rosterContext.name} record.` : "Put a missing receipt in the record."}
           </h1>
           <p className="mt-3 text-sm font-semibold leading-6 text-slate-700">
-            Build a source packet for the agenda, clip, filing, roster, article, vote, meeting video, campaign-finance record, correction, or missing official. You do not need an account. Public-source links are what turn concern into a reusable record.
+            {rosterContext
+              ? "Send a public roster or official office page with its date and the detail it supports. The jurisdiction and record page stay attached for review. Submitting a source does not publish it or confirm who currently holds an office."
+              : "Build a source packet for the agenda, clip, filing, roster, article, vote, meeting video, campaign-finance record, correction, or missing official. You do not need an account. Public-source links are what turn concern into a reusable record."}
           </p>
         </div>
       </section>
 
-      <div className="mb-8 grid gap-3 sm:grid-cols-2">
+      {!rosterContext ? <><div className="mb-8 grid gap-3 sm:grid-cols-2">
         <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="text-sm font-black uppercase tracking-wide text-blue-950">
             Fix the record
@@ -88,7 +105,16 @@ export default function FeedbackPage() {
         <PublicContentRulesPanel compact />
       </div>
 
-      <SourceSubmissionForm defaultTargetPageUrl="/submit-source" />
+      </> : null}
+
+      <SourceSubmissionForm
+        key={[rosterContext?.href, value("target"), value("jurisdiction"), value("type")].join(":")}
+        defaultTarget={value("target") || rosterContext?.name}
+        defaultJurisdiction={value("jurisdiction") || (rosterContext ? `${rosterContext.name}, Texas` : "")}
+        defaultSourceType={rosterContext ? "roster" : "official_record"}
+        defaultTargetPageUrl={rosterContext?.href ?? "/submit-source"}
+        defaultCheckRequest={rosterContext ? `Check the current officeholder, office or precinct, and source date for ${value("target") || rosterContext.name}.` : ""}
+      />
 
       <div className="mt-10 rounded-xl bg-blue-50/70 border border-blue-100 p-6">
         <h2 className="text-lg font-bold text-blue-950 mb-3">

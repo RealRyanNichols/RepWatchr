@@ -4,134 +4,60 @@ import { getAllOfficials } from "@/lib/data";
 import {
   CITY_OFFICE_SLATE,
   COUNTY_OFFICE_SLATE,
-  EXPECTED_CITY_SEATS,
-  EXPECTED_COUNTY_SEATS,
   FOOTPRINT_BOUNDARY_PROVENANCE,
   FOOTPRINT_COUNTIES,
   FOOTPRINT_PLACES,
   FOOTPRINT_PLACE_PROVENANCE,
   OFFICE_SLATE_PROVENANCE,
   OFFICE_SLATE_SOURCES,
-  officialsForCounty,
-  officialsForPlace,
-  seatLedgerFor,
-  type SeatLedgerRow,
 } from "@/lib/district-footprint";
+import JurisdictionExplorer from "@/components/officials/JurisdictionExplorer";
+import { getJurisdictionSummaries } from "@/lib/jurisdiction-explorer";
+import { parseRosterFilters } from "@/lib/roster-filters";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
-export const metadata: Metadata = buildRepWatchrMetadata({
-  title: "HD-7 and TX-01 Seat Ledger",
+const rosterMetadata = {
+  title: "Local Records: HD-7 and TX-01",
   description:
-    "Every county, city and town inside Texas House District 7 and TX-01, the elected seats each one carries, and exactly which seats RepWatchr still has to fill.",
+    "Explore county and town records in RepWatchr’s HD-7 and TX-01 working area. Find profiles, public sources, and offices that still need research.",
   path: "/home-district/roster",
   imagePath: buildOgImageUrl("home", { page: "home-district-roster" }),
   imageAlt: "RepWatchr HD-7 and TX-01 seat ledger",
-});
+};
 
-function LedgerTable({ rows, caption }: { rows: SeatLedgerRow[]; caption: string }) {
-  if (!rows.length) return null;
-  return (
-    <div className="mt-6 overflow-x-auto">
-      <table className="w-full min-w-[46rem] border-collapse text-left text-sm">
-        <caption className="sr-only">{caption}</caption>
-        <thead>
-          <tr className="border-b-2 border-[#111b24]">
-            <th scope="col" className="py-3 pr-4 font-bold uppercase tracking-wide">Jurisdiction</th>
-            <th scope="col" className="py-3 pr-4 font-bold uppercase tracking-wide">District</th>
-            <th scope="col" className="py-3 pr-4 font-bold uppercase tracking-wide">Seats on file</th>
-            <th scope="col" className="py-3 font-bold uppercase tracking-wide">Offices still empty</th>
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((row) => (
-            <tr key={`${row.kind}-${row.slug}`} className="border-b border-[#cabfae] align-top">
-              <th scope="row" className="py-4 pr-4 font-[Fraunces] text-lg font-semibold">
-                {row.name}
-                {row.kind === "city" ? (
-                  <span className="block text-xs font-normal text-slate-600">{row.county} County</span>
-                ) : null}
-              </th>
-              <td className="py-4 pr-4 text-slate-700">{row.districts.join(" · ")}</td>
-              <td className="py-4 pr-4">
-                <span className="font-[Fraunces] text-xl font-semibold">{row.covered}</span>
-                <span className="text-slate-600"> of {row.expected}</span>
-                <span
-                  className={`ml-2 inline-block px-2 py-0.5 text-xs font-bold ${
-                    row.covered === 0
-                      ? "bg-[#a23a2b] text-white"
-                      : row.percent >= 100
-                        ? "bg-[#2f6b4f] text-white"
-                        : "bg-[#e8d9b8] text-[#111b24]"
-                  }`}
-                >
-                  {row.covered === 0 ? "NOT STARTED" : row.percent >= 100 ? "SLATE FILLED" : `${row.percent}%`}
-                </span>
-              </td>
-              <td className="py-4 text-slate-700">
-                {row.missingLabels.length ? row.missingLabels.join(", ") : "None on the expected slate"}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
+type RosterPageProps = { searchParams: Promise<Record<string, string | string[] | undefined>> };
+
+export async function generateMetadata({ searchParams }: RosterPageProps): Promise<Metadata> {
+  const params = await searchParams;
+  return buildRepWatchrMetadata({
+    ...rosterMetadata,
+    robots: Object.keys(params).length ? { index: false, follow: true } : undefined,
+  });
 }
 
-export default function HomeDistrictRosterPage() {
-  const officials = getAllOfficials();
-
-  // Scoped matchers, not substring search: the dataset is nationwide and East
-  // Texas shares town names with far bigger places.
-  const countyRows = FOOTPRINT_COUNTIES.map((county) =>
-    seatLedgerFor(
-      "county",
-      {
-        slug: county.slug,
-        name: `${county.name} County`,
-        county: county.name,
-        districts: county.districts,
-      },
-      officialsForCounty(county, officials),
-    ),
-  );
-
-  const placeRows = FOOTPRINT_PLACES.map((place) => {
-    const county = FOOTPRINT_COUNTIES.find((row) => row.name === place.county);
-    return seatLedgerFor(
-      "city",
-      {
-        slug: place.slug,
-        name: place.name,
-        county: place.county,
-        districts: county?.districts ?? ["TX-01"],
-      },
-      officialsForPlace(place, officials),
-    );
-  });
-
-  const allRows = [...countyRows, ...placeRows];
-  const seatsOnFile = allRows.reduce((total, row) => total + row.covered, 0);
-  const seatsExpected = allRows.reduce((total, row) => total + row.expected, 0);
-  const notStarted = allRows.filter((row) => row.covered === 0).length;
-
-  const sortByNeed = (rows: SeatLedgerRow[]) =>
-    [...rows].sort((a, b) => a.percent - b.percent || a.name.localeCompare(b.name));
+export default async function HomeDistrictRosterPage({ searchParams }: RosterPageProps) {
+  const filters = parseRosterFilters(await searchParams);
+  const rows = getJurisdictionSummaries(getAllOfficials());
+  const profilesOnFile = rows.reduce((total, row) => total + row.profileCount, 0);
+  const seatsExpected = rows.reduce((total, row) => total + row.expected, 0);
+  const notStarted = rows.filter((row) => row.profileCount === 0).length;
 
   return (
-    <main className="bg-[#f5f1e8] text-[#111b24]">
+    <div className="bg-[#f5f1e8] text-[#111b24]">
       <section className="border-b border-[#cabfae] px-5 py-14 sm:px-8 lg:px-12 lg:py-20">
         <div className="mx-auto max-w-7xl">
-          <p className="font-semibold text-[#a23a2b]">The buildout target</p>
+          <p className="font-semibold text-[#a23a2b]">The local record</p>
           <h1 className="mt-5 max-w-4xl font-[Fraunces] text-5xl font-semibold leading-[.94] sm:text-7xl">
-            Every seat in HD-7 and TX-01. Nothing hidden.
+            Your county. Your town. The public record.
           </h1>
           <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-700">
-            This is the whole job, written down. Every county, city and town inside the two districts, the elected seats
-            each one carries, and exactly which of those seats are still empty on this site. A missing name here is a
-            gap on the record, not a person cleared of anything.
+            Open the county and town records in RepWatchr’s HD-7 and TX-01 working area. Find the profiles already
+            on file, see which offices still need research, and send a public source that helps fill the gap.
           </p>
           <div className="mt-8 flex flex-wrap gap-4 text-sm font-semibold">
+            <Link href="#explore" className="min-h-11 bg-[#163b5c] px-5 py-3 text-white hover:bg-[#0e2a43]">
+              Find your local records
+            </Link>
             <Link href="/home-district" className="min-h-11 border border-[#111b24] px-5 py-3 hover:bg-[#111b24] hover:text-white">
               The coverage beat
             </Link>
@@ -143,12 +69,12 @@ export default function HomeDistrictRosterPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-12 sm:px-8 lg:px-12">
-        <div className="grid gap-px border-y border-[#cabfae] bg-[#cabfae] md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-px border-y border-[#cabfae] bg-[#cabfae] md:grid-cols-4">
           {[
             ["Counties", FOOTPRINT_COUNTIES.length],
             ["Cities and towns", FOOTPRINT_PLACES.length],
-            ["Seats on file", seatsOnFile],
-            ["Jurisdictions not started", notStarted],
+            ["Profile records on file", profilesOnFile],
+            ["Jurisdictions without profiles", notStarted],
           ].map(([label, value]) => (
             <div key={String(label)} className="bg-[#f5f1e8] px-5 py-7">
               <p className="font-[Fraunces] text-4xl font-semibold">{Number(value).toLocaleString()}</p>
@@ -159,9 +85,9 @@ export default function HomeDistrictRosterPage() {
 
         {FOOTPRINT_BOUNDARY_PROVENANCE.status !== "verified" ? (
           <section className="mt-6 border-l-4 border-[#a23a2b] bg-[#f7ece9] p-5">
-            <p className="text-sm font-bold uppercase tracking-wide">
-              The TX-01 labels below are not an authenticated boundary
-            </p>
+            <p className="text-sm font-semibold leading-6">This is a working coverage list. TX-01 boundaries and the municipality list still need authentication.</p>
+            <details className="mt-2">
+            <summary className="min-h-11 cursor-pointer py-2 text-sm font-semibold underline underline-offset-4">Read boundary sources and review dates</summary>
             <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-700">
               {FOOTPRINT_BOUNDARY_PROVENANCE.note}
             </p>
@@ -178,33 +104,17 @@ export default function HomeDistrictRosterPage() {
               Reviewed {FOOTPRINT_BOUNDARY_PROVENANCE.reviewedAt}. HD-7&rsquo;s three counties are carried by a primary
               record and are not affected.
             </p>
+            </details>
           </section>
         ) : null}
 
         <p className="mt-6 max-w-3xl leading-7 text-slate-700">
-          {seatsOnFile.toLocaleString()} of roughly {seatsExpected.toLocaleString()} expected elected seats are on file
-          across the footprint. The expected counts are the standard slate for each kind of office, so a jurisdiction
-          that seats extra justices of the peace, constables, or council members can exceed its own target.
+          {profilesOnFile.toLocaleString()} profile records are on file across this working list. The reference slate
+          contains roughly {seatsExpected.toLocaleString()} office records to research. These are different measures:
+          a loaded profile does not confirm current membership, and local charters and precincts can change the seat count.
         </p>
 
-        <section className="mt-14">
-          <h2 className="font-[Fraunces] text-4xl font-semibold">County government</h2>
-          <p className="mt-3 max-w-3xl leading-7 text-slate-700">
-            Texas counties elect the judge, four commissioners, the sheriff, both clerks, the tax assessor-collector,
-            the treasurer, the prosecuting attorney, and their justices of the peace and constables. That is{" "}
-            {EXPECTED_COUNTY_SEATS} seats before precinct courts are counted.
-          </p>
-          <LedgerTable rows={sortByNeed(countyRows)} caption="County seat coverage across HD-7 and TX-01" />
-        </section>
-
-        <section className="mt-16">
-          <h2 className="font-[Fraunces] text-4xl font-semibold">Cities and towns</h2>
-          <p className="mt-3 max-w-3xl leading-7 text-slate-700">
-            Every municipality elects a mayor and a council. Council size varies between general-law and home-rule
-            cities, so {EXPECTED_CITY_SEATS} is the floor, not the ceiling.
-          </p>
-          <LedgerTable rows={sortByNeed(placeRows)} caption="City and town seat coverage across HD-7 and TX-01" />
-        </section>
+        <JurisdictionExplorer rows={rows} filters={filters} />
 
         <section className="mt-16 border-l-4 border-[#a23a2b] bg-[#f7ece9] p-6">
           <p className="font-bold uppercase tracking-wide">The place list is not finished either</p>
@@ -270,6 +180,6 @@ export default function HomeDistrictRosterPage() {
           </div>
         </section>
       </section>
-    </main>
+    </div>
   );
 }

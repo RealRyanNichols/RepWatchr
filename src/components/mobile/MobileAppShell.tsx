@@ -25,14 +25,13 @@ const INSTALL_DISMISSED_KEY = "repwatchr.pwaInstallDismissed.v1";
 const INSTALL_SESSIONS_KEY = "repwatchr.pwaSessionCount.v1";
 const INSTALL_SESSION_MARKER = "repwatchr.pwaSessionSeen.v1";
 
-function currentUrl(pathname: string, search: string) {
+function currentUrl(pathname: string) {
   if (typeof window === "undefined") return pathname;
-  return `${window.location.origin}${pathname}${search ? `?${search}` : ""}`;
+  return window.location.href;
 }
 
-function sourceHref(pathname: string, search: string) {
-  const route = `${pathname}${search ? `?${search}` : ""}`;
-  return `/submit-source?target=${encodeURIComponent(route)}`;
+function sourceHref(pathname: string) {
+  return `/submit-source?target=${encodeURIComponent(pathname)}`;
 }
 
 function raceCompareHref(pathname: string) {
@@ -59,8 +58,8 @@ function detectVariant(pathname: string): DockVariant {
   return "default";
 }
 
-function dockActions(variant: DockVariant, pathname: string, search: string): DockAction[] {
-  const source = sourceHref(pathname, search);
+function dockActions(variant: DockVariant, pathname: string): DockAction[] {
+  const source = sourceHref(pathname);
   if (variant === "home") {
     return [
       { key: "search", label: "Search", href: "/search", kind: "link", icon: "search" },
@@ -138,15 +137,15 @@ async function copyText(value: string) {
 
 export default function MobileAppShell() {
   const pathname = usePathname() || "/";
-  const [search] = useState(() => (typeof window === "undefined" ? "" : window.location.search.replace(/^\?/, "")));
   const [moreOpen, setMoreOpen] = useState(false);
   const [notice, setNotice] = useState("");
   const [installEvent, setInstallEvent] = useState<BeforeInstallPromptEvent | null>(null);
   const [showInstallPrompt, setShowInstallPrompt] = useState(false);
 
   const variant = useMemo(() => detectVariant(pathname), [pathname]);
-  const actions = useMemo(() => dockActions(variant, pathname, search), [pathname, search, variant]);
-  const cleanUrl = currentUrl(pathname, search);
+  // Render links from router state only, so SSR and hydration agree. Query
+  // filters are not source targets; page-specific roster links carry context.
+  const actions = useMemo(() => dockActions(variant, pathname), [pathname, variant]);
 
   useEffect(() => {
     // Development CSS URLs are stable, so a cache-first worker can hide layout edits.
@@ -222,6 +221,7 @@ export default function MobileAppShell() {
 
   async function sharePage(action?: DockAction) {
     if (action) trackDock(action, "share");
+    const cleanUrl = currentUrl(pathname);
     const title = pageTitle();
     const text = `RepWatchr public-record page: ${title}`;
     try {
@@ -240,6 +240,7 @@ export default function MobileAppShell() {
 
   async function copyQuestion(action?: DockAction) {
     if (action) trackDock(action, "question");
+    const cleanUrl = currentUrl(pathname);
     const question = `Public question for ${pageTitle()}: Which public source confirms the latest record, vote, funding, or meeting update? ${cleanUrl}`;
     const copied = await copyText(question).catch(() => false);
     if (copied) {

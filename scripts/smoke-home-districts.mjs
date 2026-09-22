@@ -339,7 +339,7 @@ assert(
   "The footprint place list must stay flagged as an incomplete working set.",
 );
 
-assert(rosterPage.includes("seatLedgerFor"), "Roster page does not compute the seat ledger.");
+assert(rosterPage.includes("getJurisdictionSummaries"), "Roster page does not compute the jurisdiction research coverage.");
 
 // The officials dataset is nationwide and East Texas shares town names with far
 // bigger places. A bare substring match counted Atlanta's, Jacksonville's,
@@ -398,7 +398,7 @@ assert(
   rosterPage.includes("OFFICE_SLATE_SOURCES"),
   "Ledger must publish the sources behind its expected slate.",
 );
-assert(rosterPage.includes("NOT STARTED"), "Roster page no longer flags jurisdictions with zero seats on file.");
+assert(read("src/components/officials/JurisdictionExplorer.tsx").includes("Not started"), "Roster explorer no longer flags jurisdictions with zero profiles on file.");
 
 // A documented gap must never read as finished work. Percent is gated on office
 // families, not raw headcount: the variable offices are floors, so a county with

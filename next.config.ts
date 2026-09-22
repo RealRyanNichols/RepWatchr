@@ -28,6 +28,7 @@ const nextConfig: NextConfig = {
   images: {
     localPatterns: [
       { pathname: "/images/officials/**" },
+      { pathname: "/images/races/**" },
       { pathname: "/**", search: "" },
     ],
     formats: ["image/avif", "image/webp"],

@@ -382,7 +382,8 @@ function CheckboxFilter({ name, label, checked }: { name: string; label: string;
 function OfficialSearchCard({ row }: { row: OfficialSearchRow }) {
   const officialPath = row.profileHref;
   const profileStatus = row.profileCompleteness >= 100 ? "Profile built" : `${row.profileCompleteness}% built`;
-  const sourceStatus = row.missingSources ? "Needed" : formatNumber(row.sourceCount);
+  // Profile research can remain open even when public source links are loaded.
+  const sourceStatus = row.sourceCount > 0 ? formatNumber(row.sourceCount) : "Needed";
   const cardPartyLabel = row.official.party === "NP" ? "Nonpartisan" : partyLabels[row.official.party];
   const officeLine = [
     row.officeTypeLabel,

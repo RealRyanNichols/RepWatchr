@@ -21,6 +21,7 @@ type SourceSubmissionFormProps = {
   defaultTargetType?: string;
   defaultTargetProfileId?: string;
   defaultTargetPageUrl?: string;
+  defaultCheckRequest?: string;
   compact?: boolean;
 };
 
@@ -43,6 +44,7 @@ export default function SourceSubmissionForm({
   defaultTargetType = "public_record",
   defaultTargetProfileId = "",
   defaultTargetPageUrl = "",
+  defaultCheckRequest = "",
   compact = false,
 }: SourceSubmissionFormProps) {
   const router = useRouter();
@@ -56,7 +58,7 @@ export default function SourceSubmissionForm({
   const [sourceTitle, setSourceTitle] = useState("");
   const [sourceDate, setSourceDate] = useState("");
   const [claimSummary, setClaimSummary] = useState("");
-  const [checkRequest, setCheckRequest] = useState("");
+  const [checkRequest, setCheckRequest] = useState(defaultCheckRequest);
   const [publicFlag, setPublicFlag] = useState(true);
   const [acknowledged, setAcknowledged] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -83,9 +85,9 @@ export default function SourceSubmissionForm({
     let mounted = true;
     window.setTimeout(() => {
       if (!mounted) return;
-      if (target) setTargetName(target);
-      if (jurisdictionParam) setJurisdiction(jurisdictionParam);
-      if (sourceTypeParam) setSourceType(sourceTypeParam);
+      if (target) setTargetName(target.slice(0, 200));
+      if (jurisdictionParam) setJurisdiction(jurisdictionParam.slice(0, 200));
+      if (sourceTypes.some((source) => source.value === sourceTypeParam)) setSourceType(sourceTypeParam!);
     }, 0);
 
     return () => {
