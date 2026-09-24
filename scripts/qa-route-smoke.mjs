@@ -66,7 +66,7 @@ async function checkRoute(route) {
       route,
       response.status,
       isMissing ? "known route gap documented" : "known gap now responds; review route inventory",
-      allowKnownGaps ? true : !isMissing,
+      allowKnownGaps ? (response.status === 404 || (response.status >= 200 && response.status < 400)) : !isMissing,
     );
   }
 

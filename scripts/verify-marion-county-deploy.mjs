@@ -13,7 +13,7 @@ const routeChecks = [
     markers: [
       "Dina K. Carroll",
       "Leward J. LaFleur II",
-      "Live community pulse",
+      "Marion County community pulse",
       "If the election were today, who would you support?",
       "See the people—not campaign placeholders",
       "dina-carroll-portrait.jpg",
@@ -25,7 +25,7 @@ const routeChecks = [
     label: "Dina Carroll profile route",
     markers: [
       "Dina K. Carroll",
-      "Current ballot status",
+      "Ballot status for this election",
       "dina-carroll-portrait.jpg",
     ],
   },

@@ -1,10 +1,10 @@
-# Daily RepWatchr reporting
+# Hourly RepWatchr accountability reporting
 
-Ryan authorized one daily political article and its publication on September 7, 2026. The Codex thread heartbeat runs at 8 a.m. America/Chicago. A saved schedule is not evidence of a successful daily publication: verify the live article each run. This workflow does not authorize social posting, ads, paid provider purchases, or private data publication.
+Ryan's September 23, 2026 instruction authorizes hourly political reporting and substantive article updates, prioritizing government and elected officials within roughly 50 miles of Longview. The existing Codex heartbeat now checks hourly. Publish when records support a meaningful development, not to meet a filler quota. Keep sessions bounded to five minutes to conserve usage. The Droplet separately monitors official source links hourly; that monitor does not write or publish articles. Social promotion from RepWatchr's exact owned accounts remains authorized, subject to duplicate checks and the unresolved Facebook restriction. No new paid services or ads are authorized.
 
 ## Select and verify
 
-Check the local calendar date, current repository status, production version and existing article topic keys. Publish at most one new daily report per local date; retries reconcile the prior result before creating a new slug. Keep useful corrections separate from duplicate articles.
+Check the local calendar date, current repository status, production version and existing article topic keys. Reconcile prior topic keys and publications before creating a new slug; an hourly check does not require a new article. Keep useful corrections separate from duplicate articles.
 
 Research a current public event affecting Harleton, Harrison County, East Texas, Texas or federal public power. Favor original records and a useful local consequence. A timely deadline is a valid civic report; label it timely rather than claiming unmeasured search/social trends. Read full linked sources. RSS clips and X posts are discovery leads, and private Notion/Fieldy material supplies voice context only. Never turn a private allegation into a published fact.
 
@@ -24,6 +24,16 @@ The API RSS generator remains draft-only. Its own risk flags cannot approve its 
 
 ## Publish and verify
 
-Use the existing authenticated GitHub/Vercel project workflow. Inspect the candidate release before promotion, then confirm the exact deployment and canonical `https://www.repwatchr.com/news/<slug>` return the intended article. Check its title, publication time, source links, single H1, mobile layout, readable social preview, `/blog`, `/rss.xml`, `/sitemaps/stories.xml` and the 48-hour `/news-sitemap.xml`.
+Use the reviewed database publishing path for content-only updates; code releases use the checked release workflow in docs/DIGITALOCEAN_RUNBOOK.md. Vercel remains the public host until migration acceptance passes. Inspect the candidate release before promotion, then confirm the exact deployment and canonical `https://www.repwatchr.com/news/<slug>` return the intended article. Check its title, publication time, source links, single H1, mobile layout, readable social preview, `/blog`, `/rss.xml`, `/sitemaps/stories.xml` and the 48-hour `/news-sitemap.xml`.
 
 Missing article routes must return 404. Publication is incomplete if only a build or commit exists. Record the URL, deploy identifier, checks and source-review outcome. Report a failure instead of claiming the story is live. Never backdate articles or refresh timestamps to simulate freshness. Corrections preserve the original record and explain the change.
+
+## East Texas accountability desk
+
+Follow public money and official decisions: budgets, procurement, bid tabulations, contracts, amendments, invoices, ethics disclosures, campaign finance, audits, school-board business and court dispositions. Start with Longview, Gregg County and nearby Harrison County communities, then verify the location of each expansion within the requested radius. County membership alone does not establish distance.
+
+Ryan's voice is direct, demanding and records-first. Ask what taxpayers received, what changed, who approved it and what documentation is missing. Keep commentary labelled. An agenda is a proposed action; an unsigned resolution in a packet is not proof of passage; a large contract, out-of-town bidder, audit weakness or missing online document alone does not establish wrongdoing. Preserve the distinction between an allegation, charge, finding, plea, conviction and appeal.
+
+The hourly server source monitor writes /var/lib/repwatchr/record-monitor/latest.json and per-source link inventories. Read the primary records, check dates and the current disposition, seek published responses, and offer a correction path before making a consequential claim. No automated contact or records-request submission without Ryan's authorization for the message.
+
+First lead, reviewed September 23–24: Longview's September 17 fuel-station bid recommendation, master packet pages 37–40. It includes three bids and a staff recommendation. Obtain adopted minutes, signed resolution/contract and later change orders before reporting a final award or misconduct. Source: https://www.longviewtexas.gov/AgendaCenter/ViewFile/Agenda/_09172026-2331 .

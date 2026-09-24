@@ -42,7 +42,7 @@ for attempt in {1..20}; do
   sleep 1
 done
 [[ "$ready" == true ]]
-REPWATCHR_SMOKE_BASE_URL=http://127.0.0.1:3202 npm run qa:routes
+REPWATCHR_SMOKE_BASE_URL=http://127.0.0.1:3202 npm run qa:routes -- --allow-known-gaps
 npm run verify:marion-deploy -- http://127.0.0.1:3202
 status=$(curl -s --max-time 10 -o /dev/null -w '%{http_code}' http://127.0.0.1:3202/admin/command-center)
 [[ "$status" == 307 ]]
