@@ -168,7 +168,7 @@ const sensitiveMetadataKeys = new Set([
 ]);
 
 function normalizeRoute(value: unknown) {
-  const route = cleanText(value, 500).split("#")[0];
+  const route = cleanText(value, 500).split(/[?#]/)[0];
   if (!route.startsWith("/") || route.startsWith("/api")) return "";
   if (
     route.startsWith("/admin") ||

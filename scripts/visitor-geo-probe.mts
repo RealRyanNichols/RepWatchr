@@ -44,12 +44,18 @@ const headers = new Headers({
   "x-vercel-ip-country-region": "TX",
   "x-vercel-ip-country": "US",
 });
+const originalVercel = process.env.VERCEL;
+process.env.VERCEL = "1";
 const fromHeaders = visitorGeoFromHeaders(headers);
-expect("headers: Kilgore TX", fromHeaders.tier, "home-district");
+expect("headers: Kilgore TX", fromHeaders.tier ?? "unknown", "home-district");
 if (fromHeaders.city !== "Kilgore") problems.push(`headers city not decoded: ${fromHeaders.city}`);
 
 // No headers at all (local dev, a bot) must not throw.
 const empty = visitorGeoFromHeaders(new Headers());
-if (!empty.tier) problems.push("An empty header set produced no tier.");
+if (empty.tier !== null) problems.push("Missing geography must remain unknown.");
+delete process.env.VERCEL;
+if (visitorGeoFromHeaders(headers).tier !== null) problems.push("Self-hosted origin trusted spoofable geo headers.");
+if (originalVercel === undefined) delete process.env.VERCEL;
+else process.env.VERCEL = originalVercel;
 
 console.log(JSON.stringify({ problems }));

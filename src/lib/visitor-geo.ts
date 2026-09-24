@@ -108,7 +108,12 @@ export function classifyVisitor(input: { city?: string | null; region?: string |
  * These headers are set by the platform and cannot be spoofed by the client:
  * Vercel overwrites them on every inbound request.
  */
-export function visitorGeoFromHeaders(headers: Headers): VisitorGeo {
+export function visitorGeoFromHeaders(headers: Headers): Omit<VisitorGeo, "tier"> & { tier: VisitorTier | null } {
+  // A self-hosted origin must not trust visitor-supplied Vercel geo headers.
+  // Missing geography is unknown, not evidence of a national or local reader.
+  if (!process.env.VERCEL || !headers.get("x-vercel-ip-country")) {
+    return { city: null, region: null, country: null, tier: null };
+  }
   return classifyVisitor({
     city: headers.get("x-vercel-ip-city"),
     region: headers.get("x-vercel-ip-country-region"),

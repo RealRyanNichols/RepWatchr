@@ -357,7 +357,8 @@ export default function AdminDashboardClient({
                 <Link href="/admin/audience" className="secondary-button">Audience</Link>
                 <Link href="/admin/share-campaigns" className="secondary-button">Share Campaigns</Link>
                 <Link href="/admin/content-review" className="secondary-button">Old Review</Link>
-                <Link href="/admin/control-center" className="secondary-button">Control Center</Link>
+                <Link href="/admin/command-center" className="secondary-button">Command Center</Link>
+                <Link href="/admin/control-center" className="secondary-button">Data Health</Link>
               </div>
             </div>
           </div>
