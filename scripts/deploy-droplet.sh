@@ -22,7 +22,7 @@ source "$env_file"
 set +a
 export REPWATCHR_HOSTING=DigitalOcean REPWATCHR_RELEASE_SHA="$sha"
 export NEXT_TELEMETRY_DISABLED=1
-npm ci --no-audit --no-fund
+npm ci --include=dev --no-audit --no-fund
 for check in qa:static smoke:sources smoke:pricing smoke:seo smoke:og smoke:thumbnails smoke:mobile-pwa; do
   npm run "$check"
 done
