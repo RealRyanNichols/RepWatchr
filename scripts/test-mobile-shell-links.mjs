@@ -17,7 +17,12 @@ const compiled = ts.transpileModule(source, {
   },
 }).outputText;
 const loaded = { exports: {} };
+const shareLoaded = { exports: {} };
+new Function("module", "exports", ts.transpileModule(readFileSync("src/lib/share-snippets.ts", "utf8"), {
+  compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 },
+}).outputText)(shareLoaded, shareLoaded.exports);
 const mockedRequire = (id) => {
+  if (id === "@/lib/share-snippets") return shareLoaded.exports;
   if (id === "next/navigation") return { usePathname: () => pathname };
   if (id === "next/link") return {
     __esModule: true,
@@ -52,6 +57,12 @@ try {
     assert.ok(browserMarkup.includes(`href="${href}"`), `Source target follows the current pathname: ${route}`);
     assert.ok(!browserMarkup.includes(encodeURIComponent(query)), "Filter and tracking queries must not become source targets");
   }
+  pathname = "/elections/texas/marion-county-judge-2026";
+  const raceMarkup = render();
+  for (const anchor of ["#community-poll", "#issues", "#discussion"]) {
+    assert.ok(raceMarkup.includes(`href="${anchor}"`), `Race shortcuts stay on the current guide: ${anchor}`);
+  }
+  assert.ok(!raceMarkup.includes("href=\"/compare/race/"), "Flagship comparison should not take readers out of the guide");
 } finally {
   if (originalWindow) Object.defineProperty(globalThis, "window", originalWindow);
   else delete globalThis.window;

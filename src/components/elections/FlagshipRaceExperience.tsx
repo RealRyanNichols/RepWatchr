@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import CommentSection from "@/components/comments/CommentSection";
 import ShareButtons from "@/components/shared/ShareButtons";
 import RaceCommunityPoll from "./RaceCommunityPoll";
+import RaceParticipation from "./RaceParticipation";
 import styles from "./FlagshipRaceExperience.module.css";
 
 const RACE_PATH = "/elections/texas/marion-county-judge-2026";
@@ -258,6 +259,7 @@ export default function FlagshipRaceExperience() {
                 <a href="#candidates" className={styles.primaryAction}>Compare profiles</a>
                 <a href="#record" className={styles.secondaryAction}>See the evidence</a>
               </div>
+              <ShareButtons compact title="Marion County Judge: compare the candidates" description="Read the records and join the community conversation." path={RACE_PATH} className={styles.quickShare} />
             </div>
 
             <aside className={styles.heroMatchup} aria-label="Candidates and election status">
@@ -324,6 +326,8 @@ export default function FlagshipRaceExperience() {
           <a href="#sources">Sources</a>
         </div>
       </nav>
+
+      <RaceParticipation />
 
       <section className={styles.opening} aria-labelledby="opening-title">
         <p className={styles.sectionNumber}>01</p>

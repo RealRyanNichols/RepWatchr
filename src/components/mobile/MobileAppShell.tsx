@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
+import { canonicalShareUrl } from "@/lib/share-snippets";
 
 type DockVariant = "home" | "profile" | "story" | "race" | "dashboard" | "admin" | "default";
 type DockActionKind = "link" | "share" | "question" | "more";
@@ -26,8 +27,7 @@ const INSTALL_SESSIONS_KEY = "repwatchr.pwaSessionCount.v1";
 const INSTALL_SESSION_MARKER = "repwatchr.pwaSessionSeen.v1";
 
 function currentUrl(pathname: string) {
-  if (typeof window === "undefined") return pathname;
-  return window.location.href;
+  return canonicalShareUrl(pathname);
 }
 
 function sourceHref(pathname: string) {
@@ -60,6 +60,15 @@ function detectVariant(pathname: string): DockVariant {
 
 function dockActions(variant: DockVariant, pathname: string): DockAction[] {
   const source = sourceHref(pathname);
+  if (pathname === "/elections/texas/marion-county-judge-2026") {
+    return [
+      { key: "pulse", label: "Your say", href: "#community-poll", kind: "link", icon: "review" },
+      { key: "compare", label: "Compare", href: "#issues", kind: "link", icon: "compare" },
+      { key: "discuss", label: "Discuss", href: "#discussion", kind: "link", icon: "question" },
+      { key: "share", label: "Share", kind: "share", icon: "share" },
+      { key: "more", label: "More", kind: "more", icon: "more" },
+    ];
+  }
   if (variant === "home") {
     return [
       { key: "search", label: "Search", href: "/search", kind: "link", icon: "search" },
@@ -148,6 +157,12 @@ export default function MobileAppShell() {
   const actions = useMemo(() => dockActions(variant, pathname), [pathname, variant]);
 
   useEffect(() => {
+    if (!notice) return;
+    const timer = window.setTimeout(() => setNotice(""), 5000);
+    return () => window.clearTimeout(timer);
+  }, [notice]);
+
+  useEffect(() => {
     // Development CSS URLs are stable, so a cache-first worker can hide layout edits.
     if (process.env.NODE_ENV !== "production") return;
     if (!("serviceWorker" in navigator)) return;
@@ -230,11 +245,11 @@ export default function MobileAppShell() {
         trackRepWatchrEvent("native_share_clicked", { route: pathname, source: "mobile_action_dock" });
         return;
       }
-      await copyText(cleanUrl);
-      setNotice("Link copied.");
-      trackRepWatchrEvent("share_copy_clicked", { route: pathname, source: "mobile_action_dock" });
-    } catch {
-      // Native share cancellation is normal.
+      const copied = await copyText(cleanUrl);
+      setNotice(copied ? "Link copied. Ready to send." : "Copy the page address from your browser to share.");
+      if (copied) trackRepWatchrEvent("share_copy_clicked", { route: pathname, source: "mobile_action_dock" });
+    } catch (error) {
+      if (!(error instanceof Error && error.name === "AbortError")) setNotice("Sharing is unavailable. Copy the page address from your browser.");
     }
   }
 
@@ -338,14 +353,15 @@ export default function MobileAppShell() {
       {moreOpen ? (
         <aside className="rw-mobile-more-panel" aria-label="More mobile actions">
           <button type="button" onClick={() => sharePage()} className="rw-mobile-more-action">
-            Copy or native-share this page
+            Share this page
           </button>
           <button type="button" onClick={() => copyQuestion()} className="rw-mobile-more-action">
             Copy safe public question
           </button>
-          <Link href={`${pathname}#source-trail`} className="rw-mobile-more-action" onClick={() => setMoreOpen(false)}>
+          <Link href={`${pathname}${pathname === "/elections/texas/marion-county-judge-2026" ? "#sources" : "#source-trail"}`} className="rw-mobile-more-action" onClick={() => setMoreOpen(false)}>
             Open source trail
           </Link>
+          <Link href={sourceHref(pathname)} className="rw-mobile-more-action" onClick={() => setMoreOpen(false)}>Submit a source</Link>
           <Link href="/dashboard/notifications" className="rw-mobile-more-action" onClick={() => setMoreOpen(false)}>
             Digest settings
           </Link>

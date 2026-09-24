@@ -278,6 +278,7 @@ body::before {
 .share-secondary-link,
 .share-primary-link {
   display: inline-flex;
+  min-height: 44px;
   align-items: center;
   justify-content: center;
   border-radius: 0.5rem;

@@ -1,0 +1,35 @@
+.panel { width: min(100% - 40px, 1240px); margin: 32px auto 0; padding: clamp(20px, 3vw, 32px); border: 1px solid #d4c9b6; border-radius: 16px; background: #fffcf5; color: #13283f; }
+.eyebrow { margin: 0; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: #66502b; }
+.panel h2 { margin: 10px 0; font-size: clamp(26px, 4vw, 36px); line-height: 1.12; }
+.intro { margin: 0; line-height: 1.6; }
+.paths { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 22px; }
+.paths a { display: grid; gap: 8px; min-width: 0; padding: 18px; border: 1px solid #c4d0d9; border-radius: 12px; background: #eef3f5; color: #13283f; text-decoration: none; }
+.paths a:hover { border-color: #13283f; background: #e1ebee; }
+.paths span { font-size: 12px; font-weight: 800; color: #466274; }
+.paths strong { font-size: 17px; }
+.paths small { font-size: 14px; line-height: 1.5; }
+.challenge { margin-top: 20px; border-top: 1px solid #d4c9b6; }
+.challenge summary { padding: 20px 0 4px; min-height: 48px; cursor: pointer; font-weight: 800; line-height: 1.5; }
+.challenge summary span { display: block; margin-left: 18px; color: #56616b; font-size: 13px; font-weight: 500; }
+.game { max-width: 680px; padding-top: 24px; }
+.game h3 { font-size: 24px; line-height: 1.25; margin: 10px 0 18px; }
+.game p { line-height: 1.6; }
+.answers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.answers button, .next { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 14px; border: 1px solid #718394; border-radius: 10px; background: white; color: #13283f; font: inherit; font-weight: 750; line-height: 1.4; cursor: pointer; text-decoration: none; text-align: center; }
+.answers button:disabled { cursor: default; }
+.answers button[aria-pressed="true"] { border: 2px solid #13283f; background: #dce9ec; }
+.answers button:enabled:hover { background: #e1ebee; }
+.feedback { margin: 16px 0; border-left: 3px solid #476f59; padding: 12px 16px; background: #edf3ed; }
+.feedback p { margin: 8px 0; }
+.feedback a { display: inline-flex; align-items: center; min-height: 44px; color: #193e30; font-weight: 750; text-decoration: underline; }
+.next { background: #13283f; color: white; }
+.privacy { margin-top: 18px; font-size: 13px; color: #56616b; }
+.panel :is(a, button, summary):focus-visible { outline: 3px solid #ad6427; outline-offset: 4px; }
+@media (max-width: 640px) {
+  .panel { width: calc(100% - 28px); margin-top: 20px; }
+  .paths { grid-template-columns: 1fr; gap: 8px; }
+  .paths a { grid-template-columns: 36px minmax(0, 1fr); gap: 3px 8px; padding: 14px; }
+  .paths span { grid-row: span 2; align-self: center; }
+  .paths small { grid-column: 2; }
+  .answers { grid-template-columns: 1fr; }
+}

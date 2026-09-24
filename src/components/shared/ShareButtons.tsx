@@ -19,6 +19,7 @@ interface ShareButtonsProps {
   subject?: string;
   sourceLabel?: string;
   className?: string;
+  compact?: boolean;
 }
 
 type ShareEventName =
@@ -44,8 +45,10 @@ export default function ShareButtons({
   subject,
   sourceLabel,
   className = "",
+  compact = false,
 }: ShareButtonsProps) {
   const [copiedKey, setCopiedKey] = useState("");
+  const [shareError, setShareError] = useState("");
   const [nativeShareSupported, setNativeShareSupported] = useState(false);
 
   const kit = useMemo(
@@ -92,6 +95,7 @@ export default function ShareButtons({
   }
 
   async function copyValue(key: string, value: string, eventName: ShareEventName, channel: string) {
+    setShareError("");
     try {
       await navigator.clipboard.writeText(value);
       setCopiedKey(key);
@@ -99,11 +103,13 @@ export default function ShareButtons({
       window.setTimeout(() => setCopiedKey((current) => (current === key ? "" : current)), 1800);
     } catch {
       setCopiedKey("");
+      setShareError("Copy is unavailable. Select and copy the link below.");
     }
   }
 
   async function nativeShare() {
     if (!nativeShareSupported) return;
+    setShareError("");
     try {
       await navigator.share({
         title,
@@ -111,8 +117,10 @@ export default function ShareButtons({
         url: cleanUrl,
       });
       recordShareEvent("native_share_clicked", "native");
-    } catch {
-      // User cancellation is normal.
+    } catch (error) {
+      if (!(error instanceof Error && error.name === "AbortError")) {
+        setShareError("Sharing is unavailable. Select and copy the link below.");
+      }
     }
   }
 
@@ -124,8 +132,24 @@ export default function ShareButtons({
     recordShareEvent("profile_watch_clicked", "watch_record");
   }
 
+  if (compact) {
+    return (
+      <div className={className} aria-label="Share this race">
+        <div className="flex flex-wrap gap-2">
+          {nativeShareSupported ? <button type="button" onClick={nativeShare} className="share-action-button">Share this race ↗</button> : null}
+          <button type="button" onClick={() => copyValue("clean_link", cleanUrl, "share_copy_clicked", "copy")} className="share-action-button">
+            {copiedKey === "clean_link" ? "Link copied ✓" : "Copy race link"}
+          </button>
+        </div>
+        <span className="sr-only" role="status">{copiedKey === "clean_link" ? "Race link copied to clipboard." : ""}</span>
+        {shareError ? <p role="status" className="mt-2 break-words text-sm">{shareError} <a href={cleanUrl} className="underline">{cleanUrl}</a></p> : null}
+      </div>
+    );
+  }
+
   return (
     <section className={`w-full max-w-2xl rounded-xl border border-slate-200 bg-white p-3 shadow-sm ${className}`}>
+      {shareError ? <p role="status" className="mb-3 break-words text-sm text-red-800">{shareError} <a href={cleanUrl} className="underline">{cleanUrl}</a></p> : null}
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <p className="text-[11px] font-black uppercase tracking-[0.18em] text-red-700">{kit.label}</p>
