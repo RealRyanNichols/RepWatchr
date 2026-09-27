@@ -867,6 +867,8 @@ export function isPublishableNewsArticle(article: NewsArticle): boolean {
 
 /**
  * Load all news article records from src/data/news/. Cached after first call.
+ * Approved records keep their referenced editorial images under public/ so
+ * article pages, cards, and social previews resolve the same deployed asset.
  * Sorted by publishedAt descending (newest first).
  */
 function getAllNewsRecords(): NewsArticle[] {
