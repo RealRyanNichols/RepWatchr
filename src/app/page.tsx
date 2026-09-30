@@ -473,12 +473,15 @@ export default async function HomePage() {
                   messageClassName="text-2xl sm:text-3xl"
                 >
                   <Image
-                    src="/images/races/marion-county-judge-2026-hero.webp"
-                    alt="Illustrated Marion County courthouse, pine country, and a judge's gavel"
+                    src="/images/races/marion-county-community-ballot-v1.webp"
+                    alt="AI-generated editorial illustration of a blank ballot being placed in a clear ballot box"
                     fill
                     sizes="(min-width: 1024px) 36vw, 100vw"
                     className="object-cover transition duration-500 group-hover:scale-[1.02]"
                   />
+                  <span className="absolute right-3 top-3 z-10 rounded bg-slate-950/75 px-2 py-1 text-[9px] font-semibold uppercase tracking-wider text-white/85">
+                    AI illustration
+                  </span>
                 </EditorialThumbnail>
               </Link>
 

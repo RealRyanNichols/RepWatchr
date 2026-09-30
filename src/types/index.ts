@@ -519,6 +519,8 @@ export interface NewsArticle {
   imageAlt?: string;
   imageCredit?: string;
   imageFocalPoint?: string;
+  /** Distinguishes source documents and editorial illustrations from photographs. */
+  imageKind?: "photo" | "illustration" | "document";
   imageRightsState?: "owned" | "licensed" | "official_public_source" | "permission_pending";
   visualTheme?: "breaking" | "federal" | "local" | "record" | "social" | "video";
   author: string;

@@ -5,10 +5,13 @@ import CommentSection from "@/components/comments/CommentSection";
 import ShareButtons from "@/components/shared/ShareButtons";
 import RaceCommunityPoll from "./RaceCommunityPoll";
 import RaceParticipation from "./RaceParticipation";
+import MarionCoverageDesk from "./MarionCoverageDesk";
+import { MARION_ELECTION_PAGE, MARION_SAMPLE_BALLOT } from "@/data/marion-public-records";
 import styles from "./FlagshipRaceExperience.module.css";
 
 const RACE_PATH = "/elections/texas/marion-county-judge-2026";
 const VERIFIED_ON = "July 27, 2026";
+const ELECTION_REVIEW_ON = "September 29, 2026";
 
 const sources = [
   {
@@ -238,7 +241,7 @@ export default function FlagshipRaceExperience() {
         <div className={styles.heroShade} aria-hidden="true" />
         <div className={styles.heroInner}>
           <nav className={styles.breadcrumbs} aria-label="Breadcrumb">
-            <Link href="/east-texas">East Texas desk</Link>
+            <Link href="/marion-county">Marion County desk</Link>
             <span>/</span>
             <span>Marion County</span>
           </nav>
@@ -257,7 +260,7 @@ export default function FlagshipRaceExperience() {
               </p>
               <div className={styles.heroActions}>
                 <a href="#candidates" className={styles.primaryAction}>Compare profiles</a>
-                <a href="#record" className={styles.secondaryAction}>See the evidence</a>
+                <a href="#discussion" className={styles.secondaryAction}>Leave a comment</a>
               </div>
               <ShareButtons compact title="Marion County Judge: compare the candidates" description="Read the records and join the community conversation." path={RACE_PATH} className={styles.quickShare} />
             </div>
@@ -315,6 +318,7 @@ export default function FlagshipRaceExperience() {
 
       <nav className={styles.chapterNav} aria-label="Race page sections">
         <div>
+          <a href="#coverage">Articles & updates</a>
           <a href="#candidates">Candidates</a>
           <a href="#profiles">Full profiles</a>
           <a href="#issues">Issue guide</a>
@@ -328,6 +332,34 @@ export default function FlagshipRaceExperience() {
       </nav>
 
       <RaceParticipation />
+      <MarionCoverageDesk />
+
+      <section id="discussion" className={styles.discussionSection} aria-labelledby="discussion-heading">
+        <div className={styles.discussionTop}>
+          <div>
+            <p className={styles.eyebrow}>Public square</p>
+            <h2 id="discussion-heading">Question the record. Bring receipts.</h2>
+            <p>Ask a question, share a record or tell us what matters to you. Free sign-in to post.</p>
+          </div>
+        </div>
+        <CommentSection
+          officialId="race:marion-county-judge-2026"
+          officialName="the Marion County Judge race"
+          storyMode
+          targetPath={`${RACE_PATH}#discussion`}
+        />
+        <details className={styles.discussionShare}>
+          <summary>Share this conversation</summary>
+          <ShareButtons
+            title="Dina Carroll vs. Leward LaFleur | Marion County Judge 2026"
+            description="Compare the candidates, inspect the record and join the Marion County community pulse."
+            path={RACE_PATH}
+            template="public_question"
+            subject="Marion County Judge race"
+            sourceLabel="official filings, public records and attributed reporting"
+          />
+        </details>
+      </section>
 
       <section className={styles.opening} aria-labelledby="opening-title">
         <p className={styles.sectionNumber}>01</p>
@@ -791,11 +823,15 @@ export default function FlagshipRaceExperience() {
         </div>
 
         <div className={styles.ballotNotice}>
-          <strong>Status checked {VERIFIED_ON}</strong>
+          <strong>Election sources checked {ELECTION_REVIEW_ON}</strong>
           <p>
-            The Texas write-in filing window runs through 5 p.m. August 17, 2026. This page will
-            update when Marion County publishes acceptance records or its qualified-write-in list.
+            The write-in declaration window closed August 17 at 5 p.m. The county now links
+            November sample ballots. The precincts 1 and 2 sample lists LaFleur and a blank
+            write-in line; it does not name Carroll or verify her qualification. The accepted
+            declaration or qualified roster has not been acquired by this desk.
           </p>
+          <SourceLink href={MARION_SAMPLE_BALLOT}>Open the reviewed sample ballot, page 2</SourceLink>
+          <SourceLink href={MARION_ELECTION_PAGE}>Check the county election calendar and other precinct samples</SourceLink>
           <SourceLink href="https://www.sos.state.tx.us/elections/candidates/guide/2026/writein2026.shtml">
             Read the Texas write-in rules
           </SourceLink>
@@ -836,7 +872,7 @@ export default function FlagshipRaceExperience() {
       <section className={styles.timelineSection} aria-labelledby="timeline-heading">
         <header className={styles.sectionHeader}>
           <p className={styles.eyebrow}>Race timeline</p>
-          <h2 id="timeline-heading">Six dates define the race</h2>
+          <h2 id="timeline-heading">Follow the race and the record</h2>
         </header>
         <ol className={styles.timeline}>
           <li><time>Feb. 23</time><strong>First allegation and denial reported</strong><p>Local reporting describes the referral history, LaFleur’s denial and a visiting judge.</p></li>
@@ -844,32 +880,10 @@ export default function FlagshipRaceExperience() {
           <li><time>Apr. 21</time><strong>Second allegation and renewed review reported</strong><p>The district attorney says LaFleur has not been charged; LaFleur’s attorney denies both allegations.</p></li>
           <li><time>Jul. 9</time><strong>Carroll announces write-in challenge</strong><p>Her campaign enters the race; official qualification remains to be verified.</p></li>
           <li><time>Aug. 17</time><strong>Write-in filing deadline</strong><p>Texas sets 5 p.m. as the deadline for declared write-in filings for the November election.</p></li>
+          <li><time dateTime="2026-09-29">Sep. 29</time><strong>Posted forum correspondence reviewed</strong><p>One invitation was declined; conditional participation was offered. Original correspondence and page authorship remain unverified.</p></li>
+          <li><time dateTime="2026-09-29">Sep. 29</time><strong>County sample ballot reviewed</strong><p>The precincts 1 and 2 sample names LaFleur and contains a blank write-in line. It does not identify the qualified write-in candidate.</p></li>
           <li><time>Nov. 3</time><strong>General election</strong><p>Only official Marion County results determine the office.</p></li>
         </ol>
-      </section>
-
-      <section id="discussion" className={styles.discussionSection} aria-labelledby="discussion-heading">
-        <div className={styles.discussionTop}>
-          <div>
-            <p className={styles.eyebrow}>Public square</p>
-            <h2 id="discussion-heading">Question the record. Bring receipts.</h2>
-            <p>Facebook, X and email sign-in are supported. Sourced comments rank above unsupported claims.</p>
-          </div>
-          <ShareButtons
-            title="Dina Carroll vs. Leward LaFleur | Marion County Judge 2026"
-            description="Compare the candidates, inspect the record and join the Marion County community pulse."
-            path={RACE_PATH}
-            template="public_question"
-            subject="Marion County Judge race"
-            sourceLabel="official filings, public records and attributed reporting"
-          />
-        </div>
-        <CommentSection
-          officialId="race:marion-county-judge-2026"
-          officialName="the Marion County Judge race"
-          storyMode
-          targetPath={`${RACE_PATH}#discussion`}
-        />
       </section>
 
       <section id="sources" className={styles.sourcesSection} aria-labelledby="sources-heading">

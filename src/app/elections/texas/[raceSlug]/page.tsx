@@ -28,6 +28,9 @@ import {
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
+// Approved database reporting should reach the race record without a rebuild.
+export const revalidate = 300;
+
 export function generateStaticParams() {
   return getTexasElectionStaticSlugs().map((raceSlug) => ({ raceSlug }));
 }

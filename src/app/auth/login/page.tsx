@@ -18,6 +18,7 @@ export default function LoginPage() {
   const [nextPath, setNextPath] = useState("/dashboard");
   const router = useRouter();
   const supabase = useMemo(() => createClient(), []);
+  const joiningDiscussion = nextPath.endsWith("#discussion");
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
@@ -99,13 +100,13 @@ export default function LoginPage() {
         <section>
           <p className="text-sm font-black uppercase tracking-wide text-red-700">Member access</p>
           <h1 className="mt-2 text-4xl font-black leading-tight text-blue-950 sm:text-5xl">
-            Log in. Track officials. Ask Faretta AI.
+            {joiningDiscussion ? "Come back to the conversation." : "Log in. Track officials. Ask Faretta AI."}
           </h1>
           <p className="mt-4 max-w-xl text-sm font-semibold leading-6 text-blue-950/75">
-            Use a password if you have one, or send yourself a one-click magic link and get into the dashboard without friction.
+            {joiningDiscussion ? "Sign in with your password or request an email sign-in link. You will return to the discussion you were reading." : "Use a password if you have one, or request an email sign-in link to open your dashboard."}
           </p>
           <div className="mt-6 grid gap-3 sm:grid-cols-3">
-            {["Profile", "Watch list", "Faretta AI"].map((item) => (
+            {(joiningDiscussion ? ["Questions", "Comments", "Public sources"] : ["Profile", "Watch list", "Faretta AI"]).map((item) => (
               <div key={item} className="rounded-xl border border-blue-100 bg-white p-4 text-sm font-black text-blue-950 shadow-sm">
                 {item}
               </div>

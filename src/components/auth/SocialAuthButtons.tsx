@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase";
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
@@ -87,8 +87,28 @@ export default function SocialAuthButtons({
   const supabase = useMemo(() => createClient(), []);
   const [loadingProvider, setLoadingProvider] = useState<SocialProvider | null>(null);
   const [error, setError] = useState("");
+  const [configuredProviders, setConfiguredProviders] = useState<SocialProvider[]>([]);
 
-  const providers = PROVIDERS.filter((provider) => ENABLED[provider.flag]);
+  useEffect(() => {
+    const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+    if (!url || !anonKey) return;
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 5000);
+    // Public Auth settings contain provider availability, never provider secrets.
+    // A failed check leaves email available and avoids advertising dead buttons.
+    void fetch(`${url}/auth/v1/settings`, { headers: { apikey: anonKey }, signal: controller.signal })
+      .then(async (response) => {
+        if (!response.ok) return;
+        const settings = await response.json();
+        if (!controller.signal.aborted) setConfiguredProviders(PROVIDERS.filter((provider) => settings.external?.[provider.id] === true).map((provider) => provider.id));
+      })
+      .catch(() => {})
+      .finally(() => window.clearTimeout(timeout));
+    return () => { controller.abort(); window.clearTimeout(timeout); };
+  }, []);
+
+  const providers = PROVIDERS.filter((provider) => ENABLED[provider.flag] && configuredProviders.includes(provider.id));
   if (providers.length === 0) return null;
 
   async function startSocialLogin(provider: SocialProvider) {
@@ -106,7 +126,7 @@ export default function SocialAuthButtons({
       if (oauthError) {
         setError(
           /provider is not enabled/i.test(oauthError.message)
-            ? `${PROVIDER_NAMES[provider]} sign-in is not connected yet. Use email below, it works now.`
+            ? `${PROVIDER_NAMES[provider]} sign-in is not connected yet. Use email below.`
             : oauthError.message,
         );
         setLoadingProvider(null);

@@ -11,6 +11,7 @@ import ReportButton from "@/components/shared/ReportButton";
 import NextUsefulMove from "@/components/shared/NextUsefulMove";
 import TrustLabel from "@/components/shared/TrustLabel";
 import PublicPostEmbed from "@/components/news/PublicPostEmbed";
+import CommentSection from "@/components/comments/CommentSection";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, jsonLd, newsArticleJsonLd } from "@/lib/structured-data";
 
@@ -130,7 +131,7 @@ export default async function NewsArticlePage({
   ]);
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div className="rw-article-page max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <RouteEventTracker eventName="article_open" metadata={{ article_id: article.id, source_status: article.sourceStatus }} />
       <script
         type="application/ld+json"
@@ -325,6 +326,10 @@ export default async function NewsArticlePage({
           ))}
         </div>
       ) : null}
+
+      <section id="discussion" className="mt-8 scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5" aria-label="Article discussion">
+        <CommentSection officialId={`article:${article.id}`} officialName={article.title} storyMode targetPath={`/news/${article.id}#discussion`} />
+      </section>
 
       {/* Share */}
       <div className="mt-4">

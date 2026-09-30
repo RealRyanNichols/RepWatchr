@@ -2,9 +2,13 @@ import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { NextResponse, type NextRequest } from "next/server";
 import { safeNextPath } from "@/lib/safe-next-path";
+import { getSiteRequestOrigin } from "@/lib/site-request-origin";
 
 export async function GET(request: NextRequest) {
   const startedAt = Date.now();
+  const origin = getSiteRequestOrigin(request, process.env.REPWATCHR_HOSTING, process.env.NODE_ENV);
+  if (!origin) return NextResponse.json({ error: "Invalid sign-in return host." }, { status: 400 });
+  const publicOrigin = origin.origin;
   const requestUrl = new URL(request.url);
   const code = requestUrl.searchParams.get("code");
   const next = safeNextPath(requestUrl.searchParams.get("next"));
@@ -15,7 +19,7 @@ export async function GET(request: NextRequest) {
   const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
   function loginError(message: string) {
-    const loginUrl = new URL("/auth/login", request.url);
+    const loginUrl = new URL("/auth/login", publicOrigin);
     loginUrl.searchParams.set("error", message);
     loginUrl.searchParams.set("next", next);
     return NextResponse.redirect(loginUrl);
@@ -73,8 +77,7 @@ export async function GET(request: NextRequest) {
 
     const metadata = data.user.user_metadata ?? {};
     const suggestedName =
-      String(metadata.full_name ?? metadata.name ?? metadata.user_name ?? "").trim() ||
-      data.user.email?.split("@")[0] ||
+      String(metadata.display_name ?? metadata.full_name ?? metadata.name ?? metadata.user_name ?? "").trim().slice(0, 50) ||
       "RepWatchr member";
     const { error: profileError } = await supabase.from("member_profiles").upsert(
       {
@@ -97,5 +100,5 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  return NextResponse.redirect(new URL(next, request.url));
+  return NextResponse.redirect(new URL(next, publicOrigin));
 }

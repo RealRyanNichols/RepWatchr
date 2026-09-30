@@ -25,6 +25,7 @@ const moreLinks = [
   { href: "/tools/public-records-response", label: "Records Response" },
   { href: "/authority-watch", label: "Authority Watch" },
   { href: "/public-safety", label: "Public Safety" },
+  { href: "/marion-county", label: "Marion County Desk" },
   { href: "/funding", label: "Funding" },
   { href: "/money", label: "Money Trail" },
   { href: "/red-flags", label: "Red Flags" },

@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import SocialAuthButtons from "@/components/auth/SocialAuthButtons";
+import TurnstileChallenge from "@/components/auth/TurnstileChallenge";
 import { useAuth } from "@/components/auth/AuthProvider";
 import styles from "./FlagshipRaceExperience.module.css";
 
@@ -29,6 +30,8 @@ type PollPayload = {
   myVote: OptionId | null;
   options: PollOption[];
   message?: string;
+  verificationProvider?: "botid" | "turnstile" | "unavailable";
+  verificationSiteKey?: string | null;
 };
 
 const pollEndpoint = "/api/races/marion-county-judge-2026/poll";
@@ -98,13 +101,16 @@ export default function RaceCommunityPoll() {
   const [loading, setLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
   const [message, setMessage] = useState("");
+  const [verificationToken, setVerificationToken] = useState("");
+  const [verificationReset, setVerificationReset] = useState(0);
 
   const loadPoll = useCallback(async (silent = false) => {
     if (!silent) setLoading(true);
     try {
       const response = await fetch(pollEndpoint, { cache: "no-store" });
       const data = (await response.json()) as PollPayload;
-      setPayload(data);
+      setPayload(response.ok ? data : null);
+      setMessage(data.message || "");
       if (!response.ok) {
         setMessage(data.message ?? "The community pulse is temporarily unavailable.");
       }
@@ -112,6 +118,7 @@ export default function RaceCommunityPoll() {
         setChoice((current) => current ?? data.myVote);
       }
     } catch {
+      setPayload(null);
       setMessage("The community pulse could not be loaded.");
     } finally {
       if (!silent) setLoading(false);
@@ -146,10 +153,10 @@ export default function RaceCommunityPoll() {
     if (choice) window.sessionStorage.setItem(savedChoiceKey, choice);
   }, [choice]);
 
-  const options = payload?.options ?? fallbackOptions;
+  const options = payload?.options?.length ? payload.options : fallbackOptions;
   const recordedChoice = payload?.myVote ?? null;
   const resultSummary = leaderLine(options);
-  const responseCount = payload?.responseCount ?? 0;
+  const responseCount = payload?.enabled ? payload.responseCount : null;
   const resultsVisible = payload?.resultsVisible === true;
   const canSubmit =
     Boolean(user) &&
@@ -157,6 +164,7 @@ export default function RaceCommunityPoll() {
     choice !== recordedChoice &&
     payload?.profileComplete === true &&
     payload?.canVote === true &&
+    (payload?.verificationProvider !== "turnstile" || Boolean(verificationToken)) &&
     !submitting;
 
   async function submitVote() {
@@ -168,7 +176,7 @@ export default function RaceCommunityPoll() {
       const response = await fetch(pollEndpoint, {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ optionId: choice }),
+        body: JSON.stringify({ optionId: choice, verificationToken }),
       });
       const data = (await response.json()) as PollPayload;
       if (response.ok) {
@@ -182,6 +190,8 @@ export default function RaceCommunityPoll() {
       setMessage("Your response could not be recorded.");
     } finally {
       setSubmitting(false);
+      setVerificationToken("");
+      setVerificationReset((value) => value + 1);
     }
   }
 
@@ -204,14 +214,14 @@ export default function RaceCommunityPoll() {
           </h2>
         </div>
         <span className={styles.pollResponseCount}>
-          {responseCount}
-          <small>signed-in {responseCount === 1 ? "response" : "responses"}</small>
+          {responseCount ?? "Pending"}
+          <small>{responseCount === null ? "counts unavailable" : `signed-in ${responseCount === 1 ? "response" : "responses"}`}</small>
         </span>
       </header>
 
       <fieldset
         className={styles.heroPollChoices}
-        disabled={!payload?.canVote && !loading}
+        disabled={!payload?.canVote}
       >
         <legend className={styles.srOnly}>Choose one candidate</legend>
         {options.map((option) => {
@@ -291,7 +301,13 @@ export default function RaceCommunityPoll() {
         </p>}
       </div>
 
-      {!authLoading && !user && choice ? (
+      {user && payload?.profileComplete && payload?.canVote && payload?.verificationProvider === "turnstile" && payload.verificationSiteKey ? (
+        <div className="my-4">
+          <TurnstileChallenge siteKey={payload.verificationSiteKey} action="race_vote" resetNonce={verificationReset} onToken={setVerificationToken} purpose="automated poll responses" />
+        </div>
+      ) : null}
+
+      {!payload?.canVote ? <p className={styles.pollChoicePrompt}>{loading ? "Loading the community poll." : "Poll responses are currently paused."}</p> : !authLoading && !user && choice ? (
         <div className={styles.heroPollSignIn}>
           <strong>Create a free profile for your vote to count</strong>
           <p>
@@ -349,7 +365,7 @@ export default function RaceCommunityPoll() {
 
       <footer className={styles.heroPollFooter}>
         <span>
-          One current vote per completed profile · invisible bot screening
+          One current vote per completed profile · human verification
         </span>
         <span>{formatUpdated(payload?.asOf ?? null)}</span>
         <small>

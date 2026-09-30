@@ -5,6 +5,8 @@ import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { useAuth } from "@/components/auth/AuthProvider";
 import SocialAuthButtons from "@/components/auth/SocialAuthButtons";
 import { createClient } from "@/lib/supabase";
+import { safeNextPath } from "@/lib/safe-next-path";
+import { readCommentDraft, saveCommentDraft } from "@/lib/comment-drafts";
 
 type CommentKind = "comment" | "question" | "official_answer" | "source_note";
 type AuthorType =
@@ -43,7 +45,7 @@ const ENHANCED_COMMENT_FIELDS = `${CORE_COMMENT_FIELDS}, comment_kind, author_ty
 function cleanMetadataName(user: { user_metadata?: Record<string, unknown> } | null): string | null {
   if (!user) return null;
 
-  for (const key of ["full_name", "name", "display_name", "user_name", "preferred_username"]) {
+  for (const key of ["display_name", "full_name", "name", "user_name", "preferred_username"]) {
     const value = user.user_metadata?.[key];
     if (typeof value !== "string") continue;
     const cleaned = value.trim().replace(/\s+/g, " ").slice(0, 50);
@@ -95,7 +97,7 @@ export default function CommentSection({
   storyMode = false,
   targetPath,
 }: CommentSectionProps) {
-  const { user, profile } = useAuth();
+  const { user, profile, loading: authLoading } = useAuth();
   const [comments, setComments] = useState<Comment[]>([]);
   const [newComment, setNewComment] = useState("");
   const [displayName, setDisplayName] = useState("");
@@ -105,6 +107,10 @@ export default function CommentSection({
   const [loading, setLoading] = useState(true);
   const [posting, setPosting] = useState(false);
   const [error, setError] = useState("");
+  const [draftStored, setDraftStored] = useState(false);
+  const userId = user?.id ?? null;
+  const returnPath = safeNextPath(targetPath ?? `/officials/${officialId}#participate`);
+  const authQuery = `?next=${encodeURIComponent(returnPath)}`;
   const supabase = useMemo(() => createClient(), []);
   const authorTier = profile?.residenceVerified
     ? "Verified resident"
@@ -115,6 +121,26 @@ export default function CommentSection({
         : "Signed-in account · identity and residence not verified";
   const defaultDisplayName =
     cleanMetadataName(user) || (profile?.county ? `${profile.county} Resident` : "Anonymous profile");
+
+  useEffect(() => {
+    if (authLoading) return;
+    const timer = window.setTimeout(() => {
+      try {
+        const draft = readCommentDraft(window.sessionStorage, officialId, userId);
+        setNewComment(draft);
+        setDraftStored(Boolean(draft));
+      } catch { setDraftStored(false); }
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, [authLoading, officialId, userId]);
+
+  function updateComment(value: string) {
+    setNewComment(value);
+    try {
+      saveCommentDraft(window.sessionStorage, officialId, userId, value);
+      setDraftStored(Boolean(value.trim()));
+    } catch { setDraftStored(false); }
+  }
 
   useEffect(() => {
     let cancelled = false;
@@ -238,7 +264,7 @@ export default function CommentSection({
     if (data) {
       setComments((currentComments) => [data, ...currentComments]);
     }
-    setNewComment("");
+    updateComment("");
     setSourceUrl("");
     setCommentKind("comment");
     setPosting(false);
@@ -296,45 +322,29 @@ export default function CommentSection({
         </div>
       )}
 
-      {/* Comment Form */}
-      {!user ? (
-        <div className="mb-6 rounded-xl border border-gray-200 bg-gradient-to-r from-gray-50 to-blue-50 p-6 text-center">
-          <p className="mb-1 font-bold text-gray-900">
-            Join the conversation about {officialName}
-          </p>
-          <p className="mb-4 text-sm text-gray-600">
-            Sign in with a social profile or email. Verification and moderation rules still apply.
-          </p>
-          <div className="mx-auto max-w-md">
-            <SocialAuthButtons compact nextPath={targetPath ?? `/officials/${officialId}#participate`} />
-          </div>
-          <div className="my-4 flex items-center gap-3 text-[11px] font-black uppercase tracking-[0.16em] text-gray-400">
-            <span className="h-px flex-1 bg-gray-200" />
-            or use email
-            <span className="h-px flex-1 bg-gray-200" />
-          </div>
-          <div className="flex justify-center gap-3">
-            <Link
-              href="/auth/login"
-              className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 transition-colors"
-            >
-              Log In
-            </Link>
-            <Link
-              href="/auth/signup"
-              className="rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-colors"
-            >
-              Sign Up
-            </Link>
-          </div>
+      <form onSubmit={handleSubmit} className="mb-6 rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
+        <label className="mb-2 block text-base font-bold text-gray-900">
+          Add your voice
+          <textarea
+            aria-label="Your public comment"
+            value={newComment}
+            onChange={(event) => updateComment(event.target.value)}
+            placeholder={`What should people know about ${officialName}? Ask a question or share a source.`}
+            rows={4}
+            maxLength={2000}
+            disabled={posting || authLoading}
+            className="mt-2 w-full resize-y rounded-lg border border-gray-300 bg-gray-50 px-3 py-3 text-base font-normal leading-6 text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          />
+        </label>
+        <div className="mb-3 flex items-center justify-between gap-3 text-xs text-gray-500">
+          <span>{newComment.length}/2000</span>
+          {newComment ? <button type="button" onClick={() => updateComment("")} disabled={posting} className="min-h-11 px-2 font-semibold underline">Discard draft</button> : null}
         </div>
-      ) : (
-        <form onSubmit={handleSubmit} className="mb-6">
-          <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-            <div className="mb-3 grid gap-2 rounded-lg border border-blue-100 bg-blue-50 p-3 text-xs font-bold text-blue-950 sm:grid-cols-[1fr_auto] sm:items-center">
-              <span>{authorTier}</span>
-              <span>Sources and verification are checked separately</span>
-            </div>
+        {draftStored ? <p className="mb-3 text-xs leading-5 text-gray-600">Draft kept in this tab for up to two hours. Return to this tab after email sign-in. Nothing is posted until you choose Post Comment, Post Question or Post Source Note.</p> : null}
+        {user ? <>
+          <p className="mb-3 text-sm text-gray-700">Posting as <strong>{displayName.trim() || defaultDisplayName}</strong></p>
+          <details className="mb-4 rounded-lg border border-gray-200 px-3">
+            <summary className="flex min-h-12 cursor-pointer items-center text-sm font-semibold text-gray-700">Edit name or add a source (optional)</summary>
             <div className="mb-3">
               <input
                 type="text"
@@ -343,7 +353,7 @@ export default function CommentSection({
                 onChange={(e) => setDisplayName(e.target.value)}
                 placeholder={`Display name (default: ${defaultDisplayName})`}
                 maxLength={50}
-                className="w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                className="w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-base text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
               />
             </div>
             {enhancedSchemaAvailable ? (
@@ -353,7 +363,7 @@ export default function CommentSection({
                   <select
                     value={commentKind}
                     onChange={(event) => setCommentKind(event.target.value as CommentKind)}
-                    className="mt-1 w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    className="mt-1 w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 text-base text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
                   >
                     <option value="comment">Comment</option>
                     <option value="question">Public question</option>
@@ -369,44 +379,28 @@ export default function CommentSection({
                     onChange={(event) => setSourceUrl(event.target.value)}
                     placeholder="https://official-record-or-report.example"
                     maxLength={1000}
-                    className="mt-1 w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-medium text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    className="mt-1 w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-base font-medium text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
                   />
                 </label>
               </div>
             ) : null}
-            <textarea
-              aria-label="Your public comment"
-              value={newComment}
-              onChange={(e) => setNewComment(e.target.value)}
-              placeholder={`Ask a public question or leave a sourced concern for ${officialName}.`}
-              rows={3}
-              maxLength={2000}
-              className="w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 resize-none"
-            />
-            {error && (
-              <p className="mt-1 text-sm text-red-600">{error}</p>
-            )}
-            <div className="mt-3 flex items-center justify-between">
-              <span className="text-xs text-gray-400">
-                {newComment.length}/2000
-              </span>
-              <button
-                type="submit"
-                disabled={posting || !newComment.trim()}
-                className="rounded-lg bg-blue-600 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700 disabled:bg-gray-300 disabled:text-gray-500"
-              >
-                {posting
-                  ? "Posting..."
-                  : commentKind === "question"
-                    ? "Post Question"
-                    : commentKind === "source_note"
-                      ? "Post Source Note"
-                      : "Post Comment"}
-              </button>
-            </div>
+
+          </details>
+          <p className="mb-3 text-xs leading-5 text-gray-500">{authorTier}. Sources are checked separately.</p>
+          <button type="submit" disabled={posting || !newComment.trim()} className="min-h-12 w-full rounded-lg bg-blue-600 px-5 py-3 text-base font-semibold text-white hover:bg-blue-700 disabled:bg-gray-200 disabled:text-gray-500 sm:w-auto">
+            {posting ? "Posting..." : commentKind === "question" ? "Post Question" : commentKind === "source_note" ? "Post Source Note" : "Post Comment"}
+          </button>
+        </> : <div className="rounded-lg bg-blue-50 p-4">
+          <p className="mb-1 font-bold text-gray-900">Write first. Sign in to post.</p>
+          <p className="mb-3 text-sm leading-6 text-gray-600">Free to join. Your comment stays here while you sign in in this tab.</p>
+          <SocialAuthButtons compact nextPath={returnPath} />
+          <div className="mt-3 grid gap-2 sm:grid-cols-2">
+            <Link href={`/auth/login${authQuery}`} className="flex min-h-12 items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white hover:bg-blue-700">Sign in with email</Link>
+            <Link href={`/auth/signup${authQuery}`} className="flex min-h-12 items-center justify-center rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm font-semibold text-gray-800 hover:bg-gray-50">Create a free account</Link>
           </div>
-        </form>
-      )}
+        </div>}
+        {error ? <p role="alert" className="mt-3 text-sm text-red-700">{error}</p> : null}
+      </form>
 
       {/* Comments List */}
       {loading ? (

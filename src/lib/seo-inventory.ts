@@ -70,6 +70,8 @@ type StaticSeoPage = {
 const now = () => new Date();
 
 const staticSeoPages: StaticSeoPage[] = [
+  { path: "/marion-county", title: "Marion County News & Public Records", description: "Reporting, dated election sources, community questions and public records from Marion County, Texas.", imageKind: "race", imageParams: { slug: "marion-county-judge-2026" }, changeFrequency: "daily" },
+  { path: "/marion-county/records", title: "Marion County Source Room", description: "Original election records and attributed correspondence, with review dates and verification gaps.", imageKind: "methodology", changeFrequency: "weekly" },
   {
     path: "/coverage",
     title: "Elected Official Directory Coverage | RepWatchr",

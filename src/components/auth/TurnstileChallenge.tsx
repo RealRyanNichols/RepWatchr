@@ -28,11 +28,13 @@ export default function TurnstileChallenge({
   action,
   resetNonce,
   onToken,
+  purpose = "automated account creation",
 }: {
   siteKey: string;
   action: string;
   resetNonce: number;
   onToken: (token: string) => void;
+  purpose?: string;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const widgetIdRef = useRef<string | null>(null);
@@ -75,7 +77,7 @@ export default function TurnstileChallenge({
       />
       <div ref={containerRef} aria-label="Human verification challenge" />
       <p className="mt-2 text-xs font-semibold leading-5 text-slate-500">
-        This privacy-preserving challenge helps limit automated account creation.
+        This privacy-preserving challenge helps limit {purpose}.
       </p>
     </div>
   );

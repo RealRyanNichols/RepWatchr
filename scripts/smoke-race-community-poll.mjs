@@ -76,7 +76,6 @@ requires(poll, files.poll, [
   "60_000",
 ]);
 for (const forbidden of [
-  "Turnstile",
   "Verified Marion residents",
   "residence-unverified",
   "winner",
@@ -97,10 +96,11 @@ requires(route, files.route, [
   'onConflict: "poll_id,user_id"',
   '.from("member_profiles")',
   "profileComplete",
+  "verifyPollTurnstile",
+  "verificationConfig",
   '"Cache-Control", "private, no-store, max-age=0"',
 ]);
 for (const forbidden of [
-  "TURNSTILE_SECRET_KEY",
   "verification_status",
   "geography_verified_at",
   '.from("profiles")',

@@ -20,6 +20,7 @@ export default function SignUpPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [displayName, setDisplayName] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -29,6 +30,7 @@ export default function SignUpPage() {
   const router = useRouter();
   const supabase = useMemo(() => createClient(), []);
   const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? "";
+  const joiningDiscussion = nextPath.endsWith("#discussion");
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
@@ -66,6 +68,7 @@ export default function SignUpPage() {
         email: normalizedEmail,
         password,
         options: {
+          data: { display_name: displayName.trim().replace(/\s+/g, " ").slice(0, 50) || "RepWatchr member" },
           emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(nextPath)}`,
           ...(captchaToken ? { captchaToken } : {}),
         },
@@ -82,7 +85,7 @@ export default function SignUpPage() {
         await supabase.from("member_profiles").upsert(
           {
             user_id: data.session.user.id,
-            display_name: normalizedEmail.split("@")[0],
+            display_name: displayName.trim().replace(/\s+/g, " ").slice(0, 50) || "RepWatchr member",
             preferred_state: "TX",
             research_focus: "Politics, accountability, public records, and watched officials",
           },
@@ -111,7 +114,7 @@ export default function SignUpPage() {
             Account Created
           </h1>
           <p className="mt-2 text-green-700">
-            Check your email if confirmation is required. Then sign in and you will land in the member dashboard.
+            Check your email to confirm your account. Then return here to sign in and continue {joiningDiscussion ? "the discussion" : "to your member dashboard"}.
           </p>
           <Link
             href={`/auth/login?next=${encodeURIComponent(nextPath)}`}
@@ -123,7 +126,7 @@ export default function SignUpPage() {
             href={nextPath}
             className="ml-3 mt-4 inline-block rounded-lg border border-green-300 bg-white px-5 py-2.5 text-sm font-semibold text-green-800 hover:bg-green-100"
           >
-            Open Dashboard
+            {joiningDiscussion ? "Back to the discussion" : "Open Dashboard"}
           </Link>
         </div>
       </div>
@@ -134,23 +137,26 @@ export default function SignUpPage() {
     <div className="bg-[linear-gradient(135deg,#ffffff_0%,#eff6ff_52%,#fff7ed_100%)]">
       <div className="mx-auto grid min-h-[calc(100vh-6rem)] max-w-6xl items-center gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
         <section>
-          <p className="text-sm font-black uppercase tracking-wide text-red-700">Founder access is open</p>
+          <p className="text-sm font-black uppercase tracking-wide text-red-700">{joiningDiscussion ? "Join the conversation" : "Founder access is open"}</p>
           <h1 className="mt-2 text-4xl font-black leading-tight text-blue-950 sm:text-5xl">
-            Create the free member office before the network gets crowded.
+            {joiningDiscussion ? "Ask a question. Bring a source. Have your say." : "Create your free RepWatchr account."}
           </h1>
           <p className="mt-4 max-w-xl text-sm font-semibold leading-6 text-blue-950/75">
-            Start with email and password. Inside the dashboard you can follow targets, build records packets,
-            draft public-records requests, use Faretta AI, and keep political research organized.
+            {joiningDiscussion ? "Create an account with email or an available sign-in option. You will return to the discussion. Everyone can read; an account lets you post." : "Start with email and password. Inside the dashboard you can follow targets, build records packets, draft public-records requests, use Faretta AI, and keep political research organized."}
           </p>
-          <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50 p-4">
+          {joiningDiscussion ? <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50 p-4">
+            <p className="text-xs font-black uppercase tracking-wide text-amber-900">A public conversation</p>
+            <p className="mt-1 text-2xl font-black text-blue-950">Free to read. Free to comment.</p>
+            <p className="mt-1 text-sm font-bold leading-6 text-blue-950/75">Choose a public name. Keep private records out of comments. Lawful disagreement is welcome.</p>
+          </div> : <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50 p-4">
             <p className="text-xs font-black uppercase tracking-wide text-amber-900">Free buildout window</p>
             <p className="mt-1 text-2xl font-black text-blue-950">90 days of founder access</p>
             <p className="mt-1 text-sm font-bold leading-6 text-blue-950/75">
               No paywall while the tools are being built into something people need.
             </p>
-          </div>
+          </div>}
           <div className="mt-4 grid gap-3">
-            {signupTools.map((item) => (
+            {(joiningDiscussion ? ["Ask a factual question or add your perspective", "Share a link to an original public record", "Keep an unsent comment draft in this tab while you sign in"] : signupTools).map((item) => (
               <div key={item} className="rounded-xl border border-blue-100 bg-white p-4 text-sm font-black text-blue-950 shadow-sm">
                 {item}
               </div>
@@ -161,14 +167,13 @@ export default function SignUpPage() {
         <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-xl shadow-blue-100/70 sm:p-8">
           <h2 className="text-2xl font-black text-gray-900">Create Account</h2>
           <p className="mt-1 text-sm font-semibold text-gray-600">
-            Join free. The member tools open immediately after signup.
+            {joiningDiscussion ? "Confirm your email, then sign in to post. Your email is not your public comment name." : "Join free. Confirm your email if requested, then sign in to use the member tools."}
           </p>
 
           <div className="mt-5">
             <SocialAuthButtons nextPath={nextPath} />
             <p className="mt-2 text-xs font-semibold leading-5 text-gray-500">
-              Facebook or X can create your member account. Human and district verification are still completed inside
-              RepWatchr before civic votes receive verified weight.
+              Only configured sign-in providers are shown. Signing in does not verify identity or residence.
             </p>
           </div>
 
@@ -185,6 +190,11 @@ export default function SignUpPage() {
           )}
 
           <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label htmlFor="public-name" className="block text-sm font-medium text-gray-700">Public display name <span className="text-gray-500">(optional)</span></label>
+              <input id="public-name" type="text" autoComplete="nickname" maxLength={50} value={displayName} onChange={(event) => setDisplayName(event.target.value)} placeholder="A name you want shown with your comments" className="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500" />
+              <p className="mt-1 text-xs leading-5 text-gray-500">You can change the name before posting. Leave it blank to use RepWatchr member.</p>
+            </div>
             <div>
               <label
                 htmlFor="email"
@@ -259,10 +269,11 @@ export default function SignUpPage() {
               {loading ? "Creating Account..." : "Create Account"}
             </button>
           </form>
+          <p className="mt-4 text-xs leading-5 text-gray-500">Read our <Link href="/terms" className="underline">terms</Link> and <Link href="/privacy" className="underline">privacy policy</Link> before joining.</p>
 
           <p className="mt-6 text-center text-sm text-gray-600">
             Already have an account?{" "}
-            <Link href="/auth/login" className="font-medium text-blue-600 hover:underline">
+            <Link href={`/auth/login?next=${encodeURIComponent(nextPath)}`} className="font-medium text-blue-600 hover:underline">
               Log in
             </Link>
           </p>

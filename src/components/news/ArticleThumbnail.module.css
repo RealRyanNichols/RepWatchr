@@ -11,6 +11,8 @@
   color: white;
 }
 .image { object-fit: cover; }
+.fullImage { position: absolute; inset: 0; }
+.documentImage { position: absolute; top: 6%; right: 6%; width: 47%; height: 60%; }
 /* Generated cover art. Fills the frame the way the photo would. */
 .backdrop {
   position: absolute;
@@ -67,7 +69,7 @@
   letter-spacing: .045em;
   text-transform: uppercase;
 }
-.headline {
+.thumbnail .headline {
   margin: 0;
   max-width: 23ch;
   color: #fff;
@@ -80,7 +82,48 @@
 }
 .featured .headline { max-width: 22ch; }
 
+.illustration .shade {
+  background: linear-gradient(180deg, transparent 30%, rgb(2 8 18 / 16%) 48%, rgb(2 8 18 / 78%) 78%, rgb(2 8 18 / 92%));
+}
+
+.document {
+  background: #e9e2d3;
+  color: #142438;
+}
+.document .shade { display: none; }
+.document .image {
+  box-shadow: 0 4px 16px rgb(40 33 20 / 16%);
+  border: 1px solid #d7cfbf;
+}
+.document .brand { top: auto; bottom: 8%; color: #142438; text-shadow: none; }
+.document .headline { color: #142438; text-shadow: none; }
+.documentTitle {
+  position: absolute;
+  top: 9%;
+  left: 6%;
+  width: 36%;
+}
+.documentTitle span {
+  display: block;
+  margin-bottom: 6%;
+  color: #62523b;
+  font-size: clamp(8px, 2.5cqw, 14px);
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.documentTitle strong {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(24px, 8cqw, 56px);
+  line-height: 1;
+  font-weight: 650;
+}
+
 @container (max-width: 280px) {
+  .document .location {
+    display: none;
+  }
+
   .brand {
     display: none;
   }

@@ -38,7 +38,7 @@ assert(
   "ArticleThumbnail is back to drawing a bare gradient div instead of cover art.",
 );
 assert(
-  thumbnail.includes('data-thumbnail-visual={hasPhoto ? "photo" : "generated"}'),
+  thumbnail.includes('data-thumbnail-visual={hasPhoto ? article.imageKind || "photo" : "generated"}'),
   "ArticleThumbnail stopped labelling which visual it drew, so this regression becomes invisible again.",
 );
 assert(

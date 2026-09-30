@@ -5,9 +5,14 @@ import { getSupabaseAdminClient } from "@/lib/race-poll-admin";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
 import { getCommunityPollResults } from "@/lib/community-poll-results";
 import { repwatchrFeatureFlags } from "@/lib/repwatchr-feature-flags";
+import { getPollRequestOrigin, getPollVerificationConfig, verifyPollTurnstile } from "@/lib/poll-verification";
 
-const POLL_SLUG = "marion-county-judge-2026";
-const MAX_BODY_BYTES = 2_048;
+const POLL_SLUGS = ["marion-county-judge-2026", "marion-county-forum-format-2026"];
+const MAX_BODY_BYTES = 4_096;
+
+function verificationConfig() {
+  return getPollVerificationConfig(process.env.REPWATCHR_HOSTING, process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY, process.env.TURNSTILE_SECRET_KEY);
+}
 
 type PollRow = {
   id: number;
@@ -71,7 +76,8 @@ function isSameOrigin(request: Request) {
   if (!origin) return false;
 
   try {
-    return new URL(origin).origin === new URL(request.url).origin;
+    const expected = getPollRequestOrigin(request, process.env.REPWATCHR_HOSTING, process.env.NODE_ENV);
+    return expected !== null && new URL(origin).origin === origin && origin === expected.origin;
   } catch {
     return false;
   }
@@ -79,11 +85,12 @@ function isSameOrigin(request: Request) {
 
 async function getPoll(
   admin: SupabaseClient,
+  slug: string,
 ): Promise<{ poll: PollRow; options: OptionRow[] } | null> {
   const { data: pollData, error: pollError } = await admin
     .from("race_community_polls")
     .select("id, slug, question, status, opens_at, closes_at, minimum_sample")
-    .eq("slug", POLL_SLUG)
+    .eq("slug", slug)
     .maybeSingle();
 
   if (pollError || !pollData) return null;
@@ -96,7 +103,7 @@ async function getPoll(
     .eq("active", true)
     .order("display_order", { ascending: true });
 
-  if (optionError || !optionData || optionData.length !== 2) return null;
+  if (optionError || !optionData || optionData.length < 2 || optionData.length > 8) return null;
   return { poll, options: optionData as OptionRow[] };
 }
 
@@ -145,10 +152,14 @@ async function buildPayload(
     memberProfile?.display_name?.trim() && memberProfile?.home_location?.trim(),
   );
 
+  const verification = verificationConfig();
   return {
     enabled: true,
     status: poll.status,
-    canVote: isPollOpen(poll),
+    canVote: isPollOpen(poll) && verification.provider !== "unavailable",
+    verificationProvider: verification.provider,
+    verificationSiteKey: verification.siteKey,
+    ...(verification.provider === "unavailable" ? { message: "Poll responses are temporarily paused while human verification is being connected." } : {}),
     question: poll.question,
     asOf: aggregate.asOf,
     closesAt: poll.closes_at,
@@ -173,7 +184,7 @@ export async function GET(
   { params }: { params: Promise<{ slug: string }> },
 ) {
   const { slug } = await params;
-  if (slug !== POLL_SLUG) {
+  if (!POLL_SLUGS.includes(slug)) {
     return json({ message: "Poll not found." }, { status: 404 });
   }
   if (!repwatchrFeatureFlags.racePollsV1) return unavailable();
@@ -181,7 +192,7 @@ export async function GET(
   const admin = getSupabaseAdminClient();
   if (!admin) return unavailable();
 
-  const pollData = await getPoll(admin);
+  const pollData = await getPoll(admin, slug);
   if (!pollData) return unavailable();
 
   const payload = await buildPayload(
@@ -200,7 +211,7 @@ export async function POST(
   { params }: { params: Promise<{ slug: string }> },
 ) {
   const { slug } = await params;
-  if (slug !== POLL_SLUG) {
+  if (!POLL_SLUGS.includes(slug)) {
     return json({ message: "Poll not found." }, { status: 404 });
   }
   if (!repwatchrFeatureFlags.racePollsV1) return unavailable();
@@ -213,9 +224,11 @@ export async function POST(
     return json({ message: "Invalid request." }, { status: 413 });
   }
 
-  let body: { optionId?: unknown };
+  let body: { optionId?: unknown; verificationToken?: unknown };
   try {
-    body = (await request.json()) as typeof body;
+    const raw = await request.text();
+    if (new TextEncoder().encode(raw).length > MAX_BODY_BYTES) return json({ message: "Invalid request." }, { status: 413 });
+    body = JSON.parse(raw) as typeof body;
   } catch {
     return json({ message: "Invalid request." }, { status: 400 });
   }
@@ -224,19 +237,26 @@ export async function POST(
     return json({ message: "Choose a candidate first." }, { status: 400 });
   }
 
-  let botCheck: Awaited<ReturnType<typeof checkBotId>>;
-  try {
-    botCheck = await checkBotId();
-  } catch {
-    return unavailable("Human verification is temporarily unavailable.");
-  }
-  if (botCheck.isBot || !botCheck.isHuman) {
-    return json({ message: "Automated responses are not accepted." }, { status: 403 });
-  }
-
   const userId = await getCurrentUserId();
   if (!userId) {
     return json({ message: "Sign in before participating." }, { status: 401 });
+  }
+
+  const verification = verificationConfig();
+  if (verification.provider === "unavailable") return unavailable("Human verification is temporarily unavailable.");
+  if (verification.provider === "turnstile") {
+    const publicOrigin = getPollRequestOrigin(request, process.env.REPWATCHR_HOSTING, process.env.NODE_ENV);
+    if (!publicOrigin) return json({ message: "This request could not be verified." }, { status: 403 });
+    const verdict = await verifyPollTurnstile(body.verificationToken, publicOrigin.hostname, process.env.TURNSTILE_SECRET_KEY);
+    if (verdict === "unavailable") return unavailable("Human verification is temporarily unavailable.");
+    if (verdict !== "verified") return json({ message: "Please complete human verification again." }, { status: 403 });
+  } else {
+    try {
+      const botCheck = await checkBotId();
+      if (botCheck.isBot || !botCheck.isHuman) return json({ message: "Automated responses are not accepted." }, { status: 403 });
+    } catch {
+      return unavailable("Human verification is temporarily unavailable.");
+    }
   }
 
   const admin = getSupabaseAdminClient();
@@ -262,7 +282,7 @@ export async function POST(
     );
   }
 
-  const pollData = await getPoll(admin);
+  const pollData = await getPoll(admin, slug);
   if (!pollData) return unavailable();
   if (!isPollOpen(pollData.poll)) {
     return json(
