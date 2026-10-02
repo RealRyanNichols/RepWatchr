@@ -123,7 +123,7 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
               Find a name. Follow the receipts.
             </h2>
             <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-slate-600 sm:text-base">
-              Start broad or narrow by state and office. Each result makes loaded evidence and unfinished research easy
+              Browse Texas or narrow by county, city and office. Each result makes loaded evidence and unfinished research easy
               to spot before you open the full profile.
             </p>
           </div>
@@ -157,11 +157,13 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
             </span>
           </label>
           <SearchSelect
-            label="State"
+            label="Texas coverage"
             name="state"
             value={params.state}
-            emptyLabel="All states"
-            options={result.facets.states}
+            emptyLabel="HD-7 / TX-01 first"
+            options={result.facets.states
+              .filter((option) => option.value === "TX")
+              .map((option) => ({ ...option, label: "All Texas" }))}
           />
           <SearchSelect
             label="Office level"

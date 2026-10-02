@@ -29,6 +29,7 @@ import { getCongressTradingDataset, getCongressTradingStats } from "@/lib/congre
 import { selectEditorialStories } from "@/lib/editorial-ranking";
 import { CATEGORY_KEY_BY_ISSUE_ID, isScoreableVote, withDerivedScores } from "@/lib/vote-record-score";
 import portraitManifest from "@/data/portrait-manifest.json";
+import { isTexasOfficial, OFFICIAL_COVERAGE_STATE } from "@/lib/official-scope";
 
 const portraitMetadata: Record<string, NonNullable<Official["photoMetadata"]>> = portraitManifest;
 
@@ -271,8 +272,8 @@ function districtSortValue(district?: string): number {
 }
 
 const FEDERAL_EXPECTED_SEATS = {
-  house: 435,
-  senate: 100,
+  house: 38,
+  senate: 2,
 } as const;
 
 const TEXAS_EXPECTED_SEATS = {
@@ -312,7 +313,7 @@ export function getAllOfficials(): Official[] {
 
   for (const file of files) {
     const official = readJsonFile<Official>(file);
-    if (official) {
+    if (official && isTexasOfficial(official)) {
       official.photoMetadata = official.photo ? portraitMetadata[official.photo] : undefined;
       official.featuredPhotoMetadata = official.featuredPhoto ? portraitMetadata[official.featuredPhoto] : undefined;
       officials.push(official);
@@ -636,7 +637,7 @@ export function getRepWatchrDataStats() {
   const federalExpectedSeats = FEDERAL_EXPECTED_SEATS.house + FEDERAL_EXPECTED_SEATS.senate;
   const federalProfilesLoaded = federalHouseProfilesLoaded + federalSenateProfilesLoaded;
   const stateLegislatorProfilesLoaded = stateLegislativeProfiles.length;
-  const stateLegislatureExpectedSeats = stateLegislatorProfilesLoaded;
+  const stateLegislatureExpectedSeats = TEXAS_EXPECTED_SEATS.stateHouse + TEXAS_EXPECTED_SEATS.stateSenate;
   const stateLegislatureJurisdictionsLoaded = new Set(
     stateLegislativeProfiles.map((official) => official.state).filter(Boolean),
   ).size;
@@ -751,6 +752,10 @@ export function getRepWatchrDataStats() {
   });
 
   return {
+    coverageState: OFFICIAL_COVERAGE_STATE,
+    texasFederalStateExpectedSeats: federalAndStateExpectedSeats,
+    texasFederalStateProfileGaps: Math.max(0, federalAndStateExpectedSeats - federalAndStateSeatProfilesLoaded),
+    texasFederalStateCompletionPercent: completionPercent(federalAndStateSeatProfilesLoaded, federalAndStateExpectedSeats),
     officialFiles: officials.length,
     nonSchoolOfficialFiles,
     legacySchoolBoardOfficialFiles: levelCounts["school-board"],

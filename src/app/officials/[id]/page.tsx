@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import {
   getAllOfficials,
   getFundingSummary,
@@ -36,12 +37,8 @@ export const dynamicParams = true;
 /**
  * Prebuild the beat.
  *
- * This page used to be force-dynamic with no prebuilt params, so all 8,914
- * profiles rendered cold on every request and every one sat in the sitemap at
- * equal weight. Crawl budget went to national records while the HD-7 / TX-01
- * profiles - the ones this desk is accountable for - got no priority at all.
- * The footprint is built at deploy time; everything else still renders on
- * demand and caches.
+ * Build the HD-7 / TX-01 footprint at deploy time. Other retained Texas
+ * profiles render on demand and cache; removed or unknown records return 404.
  */
 export async function generateStaticParams() {
   return getAllOfficials()
@@ -56,7 +53,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params;
   const official = getOfficialWithScores(id);
-  if (!official) return { title: "Official Not Found" };
+  if (!official) notFound();
 
   const title = officialProfileTitle(official);
   const description = `Source-backed RepWatchr profile for ${official.name}, ${official.position} serving ${official.jurisdiction}.`;
@@ -79,15 +76,7 @@ export default async function OfficialProfilePage({
   const official = getOfficialWithScores(id);
 
   if (!official) {
-    return (
-      <div className="min-h-screen bg-[#f4f1e8] px-4 py-16 text-center text-[#15212b]">
-        <h1 className="font-serif text-3xl font-bold">Official not found</h1>
-        <p className="mt-2 text-[#69645b]">The requested public profile does not exist.</p>
-        <Link href="/officials" className="mt-5 inline-flex font-bold text-[#204f77] underline underline-offset-4">
-          Browse all officials
-        </Link>
-      </div>
-    );
+    notFound();
   }
 
   const scoreCardCandidate = getScoreCard(id);

@@ -21,10 +21,10 @@ RepWatchr turns public-source signals, proof packets, official records, vote/fun
 
 ## Buildout Footprint
 
-- The current buildout target is every elected seat in every county, city and town inside HD-7 and TX-01, and nothing outside it for now.
+- The retained elected-official profile directory covers **all Texas**. HD-7 and TX-01 remain the first buildout priority, including every elected seat in their counties, cities and towns. Non-Texas elected-official profiles are outside the retained directory; do not reimport them.
 - `src/lib/district-footprint.ts` holds that footprint: the 13 counties, the confirmed municipalities, and the expected elected-office slate for each kind of jurisdiction. `/home-district/roster` publishes the resulting seat ledger, including what is missing.
 - The municipality list is a working set flagged `needs_authentication`, not a certified census of incorporated places. A town absent from it is a gap to fill, never a place ruled out of the footprint.
-- `districtFocusOnly` (`NEXT_PUBLIC_DISTRICT_FOCUS_ONLY`) scopes the public directory to the footprint. It is reversible and never makes an out-of-district record unreachable: a name search or an explicit state, county, city or level filter still returns it. Do not delete out-of-district profiles to achieve focus.
+- `districtFocusOnly` (`NEXT_PUBLIC_DISTRICT_FOCUS_ONLY`) gives the Texas directory a default footprint view. Other retained Texas officials remain reachable by name search or an explicit Texas, county, city or level filter. This display preference does not authorize narrowing retention to HD-7 / TX-01 alone. Ryan explicitly approved retaining all Texas and removing non-Texas elected-official profiles on October 2, 2026.
 
 ## Repo Rules
 

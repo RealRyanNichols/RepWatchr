@@ -5,10 +5,8 @@ import { repwatchrFeatureFlags } from "@/lib/repwatchr-feature-flags";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialsCommandSearchForm from "@/components/officials/OfficialsCommandSearchForm";
 import OfficialSearchPanel from "@/components/officials/OfficialSearchPanel";
-import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSelector";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import type { GovernmentLevel, Official } from "@/types";
-import { getAllNationalJurisdictions, getNationalBuildoutSummary, nationalGovernmentScopes } from "@/data/national-buildout";
 import { countByState, getSelectedStateCode } from "@/lib/state-scope";
 import { officialState } from "@/lib/official-coverage";
 import { getOfficialCompletionDashboard } from "@/lib/profile-completion";
@@ -29,6 +27,8 @@ const levelLabels: Record<GovernmentLevel, string> = {
   "school-board": "School Board",
 };
 
+const texasJurisdictions = [{ code: "TX", name: "Texas" }];
+
 function formatNumber(value: number) {
   return new Intl.NumberFormat("en-US").format(value);
 }
@@ -48,11 +48,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const rawParams = searchParams ? await searchParams : {};
   const params = parseOfficialSearchParams(rawParams);
-  const jurisdictions = getAllNationalJurisdictions();
-  const selectedState = params.state ? jurisdictions.find((state) => state.code === params.state) : undefined;
+  const selectedState = params.state === "TX" ? texasJurisdictions[0] : undefined;
   const levelLabel = params.level !== "all" ? levelLabels[params.level] : "Elected";
-  const scope = selectedState?.name ?? (params.state || "National");
-  const isIndexable = isOfficialSearchIndexable(params);
+  const scope = "Texas";
+  const isIndexable = (!params.state || params.state === "TX") && isOfficialSearchIndexable(params);
   const hasSafeFilter = params.state || params.level !== "all";
 
   // A place facet is its own page, so it gets its own title. Without this,
@@ -68,13 +67,13 @@ export async function generateMetadata({
     ? `${place} ${levelLabel} Officials`
     : hasSafeFilter
       ? `${scope} ${levelLabel} Officials`
-      : "National Elected Officials Directory";
+      : "Texas Elected Officials Directory";
 
   const description = place
     ? `Every ${levelLabel.toLowerCase()} official RepWatchr carries for ${place}, with public sources, voting records, funding data, and the records still being researched.`
     : hasSafeFilter
       ? `Browse source-backed ${levelLabel.toLowerCase()} official profiles for ${scope}. Compare voting records, public sources, funding data, and records still being researched.`
-      : "Search and filter RepWatchr elected-official profiles by state, county, city, office level, party, public sources, funding data, and voting records.";
+      : "Browse Texas elected officials, with HD-7 and TX-01 first. Filter by county, city and office to review public sources, votes, funding and research gaps.";
 
   return buildRepWatchrMetadata({
     title,
@@ -125,8 +124,7 @@ export default async function OfficialsPage({
   const schoolBoardStats = getSchoolBoardStats();
   const dataStats = getRepWatchrDataStats();
   const buildoutStats = getOfficialCompletionDashboard();
-  const jurisdictions = getAllNationalJurisdictions();
-  const nationalSummary = getNationalBuildoutSummary();
+  const jurisdictions = texasJurisdictions;
   const stateLegislatureStats = getStateLegislatureBuildoutStats();
   const profileCountsByState = countByState(officials, officialState);
   const selectedState = jurisdictions.find((state) => state.code === selectedStateCode);
@@ -142,11 +140,6 @@ export default async function OfficialsPage({
   const directoryFederalCount = directoryOfficials.filter((official) => official.level === "federal").length;
   const directoryPhotoCount = directoryOfficials.filter((official) => Boolean(official.photo)).length;
   const directorySourceCount = directoryOfficials.filter((official) => (official.sourceLinks?.length ?? 0) > 0).length;
-  const loadedFederalStates = new Set(
-    officials
-      .filter((official) => official.level === "federal" && official.state)
-      .map((official) => official.state?.toUpperCase()),
-  ).size;
   const levelCounts = officials.reduce<Record<GovernmentLevel, number>>(
     (acc, official) => {
       acc[official.level] = (acc[official.level] ?? 0) + 1;
@@ -164,12 +157,12 @@ export default async function OfficialsPage({
     {
       label: "Statehouse profiles",
       value: formatNumber(stateLegislatureStats.totalProfiles),
-      detail: `${formatNumber(stateLegislatureStats.lowerChamberProfiles)} state reps/delegates and ${formatNumber(stateLegislatureStats.upperChamberProfiles)} state senators across ${formatNumber(stateLegislatureStats.jurisdictionsLoaded)} jurisdictions.`,
+      detail: `${formatNumber(stateLegislatureStats.lowerChamberProfiles)} Texas House profiles and ${formatNumber(stateLegislatureStats.upperChamberProfiles)} Texas Senate profiles.`,
     },
     {
       label: "Federal seats",
       value: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats}`,
-      detail: `${formatNumber(dataStats.federalHouseProfilesLoaded)} U.S. House profiles and ${formatNumber(dataStats.federalSenateProfilesLoaded)} U.S. Senate profiles are live before the deeper local buildout.`,
+      detail: `${formatNumber(dataStats.federalHouseProfilesLoaded)} Texas U.S. House profiles and ${formatNumber(dataStats.federalSenateProfilesLoaded)} Texas U.S. Senate profiles are loaded.`,
     },
     {
       label: "Source-seeded profiles",
@@ -207,7 +200,6 @@ export default async function OfficialsPage({
           federalOfficials={directoryFederalCount}
           photoCount={directoryPhotoCount}
           sourceLinkedCount={directorySourceCount}
-          loadedFederalStates={loadedFederalStates}
           federalExpectedSeats={dataStats.federalExpectedSeats}
           federalProfilesLoaded={dataStats.federalProfilesLoaded}
           completeProfiles={buildoutStats.completeProfiles}
@@ -217,15 +209,15 @@ export default async function OfficialsPage({
         {repwatchrFeatureFlags.districtFocusOnly ? (
           <section className="mt-5 rounded-2xl border border-[#cabfae] bg-[#f7f2e6] p-5">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-[#a23a2b]">
-              Scoped to the home districts
+              Texas coverage, home districts first
             </p>
             <h2 className="mt-1 font-serif text-2xl font-bold text-slate-950">
               The directory is showing HD-7 and TX-01 first.
             </h2>
             <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-700">
-              RepWatchr is building the complete record for Texas House District 7 and Texas&rsquo;s 1st congressional
-              district before it widens back out. Records outside those districts are still here: search a name, or
-              pick a state, county, city or office level, and they come right back.
+              RepWatchr covers elected officials across Texas, with Texas House District 7 and Texas&rsquo;s 1st
+              congressional district first. Search a name or choose a county, city or office level to find other
+              Texas officials. Choose All Texas to browse the full retained directory.
             </p>
             <div className="mt-3 flex flex-wrap gap-4 text-sm font-bold">
               <Link href="/home-district" className="text-[#163b5c] underline underline-offset-4">
@@ -233,6 +225,9 @@ export default async function OfficialsPage({
               </Link>
               <Link href="/home-district/roster" className="text-[#163b5c] underline underline-offset-4">
                 Every seat and every gap
+              </Link>
+              <Link href="/officials?state=TX" className="text-[#163b5c] underline underline-offset-4">
+                All Texas officials
               </Link>
             </div>
           </section>
@@ -244,59 +239,50 @@ export default async function OfficialsPage({
 
         {selectedStateCode && directoryOfficials.length === 0 ? (
           <section className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5 shadow-sm">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">Source import queued</p>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">Texas directory</p>
             <h2 className="mt-1 text-2xl font-black text-amber-950">
-              {selectedState?.name ?? selectedStateCode} elected-official profiles are not loaded yet.
+              This directory covers Texas elected officials.
             </h2>
             <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-amber-900">
-              The state is turned on in the national model. RepWatchr still needs official rosters, public photos,
-              vote records, source links, funding records, and correction paths before public profile cards appear here.
+              Profiles outside Texas are outside this site&rsquo;s coverage. Choose All Texas or return to the
+              HD-7 and TX-01 view.
             </p>
+            <Link href="/officials?state=TX" className="mt-3 inline-flex text-sm font-bold text-[#163b5c] underline underline-offset-4">
+              Browse Texas officials
+            </Link>
           </section>
         ) : null}
-
-        <div className="mt-8">
-          <NationalSpotlightSelector
-            headingLevel={2}
-            basePath="/officials"
-            selectedStateCode={selectedStateCode}
-            jurisdictions={jurisdictions}
-            pageLabel="Coverage board"
-            title="Choose a state when you want the local view."
-            description="The people directory is above. This board shows which states are green, partial, or queued as the national official model fills in."
-            profileNoun="official profiles"
-            profileCountsByState={profileCountsByState}
-          />
-        </div>
 
         <section className="mt-8 overflow-hidden rounded-2xl border border-slate-300 bg-white text-slate-950 shadow-sm">
           <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_48%,#ffffff_48%,#ffffff_52%,#1d4ed8_52%,#1d4ed8_100%)]" />
           <div className="grid gap-6 p-5 lg:grid-cols-[1.18fr_0.82fr] lg:p-7">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
-                United States public-record map
+                Texas public-record directory
               </p>
               <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
                 Elected officials, source-backed.
               </h2>
               <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
-                RepWatchr is built for nationwide coverage. Federal senators and representatives are loaded for every state. Texas remains the first deeper state/local buildout while D.C., territories, tribal governments, school boards, special districts, courts, and other public offices stay marked queued or partial until public sources are attached.
+                Follow Texas&rsquo;s federal representatives, statewide offices, state legislature and local
+                elected officials. HD-7 and TX-01 lead the coverage; source links and research gaps show what
+                has been collected and what still needs review.
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {Object.entries(levelLabels).map(([level, label]) => (
                   <Link
                     key={level}
-                    href={`/officials?level=${level}`}
+                    href={`/officials?state=TX&level=${level}`}
                     className="rounded-full border border-slate-300 bg-slate-50 px-3 py-1.5 text-xs font-black text-slate-800 transition hover:border-blue-400 hover:bg-blue-50 hover:text-blue-800"
                   >
                     {label}: {formatNumber(levelCounts[level as GovernmentLevel])}
                   </Link>
                 ))}
                 <Link
-                  href="/buildout"
+                  href="/home-district/roster"
                   className="rounded-full border border-red-200 bg-red-50 px-3 py-1.5 text-xs font-black text-red-800 transition hover:border-red-300 hover:bg-white"
                 >
-                  National model: {formatNumber(nationalSummary.enabledJurisdictions)} jurisdictions
+                  HD-7 / TX-01 seat ledger
                 </Link>
               </div>
             </div>
@@ -312,22 +298,6 @@ export default async function OfficialsPage({
           </div>
         </section>
 
-        <section className="mt-8 rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
-          <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
-            Nationwide source lanes
-          </p>
-          <h2 className="mt-1 text-2xl font-black text-slate-950">
-            Federal, state, local, tribal, and public-organization profiles use the same model.
-          </h2>
-          <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-            {nationalGovernmentScopes.slice(0, 6).map((scope) => (
-              <div key={scope.id} className="rounded-xl border border-slate-200 bg-slate-50 p-4">
-                <p className="text-sm font-black text-slate-950">{scope.label}</p>
-                <p className="mt-1 text-xs font-semibold leading-5 text-slate-600">{scope.buildoutNeed}</p>
-              </div>
-            ))}
-          </div>
-        </section>
       </div>
     </div>
   );
@@ -345,7 +315,6 @@ function OfficialsCommandDeck({
   federalOfficials,
   photoCount,
   sourceLinkedCount,
-  loadedFederalStates,
   federalExpectedSeats,
   federalProfilesLoaded,
   completeProfiles,
@@ -353,7 +322,7 @@ function OfficialsCommandDeck({
 }: {
   selectedStateCode?: string;
   selectedStateName?: string;
-  jurisdictions: ReturnType<typeof getAllNationalJurisdictions>;
+  jurisdictions: typeof texasJurisdictions;
   profileCountsByState: Record<string, number>;
   spotlightOfficials: Official[];
   initialLevel: string;
@@ -362,13 +331,12 @@ function OfficialsCommandDeck({
   federalOfficials: number;
   photoCount: number;
   sourceLinkedCount: number;
-  loadedFederalStates: number;
   federalExpectedSeats: number;
   federalProfilesLoaded: number;
   completeProfiles: number;
   incompleteProfiles: number;
 }) {
-  const activeScope = selectedStateCode ? selectedStateName ?? selectedStateCode : "United States";
+  const activeScope = selectedStateCode === "TX" ? selectedStateName ?? "Texas" : "Texas · HD-7 / TX-01 first";
   const quickStates = jurisdictions
     .filter((state) => (profileCountsByState[state.code] ?? 0) > 0)
     .slice(0, 12);
@@ -394,7 +362,7 @@ function OfficialsCommandDeck({
             Know who represents you—and what their record shows.
           </h1>
           <p className="mt-6 max-w-2xl border-l border-amber-300/70 pl-5 text-base leading-7 text-slate-200 sm:text-lg">
-            Move from Congress to your statehouse and local offices. Every profile is designed to show the public
+            Follow Texas officials from Congress to the statehouse and local offices. Every profile shows the public
             sources, recorded votes, funding trail, and research gaps behind the headline.
           </p>
 
@@ -411,10 +379,10 @@ function OfficialsCommandDeck({
 
           <div className="mt-5 flex gap-2 overflow-x-auto border-b border-white/10 pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             <Link
-              href="/officials?level=federal"
+              href="/officials?state=TX&level=federal"
               className="shrink-0 rounded-sm border border-blue-300/30 bg-blue-400/10 px-3 py-2 text-xs font-semibold text-blue-100 hover:bg-blue-400/20"
             >
-              Federal races
+              Texas in Congress
             </Link>
             <Link
               href="/state-reps"
@@ -444,8 +412,8 @@ function OfficialsCommandDeck({
           </div>
           <p className="mt-3 max-w-2xl text-xs font-semibold leading-5 text-slate-400">
             Coverage is transparent: {formatNumber(photoCount)} profiles have photography, {formatNumber(completeProfiles)}{" "}
-            are fully built, and {formatNumber(incompleteProfiles)} remain visibly marked for research. National federal
-            coverage: {formatNumber(federalProfilesLoaded)}/{formatNumber(federalExpectedSeats)} seats across {loadedFederalStates} states.
+            are fully built, and {formatNumber(incompleteProfiles)} remain visibly marked for research. Texas federal
+            coverage: {formatNumber(federalProfilesLoaded)}/{formatNumber(federalExpectedSeats)} seats.
           </p>
         </div>
 

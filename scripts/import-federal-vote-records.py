@@ -25,6 +25,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 
+from official_scope import is_profile_state
+
 
 ROOT = Path(__file__).resolve().parents[1]
 OFFICIALS_DIR = ROOT / "src" / "data" / "officials" / "federal"
@@ -177,7 +179,7 @@ def load_federal_officials() -> tuple[dict[str, dict[str, Any]], dict[tuple[str,
     senators_by_state_last: dict[tuple[str, str], dict[str, Any]] = {}
     for path in sorted(OFFICIALS_DIR.glob("*.json")):
         official = read_json(path)
-        if not official:
+        if not official or not is_profile_state(official.get("state")):
             continue
         bioguide = official.get("bioguideId")
         if bioguide:

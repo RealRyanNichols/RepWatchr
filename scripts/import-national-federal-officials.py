@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Import current U.S. Senators and House members for all 50 states.
+"""Import current Texas U.S. Senators and House members.
+
+The historical script name is retained; the roster is restricted to Texas.
 
 Sources:
 - Federal roster: unitedstates/congress-legislators current YAML.
@@ -24,6 +26,8 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
+
+from official_scope import is_profile_state, require_profile_state
 
 try:
     import yaml
@@ -305,6 +309,7 @@ def download_image(url: str | None, target_stem: Path) -> tuple[str | None, str 
 
 
 def write_json(file_path: Path, payload: dict[str, Any]) -> None:
+    require_profile_state(payload)
     file_path.parent.mkdir(parents=True, exist_ok=True)
     file_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
@@ -588,8 +593,14 @@ def main() -> int:
     records: list[tuple[dict[str, Any], dict[str, Any]]] = []
     for person in people:
         term = current_federal_term(person)
-        if term:
+        if term and is_profile_state(term.get("state")):
             records.append((person, term))
+
+    senator_count = sum(term["type"] == "sen" for _, term in records)
+    representative_count = sum(term["type"] == "rep" for _, term in records)
+    if senator_count != 2 or representative_count == 0:
+        print("Incomplete Texas federal source roster; refusing to replace profiles.", file=sys.stderr)
+        return 1
 
     used_ids: set[str] = set()
     tasks: list[dict[str, Any]] = []
@@ -652,14 +663,14 @@ def main() -> int:
         for warning in warnings:
             print(f"- {warning}")
 
-    if by_type["sen"] != 100:
-        print(f"Expected 100 U.S. Senators, found {by_type['sen']}.", file=sys.stderr)
+    if by_type["sen"] != 2:
+        print(f"Expected 2 Texas U.S. Senators, found {by_type['sen']}.", file=sys.stderr)
         return 1
-    if len(states) != 50:
-        print(f"Expected all 50 states, found {len(states)}.", file=sys.stderr)
+    if states != {"TX"}:
+        print(f"Expected only Texas federal officials, found {sorted(states)}.", file=sys.stderr)
         return 1
-    if by_type["rep"] < 400:
-        print(f"Expected at least 400 current U.S. House members, found {by_type['rep']}.", file=sys.stderr)
+    if by_type["rep"] == 0:
+        print("No current Texas U.S. House members found.", file=sys.stderr)
         return 1
     return 0
 

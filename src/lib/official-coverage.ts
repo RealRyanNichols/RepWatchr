@@ -2,38 +2,20 @@ import { cache } from "react";
 import type { Official } from "@/types";
 import { getAllOfficials } from "@/lib/data";
 import { getAllNationalJurisdictions } from "@/data/national-buildout";
+import { officialState } from "@/lib/official-scope";
+export { officialState } from "@/lib/official-scope";
 import { EAST_TEXAS_PRIORITY_DISTRICTS } from "@/lib/school-board-research";
 import {
   getSchoolBoardSearchIndex,
   isVacancyRecord,
 } from "@/lib/school-board-search";
 
-const stateCodes = new Set(
-  getAllNationalJurisdictions().map((state) => state.code),
-);
 const jurisdictionNames = new Map(
   getAllNationalJurisdictions().map((state) => [
     state.code,
     state.name.toLowerCase(),
   ]),
 );
-
-export function officialState(official: Official) {
-  const explicit = official.state?.trim().toUpperCase();
-  if (explicit && stateCodes.has(explicit)) return explicit;
-  // A public postal address is stronger evidence than assuming all local records are Texas.
-  const postal = official.contactInfo.office?.match(
-    /,\s*([A-Z]{2})\s+\d{5}(?:-\d{4})?\b/,
-  );
-  if (postal && stateCodes.has(postal[1])) return postal[1];
-  if (
-    /texas|\btx\b/i.test(
-      `${official.jurisdiction} ${official.county.join(" ")}`,
-    )
-  )
-    return "TX";
-  return "";
-}
 
 export function countyName(value: string) {
   return value.replace(/\s+County$/i, "").trim();

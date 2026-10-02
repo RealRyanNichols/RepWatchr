@@ -166,8 +166,8 @@ const baseNationalTerritoryBuildouts: NationalJurisdictionBuildout[] = [
 
 function applyOfficialProfileCounts(items: NationalJurisdictionBuildout[]): NationalJurisdictionBuildout[] {
   return items.map((item) => {
-    const count = officialProfileCountsByJurisdiction[item.code] ?? item.loadedProfileCount;
-    if (count <= 0) return item;
+    const count = officialProfileCountsByJurisdiction[item.code] ?? 0;
+    if (count <= 0) return { ...item, loadedProfileCount: 0, status: "queued" };
 
     return {
       ...item,

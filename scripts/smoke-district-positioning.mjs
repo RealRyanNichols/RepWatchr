@@ -99,7 +99,7 @@ assert(
 );
 assert(
   !officialPage.includes('dynamic = "force-dynamic"'),
-  "officials/[id] is force-dynamic again: 8,914 profiles rendering cold on every request, with none prebuilt.",
+  "officials/[id] is force-dynamic again, with no home-district profiles prebuilt.",
 );
 assert(
   officialPage.includes("isInFootprint(official)"),
@@ -283,7 +283,7 @@ try {
   assert(false, `Could not evaluate real profile titles: ${error.message}`);
 }
 
-assert(probeResult.scanned > 8000, `Only ${probeResult.scanned} official records were checked.`);
+assert(probeResult.scanned > 700, `Only ${probeResult.scanned} retained Texas official records were checked.`);
 assert(
   probeResult.awkward === 0,
   `${probeResult.awkward} profile titles read as an institution rather than a place, e.g. ${probeResult.awkwardSamples

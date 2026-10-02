@@ -14,6 +14,8 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
+from official_scope import is_texas_official
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "src" / "data"
 OFFICIALS = DATA / "officials"
@@ -76,7 +78,7 @@ def collect_officials() -> list[dict[str, Any]]:
     officials: list[dict[str, Any]] = []
     for path in sorted(OFFICIALS.rglob("*.json")):
         official = read_json(path)
-        if official:
+        if official and is_texas_official(official):
             officials.append(official)
     return sorted(
         officials,

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import current municipal mayor profiles from OpenStates people data.
+"""Import current Texas municipal mayor profiles from OpenStates people data.
 
 The importer only writes generated municipal data under:
 
@@ -26,6 +26,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from io import BytesIO
 from pathlib import Path
 from typing import Any
+
+from official_scope import PROFILE_STATE, is_profile_state, require_profile_state
 
 try:
     import yaml
@@ -180,6 +182,7 @@ def read_yaml(path: Path) -> dict[str, Any] | None:
 
 
 def write_json(path: Path, payload: dict[str, Any]) -> None:
+    require_profile_state(payload)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
 
@@ -459,7 +462,7 @@ def build_tasks(source_dir: Path, used_ids: set[str], city_keys: set[tuple[str, 
     skipped_duplicates = 0
     skipped_non_people = 0
 
-    for code in sorted(JURISDICTION_NAMES):
+    for code in (PROFILE_STATE,):
         directory = source_dir / "data" / code.lower() / "municipalities"
         if not directory.exists():
             continue
@@ -512,7 +515,7 @@ def write_counts_file() -> None:
         if not data or data.get("level") == "school-board":
             continue
         code = html_to_text(data.get("state")).upper()
-        if code:
+        if is_profile_state(code):
             counts[code] = counts.get(code, 0) + 1
 
     ordered = {key: counts[key] for key in sorted(counts)}
@@ -538,9 +541,12 @@ def main() -> int:
         print(f"OpenStates source directory missing data/: {source_dir}", file=sys.stderr)
         return 1
 
-    clean_generated_dirs()
     used_ids, city_keys = collect_existing_ids_and_city_keys()
     tasks, counts, skipped_duplicates, skipped_non_people = build_tasks(source_dir, used_ids, city_keys)
+    if not tasks:
+        print("No new current Texas mayor source profiles; refusing empty import.", file=sys.stderr)
+        return 1
+    clean_generated_dirs()
 
     photos: dict[str, tuple[str | None, str | None]] = {}
     warnings: list[str] = []

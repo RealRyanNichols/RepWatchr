@@ -13,11 +13,6 @@ function nonZeroStateCount(counts: Record<string, number>) {
   return Object.values(counts).filter((value) => value > 0).length;
 }
 
-function completionPercent(loaded: number, target: number) {
-  if (target <= 0) return 0;
-  return Math.round((loaded / target) * 1000) / 10;
-}
-
 export async function GET() {
   const officials = getAllOfficials();
   const dataStats = getRepWatchrDataStats();
@@ -29,7 +24,7 @@ export async function GET() {
   const mediaStats = getPowerWatchStats(mediaProfiles);
   const publicSafetyStats = getPowerWatchStats(publicSafetyProfiles);
   const nationalSummary = getNationalBuildoutSummary();
-  const jurisdictions = getAllNationalJurisdictions();
+  const jurisdictions = getAllNationalJurisdictions().filter((state) => state.code === "TX");
   const geographic = getGeographicBuildoutDashboard();
   const officialBuildout = getOfficialCompletionDashboard();
 
@@ -66,43 +61,40 @@ export async function GET() {
   const totalPublicProfiles =
     dataStats.officialFiles + schoolStats.candidates + attorneyStats.totalProfiles + mediaStats.totalProfiles + publicSafetyStats.totalProfiles;
   const electedProfilesLoaded = dataStats.nonSchoolOfficialFiles + schoolStats.candidates;
-  const allElectedOfficialGaps = Math.max(
-    0,
-    dataStats.nationalAllElectedOfficialEstimate - electedProfilesLoaded,
-  );
-  const allElectedOfficialCompletionPercent = completionPercent(
-    electedProfilesLoaded,
-    dataStats.nationalAllElectedOfficialEstimate,
-  );
   const sourceLinksSurfaced =
     dataStats.publicSourceUrls + schoolStats.sourceCount;
 
   return NextResponse.json({
     generatedAt: new Date().toISOString(),
+    coverageState: "TX",
+    coverageLabel: "Texas elected officials, with HD7 and TX01 priority",
+    // Retain the legacy response container for existing dashboard consumers.
     national: {
-      enabledJurisdictions: nationalSummary.enabledJurisdictions,
+      enabledJurisdictions: jurisdictions.length,
       loadedSpotlightStates: loadedSpotlightStates.size,
-      queuedJurisdictions: Math.max(0, nationalSummary.enabledJurisdictions - loadedSpotlightStates.size),
+      queuedJurisdictions: Math.max(0, jurisdictions.length - loadedSpotlightStates.size),
       governmentScopeCount: nationalSummary.governmentScopeCount,
-      federalStateOfficialProfilesLoaded: dataStats.federalAndStateOfficeProfilesLoaded,
-      federalStateOfficialEstimate: dataStats.nationalFederalStateOfficialEstimate,
-      federalStateOfficialCompletionPercent: dataStats.nationalFederalStateCompletionPercent,
-      federalStateOfficialGaps: dataStats.nationalFederalStateOfficialGaps,
+      federalStateOfficialProfilesLoaded: dataStats.federalAndStateSeatProfilesLoaded,
+      federalStateOfficialEstimate: dataStats.texasFederalStateExpectedSeats,
+      federalStateOfficialCompletionPercent: dataStats.texasFederalStateCompletionPercent,
+      federalStateOfficialGaps: dataStats.texasFederalStateProfileGaps,
       electedProfilesLoaded,
-      allElectedOfficialEstimate: dataStats.nationalAllElectedOfficialEstimate,
-      allElectedOfficialCompletionPercent,
-      allElectedOfficialGaps,
-      localGovernmentUnits: dataStats.nationalLocalGovernmentUnits,
+      allElectedOfficialEstimate: null,
+      allElectedOfficialCompletionPercent: null,
+      allElectedOfficialGaps: null,
+      allElectedRosterStatus: "needs_authentication",
+      officialProfilesNeedingReview: officialBuildout.incompleteProfiles,
+      localGovernmentUnits: null,
     },
     spotlights: [
       {
         id: "officials",
-        label: "Elected officials",
+        label: "Texas elected officials",
         value: dataStats.officialFiles,
         loadedStates: nonZeroStateCount(officialCountsByState),
         href: "/officials",
-        detail: `${dataStats.officialFiles.toLocaleString()} profiles are live on the officials page. ${dataStats.federalAndStateOfficeProfilesLoaded.toLocaleString()}/${dataStats.nationalFederalStateOfficialEstimate.toLocaleString()} estimated federal/state official profiles are loaded (${dataStats.nationalFederalStateCompletionPercent}%). ${officialBuildout.completeProfiles.toLocaleString()}/${officialBuildout.totalProfiles.toLocaleString()} official pages are full profiles.`,
-        notTracked: `${officialBuildout.incompleteProfiles.toLocaleString()} official profiles still need deeper buildout. Rough federal/state gap: ${dataStats.nationalFederalStateOfficialGaps.toLocaleString()} profiles. True all-elected national gap after loaded school-board dossiers: ${allElectedOfficialGaps.toLocaleString()} profiles.`,
+        detail: `${dataStats.officialFiles.toLocaleString()} Texas profiles are loaded. ${dataStats.federalAndStateSeatProfilesLoaded.toLocaleString()}/${dataStats.texasFederalStateExpectedSeats.toLocaleString()} legislative/federal seats have profiles (${dataStats.texasFederalStateCompletionPercent}%). ${officialBuildout.completeProfiles.toLocaleString()}/${officialBuildout.totalProfiles.toLocaleString()} official pages have all required source-backed sections.`,
+        notTracked: `${officialBuildout.incompleteProfiles.toLocaleString()} official profiles need deeper source review; ${dataStats.texasFederalStateProfileGaps.toLocaleString()} legislative/federal seat profiles are missing. The statewide total for every local elected seat has not been authenticated.`,
       },
       {
         id: "school-boards",
@@ -148,14 +140,14 @@ export async function GET() {
         detail: "Officials, school-board members, attorneys/law firms, media profiles, and public-safety profiles currently loaded.",
       },
       {
-        label: "Federal/state official completion",
-        value: dataStats.federalAndStateOfficeProfilesLoaded,
-        detail: `${dataStats.nationalFederalStateCompletionPercent}% of the broad federal/state benchmark is loaded (${dataStats.federalAndStateOfficeProfilesLoaded.toLocaleString()}/${dataStats.nationalFederalStateOfficialEstimate.toLocaleString()}).`,
+        label: "Texas legislative/federal roster",
+        value: dataStats.federalAndStateSeatProfilesLoaded,
+        detail: `${dataStats.texasFederalStateCompletionPercent}% of ${dataStats.texasFederalStateExpectedSeats.toLocaleString()} Texas legislative/federal seats have profiles. Statewide executive and judicial profiles are additional records. Roster coverage does not mean source review is complete.`,
       },
       {
-        label: "All elected-office completion",
+        label: "Texas elected profiles and school dossiers",
         value: electedProfilesLoaded,
-        detail: `${allElectedOfficialCompletionPercent}% of the rough all-elected-official benchmark is loaded when officials plus school-board dossiers are counted (${electedProfilesLoaded.toLocaleString()}/${dataStats.nationalAllElectedOfficialEstimate.toLocaleString()}).`,
+        detail: "Loaded Texas elected-official records and school-board dossiers. A complete statewide count of every local elected seat has not been authenticated; no total-completion percentage is asserted.",
       },
       {
         label: "Source links surfaced",
@@ -181,7 +173,7 @@ export async function GET() {
         label: "Open buildout work",
         value:
           officialBuildout.incompleteProfiles +
-          dataStats.federalAndStateProfileGaps +
+          dataStats.texasFederalStateProfileGaps +
           schoolStats.gapCount +
           attorneyStats.needsBuildout +
           mediaStats.needsBuildout +
@@ -189,8 +181,13 @@ export async function GET() {
         detail: "Known incomplete official profiles, missing profile imports, school-board gaps, and attorney/media/public-safety records needing buildout.",
       },
     ],
-    geographicSummary: geographic.summary,
-    stateRows: geographic.stateRows,
+    geographicSummary: {
+      ...geographic.summary,
+      enabledStatesAndTerritories: jurisdictions.length,
+      statesWithLoadedData: loadedSpotlightStates.size,
+      queuedStatesAndTerritories: Math.max(0, jurisdictions.length - loadedSpotlightStates.size),
+    },
+    stateRows: geographic.stateRows.filter((state) => state.code === "TX"),
     countyRows: geographic.topCountyRows,
     cityRows: geographic.topCityRows,
     districtRows: geographic.lowestDistrictRows,

@@ -180,8 +180,16 @@ assert.equal(
     ),
   ).size,
 );
-assert(
-  coverage.states.filter((state) => state.officialProfiles > 0).length >= 50,
+assert.deepEqual(
+  coverage.states.filter((state) => state.officialProfiles > 0).map((state) => state.code),
+  ["TX"],
+  "Elected-official profile coverage must be limited to Texas",
+);
+assert(getAllOfficials().every((official) => officialState(official) === "TX"));
+assert.equal(
+  coverage.states.find((state) => state.code === "CA").officialProfiles,
+  0,
+  "Out-of-state elected profiles must not be loaded",
 );
 assert.equal(
   coverage.states.find((state) => state.code === "CA").schoolDistricts,
@@ -261,6 +269,22 @@ assert.equal(
 assert.equal(result.rows[0].profileHref, harletonMemberHref(appointed));
 assert(result.rows[0].recordStatus.startsWith("Appointed"));
 assert.equal(result.stats.totalProfiles, coverage.searchRecords);
+
+const { buildSuperAdminSnapshot, buildSuperAdminWatchItems } = require("../src/lib/superadmin-data.ts");
+const snapshot = buildSuperAdminSnapshot();
+assert.equal(snapshot.allElectedOfficialCompletion, null, "Unknown statewide local-seat totals must not imply completion");
+assert.equal(snapshot.allElectedOfficialGaps, null, "An unauthenticated local-seat total cannot produce a gap count");
+assert(!buildSuperAdminWatchItems().some((item) => /national elected|national gap/i.test(`${item.label} ${item.detail}`)));
+const { GET: coverageGET } = require("../src/app/api/dashboard/coverage/route.ts");
+const dashboard = await (await coverageGET()).json();
+assert.equal(dashboard.coverageState, "TX");
+assert.equal(dashboard.national.enabledJurisdictions, 1);
+assert.equal(dashboard.national.federalStateOfficialEstimate, 221);
+assert.equal(dashboard.national.allElectedOfficialEstimate, null);
+assert.equal(dashboard.national.allElectedOfficialCompletionPercent, null);
+assert.equal(dashboard.national.allElectedOfficialGaps, null);
+assert.equal(dashboard.national.allElectedRosterStatus, "needs_authentication");
+assert(dashboard.stateRows.length === 1 && dashboard.stateRows[0].code === "TX");
 console.log(
   JSON.stringify(
     {

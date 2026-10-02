@@ -4,15 +4,13 @@ import {
   getSchoolBoardCompletionReport,
   getSchoolBoardStats,
 } from "@/lib/school-board-research";
-import { getRepWatchrDataStats } from "@/lib/data";
+import { getAllOfficials, getRepWatchrDataStats } from "@/lib/data";
 import { getAllOfficialIdeologyProfiles } from "@/lib/ideology";
 import { getOfficialCompletionDashboard } from "@/lib/profile-completion";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats, getPublicSafetyWatchProfiles } from "@/lib/power-watch";
 import { getAttorneyBuildoutDashboard } from "@/data/attorney-buildout";
 import {
-  getNationalBuildoutSummary,
-  nationalGovernmentScopes,
   socialMonitoringConnections,
 } from "@/data/national-buildout";
 import {
@@ -286,34 +284,26 @@ export default function BuildoutDashboardPage() {
   const attorneyBuildout = getAttorneyBuildoutDashboard(attorneyProfiles);
   const mediaStats = getPowerWatchStats(getMediaWatchProfiles());
   const publicSafetyStats = getPowerWatchStats(getPublicSafetyWatchProfiles());
-  const nationalSummary = getNationalBuildoutSummary();
   const geographic = getGeographicBuildoutDashboard();
+  const texasStateRows = geographic.stateRows.filter((row) => row.state === "TX");
+  const texasCountyRows = geographic.countyRows.filter((row) => row.state === "TX");
+  const texasCityRows = geographic.cityRows.filter((row) => row.state === "TX");
+  const texasDistrictRows = geographic.districtRows.filter((row) => row.state === "TX");
   const officialBuildoutStats = getOfficialCompletionDashboard();
-  const loadedJurisdictionRows = geographic.stateRows.filter((row) => row.status === "loaded").length;
-  const partialJurisdictionRows = geographic.stateRows.filter((row) => row.status === "partial").length;
-  const queuedJurisdictionRows = geographic.stateRows.filter((row) => row.status === "queued").length;
-  const ideologyProfiles = getAllOfficialIdeologyProfiles();
+  const officialIds = new Set(getAllOfficials().map((official) => official.id));
+  const ideologyProfiles = getAllOfficialIdeologyProfiles().filter((profile) => officialIds.has(profile.officialId));
   const numericIdeologyProfiles = ideologyProfiles.filter((profile) => profile.ideologyScore !== null);
   const pendingIdeologyProfiles = ideologyProfiles.length - numericIdeologyProfiles.length;
   const loadedOfficialProfiles = dataStats.nonSchoolOfficialFiles;
-  const electedProfilesLoaded = dataStats.nonSchoolOfficialFiles + stats.candidates;
-  const allElectedOfficialGaps = Math.max(
-    0,
-    dataStats.nationalAllElectedOfficialEstimate - electedProfilesLoaded,
-  );
-  const allElectedCompletionPercent = Math.round(
-    (electedProfilesLoaded / dataStats.nationalAllElectedOfficialEstimate) * 1000,
-  ) / 10;
+  const officialAndSchoolRecordsLoaded = dataStats.nonSchoolOfficialFiles + stats.candidates;
   const sourceUrlCount = dataStats.publicSourceUrls + stats.sourceCount;
   const totalPublicPowerProfiles = attorneyStats.totalProfiles + mediaStats.totalProfiles + publicSafetyStats.totalProfiles;
   const openWorkCount =
     officialBuildoutStats.incompleteProfiles +
-    dataStats.nationalFederalStateOfficialGaps +
-    allElectedOfficialGaps +
     stats.gapCount +
     publicSafetyStats.needsBuildout +
     report.totalBrokenSources;
-  const federalAndStateSeatPercent = dataStats.nationalFederalStateCompletionPercent;
+  const federalAndStateSeatPercent = dataStats.texasFederalStateCompletionPercent;
 
   // Sort districts by completion ascending - show what needs work first.
   const sortedDistricts = [...report.districtCompletions].sort((a, b) => a.percent - b.percent);
@@ -327,15 +317,15 @@ export default function BuildoutDashboardPage() {
       href: "/officials",
     },
     {
-      label: "Federal and state seat profiles",
-      value: dataStats.federalAndStateOfficeProfilesLoaded,
-      status: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} current federal seats are loaded. ${dataStats.stateLegislatorProfilesLoaded.toLocaleString()} state-legislative profiles and ${dataStats.stateExecutiveProfilesLoaded.toLocaleString()} state executive/public-office profiles are loaded. That is ${dataStats.nationalFederalStateCompletionPercent}% of the broad ${dataStats.nationalFederalStateOfficialEstimate.toLocaleString()} federal/state benchmark.`,
-      href: "/officials",
+      label: "Texas federal and legislative seat profiles",
+      value: dataStats.federalAndStateSeatProfilesLoaded,
+      status: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} Texas federal seats and ${dataStats.stateLegislatorProfilesLoaded.toLocaleString()}/181 Texas legislative seats are loaded. That is ${dataStats.texasFederalStateCompletionPercent}% of the ${dataStats.texasFederalStateExpectedSeats} seats. ${dataStats.stateExecutiveProfilesLoaded.toLocaleString()} other Texas state-office profiles are counted separately.`,
+      href: "/officials?state=TX",
     },
     {
-      label: "All elected-office profile surface",
-      value: electedProfilesLoaded,
-      status: `${allElectedCompletionPercent}% of the rough ${dataStats.nationalAllElectedOfficialEstimate.toLocaleString()} all-elected-official benchmark is loaded when officials plus school-board dossiers are counted. ${allElectedOfficialGaps.toLocaleString()} elected profiles remain for true national completion.`,
+      label: "Texas official and school research records",
+      value: officialAndSchoolRecordsLoaded,
+      status: "Loaded non-school official profiles plus school-board research dossiers. Dossiers may include candidates and historical snapshots; this is not a count of every current elected seat in Texas. A complete statewide local-seat inventory has not been established.",
       href: "/buildout",
     },
     {
@@ -463,16 +453,10 @@ export default function BuildoutDashboardPage() {
   ];
   const notTrackedSurfaces = [
     {
-      label: "Estimated federal/state officials left",
-      value: dataStats.nationalFederalStateOfficialGaps,
-      status: `${dataStats.federalAndStateOfficeProfilesLoaded.toLocaleString()}/${dataStats.nationalFederalStateOfficialEstimate.toLocaleString()} estimated federal/state official profiles are loaded. This is a benchmark gap, not a negative finding.`,
-      href: "/officials",
-    },
-    {
-      label: "Estimated all elected officials left",
-      value: allElectedOfficialGaps,
-      status: `${electedProfilesLoaded.toLocaleString()} elected profiles are surfaced across officials and school-board dossiers. The rough all-elected-official benchmark is ${dataStats.nationalAllElectedOfficialEstimate.toLocaleString()}, so this is the long national buildout queue.`,
-      href: "/buildout",
+      label: "Texas federal and legislative seat gaps",
+      value: dataStats.texasFederalStateProfileGaps,
+      status: `${dataStats.federalAndStateSeatProfilesLoaded}/${dataStats.texasFederalStateExpectedSeats} seat profiles are loaded: 38 Texas U.S. House seats, 2 U.S. Senate seats, 150 Texas House seats and 31 Texas Senate seats. Other statewide and local offices require their own source-backed inventories.`,
+      href: "/officials?state=TX",
     },
     {
       label: "Non-school officials without scorecards",
@@ -556,26 +540,21 @@ export default function BuildoutDashboardPage() {
       status: "member_tracked_items, member_profiles, and profile_claims feed the logged-in dashboard and claim flow.",
     },
   ];
-  const nationalCards = [
+  const texasCards = [
     {
-      label: "Jurisdictions enabled",
-      value: nationalSummary.enabledJurisdictions,
-      detail: `${nationalSummary.stateCount} states plus ${nationalSummary.territoryAndDistrictCount} district/territory rows are in the national buildout model. ${loadedJurisdictionRows} are green from loaded records.`,
+      label: "Profile coverage",
+      value: 1,
+      detail: "Texas elected officials, with HD-7 and TX-01 first. Non-Texas elected-official profiles are outside the retained directory.",
     },
     {
-      label: "Federal/state loaded",
-      value: dataStats.federalAndStateOfficeProfilesLoaded,
-      detail: `${dataStats.nationalFederalStateCompletionPercent}% of the ${dataStats.nationalFederalStateOfficialEstimate.toLocaleString()} broad federal/state official benchmark is surfaced.`,
+      label: "Federal/legislative seats loaded",
+      value: dataStats.federalAndStateSeatProfilesLoaded,
+      detail: `${dataStats.texasFederalStateCompletionPercent}% of ${dataStats.texasFederalStateExpectedSeats} Texas federal and state legislative seats have profiles. Loaded does not mean fully reviewed.`,
     },
     {
-      label: "All elected loaded",
-      value: electedProfilesLoaded,
-      detail: `${allElectedCompletionPercent}% of the rough ${dataStats.nationalAllElectedOfficialEstimate.toLocaleString()} all-elected-official benchmark is surfaced across officials and school-board dossiers.`,
-    },
-    {
-      label: "Government lanes",
-      value: nationalSummary.governmentScopeCount,
-      detail: "Federal, state, local, school-board, tribal, courts, special districts, and public-power roles have source plans.",
+      label: "Official and school records",
+      value: officialAndSchoolRecordsLoaded,
+      detail: "Texas non-school official profiles plus school-board research dossiers. The statewide total of all local elected seats remains unverified.",
     },
     {
       label: "Power profiles",
@@ -589,8 +568,8 @@ export default function BuildoutDashboardPage() {
     },
     {
       label: "Social connections",
-      value: nationalSummary.socialConnectionCount,
-      detail: "Profile links are live-ready; real-time X scanning remains credential-gated and admin-reviewed.",
+      value: socialMonitoringConnections.length,
+      detail: "Source connections are listed separately from verified API access. Scanning and publishing require valid credentials and approval.",
     },
   ];
 
@@ -599,9 +578,11 @@ export default function BuildoutDashboardPage() {
       <section className="border-b border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#eff6ff_50%,#fff7ed_100%)]">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <p className="text-xs font-black uppercase tracking-wide text-red-700">Operator dashboard</p>
-          <h1 className="mt-1 text-3xl font-black text-blue-950 sm:text-5xl">RepWatchr buildout completion</h1>
+          <h1 className="mt-1 text-3xl font-black text-blue-950 sm:text-5xl">Texas profile buildout</h1>
           <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-blue-950/75">
-            These numbers are computed from the records currently loaded or queried by RepWatchr. Loaded people, scored records, source URLs, live tables, and missing coverage are separated so the dashboard does not imply tracking that is not wired yet.
+            All Texas elected-official profiles are retained, with HD-7 and TX-01 first. These numbers come from
+            loaded records and research queues. A profile file, a reviewed claim and a live integration are
+            different states; the statewide total of all local elected seats remains unverified.
           </p>
 
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -617,15 +598,15 @@ export default function BuildoutDashboardPage() {
               <div className="mt-3"><ProgressBar percent={officialBuildoutStats.averageCompletionPercent} tone={toneFor(officialBuildoutStats.averageCompletionPercent)} /></div>
             </div>
             <div className="rounded-2xl border border-blue-200 bg-white p-5 shadow-sm">
-              <p className="text-xs font-black uppercase tracking-wide text-emerald-700">Federal/state benchmark</p>
-              <p className="mt-1 text-4xl font-black text-emerald-700">{dataStats.nationalFederalStateCompletionPercent}%</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateOfficeProfilesLoaded.toLocaleString()}/{dataStats.nationalFederalStateOfficialEstimate.toLocaleString()} estimated federal/state officials loaded</p>
+              <p className="text-xs font-black uppercase tracking-wide text-emerald-700">Texas federal/legislative seats</p>
+              <p className="mt-1 text-4xl font-black text-emerald-700">{dataStats.texasFederalStateCompletionPercent}%</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateSeatProfilesLoaded}/{dataStats.texasFederalStateExpectedSeats} seat profiles loaded</p>
               <div className="mt-3"><ProgressBar percent={federalAndStateSeatPercent} tone="green" /></div>
             </div>
             <div className="rounded-2xl border border-red-200 bg-white p-5 shadow-sm">
-              <p className="text-xs font-black uppercase tracking-wide text-red-700">Open work</p>
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Tracked research work</p>
               <p className="mt-1 text-4xl font-black text-red-700">{openWorkCount.toLocaleString()}</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{officialBuildoutStats.incompleteProfiles} incomplete official profiles + {dataStats.nationalFederalStateOfficialGaps.toLocaleString()} federal/state benchmark gaps + {allElectedOfficialGaps.toLocaleString()} all-elected benchmark gaps</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{officialBuildoutStats.incompleteProfiles} incomplete official profiles, {stats.gapCount} school research gaps, {publicSafetyStats.needsBuildout} public-safety records and {report.totalBrokenSources} broken source slots. Entries may concern the same profile.</p>
             </div>
           </div>
         </div>
@@ -696,17 +677,17 @@ export default function BuildoutDashboardPage() {
       <section className="border-b border-slate-200 bg-white py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-6">
-            <p className="text-xs font-black uppercase tracking-wide text-red-700">Nationwide model</p>
-            <h2 className="text-2xl font-black text-gray-950">All-state civic-accountability buildout is turned on</h2>
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">Texas coverage</p>
+            <h2 className="text-2xl font-black text-gray-950">All Texas, with the home districts first</h2>
             <p className="mt-2 max-w-4xl text-sm font-semibold leading-6 text-slate-600">
-              The public buildout page now separates the model from the loaded data. Every state has an enabled
-              federal/state source plan, while incomplete states stay clearly marked queued until source-backed profiles,
-              photos, statements, votes, and public links are loaded.
+              The elected-official directory covers Texas federal, statewide, legislative and local offices.
+              HD-7 and TX-01 lead the research queue. Separate attorney, media, public-safety and news records
+              retain their own coverage and review rules.
             </p>
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {nationalCards.map((card) => (
+            {texasCards.map((card) => (
               <div key={card.label} className="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
                 <p className="text-3xl font-black text-blue-950">{card.value.toLocaleString()}</p>
                 <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">{card.label}</p>
@@ -717,14 +698,12 @@ export default function BuildoutDashboardPage() {
 
           <div className="mt-6 grid gap-4 lg:grid-cols-[0.95fr_1.05fr]">
             <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-              <p className="text-xs font-black uppercase tracking-wide text-red-700">Public-power lanes</p>
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Texas official coverage</p>
               <div className="mt-3 grid gap-2">
-                {nationalGovernmentScopes.map((scope) => (
-                  <div key={scope.id} className="rounded-xl border border-white bg-white p-3 shadow-sm">
-                    <p className="text-sm font-black text-slate-950">{scope.label}</p>
-                    <p className="mt-1 text-xs font-semibold leading-5 text-slate-600">{scope.publicDescription}</p>
-                  </div>
-                ))}
+                <Link href="/officials?state=TX&level=federal" className="rounded-xl border border-white bg-white p-3 text-sm font-black text-[#163b5c] shadow-sm">Texas in Congress</Link>
+                <Link href="/officials?state=TX&level=state" className="rounded-xl border border-white bg-white p-3 text-sm font-black text-[#163b5c] shadow-sm">Texas statewide and legislative offices</Link>
+                <Link href="/home-district/roster" className="rounded-xl border border-white bg-white p-3 text-sm font-black text-[#163b5c] shadow-sm">HD-7 / TX-01 local seat ledger</Link>
+                <Link href="/officials?state=TX" className="rounded-xl border border-white bg-white p-3 text-sm font-black text-[#163b5c] shadow-sm">All retained Texas profiles</Link>
               </div>
             </div>
 
@@ -749,11 +728,11 @@ export default function BuildoutDashboardPage() {
           <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200">
             <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
               <p className="text-xs font-black uppercase tracking-wide text-slate-500">
-                State model status · {loadedJurisdictionRows} loaded · {partialJurisdictionRows} partial · {queuedJurisdictionRows} queued
+                Texas loaded records and research gaps
               </p>
             </div>
             <div className="grid gap-px bg-slate-200 sm:grid-cols-2 lg:grid-cols-3">
-              {geographic.stateRows.map((state) => (
+              {texasStateRows.map((state) => (
                 <div key={state.code} className="bg-white p-3">
                   <div className="flex items-start justify-between gap-3">
                     <div>
@@ -790,9 +769,10 @@ export default function BuildoutDashboardPage() {
           <div className="mb-6 flex flex-col gap-2 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <p className="text-xs font-black uppercase tracking-wide text-red-700">Geographic completion control center</p>
-              <h2 className="text-2xl font-black text-gray-950">Every state, then counties, cities, and districts.</h2>
+              <h2 className="text-2xl font-black text-gray-950">Texas counties, cities and districts</h2>
               <p className="mt-1 max-w-4xl text-xs font-semibold leading-5 text-gray-600">
-                State rows include every enabled jurisdiction. County, city, and district rows show source-known areas already loaded into RepWatchr. Empty states stay queued until a source import creates real records.
+                These Texas rows show source-known areas with loaded official, school-board or public-power records.
+                This is loaded coverage, not a certified inventory of every Texas elected seat.
               </p>
             </div>
             <p className="rounded-full border border-blue-200 bg-white px-3 py-1.5 text-xs font-black text-blue-950">
@@ -802,22 +782,22 @@ export default function BuildoutDashboardPage() {
 
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-3xl font-black text-blue-950">{geographic.summary.enabledStatesAndTerritories.toLocaleString()}</p>
-              <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">States/territories enabled</p>
-              <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{geographic.summary.statesWithLoadedData} have at least one loaded spotlight record.</p>
+              <p className="text-3xl font-black text-blue-950">{texasStateRows.length}</p>
+              <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">Texas coverage</p>
+              <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">HD-7 and TX-01 first; all retained Texas officials remain available.</p>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-3xl font-black text-blue-950">{geographic.summary.countyRows.toLocaleString()}</p>
+              <p className="text-3xl font-black text-blue-950">{texasCountyRows.length.toLocaleString()}</p>
               <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">County rows</p>
               <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">Counties with officials, school boards, attorneys, or media records loaded.</p>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-3xl font-black text-blue-950">{geographic.summary.cityRows.toLocaleString()}</p>
+              <p className="text-3xl font-black text-blue-950">{texasCityRows.length.toLocaleString()}</p>
               <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">City rows</p>
               <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">Cities with local officials, legal-power, or media-power profiles loaded.</p>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-3xl font-black text-blue-950">{geographic.summary.districtRows.toLocaleString()}</p>
+              <p className="text-3xl font-black text-blue-950">{texasDistrictRows.length.toLocaleString()}</p>
               <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">District rows</p>
               <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">School-board district completion rows already computed from roster dossiers.</p>
             </div>
@@ -839,11 +819,11 @@ export default function BuildoutDashboardPage() {
             <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="text-xs font-black uppercase tracking-wide text-red-700">State dashboard</p>
-                <h3 className="text-xl font-black text-slate-950">National queue and loaded profile count</h3>
+                <h3 className="text-xl font-black text-slate-950">Texas loaded profile counts</h3>
               </div>
               <p className="text-xs font-semibold text-slate-500">Officials + school boards + attorneys + media + public safety</p>
             </div>
-            <CompactGeoTable rows={geographic.stateRows} />
+            <CompactGeoTable rows={texasStateRows} />
           </div>
 
           <div className="mt-6 grid gap-4 xl:grid-cols-2">
@@ -852,14 +832,14 @@ export default function BuildoutDashboardPage() {
                 <p className="text-xs font-black uppercase tracking-wide text-red-700">County dashboard</p>
                 <h3 className="text-xl font-black text-slate-950">Top loaded counties</h3>
               </div>
-              <CompactGeoTable rows={geographic.topCountyRows} showState />
+              <CompactGeoTable rows={texasCountyRows.slice(0, 20)} showState />
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
               <div className="mb-3">
                 <p className="text-xs font-black uppercase tracking-wide text-red-700">City dashboard</p>
                 <h3 className="text-xl font-black text-slate-950">Top loaded cities</h3>
               </div>
-              <CompactGeoTable rows={geographic.topCityRows} showState />
+              <CompactGeoTable rows={texasCityRows.slice(0, 20)} showState />
             </div>
           </div>
 
@@ -871,7 +851,7 @@ export default function BuildoutDashboardPage() {
               </div>
               <p className="text-xs font-semibold text-slate-500">Full district table remains below for every loaded district.</p>
             </div>
-            <CompactGeoTable rows={geographic.lowestDistrictRows} showState />
+            <CompactGeoTable rows={texasDistrictRows.slice(0, 30)} showState />
           </div>
         </div>
       </section>

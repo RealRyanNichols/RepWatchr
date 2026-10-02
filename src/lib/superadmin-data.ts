@@ -1,4 +1,5 @@
 import { getRepWatchrDataStats } from "@/lib/data";
+import { getOfficialCompletionDashboard } from "@/lib/profile-completion";
 import {
   getSchoolBoardCompletionReport,
   getSchoolBoardStats,
@@ -20,8 +21,8 @@ export type SuperAdminSnapshot = {
   openResearchItems: number;
   federalStateOfficialCompletion: number;
   federalStateOfficialGaps: number;
-  allElectedOfficialCompletion: number;
-  allElectedOfficialGaps: number;
+  allElectedOfficialCompletion: number | null;
+  allElectedOfficialGaps: number | null;
   scorecards: number;
   redFlagItems: number;
   congressTradingProfiles: number;
@@ -45,19 +46,13 @@ export function buildSuperAdminSnapshot(): SuperAdminSnapshot {
   const dataStats = getRepWatchrDataStats();
   const schoolStats = getSchoolBoardStats();
   const completion = getSchoolBoardCompletionReport();
+  const officialCompletion = getOfficialCompletionDashboard();
   const attorneyStats = getPowerWatchStats(getAttorneyWatchProfiles());
   const mediaStats = getPowerWatchStats(getMediaWatchProfiles());
   const publicSafetyStats = getPowerWatchStats(getPublicSafetyWatchProfiles());
   const visibleElectedProfiles = dataStats.nonSchoolOfficialFiles + schoolStats.candidates;
   const publicPowerProfiles = attorneyStats.totalProfiles + mediaStats.totalProfiles + publicSafetyStats.totalProfiles;
   const publicPowerNeedsBuildout = attorneyStats.needsBuildout + mediaStats.needsBuildout + publicSafetyStats.needsBuildout;
-  const allElectedOfficialGaps = Math.max(
-    0,
-    dataStats.nationalAllElectedOfficialEstimate - visibleElectedProfiles,
-  );
-  const allElectedOfficialCompletion = Math.round(
-    (visibleElectedProfiles / dataStats.nationalAllElectedOfficialEstimate) * 1000,
-  ) / 10;
 
   return {
     visibleProfiles: visibleElectedProfiles + publicPowerProfiles,
@@ -69,11 +64,14 @@ export function buildSuperAdminSnapshot(): SuperAdminSnapshot {
     openResearchItems:
       schoolStats.gapCount +
       completion.totalBrokenSources +
+      officialCompletion.incompleteProfiles +
+      dataStats.texasFederalStateProfileGaps +
       publicPowerNeedsBuildout,
-    federalStateOfficialCompletion: dataStats.nationalFederalStateCompletionPercent,
-    federalStateOfficialGaps: dataStats.nationalFederalStateOfficialGaps,
-    allElectedOfficialCompletion,
-    allElectedOfficialGaps,
+    federalStateOfficialCompletion: dataStats.texasFederalStateCompletionPercent,
+    federalStateOfficialGaps: dataStats.texasFederalStateProfileGaps,
+    // No authenticated statewide census exists for every local elected seat.
+    allElectedOfficialCompletion: null,
+    allElectedOfficialGaps: null,
     scorecards: dataStats.scoreCards,
     redFlagItems: dataStats.redFlagItems,
     congressTradingProfiles: dataStats.congressTradingCurrentProfilesWithRows,
@@ -89,37 +87,31 @@ export function buildSuperAdminWatchItems(): SuperAdminWatchItem[] {
   const dataStats = getRepWatchrDataStats();
   const schoolStats = getSchoolBoardStats();
   const completion = getSchoolBoardCompletionReport();
+  const officialCompletion = getOfficialCompletionDashboard();
   const attorneyStats = getPowerWatchStats(getAttorneyWatchProfiles());
   const mediaStats = getPowerWatchStats(getMediaWatchProfiles());
   const publicSafetyStats = getPowerWatchStats(getPublicSafetyWatchProfiles());
   const sourceUrls = dataStats.publicSourceUrls + schoolStats.sourceCount;
   const publicPowerProfiles = attorneyStats.totalProfiles + mediaStats.totalProfiles + publicSafetyStats.totalProfiles;
   const publicPowerNeedsBuildout = attorneyStats.needsBuildout + mediaStats.needsBuildout + publicSafetyStats.needsBuildout;
-  const openResearchItems = schoolStats.gapCount + completion.totalBrokenSources + publicPowerNeedsBuildout;
+  const openResearchItems = schoolStats.gapCount + completion.totalBrokenSources + officialCompletion.incompleteProfiles + dataStats.texasFederalStateProfileGaps + publicPowerNeedsBuildout;
   const visibleElectedProfiles = dataStats.nonSchoolOfficialFiles + schoolStats.candidates;
-  const allElectedOfficialGaps = Math.max(
-    0,
-    dataStats.nationalAllElectedOfficialEstimate - visibleElectedProfiles,
-  );
-  const allElectedOfficialCompletion = Math.round(
-    (visibleElectedProfiles / dataStats.nationalAllElectedOfficialEstimate) * 1000,
-  ) / 10;
 
   return [
     {
-      id: "national-official-completion",
-      label: "National elected-official completion",
-      status: allElectedOfficialCompletion >= 25 ? "yellow" : "red",
-      value: `${allElectedOfficialCompletion}%`,
-      detail: `${visibleElectedProfiles.toLocaleString()} elected profiles are surfaced across officials and school boards, plus ${publicPowerProfiles.toLocaleString()} attorney, media, and public-safety power profiles. Rough all-elected national gap: ${allElectedOfficialGaps.toLocaleString()} profiles.`,
+      id: "texas-official-review",
+      label: "Texas elected-profile review",
+      status: officialCompletion.incompleteProfiles > 0 ? "yellow" : "green",
+      value: officialCompletion.incompleteProfiles.toLocaleString(),
+      detail: `${visibleElectedProfiles.toLocaleString()} Texas elected profiles and school-board dossiers are surfaced. ${officialCompletion.incompleteProfiles.toLocaleString()} official profiles need source-backed sections. The total number of Texas local elected seats has not been authenticated. ${publicPowerProfiles.toLocaleString()} attorney, media, and public-safety profiles are tracked separately.`,
       href: "/buildout",
     },
     {
       id: "federal-state-official-completion",
-      label: "Federal/state official completion",
-      status: dataStats.nationalFederalStateCompletionPercent >= 75 ? "green" : "yellow",
-      value: `${dataStats.nationalFederalStateCompletionPercent}%`,
-      detail: `${dataStats.federalAndStateOfficeProfilesLoaded.toLocaleString()}/${dataStats.nationalFederalStateOfficialEstimate.toLocaleString()} broad federal/state official benchmark profiles are loaded.`,
+      label: "Texas legislative/federal roster",
+      status: dataStats.texasFederalStateProfileGaps === 0 ? "green" : "yellow",
+      value: `${dataStats.texasFederalStateCompletionPercent}%`,
+      detail: `${dataStats.federalAndStateSeatProfilesLoaded.toLocaleString()}/${dataStats.texasFederalStateExpectedSeats.toLocaleString()} Texas legislative and federal seats have profiles. Statewide executive and judicial profiles are additional records. This measures roster coverage, not completed source review.`,
       href: "/officials",
     },
     {
@@ -143,7 +135,7 @@ export function buildSuperAdminWatchItems(): SuperAdminWatchItem[] {
       label: "Open research work",
       status: openResearchItems > 500 ? "red" : openResearchItems > 100 ? "yellow" : "green",
       value: openResearchItems.toLocaleString(),
-      detail: `${schoolStats.gapCount} school-board gaps, ${completion.totalBrokenSources} empty source URLs, and ${publicPowerNeedsBuildout} public-power profiles still need buildout.`,
+      detail: `${officialCompletion.incompleteProfiles} incomplete Texas official profiles, ${dataStats.texasFederalStateProfileGaps} missing legislative/federal seat profiles, ${schoolStats.gapCount} school-board gaps, ${completion.totalBrokenSources} empty source URLs, and ${publicPowerNeedsBuildout} public-power profiles still need buildout.`,
       href: "/buildout",
     },
     {

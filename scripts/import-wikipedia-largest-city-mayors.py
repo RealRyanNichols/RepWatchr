@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import source-seeded mayor profiles for the 50 largest U.S. cities.
+"""Import source-seeded Texas mayor profiles from the 50-largest-cities table.
 
 Source:
 - Wikipedia table: List of mayors of the 50 largest cities in the United States
@@ -29,6 +29,8 @@ from html.parser import HTMLParser
 from io import BytesIO
 from pathlib import Path
 from typing import Any
+
+from official_scope import is_profile_state, require_profile_state
 
 try:
     from PIL import Image, ImageOps, UnidentifiedImageError
@@ -354,6 +356,7 @@ def source_links(row: dict[str, Any]) -> list[dict[str, str]]:
 
 
 def write_json(path: Path, payload: dict[str, Any]) -> None:
+    require_profile_state(payload)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
 
@@ -368,7 +371,7 @@ def write_counts_file() -> None:
         if data.get("level") == "school-board":
             continue
         code = html_to_text(data.get("state")).upper()
-        if code:
+        if is_profile_state(code):
             counts[code] = counts.get(code, 0) + 1
 
     lines = [
@@ -429,6 +432,11 @@ def main() -> int:
         print(f"Only found {len(rows)} largest-city mayor rows; refusing partial import.", file=sys.stderr)
         return 1
 
+    rows = [row for row in rows if is_profile_state(STATE_CODES.get(row["state"]))]
+    if not rows:
+        print("No Texas largest-city mayor rows; refusing empty import.", file=sys.stderr)
+        return 1
+
     clean_generated_dirs()
     photos = 0
     for row in rows:
@@ -440,7 +448,7 @@ def main() -> int:
         write_json(CITY_OUT / f"{official_id}.json", payload)
 
     write_counts_file()
-    print(f"Imported {len(rows)} largest-city mayor profiles.")
+    print(f"Imported {len(rows)} Texas largest-city mayor profiles.")
     print(f"Downloaded {photos} mayor profile photos.")
     print(f"Source: {WIKIPEDIA_PAGE_URL}")
     return 0

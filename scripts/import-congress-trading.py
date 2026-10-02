@@ -18,6 +18,8 @@ import urllib.request
 from pathlib import Path
 from typing import Any
 
+from official_scope import is_profile_state
+
 ROOT = Path(__file__).resolve().parents[1]
 FEDERAL_OFFICIALS_DIR = ROOT / "src" / "data" / "officials" / "federal"
 OUTPUT_DIR = ROOT / "src" / "data" / "congress-trading"
@@ -105,6 +107,8 @@ def load_current_federal_lookup() -> tuple[set[str], dict[str, list[str]]]:
 
     for file_path in FEDERAL_OFFICIALS_DIR.glob("*.json"):
         data = json.loads(file_path.read_text())
+        if not is_profile_state(data.get("state")):
+            continue
         profile_id = data["id"]
         profile_ids.add(profile_id)
         possible_names = {
@@ -149,6 +153,10 @@ def find_profile_id(row: dict[str, Any], profile_ids: set[str], lookup: dict[str
         matches.update(lookup.get(variant, []))
 
     return next(iter(matches)) if len(matches) == 1 else None
+
+
+def is_texas_tracker_row(row: dict[str, Any]) -> bool:
+    return bool(re.match(r"^(?:TX|Texas)\b", str(row.get("district", "")).strip(), re.I))
 
 
 def risk_for(row: dict[str, Any]) -> tuple[str, list[str]]:
@@ -200,6 +208,8 @@ def main() -> None:
     unmatched_records: list[dict[str, Any]] = []
 
     for row in parsed_rows:
+        if not is_texas_tracker_row(row):
+            continue
         risk_level, risk_reasons = risk_for(row)
         official_source_name, official_source_url = official_disclosure_source(str(row["chamber"]))
         profile_id = find_profile_id(row, profile_ids, lookup)

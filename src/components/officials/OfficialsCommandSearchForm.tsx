@@ -46,7 +46,7 @@ export default function OfficialsCommandSearchForm({
         track("official_button_click", {
           action: "command_deck_open",
           level: levelValue,
-          state: stateValue || "national",
+          state: stateValue || "home-districts",
           has_search: searchValue.trim() ? "true" : "false",
         });
       }}
@@ -57,7 +57,7 @@ export default function OfficialsCommandSearchForm({
         <input
           name="search"
           defaultValue={initialSearch}
-          placeholder="Search by name, office, district, state, or county"
+          placeholder="Search Texas by name, office, district, or county"
           className="mt-1 w-full rounded-sm border border-white/30 bg-white px-3 py-3 text-base font-semibold text-slate-950 placeholder:font-normal placeholder:text-slate-500 outline-none focus:border-amber-300 focus:ring-2 focus:ring-amber-200/40"
         />
       </label>
@@ -79,25 +79,24 @@ export default function OfficialsCommandSearchForm({
         </select>
       </label>
       <label>
-        <span className="text-xs font-semibold text-slate-300">State or national view</span>
+        <span className="text-xs font-semibold text-slate-300">Texas coverage</span>
         <select
           name="state"
           defaultValue={selectedStateCode ?? ""}
           onChange={(event) => {
             track("official_filter_change", {
               filter: "command_state",
-              value: event.target.value || "national",
+              value: event.target.value || "home-districts",
             });
           }}
           className="mt-1 w-full rounded-sm border border-white/30 bg-white px-3 py-3 text-base font-semibold text-slate-950 outline-none focus:border-amber-300 focus:ring-2 focus:ring-amber-200/40"
         >
-          <option value="">National - {totalOfficials.toLocaleString()}</option>
+          <option value="">HD-7 / TX-01 first</option>
           {jurisdictions.map((state) => {
             const count = profileCountsByState[state.code] ?? 0;
             return (
               <option key={state.code} value={state.code}>
-                {state.name}
-                {count > 0 ? ` - ${count.toLocaleString()}` : " - queued"}
+                All {state.name} - {(count || totalOfficials).toLocaleString()}
               </option>
             );
           })}

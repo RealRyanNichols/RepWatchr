@@ -56,7 +56,8 @@ assert(!existsSync(path.join(newsDir, "uap-file-dump-congress-attention-2026.jso
 assert(currentArticle.editorialStatus === "approved", "Current midterm article is not approved.");
 assert(currentArticle.publicPostEmbeds?.[0]?.url?.startsWith("https://x.com/"), "Current midterm article is missing its native public-post source.");
 
-const factualRoster = read("src/data/officials/federal/us-house-tn2.json");
-assert(factualRoster.includes('"name": "Tim Burchett"'), "Neutrality cleanup removed the ordinary factual roster record.");
+const factualRoster = JSON.parse(read("src/data/officials/federal/us-house-tx1.json"));
+assert(factualRoster.name === "Nathaniel Moran" && factualRoster.state === "TX", "Neutrality cleanup removed the retained factual Texas roster record.");
+assert(factualRoster.reviewStatus && factualRoster.sourceLinks?.length > 0, "Retained Texas roster must preserve review status and source provenance.");
 
 console.log("Editorial neutrality smoke check passed.");

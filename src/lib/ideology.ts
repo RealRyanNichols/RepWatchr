@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { Official, OfficialIdeologyProfile } from "@/types";
-import { getAllBills } from "@/lib/data";
+import { getAllBills, getAllOfficials } from "@/lib/data";
 
 const IDEOLOGY_MASTER_PATH = path.join(process.cwd(), "src", "data", "official-ideology-master.json");
 
@@ -31,7 +31,8 @@ function readIdeologyProfiles(): OfficialIdeologyProfile[] {
   try {
     const raw = fs.readFileSync(IDEOLOGY_MASTER_PATH, "utf-8");
     const publishedBillIds = new Set(getAllBills().map((bill) => bill.id));
-    ideologyProfilesCache = (JSON.parse(raw) as OfficialIdeologyProfile[]).map((profile) => {
+    const retainedOfficialIds = new Set(getAllOfficials().map((official) => official.id));
+    ideologyProfilesCache = (JSON.parse(raw) as OfficialIdeologyProfile[]).filter((profile) => retainedOfficialIds.has(profile.officialId)).map((profile) => {
       const publishedEvidence = profile.evidence.filter((item) => publishedBillIds.has(item.billId));
       if (publishedEvidence.length === profile.evidence.length) return profile;
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Import current state-level public officials from OpenStates people data.
+"""Import current Texas state-level public officials from OpenStates people data.
 
 The importer is non-destructive to the existing Texas hand-tuned state
-legislature files. It writes generated national data under:
+legislature files. The historical script name is retained. It writes Texas data under:
 
 - src/data/officials/state-legislature
 - src/data/officials/state-executive
@@ -30,6 +30,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from io import BytesIO
 from pathlib import Path
 from typing import Any
+
+from official_scope import PROFILE_STATE, is_profile_state, require_profile_state
 
 try:
     import yaml
@@ -198,6 +200,7 @@ def read_yaml(path: Path) -> dict[str, Any] | None:
 
 
 def write_json(path: Path, payload: dict[str, Any]) -> None:
+    require_profile_state(payload)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
 
@@ -526,7 +529,7 @@ def build_tasks(source_dir: Path, include_texas_legislature: bool, used_ids: set
     legislative_counts: dict[str, int] = {}
     executive_counts: dict[str, int] = {}
 
-    for code in sorted(JURISDICTION_NAMES):
+    for code in (PROFILE_STATE,):
         code_lower = code.lower()
         jurisdiction_dir = source_dir / "data" / code_lower
         if not jurisdiction_dir.exists():
@@ -582,7 +585,7 @@ def write_counts_file() -> None:
         if not data or data.get("level") == "school-board":
             continue
         code = html_to_text(data.get("state")).upper()
-        if code:
+        if is_profile_state(code):
             counts[code] = counts.get(code, 0) + 1
 
     ordered = {key: counts[key] for key in sorted(counts)}
@@ -609,9 +612,12 @@ def main() -> int:
         print(f"OpenStates source directory missing data/: {source_dir}", file=sys.stderr)
         return 1
 
-    clean_generated_dirs()
     used_ids = collect_existing_ids()
     tasks, legislative_counts, executive_counts = build_tasks(source_dir, args.include_texas_legislature, used_ids)
+    if not tasks:
+        print("No current Texas source profiles; refusing empty import.", file=sys.stderr)
+        return 1
+    clean_generated_dirs()
 
     photos: dict[str, tuple[str | None, str | None]] = {}
     warnings: list[str] = []

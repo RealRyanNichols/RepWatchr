@@ -124,10 +124,10 @@ export default function DashboardCoveragePanel() {
         <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="text-xs font-black uppercase tracking-wide text-red-700">Website analytics</p>
-            <h2 className="mt-1 text-2xl font-black text-slate-950">National spotlight coverage</h2>
+            <h2 className="mt-1 text-2xl font-black text-slate-950">Texas coverage</h2>
             <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-slate-600">
-              These dashboard numbers now match the national-first model: elected officials, school-board members,
-              attorneys/law firms, and media profiles are counted separately from states that are only queued.
+              Elected-official coverage is Texas-wide, with HD-7 and TX-01 first. School-board dossiers,
+              attorneys, media and public-safety records are counted separately.
             </p>
           </div>
           <div className="rounded-xl border border-blue-100 bg-blue-50 px-4 py-3 text-xs font-bold text-blue-950">
@@ -136,9 +136,9 @@ export default function DashboardCoveragePanel() {
         </div>
 
         <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          <Metric label="Enabled jurisdictions" value={payload.national.enabledJurisdictions} detail="States, D.C., and territories in the model" />
+          <Metric label="Coverage jurisdictions" value={payload.national.enabledJurisdictions} detail="Texas elected-official coverage" />
           <Metric label="Loaded states" value={payload.national.loadedSpotlightStates} detail="States with at least one spotlight record" />
-          <Metric label="Queued jurisdictions" value={payload.national.queuedJurisdictions} detail="Enabled but not imported on these pages yet" />
+          <Metric label="Queued jurisdictions" value={payload.national.queuedJurisdictions} detail="Within the Texas coverage scope" />
           <Metric label="Public-power lanes" value={payload.national.governmentScopeCount} detail="Government, attorney, media, and public-source lanes" />
         </div>
 
