@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { getOfficialCoverage } from "@/lib/official-coverage";
+import { getAllOfficials, getRepWatchrDataStats } from "@/lib/data";
+import { getSchoolBoardStats } from "@/lib/school-board-research";
+import { FOOTPRINT_BOUNDARY_PROVENANCE, isInFootprint } from "@/lib/district-footprint";
 import {
   harletonMemberHref,
   harletonRoster,
@@ -8,9 +11,9 @@ import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 
 export const metadata = buildRepWatchrMetadata({
-  title: "Official Directory Coverage by State",
+  title: "Texas Directory Coverage and Source Counts",
   description:
-    "See actual RepWatchr profile and school-district coverage, source dates, remaining gaps, and the Harleton-to-national research priorities.",
+    "See Texas profile and school research counts, source dates and missing records. HD-7 and TX-01 lead coverage; records and verified officeholders stay distinct.",
   path: "/coverage",
   imagePath: buildOgImageUrl("home", { page: "coverage" }),
   imageAlt: "RepWatchr official directory coverage",
@@ -22,6 +25,9 @@ const linkClass =
 
 export default function CoveragePage() {
   const coverage = getOfficialCoverage();
+  const dataStats = getRepWatchrDataStats();
+  const schoolStats = getSchoolBoardStats();
+  const footprintProfiles = getAllOfficials().filter(isInFootprint).length;
   return (
     <div className="rw-page-shell">
       <div className="mx-auto max-w-7xl space-y-10 px-4 py-10 sm:px-6 lg:px-8">
@@ -30,7 +36,7 @@ export default function CoveragePage() {
             Coverage, with the gaps visible
           </p>
           <h1 className="mt-3 font-serif text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-            From Harleton to every state.
+            All Texas, with HD-7 and TX-01 first.
           </h1>
           <p className="mt-5 text-lg leading-8 text-slate-700">
             Find the records already here, see when their sources were checked,
@@ -39,10 +45,10 @@ export default function CoveragePage() {
           </p>
           <div className="mt-5 flex flex-wrap gap-4 text-sm">
             <Link className={linkClass} href="/officials">
-              Search all records →
+              Search the home-district view →
             </Link>
             <a className={linkClass} href="#states">
-              Browse every state
+              Browse Texas coverage
             </a>
             <a className={linkClass} href="#harleton">
               Harleton roster check
@@ -87,6 +93,44 @@ export default function CoveragePage() {
               <p className="mt-2 text-sm leading-6 text-slate-600">{detail}</p>
             </div>
           ))}
+        </section>
+
+        <section id="inventory" className="scroll-mt-24" aria-labelledby="inventory-title">
+          <h2 id="inventory-title" className="font-serif text-3xl font-semibold text-slate-950">
+            What the inventory counts mean
+          </h2>
+          <p className="mt-3 max-w-4xl leading-7 text-slate-700">
+            These collections serve different research purposes. Adding their totals does not establish a count
+            of unique people, current officeholders or verified findings.
+          </p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-lg border border-slate-200 bg-white p-5">
+              <p className="text-3xl font-bold text-slate-950">{number(footprintProfiles)}</p>
+              <h3 className="mt-2 text-sm font-bold text-slate-800">HD-7 / TX-01 profile records</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                Records in the {FOOTPRINT_BOUNDARY_PROVENANCE.status === "verified" ? "verified" : "working"} footprint.
+                {FOOTPRINT_BOUNDARY_PROVENANCE.status !== "verified" ? " TX-01’s county boundary remains pending authentication." : null}
+              </p>
+              <Link href="/home-district/roster" className={`${linkClass} mt-3 inline-flex text-sm`}>Open the seat ledger →</Link>
+            </div>
+            <div className="rounded-lg border border-slate-200 bg-white p-5">
+              <p className="text-3xl font-bold text-slate-950">{number(schoolStats.candidates)}</p>
+              <h3 className="mt-2 text-sm font-bold text-slate-800">School research dossiers</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">Includes historical records, candidates and incomplete dossiers. This is not a current elected-member count.</p>
+              <Link href="/school-boards" className={`${linkClass} mt-3 inline-flex text-sm`}>Open school research →</Link>
+            </div>
+            <div className="rounded-lg border border-slate-200 bg-white p-5">
+              <p className="text-3xl font-bold text-slate-950">{number(dataStats.publicPowerProfiles)}</p>
+              <h3 className="mt-2 text-sm font-bold text-slate-800">Public-power records</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">Separate attorney, media and public-safety records. These are not elected-official profiles.</p>
+              <Link href="/buildout" className={`${linkClass} mt-3 inline-flex text-sm`}>See collection details →</Link>
+            </div>
+            <div className="rounded-lg border border-slate-200 bg-white p-5">
+              <p className="text-2xl font-bold text-slate-950">{number(dataStats.publicSourceUrls)} + {number(schoolStats.sourceCount)}</p>
+              <h3 className="mt-2 text-sm font-bold text-slate-800">General + school source URLs</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">Each collection counts distinct URLs internally. The collections may overlap; a link alone does not verify a claim.</p>
+            </div>
+          </div>
         </section>
 
         <section
@@ -263,10 +307,10 @@ export default function CoveragePage() {
             id="states-title"
             className="font-serif text-3xl font-semibold text-slate-950"
           >
-            Browse all 50 states, D.C., and territories.
+            Texas records by office level
           </h2>
           <p className="mt-3 max-w-4xl leading-7 text-slate-700">
-            Federal and state records extend nationwide. Local and school-board
+            The elected-official directory retains Texas profiles. Local and school-board
             coverage is uneven. A zero means no matching records are loaded; it
             does not mean the jurisdiction has no officials. District counts are
             separate from people.
@@ -279,7 +323,7 @@ export default function CoveragePage() {
               <thead className="bg-slate-100 text-slate-700">
                 <tr>
                   {[
-                    "State / territory",
+                    "State",
                     "Federal",
                     "State",
                     "County",
@@ -295,7 +339,7 @@ export default function CoveragePage() {
                 </tr>
               </thead>
               <tbody>
-                {coverage.states.map((state) => (
+                {coverage.states.filter((state) => state.code === "TX").map((state) => (
                   <tr key={state.code} className="border-t border-slate-200">
                     <th scope="row" className="p-3">
                       <Link

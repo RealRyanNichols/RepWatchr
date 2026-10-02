@@ -120,6 +120,17 @@ export default async function OfficialsPage({
   const selectedStateCode = getSelectedStateCode({ state: searchResult.params.state });
   const initialSearch = searchResult.params.search || getParamValue(params.search);
   const initialLevel = getInitialLevel(searchResult.params.level);
+  const districtView = repwatchrFeatureFlags.districtFocusOnly && !(
+    searchResult.params.search || searchResult.params.state || searchResult.params.county ||
+    searchResult.params.city || searchResult.params.level !== "all"
+  );
+  const directoryScopeHeading = districtView
+    ? "Showing the HD-7 and TX-01 view."
+    : searchResult.params.state && searchResult.params.state !== "TX"
+      ? "This directory covers Texas records."
+      : searchResult.params.state === "TX" && searchResult.activeFilterCount === 1
+        ? "Showing all Texas records."
+        : "Showing your filtered Texas records.";
   const officials = getAllOfficials();
   const schoolBoardStats = getSchoolBoardStats();
   const dataStats = getRepWatchrDataStats();
@@ -212,7 +223,7 @@ export default async function OfficialsPage({
               Texas coverage, home districts first
             </p>
             <h2 className="mt-1 font-serif text-2xl font-bold text-slate-950">
-              The directory is showing HD-7 and TX-01 first.
+              {directoryScopeHeading}
             </h2>
             <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-700">
               RepWatchr covers elected officials across Texas, with Texas House District 7 and Texas&rsquo;s 1st

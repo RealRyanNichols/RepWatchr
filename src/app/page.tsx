@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { getAllOfficials, getScoreCard, getIssueCategories, getRepWatchrDataStats, getOfficialById } from "@/lib/data";
-import { getSchoolBoardStats } from "@/lib/school-board-research";
+import { getAllOfficials, getScoreCard, getIssueCategories, getOfficialById } from "@/lib/data";
 import OfficialCard from "@/components/officials/OfficialCard";
 import EditorialThumbnail from "@/components/shared/EditorialThumbnail";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
@@ -15,7 +14,6 @@ import {
   HOME_DISTRICTS,
   TX_HOUSE_DISTRICT_7,
 } from "@/lib/home-districts";
-import { FOOTPRINT_BOUNDARY_PROVENANCE, FOOTPRINT_COUNTY_NAMES, isInFootprint } from "@/lib/district-footprint";
 import { ISSUE_ART_VIEWBOX, issueArtInnerSvg } from "@/lib/issue-art";
 import { STANDARD_ART_VIEWBOX, standardArtInnerSvg } from "@/lib/standard-art";
 import VectorArt from "@/components/shared/VectorArt";
@@ -90,6 +88,33 @@ const sourceDeskActions = [
   },
 ];
 
+const publicRecordActions = [
+  {
+    label: "Find your official",
+    href: "/officials#official-directory",
+    eyebrow: "People",
+    detail: "Search Texas profiles, with HD-7 and TX-01 first.",
+  },
+  {
+    label: "Read Marion County reporting",
+    href: "/marion-county#reporting",
+    eyebrow: "Local reporting",
+    detail: "Follow dated stories, public documents and updates.",
+  },
+  {
+    label: "See voting records",
+    href: "/officials?state=TX&voting=1#official-directory",
+    eyebrow: "Votes",
+    detail: "Open Texas officials with loaded public vote records.",
+  },
+  {
+    label: "Submit a public source",
+    href: "/submit-source",
+    eyebrow: "Contribute",
+    detail: "Send a document, source link or correction for review.",
+  },
+];
+
 /**
  * "Gregg, Harrison and Marion" from the module, never typed by hand.
  * Read from the HD-7 entry specifically: the aggregate of verified districts
@@ -141,10 +166,6 @@ const publicAssetAllowlist = new Set([
   "/images/banner.png",
   "/images/icon.png",
 ]);
-
-function formatNumber(value: number) {
-  return new Intl.NumberFormat("en-US").format(value);
-}
 
 function publicAssetExists(assetPath?: string) {
   if (!assetPath) return false;
@@ -280,8 +301,6 @@ function HomeStoryVisual({ article }: { article: NewsArticle }) {
 export default async function HomePage() {
   const officials = getAllOfficials();
   const issueCategories = getIssueCategories();
-  const schoolBoardStats = getSchoolBoardStats();
-  const dataStats = getRepWatchrDataStats();
   const [allNews, wireResult] = await Promise.all([
     getPublicArticleCatalog(),
     getDailyWireClips(24),
@@ -334,47 +353,6 @@ export default async function HomePage() {
       (article.publicPostEmbeds ?? []).map((post) => ({ article, post })),
     )
     .find(({ post }) => post.platform === "x");
-  const electedProfileCount = dataStats.nonSchoolOfficialFiles + schoolBoardStats.candidates;
-  const allPublicProfileCount = electedProfileCount + dataStats.publicPowerProfiles;
-  const allPublicSourceUrls = dataStats.publicSourceUrls + schoolBoardStats.sourceCount;
-
-  // The headline says HD-7 and TX-01, so the district number leads. The
-  // all-states total is real and stays on the page, but it is labelled as a
-  // national archive rather than left beside the district claim where a reader
-  // in Longview would read it as coverage of their own ballot.
-  const footprintProfileCount = officials.filter(isInFootprint).length;
-
-  const stats = [
-    {
-      label: "HD-7 / TX-01 Profiles",
-      value: formatNumber(footprintProfileCount),
-      // The county count is only as settled as TX-01's boundary, which is
-      // carried as needs_authentication pending the state's PlanC2333 report.
-      // Printing "13-county footprint" flat would publish a working coverage
-      // target as an established boundary finding.
-      caption:
-        FOOTPRINT_BOUNDARY_PROVENANCE.status === "verified"
-          ? `seats loaded inside the ${FOOTPRINT_COUNTY_NAMES.length}-county footprint`
-          : `seats loaded inside the working ${FOOTPRINT_COUNTY_NAMES.length}-county footprint (TX-01 boundary pending authentication)`,
-    },
-    {
-      label: "All-State Archive",
-      value: formatNumber(allPublicProfileCount),
-      caption: "records nationwide, most outside the district",
-    },
-    {
-      label: "Authority Roles",
-      value: formatNumber(dataStats.publicPowerProfiles),
-      caption: "public authority and influence roles",
-    },
-    {
-      label: "Source URLs",
-      value: formatNumber(allPublicSourceUrls),
-      caption: "links voters can open and share",
-    },
-  ];
-
-
   // The previous selection was an accident of the global sort: at-large districts encode
   // as district 0, so six unrelated at-large House members permanently held the homepage.
   // RepWatchr covers HD-7 and TX-01 first, so the two home seats lead, then the rest of
@@ -585,26 +563,27 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Proof Bar */}
+      {/* Public record actions */}
       <section className="border-b border-gray-100 bg-white">
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="mb-4 flex items-baseline justify-between gap-4">
             <h2 className="text-lg font-bold text-blue-950">Explore the public record</h2>
-            <Link href="/coverage" className="text-sm font-semibold text-blue-800 underline underline-offset-4">Check coverage</Link>
+            <Link href="/coverage#inventory" className="text-sm font-semibold text-blue-800 underline underline-offset-4">See coverage and source counts</Link>
           </div>
           <div className="grid grid-cols-2 overflow-hidden rounded-2xl border border-gray-100 sm:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.label} className="border-b border-r border-gray-100 px-4 py-5 sm:border-b-0">
-                <p className="text-2xl font-black text-slate-900 sm:text-3xl">
-                  {stat.value}
-                </p>
-                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700 sm:text-sm">
-                  {stat.label}
-                </p>
-                <p className="mt-1 text-[11px] font-semibold leading-4 text-gray-500">
-                  {stat.caption}
-                </p>
-              </div>
+            {publicRecordActions.map((action) => (
+              <Link
+                key={action.href}
+                href={action.href}
+                className="group flex min-h-56 flex-col border-b border-r border-gray-100 px-4 py-5 transition hover:bg-blue-50 focus-visible:relative focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-700 sm:border-b-0 sm:px-5"
+              >
+                <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-red-700">{action.eyebrow}</p>
+                <h3 className="mt-3 text-lg font-bold leading-tight text-blue-950 group-hover:underline sm:text-xl">{action.label}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-600">{action.detail}</p>
+                <span className="mt-auto flex items-center gap-2 pt-5 text-sm font-bold text-blue-800">
+                  Open <span aria-hidden="true">→</span>
+                </span>
+              </Link>
             ))}
           </div>
         </div>
