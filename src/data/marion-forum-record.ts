@@ -52,6 +52,12 @@ export const marionForumFacts = [
 
 export const marionForumUpdates = [
   {
+    date: "2026-10-02",
+    title: "County declared write-in list reviewed",
+    text: "The county-published November 3 list names Dina Carroll for County Judge. This closes the earlier missing-roster check. Her accepted declaration and filing date remain separate records not acquired by this desk. The September 29 sample-ballot review below is retained as a historical entry.",
+    source: { title: "County list of declared write-in candidates", url: "https://marioncountytaxoffice.com/wp-content/uploads/2026/09/LIST-OF-DECLARED-WRITE-IN-CANDIDATES.pdf" },
+  },
+  {
     date: "2026-09-29",
     title: "County sample ballot reviewed",
     text: "The precincts 1 and 2 sample names LaFleur and includes a blank write-in line. It does not name Carroll or establish her write-in qualification. The accepted declaration or qualified roster remains an open record check.",

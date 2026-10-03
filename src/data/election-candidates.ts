@@ -67,12 +67,13 @@ const dinaCarroll: ElectionCandidateProfile = {
   electionDate: "November 3, 2026",
   racePath: "/elections/texas/marion-county-judge-2026",
   ballotStatus:
-    "announced write-in candidate; ballot-counting eligibility pending official filing confirmation",
+    "named by the county as a declared write-in candidate for County Judge",
+  recordLabel: "Declared write-in",
   lastVerifiedAt: "2026-07-27",
   partyStatus:
     "No party affiliation was located in the county-posted campaign-treasurer appointment or the reviewed campaign material.",
   summary:
-    "Dina K. Carroll has publicly announced a write-in campaign for Marion County Judge. This profile separates her campaign account from independently supported community work and keeps her write-in qualification visibly unconfirmed until an official filing record is located.",
+    "Marion County’s published list of declared write-in candidates names Dina Carroll for County Judge in the November 3, 2026 general election. The list was checked October 2, 2026; this profile keeps campaign claims, independent reporting and remaining filing-document gaps separate.",
   portrait: {
     src: "/images/races/marion-county-judge-2026/dina-carroll-portrait.jpg",
     alt: "Dina K. Carroll holding a kitten",
@@ -102,6 +103,11 @@ const dinaCarroll: ElectionCandidateProfile = {
     },
   ],
   independentRecord: [
+    {
+      title: "County declared write-in list checked October 2, 2026",
+      detail: "The county-published November 3 list names Dina Carroll for County Judge. The underlying accepted declaration and candidate filing date have not been acquired by this desk.",
+      sourceIds: ["county-declared-write-in-list"],
+    },
     {
       title: "Campaign-treasurer appointment is posted",
       detail:
@@ -155,7 +161,6 @@ const dinaCarroll: ElectionCandidateProfile = {
   ],
   evidenceGaps: [
     "An accepted write-in declaration and any required fee or petition acceptance.",
-    "A county-published qualified-write-in roster naming Carroll.",
     "Degree and teacher-certification records referenced by the campaign.",
     "A detailed county-budget, audit and contract-oversight plan.",
     "An emergency-management plan for the county judge's statutory role.",
@@ -177,6 +182,13 @@ const dinaCarroll: ElectionCandidateProfile = {
     instagram: "https://www.instagram.com/dcjcarroll2/",
   },
   sources: [
+    {
+      id: "county-declared-write-in-list",
+      title: "Marion County: list of declared write-in candidates",
+      url: "https://marioncountytaxoffice.com/wp-content/uploads/2026/09/LIST-OF-DECLARED-WRITE-IN-CANDIDATES.pdf",
+      kind: "official",
+      note: "The November 3, 2026 list names Dina Carroll for County Judge; checked October 2. It does not establish her filing date or its original publication date.",
+    },
     {
       id: "county-elections",
       title: "Marion County elections and campaign filings",

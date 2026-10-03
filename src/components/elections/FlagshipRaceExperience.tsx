@@ -6,14 +6,19 @@ import ShareButtons from "@/components/shared/ShareButtons";
 import RaceCommunityPoll from "./RaceCommunityPoll";
 import RaceParticipation from "./RaceParticipation";
 import MarionCoverageDesk from "./MarionCoverageDesk";
-import { MARION_ELECTION_PAGE, MARION_SAMPLE_BALLOT } from "@/data/marion-public-records";
+import { MARION_DECLARED_WRITE_INS, MARION_ELECTION_PAGE, MARION_SAMPLE_BALLOT } from "@/data/marion-public-records";
 import styles from "./FlagshipRaceExperience.module.css";
 
 const RACE_PATH = "/elections/texas/marion-county-judge-2026";
 const VERIFIED_ON = "July 27, 2026";
-const ELECTION_REVIEW_ON = "September 29, 2026";
+const ELECTION_REVIEW_ON = "October 2, 2026";
 
 const sources = [
+  {
+    label: "County list of declared write-in candidates; checked October 2, 2026",
+    href: MARION_DECLARED_WRITE_INS,
+    type: "Official",
+  },
   {
     label: "Marion County elections",
     href: "https://marioncountytaxoffice.com/elections/",
@@ -271,7 +276,7 @@ export default function FlagshipRaceExperience() {
                   href="/candidates/dina-k-carroll"
                   src="/images/races/marion-county-judge-2026/dina-carroll-portrait.jpg"
                   alt="Dina K. Carroll holding a kitten"
-                  status="Announced write-in · qualification pending"
+                  status="County-listed declared write-in"
                   name="Dina Carroll"
                   role="Challenger"
                   position="50% 38%"
@@ -368,11 +373,11 @@ export default function FlagshipRaceExperience() {
           <h2 id="opening-title">The race is real. Some of the evidence is still catching up.</h2>
           <p>
             LaFleur is the sitting Republican county judge and won an unopposed primary.
-            Carroll has announced a write-in challenge and filed a campaign-treasurer
-            appointment. RepWatchr has not yet located the county’s accepted declaration or
-            qualified-write-in roster, so her ballot status remains explicitly unconfirmed.
+            The county’s list of declared write-in candidates names Dina Carroll for County
+            Judge in the November 3 election. RepWatchr checked it October 2. Her underlying
+            accepted declaration and filing date remain separate records not acquired by this desk.
           </p>
-          <p className={styles.verificationStamp}>Source review updated {VERIFIED_ON}</p>
+          <p className={styles.verificationStamp}>Profile baseline reviewed {VERIFIED_ON}; ballot record checked {ELECTION_REVIEW_ON}</p>
         </div>
         <div className={styles.truthBox}>
           <strong>Current editorial grade</strong>
@@ -403,7 +408,7 @@ export default function FlagshipRaceExperience() {
             />
             <div className={styles.candidateBody}>
               <div className={styles.candidateIdentity}>
-                <p>Announced write-in · qualification pending</p>
+                <p>County-listed declared write-in</p>
                 <h3>Dina K. Carroll</h3>
                 <span>Jefferson small-business owner, educator and community advocate</span>
               </div>
@@ -788,15 +793,16 @@ export default function FlagshipRaceExperience() {
           </article>
 
           <article className={styles.ballotCard}>
-            <p className={`${styles.statusBadge} ${styles.pendingBadge}`}>Verification pending</p>
+            <p className={`${styles.statusBadge} ${styles.pendingBadge}`}>County list documented</p>
             <span className={styles.ballotCandidate}>Dina K. Carroll</span>
-            <h3>Announced write-in challenger</h3>
+            <h3>County-listed declared write-in candidate</h3>
             <dl>
               <div><dt>Treasurer form</dt><dd>Posted by county</dd></div>
-              <div><dt>Declaration</dt><dd>Campaign says filed</dd></div>
+              <div><dt>Declaration</dt><dd>Underlying filing not acquired</dd></div>
               <div><dt>Fee or petition</dt><dd>Acceptance not located</dd></div>
-              <div><dt>Qualified roster</dt><dd>Not yet located</dd></div>
+              <div><dt>Declared write-in list</dt><dd>County names Dina Carroll</dd></div>
             </dl>
+            <SourceLink href={MARION_DECLARED_WRITE_INS}>Open the county declared write-in list</SourceLink>
             <SourceLink href="https://marioncountytaxoffice.com/wp-content/uploads/2026/07/CTA-D-CARROLL.pdf">
               Open the posted treasurer form
             </SourceLink>
@@ -827,9 +833,12 @@ export default function FlagshipRaceExperience() {
           <p>
             The write-in declaration window closed August 17 at 5 p.m. The county now links
             November sample ballots. The precincts 1 and 2 sample lists LaFleur and a blank
-            write-in line; it does not name Carroll or verify her qualification. The accepted
-            declaration or qualified roster has not been acquired by this desk.
+            write-in line; it does not name Carroll. The county’s separate declared write-in list
+            names Dina Carroll for County Judge. The underlying declaration and filing date
+            have not been acquired. The PDF’s server modification date does not establish
+            its original publication date.
           </p>
+          <SourceLink href={MARION_DECLARED_WRITE_INS}>Open the county declared write-in list</SourceLink>
           <SourceLink href={MARION_SAMPLE_BALLOT}>Open the reviewed sample ballot, page 2</SourceLink>
           <SourceLink href={MARION_ELECTION_PAGE}>Check the county election calendar and other precinct samples</SourceLink>
           <SourceLink href="https://www.sos.state.tx.us/elections/candidates/guide/2026/writein2026.shtml">
@@ -882,6 +891,7 @@ export default function FlagshipRaceExperience() {
           <li><time>Aug. 17</time><strong>Write-in filing deadline</strong><p>Texas sets 5 p.m. as the deadline for declared write-in filings for the November election.</p></li>
           <li><time dateTime="2026-09-29">Sep. 29</time><strong>Posted forum correspondence reviewed</strong><p>One invitation was declined; conditional participation was offered. Original correspondence and page authorship remain unverified.</p></li>
           <li><time dateTime="2026-09-29">Sep. 29</time><strong>County sample ballot reviewed</strong><p>The precincts 1 and 2 sample names LaFleur and contains a blank write-in line. It does not identify the qualified write-in candidate.</p></li>
+          <li><time dateTime="2026-10-02">Oct. 2</time><strong>County declared write-in list reviewed</strong><p>The county’s November 3 list names Dina Carroll for County Judge. The underlying filing and original posting date remain unverified by this desk.</p></li>
           <li><time>Nov. 3</time><strong>General election</strong><p>Only official Marion County results determine the office.</p></li>
         </ol>
       </section>

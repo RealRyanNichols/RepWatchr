@@ -1,15 +1,19 @@
 {
   "id": "marion-county-sample-ballot-record-check-2026-09-29",
-  "title": "Marion County’s Sample Ballot Shows a Write-In Line. It Does Not Name Carroll.",
-  "seoTitle": "Marion County Sample Ballot: What It Shows",
-  "thumbnailMessage": "Read the County Judge write-in line.",
-  "summary": "The county’s precincts 1 and 2 sample ballot names LaFleur and includes a blank write-in line. That is separate from an accepted write-in declaration or qualified-candidate roster.",
+  "title": "Marion County’s Write-In List Names Dina Carroll for County Judge",
+  "seoTitle": "Marion County Write-In List Names Dina Carroll",
+  "thumbnailMessage": "The county list names Dina Carroll.",
+  "summary": "The county’s declared write-in list names Dina Carroll for County Judge. The sample ballot still shows LaFleur and a blank write-in line; the two documents serve different purposes.",
   "category": "Record check",
-  "content": "Marion County has linked November 3 sample ballots from its election page. RepWatchr reviewed the two-page sample for precincts 1 and 2 on September 29.\n\nThe County Judge section appears on page 2. It lists Leward J. LaFleur as Republican and provides a separate blank line labeled for a write-in response. Dina Carroll’s name is not printed in that section.\n\n## What that establishes\n\nThe county-published sample shows how that contest is presented in the reviewed precincts. It is useful evidence of the sample ballot’s contents. It does not report a vote count or an election outcome.\n\n## What remains missing\n\nA blank write-in line does not identify every qualified write-in candidate. Carroll’s posted campaign-treasurer appointment is a separate record. RepWatchr has not acquired the accepted write-in declaration or qualified-write-in roster for this desk.\n\nThat gap should stay visible. It is not a finding that Carroll failed to qualify, and a campaign statement alone does not close it.\n\n## Open the right record\n\nUse the county election page to select the sample for your precinct; do not assume this one sample covers every voter. Open the original PDF and read the office label before sharing a screenshot. If you have the accepted declaration or official roster, submit it for review so the candidate-status note can be corrected with a source.\n\nThis is a document check, not a candidate endorsement. AI-assisted draft; publication remains subject to human editorial review.",
+  "content": "## Update — October 2, 2026\n\nMarion County’s official List of Declared Write-In Candidates names Dina Carroll for County Judge in the November 3, 2026 general election. RepWatchr retrieved the county-linked PDF and checked the office-and-name row against the original document.\n\nThis closes the desk’s earlier missing-roster gap. The original September 30 article said RepWatchr had not acquired the accepted declaration or qualified-write-in roster. That statement is outdated now that the county’s list has been reviewed. The separate declaration and its filing date have not been acquired.\n\n## Two records, two different purposes\n\nRepWatchr reviewed Marion County’s two-page sample ballot for precincts 1 and 2 on September 29. The County Judge section on page 2 lists Leward J. LaFleur as Republican and provides a blank write-in line. Carroll’s name is not printed in that sample’s County Judge section.\n\nThe county’s declared write-in list supplies the candidate name that the blank sample-ballot line does not provide. Read those documents together. The fact that a name is absent from the printed sample is not evidence that the person is absent from the county’s declared write-in list.\n\n## What the documents do not establish\n\nNeither document reports votes or an election outcome. The list does not give Carroll’s declaration filing date or an initial publication date for the county’s PDF. A server modification timestamp is not proof of when a candidate filed.\n\nThis review covers the two linked records. It does not establish misconduct, page ownership, a candidate’s private communications, or the terms of any proposed forum.\n\n## Read the original before sharing\n\nOpen the county’s declared write-in list and find the County Judge row. Use the November election page to select the sample ballot for your own precinct; the precincts 1 and 2 sample is not a substitute for every precinct’s record.\n\nThe original article URL and September 30 publication date are retained. This dated update replaces the missing-roster statement while preserving the September 29 sample-ballot review. AI-assisted reporting, checked against the linked county documents.",
   "sourceLinks": [
     {
       "title": "County November election page and precinct-specific sample links",
       "url": "https://marioncountytaxoffice.com/november-3-2026-general-special-election/"
+    },
+    {
+      "title": "Marion County List of Declared Write-In Candidates — County Judge row",
+      "url": "https://marioncountytaxoffice.com/wp-content/uploads/2026/09/LIST-OF-DECLARED-WRITE-IN-CANDIDATES.pdf"
     },
     {
       "title": "Precincts 1 and 2 sample ballot, page 2",
@@ -20,7 +24,7 @@
       "url": "https://marioncountytaxoffice.com/elections/"
     }
   ],
-  "primarySourceCount": 1,
+  "primarySourceCount": 2,
   "independentPublisherCount": 0,
   "author": "RepWatchr Editorial Desk",
   "scope": "east-texas",
@@ -44,9 +48,9 @@
   ],
   "sourceStatus": "source_linked",
   "editorialStatus": "approved",
-  "reviewedAt": "2026-09-29T22:36:06-05:00",
-  "reviewedBy": "Codex source review; human editorial approval pending",
-  "correctionStatus": "none",
+  "reviewedAt": "2026-10-03T04:32:12.281198+00:00",
+  "reviewedBy": "Codex primary-source review; publication authorized by Ryan on October 2, 2026",
+  "correctionStatus": "corrected",
   "topicKey": "marion-county-election-records-2026",
   "publishedAt": "2026-09-30T05:30:33.862604+00:00",
   "featured": false,

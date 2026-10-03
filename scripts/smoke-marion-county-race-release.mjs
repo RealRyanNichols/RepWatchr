@@ -90,7 +90,7 @@ for (const marker of [
   "Leward J. LaFleur II",
   'href="/candidates/dina-k-carroll"',
   'href="/officials/leward-j-lafleur-ii"',
-  "Announced write-in · qualification pending",
+  "County-listed declared write-in",
   "selected as chair in 2023",
   "current official roster for a reported East Texas water-advisory role was not located",
   "<RaceCommunityPoll />",
@@ -135,8 +135,10 @@ if (
 
 for (const marker of [
   'slug: "dina-k-carroll"',
-  "announced write-in candidate; ballot-counting eligibility pending official filing confirmation",
+  "named by the county as a declared write-in candidate for County Judge",
   `/images/races/${raceSlug}/dina-carroll-portrait.jpg`,
+  "county-declared-write-in-list",
+  "candidate filing date have not been acquired",
   "campaignClaims",
   "independentRecord",
   "evidenceGaps",

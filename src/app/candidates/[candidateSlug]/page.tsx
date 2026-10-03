@@ -358,12 +358,12 @@ export default async function CandidateProfilePage({
           <p className={styles.openingNumber}>01</p>
           <div>
             <p className={styles.eyebrow}>What voters should know first</p>
-            <h2>{candidate.overviewTitle || (isDinaCarroll ? "A public campaign is underway. Qualification is still a verification question." : "Start with the election and the source record.")}</h2>
+            <h2>{candidate.overviewTitle || (isDinaCarroll ? "The county’s declared write-in list names Carroll." : "Start with the election and the source record.")}</h2>
             {candidate.overviewParagraphs ? candidate.overviewParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>) : isDinaCarroll ? <p>
-              Carroll has announced a write-in campaign, and Marion County posts her
-              campaign-treasurer appointment. RepWatchr has not located an accepted write-in
-              declaration or county-published qualified-write-in roster naming her. Those are
-              different records, so this page does not collapse them into one claim.
+              Marion County’s list of declared write-in candidates names Dina Carroll for
+              County Judge in the November 3, 2026 general election. RepWatchr checked it
+              October 2. The accepted declaration and filing date have not been acquired;
+              the published list, treasurer appointment and underlying filing remain distinct records.
             </p> : <p>{candidate.summary}</p>}
             {writeInRulesSource ? <p>
               Texas sets 5 p.m. August 17, 2026 as the write-in filing deadline for this

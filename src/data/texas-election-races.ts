@@ -80,11 +80,11 @@ export const TEXAS_ELECTION_RACES: TexasElectionRace[] = [
     lane: "local-watch",
     region: "Marion County",
     electionDate: "November 3, 2026",
-    lastUpdatedAt: "2026-07-27",
-    stage: "Announced write-in challenge; qualification pending official confirmation",
+    lastUpdatedAt: "2026-10-02",
+    stage: "County lists Carroll as a declared write-in candidate",
     priority: 99,
     summary:
-      "Leward J. LaFleur II, the Republican incumbent, faces a publicly announced write-in challenge from Dina K. Carroll for Marion County's countywide executive and constitutional-court office.",
+      "Leward J. LaFleur II, the Republican incumbent, appears on the county’s sample ballot. The separate county declared write-in list names Dina Carroll for County Judge. These are different records for the November 3 contest.",
     whyItMatters:
       "The county judge presides over Commissioners Court and holds real power over the budget, emergency management, public administration and the constitutional county court. The race also places unresolved, disputed misconduct reporting before voters.",
     geography: "Marion County, Texas",
@@ -98,12 +98,16 @@ export const TEXAS_ELECTION_RACES: TexasElectionRace[] = [
       "reported allegations and procedural disposition"
     ],
     watchActions: [
-      "Verify Carroll's accepted write-in declaration",
+      "Acquire Carroll's accepted declaration and filing-date record; the county declared list now names her",
       "Obtain the complaint, docket, transfer records and current disposition",
       "Load Commissioners Court attendance, votes, budgets and audits",
       "Offer both candidates equal sourced-response space"
     ],
     sourceLinks: [
+      {
+        title: "Marion County list of declared write-in candidates: Dina Carroll, County Judge",
+        url: "https://marioncountytaxoffice.com/wp-content/uploads/2026/09/LIST-OF-DECLARED-WRITE-IN-CANDIDATES.pdf"
+      },
       {
         title: "Marion County elections and campaign filings",
         url: "https://marioncountytaxoffice.com/elections/"

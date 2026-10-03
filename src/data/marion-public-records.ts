@@ -1,5 +1,7 @@
 export const MARION_ELECTION_REVIEW_DATE = "2026-09-29";
 export const MARION_ELECTION_PAGE = "https://marioncountytaxoffice.com/november-3-2026-general-special-election/";
+export const MARION_WRITE_IN_REVIEW_DATE = "2026-10-02";
+export const MARION_DECLARED_WRITE_INS = "https://marioncountytaxoffice.com/wp-content/uploads/2026/09/LIST-OF-DECLARED-WRITE-IN-CANDIDATES.pdf";
 export const MARION_SAMPLE_BALLOT = "https://marioncountytaxoffice.com/wp-content/uploads/2026/09/SAMPLE-BALLOT-PCT-1-2.pdf";
 
 export const marionElectionDates = [
@@ -17,8 +19,9 @@ export type MarionPublicRecord = {
 };
 
 export const marionOfficialRecords: MarionPublicRecord[] = [
+  { id: "declared-write-in-list", title: "County list of declared write-in candidates", kind: "Official", status: "Documented", url: MARION_DECLARED_WRITE_INS, reviewedAt: MARION_WRITE_IN_REVIEW_DATE, supports: "The county-published November 3, 2026 list names Dina Carroll for County Judge.", limit: "The underlying accepted declaration and candidate filing date have not been acquired. The PDF’s server modification timestamp does not establish its original publication date. This is not an election result." },
   { id: "election-calendar", title: "November election calendar", kind: "Official", status: "Documented", url: MARION_ELECTION_PAGE, reviewedAt: MARION_ELECTION_REVIEW_DATE, supports: "The county publishes election dates, voting-location information, and links to sample ballots.", limit: "Check the county's current notice before relying on hours or locations. This review does not verify an individual voter's eligibility." },
   { id: "sample-ballot", title: "Sample ballot: precincts 1 and 2", kind: "Official", status: "Documented", url: MARION_SAMPLE_BALLOT, reviewedAt: MARION_ELECTION_REVIEW_DATE, supports: "Page 2 lists Leward J. LaFleur as Republican in the County Judge contest and provides a blank write-in line.", limit: "This is one precinct-specific sample. The blank line does not name Carroll or establish her write-in qualification. It is not an election result." },
-  { id: "treasurer-appointment", title: "Carroll campaign-treasurer appointment", kind: "Official", status: "Documented", url: "https://marioncountytaxoffice.com/wp-content/uploads/2026/07/CTA-D-CARROLL.pdf", reviewedAt: MARION_ELECTION_REVIEW_DATE, supports: "The county elections index links a campaign-treasurer appointment under Dina K. Carroll.", limit: "A treasurer appointment is separate from an accepted write-in declaration. The accepted declaration or qualified-write-in roster has not been acquired for this desk." },
+  { id: "treasurer-appointment", title: "Carroll campaign-treasurer appointment", kind: "Official", status: "Documented", url: "https://marioncountytaxoffice.com/wp-content/uploads/2026/07/CTA-D-CARROLL.pdf", reviewedAt: MARION_ELECTION_REVIEW_DATE, supports: "The county elections index links a campaign-treasurer appointment under Dina K. Carroll.", limit: "A treasurer appointment is separate from an accepted write-in declaration. The accepted declaration and filing date have not been acquired for this desk. The county’s separate declared write-in list names Dina Carroll for County Judge." },
   { id: "write-in-procedures", title: "Texas 2026 write-in procedures", kind: "Official", status: "Documented", url: "https://www.sos.state.tx.us/elections/candidates/guide/2026/writein2026.shtml", reviewedAt: MARION_ELECTION_REVIEW_DATE, supports: "The Secretary of State lists the declaration filing period as July 18 through August 17, 2026, at 5 p.m.", limit: "State procedures do not prove county acceptance of a particular candidate. This filing window has closed." },
 ];
