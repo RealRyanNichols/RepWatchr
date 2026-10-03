@@ -80,13 +80,23 @@ function dateLabel(value: string) {
   });
 }
 
+function hasSourceLink(article: NewsArticle) {
+  return Boolean(article.sourceUrl || article.sourceLinks?.some((source) => source.url));
+}
+
 function sourceLabel(article: NewsArticle) {
-  if (article.sourceUrl && article.sourceName) return `Source: ${article.sourceName}`;
   if (article.sourceName) return `Source: ${article.sourceName}`;
+  const linkedSource = article.sourceLinks?.find((source) => source.url);
+  if (linkedSource) return `Source: ${linkedSource.title}`;
+  if (article.sourceUrl) return "Public source linked";
   return "Needs source URL";
 }
 
 function recordLabel(article: NewsArticle) {
+  if (article.sourceStatus === "needs_source_review" || (article.editorialStatus && article.editorialStatus !== "approved")) {
+    return "Needs review";
+  }
+  if (article.editorialStatus === "approved" && hasSourceLink(article)) return "Source backed";
   if (article.featured && article.sourceUrl) return "Source backed";
   if (article.tags.some((tag) => ["breaking", "investigation", "watchdog", "corruption"].includes(tag))) {
     return "Needs review";
@@ -181,7 +191,7 @@ function ArticleCard({ article, compact = false }: { article: NewsArticle; compa
 
       <div className="mt-auto border-t border-slate-100 pt-4 text-xs font-bold text-slate-500">
         <p>{article.locationLabel ?? scopeLabels[articleScope(article)]} / {dateLabel(article.publishedAt)}</p>
-        <p className={article.sourceUrl ? "mt-1 text-blue-800" : "mt-1 text-red-700"}>
+        <p className={hasSourceLink(article) ? "mt-1 text-blue-800" : "mt-1 text-red-700"}>
           {sourceLabel(article)}
         </p>
         <span className="mt-3 inline-flex text-[11px] font-black uppercase tracking-wide text-slate-900 group-hover:text-red-700">
@@ -247,7 +257,7 @@ export default async function NewsPage({
     matchesGeo(article, selectedScope, selectedState, selectedCounty, selectedCity),
   );
   const activeArticles = filtered.length ? filtered : articles;
-  const sourceLinkedCount = articles.filter((article) => Boolean(article.sourceUrl)).length;
+  const sourceLinkedCount = articles.filter(hasSourceLink).length;
   const eastTexasArticles = articles.filter((article) => articleScope(article) === "east-texas");
   const texasArticles = articles.filter((article) => articleScope(article) === "texas");
   const nationalArticles = articles.filter((article) => articleScope(article) === "national");
