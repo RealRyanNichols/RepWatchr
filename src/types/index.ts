@@ -487,6 +487,31 @@ export interface PublicPostEmbed {
   publishedAt?: string;
 }
 
+export interface NewsSourceFigureAnnotation {
+  id: string;
+  title: string;
+  note: string;
+  /** Coordinates refer to the source image's intrinsic pixels. */
+  ellipse: { cx: number; cy: number; rx: number; ry: number };
+  arrow?: { startX: number; startY: number; endX: number; endY: number };
+  sourceLinks: SourceLink[];
+}
+
+export interface NewsSourceFigure {
+  id: string;
+  title: string;
+  /** Reviewed public screenshot excerpt; never a private raw-capture path. */
+  imageUrl: string;
+  width: number;
+  height: number;
+  alt: string;
+  caption: string;
+  sourceUrl: string;
+  sourceTitle: string;
+  capturedAt: string;
+  annotations: NewsSourceFigureAnnotation[];
+}
+
 export type OfficialCoverageTone = "positive" | "critical" | "neutral";
 
 export interface OfficialCoverageClassification {
@@ -543,6 +568,8 @@ export interface NewsArticle {
   independentPublisherCount?: number;
   midtermRelevance?: 0 | 1 | 2 | 3;
   publicPostEmbeds?: PublicPostEmbed[];
+  /** Original screenshot excerpts with separate editorial annotation layers. */
+  sourceFigures?: NewsSourceFigure[];
   /** Curated links to relevant RepWatchr records and explainers. */
   internalLinks?: SourceLink[];
   /** An article can treat different named officials differently, so tone is keyed by official id. */

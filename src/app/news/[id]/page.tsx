@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ArticleThumbnail from "@/components/news/ArticleThumbnail";
+import ArticleSourceFigure, { isRenderableSourceFigure } from "@/components/news/ArticleSourceFigure";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllNews, getNewsById, getOfficialById } from "@/lib/data";
@@ -92,6 +93,7 @@ export default async function NewsArticlePage({
 
   if (!article) notFound();
 
+  const sourceFigures = Array.isArray(article.sourceFigures) ? article.sourceFigures.filter(isRenderableSourceFigure) : [];
   const linkedOfficials = article.officialIds
     .map((officialId) => getOfficialById(officialId))
     .filter(Boolean);
@@ -221,6 +223,10 @@ export default async function NewsArticlePage({
         {article.summary}
       </p>
 
+      {sourceFigures.length ? (
+        <a href="#article-source-figures" className="mt-4 inline-block text-sm font-bold text-blue-800 underline underline-offset-4">See the annotated screenshots</a>
+      ) : null}
+
       {/* Content */}
       <div className="mt-8 prose prose-gray max-w-none">
         {article.content.split("\n\n").map((paragraph, i) => (
@@ -229,6 +235,13 @@ export default async function NewsArticlePage({
             <p key={i} className="text-gray-700 leading-relaxed mb-4">{paragraph}</p>
         ))}
       </div>
+
+      {sourceFigures.length ? (
+        <section id="article-source-figures" className="mt-10 scroll-mt-44 space-y-6" aria-labelledby="article-source-figures-title">
+          <h2 id="article-source-figures-title" className="text-2xl font-bold leading-tight text-blue-950">Check the original wording</h2>
+          {sourceFigures.map((figure) => <ArticleSourceFigure key={figure.id} figure={figure} />)}
+        </section>
+      ) : null}
 
       {article.publicPostEmbeds?.length ? (
         <section className="mt-6 space-y-4">
